@@ -2,6 +2,30 @@ from .moves import Move, BaseMove
 from parse.utils import split_sequence, clean_alg
 
 
+def constructor(a, b, alg_type=0):
+    """
+    Logic for constructing a commutator (A B A' B') or a conjugate (A B A')
+    :param a: list of Move objects.
+    :param b: list of Move objects.
+    :param alg_type: commutator (0) or conjugate (1)
+    :type alg_type: int
+    :return: list of strings.
+    """
+    A = [m.move for m in a]
+    B = [m.move for m in b]
+    Ai = [m.invert() for m in a]
+    Ai.reverse()
+    base = A + B + Ai
+    if alg_type == 0:
+        Bi = [m.invert() for m in b]
+        Bi.reverse()
+        return base + Bi
+    if alg_type == 1:
+        return base
+    else:
+        return None
+
+
 def construct_commutator(a, b):
     """
     Logic for constructing a commutator. A B A' B'.
