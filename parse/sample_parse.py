@@ -25,7 +25,6 @@ def expand(s):
         comm_str = construct_ab(this_str)
         alg = alg.replace(this_match, comm_str)
 
-
     # Process outer conjugates/commutators.
     if Notation.COMMUTATOR not in alg and Notation.CONJUGATE not in alg:
         return Algorithm(alg)
@@ -48,7 +47,10 @@ def construct_ab(s):
     else:
         sep = Notation.CONJUGATE
 
-    A, B = init_ab(s, sep)
+    A, B = split_ab(s, sep)
+    A = [Move(m) for m in split_sequence(A)]
+    B = [Move(m) for m in split_sequence(B)]
+
     comm = (construct_commutator(A, B) if sep == Notation.COMMUTATOR else construct_conjugate(A, B))
     return ''.join(comm)
 
@@ -58,10 +60,11 @@ if __name__ == "__main__":
     r = Regex()
 
     alg_list = [
+        #"[U : R U R', D]",
         "[R,U] R' F R2 U' [R': U'] U R' F'", # t-perm
         "[D: [R D' R' D, F2]]", # commutator
         # TODO: breaks here
-        "[U R U': M2][U' R' U, M2]", # M2 method
+        "[U R U': M2][U' R' U: M2]", # M2 method
         "RUR'U'" # nothing required.
         ]
 
@@ -69,10 +72,9 @@ if __name__ == "__main__":
 
         algo = expand(alg)
 
-        print("Alg raw: '{0}'".format(algo.raw))
-        print("Alg moves: '{0}'".format(algo.moves))
-        print("Alg inverse: '{0}'".format(algo.invert()))
-        print("Alg SiGN: '{0}'".format(algo.to_SiGN()))
+        print("Alg raw: {0}".format(algo.raw))
+        print("Alg inverse: {0}".format(algo.invert()))
+        print("Alg SiGN: {0}".format(algo.to_SiGN()))
 
 
 

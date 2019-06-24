@@ -1,18 +1,5 @@
 from .moves import Move, BaseMove
-from parse.utils import split_sequence, split_ab, clean_alg
-
-
-def init_ab(s, sep):
-    """
-    Extract the A and B parts from a string input, split them up into their individual moves and initialise Move objects.
-    :param s: str - raw string
-    :param sep: str - separator
-    :return: two lists.
-    """
-    A, B = split_ab(s, sep)
-    A = [Move(m) for m in split_sequence(A)]
-    B = [Move(m) for m in split_sequence(B)]
-    return A, B
+from parse.utils import split_sequence, clean_alg
 
 
 def construct_commutator(a, b):
@@ -24,7 +11,6 @@ def construct_commutator(a, b):
     """
     A = [m.move for m in a]
     B = [m.move for m in b]
-    # TODO: find more elegant solution.
     Ai = [m.invert() for m in a]
     Bi = [m.invert() for m in b]
     Ai.reverse()
@@ -42,7 +28,6 @@ def construct_conjugate(a, b):
     """
     A = [m.move for m in a]
     B = [m.move for m in b]
-    # TODO: find more elegant solution.
     Ai = [m.invert() for m in a]
     Ai.reverse()
     return A + B + Ai

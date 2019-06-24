@@ -29,6 +29,7 @@ def clean_alg(alg):
     :param alg: raw string.
     :return: str
     """
+    # TODO: this is no longer valid.
     clean_ws = alg.strip().replace(" ", "")
     while (clean_ws.startswith("[") and clean_ws.endswith("]")) or (clean_ws.startswith("(") and clean_ws.endswith(")")):
         clean_ws = remove_redundant_chars("[", "]", remove_redundant_chars("(", ")", clean_ws))

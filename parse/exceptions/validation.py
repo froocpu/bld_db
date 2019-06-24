@@ -5,3 +5,7 @@ class AmbiguousStatementException(Exception):
 class BadSeparatorException(Exception):
     pass
 
+
+class BadMultiplierException(Exception):
+    pass
+
