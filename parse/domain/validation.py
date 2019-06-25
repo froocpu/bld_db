@@ -1,5 +1,4 @@
-from parse.exceptions import InvalidMoveException, InvalidSequenceException
-from parse.utils import count_occurrences, remove_redundant_chars
+from parse.exceptions import InvalidMoveException
 from .notation import Notation
 
 
@@ -19,24 +18,6 @@ def validate_move(s):
         raise InvalidMoveException("'{0}' not a valid move in SiGN or WCA notation.".format(move))
 
     return move
-
-
-def validate_alg(s):
-    """
-    Validate an algorithm to check if it has correct/readable syntax.
-    :param s: str
-    :return: str
-    """
-    s = ""
-    trim = s.strip()
-    if count_occurrences('[', trim) != count_occurrences(']', trim):
-        raise InvalidSequenceException("Unmatched square brackets found in sequence: {}.".format(trim))
-    if count_occurrences('(', trim) != count_occurrences(')', trim):
-        raise InvalidSequenceException("Unmatched round brackets found in sequence: {}.".format(trim))
-
-    concise_sq = remove_redundant_chars("[", "]", trim)
-    concise_rnd = remove_redundant_chars("(", ")", trim)
-
 
 
 def generate_valid_moves():

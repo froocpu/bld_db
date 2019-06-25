@@ -2,7 +2,7 @@ import unittest
 
 from parse.utils import split_sequence
 from parse.domain import Algorithm, Move
-from parse.domain import construct_commutator
+from parse.domain import constructor
 
 
 class TestMoveClass(unittest.TestCase):
@@ -34,6 +34,6 @@ class TestMoveClass(unittest.TestCase):
         self.assertListEqual(t.invert(), expected)
 
     def test_construct_commutator(self):
-        comm = construct_commutator([Move("R")], [Move("U")])
+        comm = constructor([Move("R")], [Move("U")])
         expected = ["R", "U", "R'", "U'"]
         self.assertListEqual(comm, expected)

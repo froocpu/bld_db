@@ -9,20 +9,6 @@ def count_occurrences(pattern, s):
     return (s_len - (len(s.replace(pattern, "")))) / len(pattern)
 
 
-def remove_redundant_chars(start, end, s):
-    """
-    Remove redundant starting and ending characters that don't get used to parse grammar.
-    :param start: first char
-    :param end: last char
-    :param s: string
-    :return: str
-    """
-    while s.startswith(start) and s.endswith(end):
-        s = s[1:len(s)-1]
-        s = s.strip()
-    return s
-
-
 def clean_alg(alg):
     """
     A simple cleaning function. Algs don't need whitespace to be parsed.
