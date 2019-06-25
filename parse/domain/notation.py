@@ -8,3 +8,4 @@ class Notation:
     BLOCKS = 'ULFRBD'
     CONJUGATE = ":"
     COMMUTATOR = ","
+    MULTIPLIER = "*"

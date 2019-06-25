@@ -17,22 +17,34 @@ def expand(s):
     alg = clean_alg(s)
     print(alg)
 
-    # Process smaller, nested brackets.
-    while r.match_sequence(alg) is not None:
+    subparts = sorted(list(parse_brackets(alg)))
+    print(subparts)
 
-        this_match = r.match_sequence(alg)
-        this_str = this_match.replace("[", "").replace("]", "")
-        comm_str = construct_ab(this_str)
-        alg = alg.replace(this_match, comm_str)
+    while len(subparts) > 0:
+        this_subpart = subparts.pop()[1]
+        ab = construct_ab(this_subpart)
+        if Notation.MULTIPLIER in ab:
+            ab = multiplier(ab)
+        alg = alg.replace("[" + this_subpart + "]", ab)  # this won't catch a block with more than one nested block inside it.
+        print(alg)
 
-    # Process outer conjugates/commutators.
-    if Notation.COMMUTATOR not in alg and Notation.CONJUGATE not in alg:
-        return Algorithm(alg)
 
-    if Notation.COMMUTATOR in alg and Notation.CONJUGATE in alg:
-        raise AmbiguousStatementException("Syntax contains both commutator and conjugate notation with no brackets.")
+    """
+    While number of strings != 1:
+        1. For the lowest levels:
+            if commutator and conjugate:
+                special edge case
+            if commutator:
+                expand A B A' B'
+            else if conjugate:
+                expand A B A'
+            else
+                nothing
+        2. Replace parent levels string patterns with expanded variants.
+        3. Remove children.
 
-    alg = construct_ab(alg)
+    """
+
     return Algorithm(alg)
 
 
@@ -51,21 +63,22 @@ def construct_ab(s):
     A = [Move(m) for m in split_sequence(A)]
     B = [Move(m) for m in split_sequence(B)]
 
-    comm = (construct_commutator(A, B) if sep == Notation.COMMUTATOR else construct_conjugate(A, B))
+    comm = (constructor(A, B, 0) if sep == Notation.COMMUTATOR else constructor(A, B, 1))
     return ''.join(comm)
 
 
 if __name__ == "__main__":
 
+
+
     r = Regex()
 
     alg_list = [
         #"[U : R U R', D]",
-        "[R,U] R' F R2 U' [R': U'] U R' F'", # t-perm
-        "[D: [R D' R' D, F2]]", # commutator
-        # TODO: breaks here
-        "[U R U': M2][U' R' U: M2]", # M2 method
-        "RUR'U'" # nothing required.
+        #"[R,U] R' F R2 U' [R': U'] U R' F'", # t-perm
+        "[[M', U],[R D' R' D, F2]]"  # commutator
+        #"[U R U': M2][U' R' U: M2]", # M2 method
+        #"RUR'U'" # nothing required.
         ]
 
     for alg in alg_list:

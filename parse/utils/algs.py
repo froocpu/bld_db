@@ -41,6 +41,7 @@ def split_ab(s, sep):
     """
     if sep not in [Notation.COMMUTATOR, Notation.CONJUGATE]:
         raise BadSeparatorException("This alg uses non-standard notation - '{0}' is not allowed.".format(sep))
+    print(count_occurrences(sep, s))
     if count_occurrences(sep, s) != 1:
         raise AmbiguousStatementException("This statement appears to have incorrect syntax. '{0}'".format(s))
 

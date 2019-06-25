@@ -26,11 +26,8 @@ def remove_redundant_chars(start, end, s):
 def clean_alg(alg):
     """
     A simple cleaning function. Algs don't need whitespace to be parsed.
-    :param alg: raw string.
+    :param alg: unicode string containing algorithm
+    :type alg: str
     :return: str
     """
-    # TODO: this is no longer valid.
-    clean_ws = alg.strip().replace(" ", "")
-    while (clean_ws.startswith("[") and clean_ws.endswith("]")) or (clean_ws.startswith("(") and clean_ws.endswith(")")):
-        clean_ws = remove_redundant_chars("[", "]", remove_redundant_chars("(", ")", clean_ws))
-    return clean_ws
+    return alg.strip().replace(" ", "")
