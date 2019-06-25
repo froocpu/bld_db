@@ -20,12 +20,14 @@ def expand(s):
     subparts = sorted(list(parse_brackets(alg)))
     print(subparts)
 
+    this_depth = subparts[-1][0]
+
     while len(subparts) > 0:
+        if subparts[-1][0] != this_depth and this_depth > 0:
+            subparts = sorted(list(parse_brackets(alg)))
         this_subpart = subparts.pop()[1]
         ab = construct_ab(this_subpart)
-        if Notation.MULTIPLIER in ab:
-            ab = multiplier(ab)
-        alg = alg.replace("[" + this_subpart + "]", ab)  # this won't catch a block with more than one nested block inside it.
+        alg = alg.replace("[" + this_subpart + "]", ab)
         print(alg)
 
 
@@ -56,10 +58,18 @@ def construct_ab(s):
     """
     if Notation.COMMUTATOR in s:
         sep = Notation.COMMUTATOR
-    else:
+    elif Notation.CONJUGATE in s:
         sep = Notation.CONJUGATE
+    else:
+        return s
 
     A, B = split_ab(s, sep)
+
+    if Notation.MULTIPLIER in A:
+        A = multiplier(A)
+    if Notation.MULTIPLIER in B:
+        B = multiplier(B)
+
     A = [Move(m) for m in split_sequence(A)]
     B = [Move(m) for m in split_sequence(B)]
 
@@ -74,11 +84,13 @@ if __name__ == "__main__":
     r = Regex()
 
     alg_list = [
-        #"[U : R U R', D]",
-        #"[R,U] R' F R2 U' [R': U'] U R' F'", # t-perm
-        "[[M', U],[R D' R' D, F2]]"  # commutator
-        #"[U R U': M2][U' R' U: M2]", # M2 method
-        #"RUR'U'" # nothing required.
+
+        "[R,U] R' F R2 U' [R': U'] U R' F'", # t-perm
+        "[[M', U],[R D' R' D, F2]]",  # commutator
+        "[U R U': M2][U' R' U: M2]", # M2 method
+        "[L: (U M' U M)*2]",  # multiplier
+        "RUR'U'", # nothing required.
+        "[U : R U R', D]"
         ]
 
     for alg in alg_list:

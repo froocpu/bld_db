@@ -1,7 +1,7 @@
 # TODO:
 
-- [ ] Parse brackets. i.e. `(M' U M U)*2`
-- [ ] Parse M2 notation. i.e. `[U' R' U: M2][U L U', M2]`
+- [x] Parse brackets. i.e. `(M' U M U)*2`
+- [x] Parse M2 notation. i.e. `[U' R' U: M2][U L U', M2]`
 - [ ] Handle this case: `[R: R U R', D]` - both commutator and conjugate notation is allowed.
 
 ## Algorithm
