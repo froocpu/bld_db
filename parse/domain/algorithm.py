@@ -1,3 +1,5 @@
+import re
+
 from .moves import Move, BaseMove
 from .notation import Notation
 from parse.utils import split_sequence, clean_alg, split_ab, parse_brackets, multiplier
@@ -7,9 +9,17 @@ class Algorithm(BaseMove):
 
     def __init__(self, s):
         self.raw = s
+
         cleaned = clean_alg(s)
+
+        matches = list(set(re.findall(r'\([A-Z\'0-9]+\)\*[0-9]+', cleaned)))
+
+        while len(matches) > 0:
+            x = matches.pop()
+            y = multiplier(x)
+            cleaned = cleaned.replace(x, y)
+
         subparts = sorted(list(parse_brackets(cleaned)))
-        print(subparts)
 
         if len(subparts) == 0:
             tidy = normalise(cleaned)
@@ -25,8 +35,6 @@ class Algorithm(BaseMove):
                 this_subpart = normalise(original_subpart)
                 ab = expand_algorithm(this_subpart)
                 cleaned = cleaned.replace("[" + original_subpart + "]", ab)
-
-            print(cleaned)
 
             self.moves = [Move(m) for m in split_sequence(cleaned)]
 
@@ -57,7 +65,7 @@ def expand_algorithm(s):
     else:
         multiplied = multiplier(s)
         move_objects = [Move(m) for m in split_sequence(multiplied)]
-        return constructor(a=move_objects)
+        return ''.join(constructor(a=move_objects))
 
     A, B = split_ab(s, sep)
 

@@ -1,10 +1,11 @@
 import logging
+import re
 
 from parse.domain import *
+from parse.utils import multiplier
 
 log = logging.getLogger("parse logger")
 logging.basicConfig(format=logging.INFO)
-
 
 if __name__ == "__main__":
 
@@ -16,7 +17,10 @@ if __name__ == "__main__":
         "[L: (U M' U M)*2]",  # multiplier
         "RUR'U'", # nothing required.
         "[U : R U R', D]", # cleaner
-        # BROKEN #  "U : R U R', D"  # even cleaner
+        "U : R U R', D",  # even cleaner
+        "(M' U M U)*2",  # just a multiplier
+        "M' U' (M' D')*2 U M'",  # in the middle of a subpart
+        "M U' (M U) M U"  # nested
 
         ]
 

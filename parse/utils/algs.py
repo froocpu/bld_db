@@ -78,11 +78,12 @@ def multiplier(string, m=Notation.MULTIPLIER, op='(', cp=')'):
     :param m: the symbol to denote the multiplier
     :type m: str
     :return: str
+    TODO: handle ([M',U2])*2?
     """
-
-    if m not in string:
-        return string
     empty = ""
+    if m not in string:
+        return string.replace(op, empty).replace(cp, empty)
+
     splits = string.split(m)
     try:
         n = int(splits[1])
