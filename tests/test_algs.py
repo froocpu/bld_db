@@ -1,39 +1,39 @@
 import unittest
 
-from parse.utils import split_sequence
-from parse.domain import Algorithm, Move
-from parse.domain import constructor
+from parse.domain import Algorithm
 
 
-class TestMoveClass(unittest.TestCase):
+class TestAlgorithm(unittest.TestCase):
 
-    def test_split_ab_good(self):
-        good_comm = "U,R"
-        good_conj = "U:R"
-        pass
+    alg_list = [
 
-    def test_split_ab_bad(self):
-        bad_comm = "U;R"
-        bad_conj = "U,R,L"
-        pass
+        "[R,U] R' F R2 U' [R': U'] U R' F'", # t-perm
+        "[[M', U],[R D' R' D, F2]]",  # commutator
+        "[U R U': M2][U' R' U: M2]",  # M2 method
+        "[L: (U M' U M)*2]",  # multiplier
+        "RUR'U'", # nothing required.
+        "[U : R U R', D]", # cleaner
+        "U : R U R', D",  # even cleaner
+        "(M' U M U)*2",  # just a multiplier
+        "M' U' (M' D')*2 U M'",  # in the middle of a subpart
+        "M U' (M U) M U",  # nested
+        "[S, R2]",  # throw in some S's
+        "[U R': [E, R2]]",  # test Es
+        "U"  # one move
+        ]
 
-    def test_split_sequence_long(self):
-        seq = "ULwUw'U2l2L'Lw2'F"
-        expected = ["U", "Lw", "Uw'", "U2", "l2", "L'", "Lw2'", "F"]
-        split = split_sequence(seq)
-        self.assertListEqual(split, expected)
+    def test_tperm_simple(self):
+        t = Algorithm("R U R' U' R' F R2 U' R' U' R U R' F'")
+        expected = ["R", "U", "R'", "U'", "R'", "F", "R2", "U'", "R'", "U'", "R", "U", "R'", "F'"]
+        expected_inverse = ["F", "R", "U'", "R'", "U", "R", "U", "R2'", "F'", "R", "U", "R", "U'", "R'"]
+        self.assertListEqual(t.moves(), expected)
+        self.assertListEqual(t.invert(), expected_inverse)
+
+
 
     def test_invert_sexy(self):
         alg = Algorithm("R U R' U'")
         expected = ["U", "R", "U'", "R'"]
         self.assertListEqual(alg.invert(), expected)
 
-    def test_invert_tperm(self):
-        t = Algorithm("R U R' U' R' F R2 U' R' U' R U R' F'")
-        expected = ["F", "R", "U'", "R'", "U", "R", "U", "R2'", "F'", "R", "U", "R", "U'", "R'"]
-        self.assertListEqual(t.invert(), expected)
 
-    def test_construct_commutator(self):
-        comm = constructor([Move("R")], [Move("U")])
-        expected = ["R", "U", "R'", "U'"]
-        self.assertListEqual(comm, expected)
