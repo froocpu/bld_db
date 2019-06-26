@@ -1,12 +1,12 @@
 import unittest
 
-from parse.domain import Algorithm
+from parse.domain import Algorithm, Validation
+from parse.exceptions import AmbiguousStatementException, EmptyAlgorithmException, BadMultiplierException
 
 
 class TestAlgorithm(unittest.TestCase):
 
-    def test_vanilla(self):
-
+    def test_vanilla_success(self):
         v1 = Algorithm("RUR'U'")
         v2 = Algorithm("U")
 
@@ -15,36 +15,54 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(v2.alg(), ["U"])
         self.assertListEqual(v2.invert(), ["U'"])
 
-    def test_illegal_characters(self):
+    def test_vanilla_failed(self):
+        with self.assertRaises(EmptyAlgorithmException):
+            Algorithm("")
 
+    def test_illegal_characters_success(self):
         ic1 = Algorithm("[U: [M', U2]]h")  # removing illegal characters should not interfere with the intended meaning.
         ic2 = Algorithm("[U: [pooL, U2]]")
 
         self.assertListEqual(ic1.alg(), ["U", "M'", "U2", "M", "U2", "U'"])
         self.assertListEqual(ic2.alg(), ["U", "L", "U2", "L'", "U2", "U'"])
 
-    def test_commutator(self):
-
+    def test_commutator_success(self):
         comm1 = Algorithm("[S, R2]")
         comm2_nested = Algorithm("[[M', U],[M, D]]")
-
         comm2_nested_expected = ["M'", "U", "M", "U'", "M", "D", "M'", "D'", "U", "M'", "U'", "M", "D", "M", "D'", "M'"]
 
         self.assertListEqual(comm1.alg(), ["S", "R2", "S'", "R2"])
         self.assertEqual(comm2_nested.alg(), comm2_nested_expected)
 
-    def test_conjugate(self):
+    def test_commutator_failed(self):
+        with self.assertRaises(AmbiguousStatementException):
+            Algorithm("[S, R2, S]")
+        with self.assertRaises(AmbiguousStatementException):
+            Algorithm("[S, [R2, S, U,, U]]")
+        with self.assertRaises(AmbiguousStatementException):
+            Algorithm("[S,,U]")
+        with self.assertRaises(EmptyAlgorithmException):
+            Algorithm(",S")
 
+    def test_conjugate_success(self):
         conj1 = Algorithm("[S: R2]")
         conj2_nested = Algorithm("[U: [M: D]]")
-
         conj2_nested_expected = ["U", "M", "D", "M'", "U'"]
 
         self.assertListEqual(conj1.alg(), ["S", "R2", "S'"])
         self.assertEqual(conj2_nested.alg(), conj2_nested_expected)
 
-    def test_combined(self):
+    def test_conjugate_failed(self):
+        with self.assertRaises(AmbiguousStatementException):
+            Algorithm("[S: R2: S]")
+        with self.assertRaises(AmbiguousStatementException):
+            Algorithm("[S: [R2: S: U]]")
+        with self.assertRaises(AmbiguousStatementException):
+            Algorithm("[S:::U]")
+        with self.assertRaises(EmptyAlgorithmException):
+            Algorithm("S:")
 
+    def test_combined_success(self):
         c1 = Algorithm("[U R': [E, R2]]")
         c2_single_set = Algorithm("[U : R U R', D]")
         c2_no_brackets = Algorithm("U : R U R', D")
@@ -56,15 +74,25 @@ class TestAlgorithm(unittest.TestCase):
         self.assertEqual(c2_single_set.alg(), c2_expected)
         self.assertEqual(c2_no_brackets.alg(), c2_expected)
 
-    def test_M2(self):
+    def test_combined_failed(self):
+        with self.assertRaises(AmbiguousStatementException):
+            Algorithm("[U R': [E, R2] : U]")
+        with self.assertRaises(AmbiguousStatementException):
+            Algorithm("[U : R U R', D, E]")
+        with self.assertRaises(EmptyAlgorithmException):
+            Algorithm("[U R': [E,]]")
+        with self.assertRaises(EmptyAlgorithmException):
+            Algorithm("[: [E,]]")
+        with self.assertRaises(EmptyAlgorithmException):
+            Algorithm("[: [,]]")
 
+    def test_M2_success(self):
         m2 = Algorithm("[U R U': M2][U' R' U: M2]")
         m2_expected = ["U", "R", "U'", "M2", "U", "R'", "U'", "U'", "R'", "U", "M2", "U'", "R", "U"]
 
         self.assertListEqual(m2.alg(), m2_expected)
 
-    def test_tperm(self):
-
+    def test_tperm_success(self):
         t = Algorithm("R U R' U' R' F R2 U' R' U' R U R' F'")
         t_shorthand = Algorithm("[R,U] R' F R2 U' [R': U'] U R' F'")
         t_complex = Algorithm("[R,U] (R' F R2) U' [R': U'] U R' F'")
@@ -80,8 +108,7 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(t_shorthand.invert(), t_expected_inverse)
         self.assertListEqual(t_complex.invert(), t_expected_inverse)
 
-    def test_multiplier(self):
-
+    def test_multiplier_success(self):
         test_int = 2
 
         mult1 = Algorithm("(M' U M U)*{}".format(test_int))  # simple multiplier alg
@@ -89,17 +116,31 @@ class TestAlgorithm(unittest.TestCase):
         mult3 = Algorithm("[L: (U M' U M)*{}]".format(test_int))  # nested inside conjugate
         mult4 = Algorithm("(M' U M U)*1")  # one iteration
         mult5 = Algorithm("(M' U)*4")  # four iterations
+        mult6 = Algorithm("U (M' U)*0")  # zero iterations is valid.
 
         self.assertListEqual(mult1.alg(), ["M'", "U", "M", "U"] * test_int)
         self.assertListEqual(mult2.alg(), ["M'", "U'"] + ["M'", "D'"] * test_int + ["U", "M'"])
         self.assertListEqual(mult3.alg(), ["L"] + ["U", "M'", "U", "M"] * test_int + ["L'"])
         self.assertListEqual(mult4.alg(), ["M'", "U", "M", "U"])
         self.assertListEqual(mult5.alg(), ["M'", "U"] * 4)
+        self.assertListEqual(mult6.alg(), ["U"])
 
-    def test_brackets(self):
+    def test_multiplier_failed(self):
+        negative_n = Validation.MULTIPLIER_MIN_REPITITIONS - 100
+        too_large_n = Validation.MULTIPLIER_MAX_REPITITIONS * 100
+        with self.assertRaises(BadMultiplierException):
+            Algorithm("(M' U M U)*{}".format(negative_n))
+        with self.assertRaises(BadMultiplierException):
+            Algorithm("(M' U M U)*{}".format(too_large_n))
+        with self.assertRaises(EmptyAlgorithmException):
+            Algorithm("(M' U M U)*{}".format(0))
+        with self.assertRaises(BadMultiplierException):
+            Algorithm("(M' U M U)*{}".format("a beer"))
+        with self.assertRaises(BadMultiplierException):
+            Algorithm("(M' U M U)*{}".format(None))
 
+    def test_brackets_success(self):
         br = Algorithm("M U' (M U) M U")
-
         self.assertListEqual(br.alg(), ["M", "U'", "M", "U", "M", "U"])
 
 

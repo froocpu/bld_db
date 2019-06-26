@@ -27,3 +27,5 @@ class Notation:
 
 class Validation:
     MOVE_MAX_CHAR_LENGTH = 3
+    MULTIPLIER_MIN_REPITITIONS = 0
+    MULTIPLIER_MAX_REPITITIONS = 10

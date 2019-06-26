@@ -10,5 +10,9 @@ class BadMultiplierException(Exception):
     pass
 
 
+class EmptyAlgorithmException(Exception):
+    pass
+
+
 class UnclosedBracketsException(Exception):
     pass
