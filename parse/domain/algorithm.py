@@ -10,34 +10,41 @@ class Algorithm(BaseMove):
 
     def __init__(self, s):
         self.raw = s
-
+        # Remove whitespace and any 'illegal' characters from the raw string.
         cleaned = sanitise(clean_alg(s))
 
-        matches = list(set(re.findall(r'\([A-Z\'0-9]+\)\*[0-9]+', cleaned)))
+        # Scan the cleaned string for instances of (A)*n, where A needs to be repeated n times.
+        # Expand each match and reset the string.
+        multiplier_pattern_matches = list(set(re.findall(Notation.MULTIPLIER_REGEX, cleaned)))
 
-        while len(matches) > 0:
-            x = matches.pop()
-            y = multiplier(x)
-            cleaned = cleaned.replace(x, y)
+        for m in multiplier_pattern_matches:
+            expanded_expression = multiplier(m)
+            cleaned = cleaned.replace(m, expanded_expression)
 
-        subparts = sorted(list(parse_brackets(cleaned)))
+        # Presumably, at this point, brackets don't mean anything significant, so remove them.
+        cleaned = cleaned.replace(Notation.EXPRESSION_OB, Notation.EMPTY).replace(Notation.EXPRESSION_CB, Notation.EMPTY)
 
-        if len(subparts) == 0:
-            tidy = normalise(cleaned)
-            alg = expand_algorithm(tidy)
-            self.moves = [Move(m) for m in split_sequence(alg)]
+        # Scan the alg for occurrences of conjugates and commutators. Sort them by their depth.
+        # If there aren't any, simply finish processing the alg.
+        inner_algs = sorted(list(parse_brackets(cleaned)))
+
+        if len(inner_algs) == 0:
+            tidy = handle_edge_case(cleaned)
+            cleaned = expand_algorithm(tidy)
         else:
-            this_depth = subparts[-1][0]
+            this_depth = inner_algs[-1][0]
+            # Starting with the deepest matches, start expanding out the ald and resetting the parsed alg.
+            while len(inner_algs) > 0:
+                if inner_algs[-1][0] != this_depth and this_depth > 0:
+                    # Overwrite the original list of inner algs, else the str.replace() call won't find a match.
+                    inner_algs = sorted(list(parse_brackets(cleaned)))
+                original = inner_algs.pop()[1]
+                replacement = handle_edge_case(original)
+                ab = expand_algorithm(replacement)
+                cleaned = cleaned.replace("[" + original + "]", ab)
 
-            while len(subparts) > 0:
-                if subparts[-1][0] != this_depth and this_depth > 0:
-                    subparts = sorted(list(parse_brackets(cleaned)))
-                original_subpart = subparts.pop()[1]
-                this_subpart = normalise(original_subpart)
-                ab = expand_algorithm(this_subpart)
-                cleaned = cleaned.replace("[" + original_subpart + "]", ab)
-
-            self.moves = [Move(m) for m in split_sequence(cleaned)]
+        # Once there are no more work to do, split the final string into individual move objects.
+        self.moves = [Move(m) for m in split_sequence(cleaned)]
 
     def alg(self):
         return [m.move for m in self.moves]
@@ -83,16 +90,17 @@ def expand_algorithm(s):
     return ''.join(comm)
 
 
-def normalise(s):
+def handle_edge_case(s):
     """
     Handle the specific edge case, where brackets are omitted from the sequence [A:B,C]
+    TODO: this might not be necessary.
     :param s: string with algorithm
     :return:
     """
     if Notation.CONJUGATE in s and Notation.COMMUTATOR in s:
-        split_subparts = s.split(Notation.CONJUGATE)
-        parsed_subparts = [expand_algorithm(i) for i in split_subparts]
-        return parsed_subparts[0] + ":" + parsed_subparts[1]
+        split = s.split(Notation.CONJUGATE)
+        parsed = [expand_algorithm(i) for i in split]
+        return parsed[0] + ":" + parsed[1]
     return s
 
 

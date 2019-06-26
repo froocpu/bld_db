@@ -67,14 +67,18 @@ class TestAlgorithm(unittest.TestCase):
 
         t = Algorithm("R U R' U' R' F R2 U' R' U' R U R' F'")
         t_shorthand = Algorithm("[R,U] R' F R2 U' [R': U'] U R' F'")
-        #t_complex = Algorithm("[R,U] (R' F R2) U' [R': U'] U R' F'")
+        t_complex = Algorithm("[R,U] (R' F R2) U' [R': U'] U R' F'")
 
         t_expected = ["R", "U", "R'", "U'", "R'", "F", "R2", "U'", "R'", "U'", "R", "U", "R'", "F'"]
         t_expected_inverse = ["F", "R", "U'", "R'", "U", "R", "U", "R2", "F'", "R", "U", "R", "U'", "R'"]
 
         self.assertListEqual(t.alg(), t_expected)
         self.assertListEqual(t_shorthand.alg(), t_expected)
+        self.assertListEqual(t_complex.alg(), t_expected)
+
         self.assertListEqual(t.invert(), t_expected_inverse)
+        self.assertListEqual(t_shorthand.invert(), t_expected_inverse)
+        self.assertListEqual(t_complex.invert(), t_expected_inverse)
 
     def test_multiplier(self):
 
@@ -99,3 +103,5 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(br.alg(), ["M", "U'", "M", "U", "M", "U"])
 
 
+if __name__ == "__main__":
+    unittest.main()
