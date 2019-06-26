@@ -2,6 +2,7 @@ import re
 
 from .moves import Move, BaseMove
 from .notation import Notation
+from .sanitise import sanitise
 from parse.utils import split_sequence, clean_alg, split_ab, parse_brackets, multiplier
 
 
@@ -10,7 +11,7 @@ class Algorithm(BaseMove):
     def __init__(self, s):
         self.raw = s
 
-        cleaned = clean_alg(s)
+        cleaned = sanitise(clean_alg(s))
 
         matches = list(set(re.findall(r'\([A-Z\'0-9]+\)\*[0-9]+', cleaned)))
 

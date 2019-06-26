@@ -9,3 +9,6 @@ class BadSeparatorException(Exception):
 class BadMultiplierException(Exception):
     pass
 
+
+class UnclosedBracketsException(Exception):
+    pass

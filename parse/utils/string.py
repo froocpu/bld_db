@@ -11,9 +11,11 @@ def count_occurrences(pattern, s):
 
 def clean_alg(alg):
     """
-    A simple cleaning function. Algs don't need whitespace to be parsed.
+    Algs need to be stripped of all whitespace characters and forced to ascii encoding.
     :param alg: unicode string containing algorithm
     :type alg: str
     :return: str
     """
-    return alg.strip().replace(" ", "")
+    empty = ""
+    stripped = alg.strip().replace(" ", empty).replace("\t", empty).replace("\n", empty).replace("\r", empty)
+    return stripped.encode('ascii', errors='ignore').decode('utf-8')

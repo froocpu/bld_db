@@ -31,10 +31,11 @@ print("Alg inverse: {0}".format(t_perm.invert()))
 
 ## TODO:
 
-- [ ] Better sanitisation of user input. **This one is very important.** 
+- [x] Better sanitisation of user input. **This one is very important.** 
 - [ ] Some brackets get parsed as moves. i.e. `"[R,U] (R' F R2) U' [R': U'] U R' F'"` will break.
 - [ ] Should double moves always be displayed as primes when inverted? i.e. `R2'` and not `R2`
 - [ ] Make preparations for scaling the project to larger cubes.
 - [ ] Benchmark the performance of functions.
 - [ ] More tests, specifically on when to throw errors.
 - [ ] Cancellations. i.e. `R2 R -> R'`
+- [ ] Comments allowed in algs?

@@ -6,7 +6,7 @@ class BaseMove:
 
     @staticmethod
     def inverse(move):
-        if move == Notation.PAUSE:
+        if move == Notation.PAUSE or move.endswith(Notation.DOUBLE):
             return move
         if move.endswith(Notation.PRIME):
             return move.replace(Notation.PRIME, "")

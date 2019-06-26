@@ -9,14 +9,19 @@ class TestAlgorithm(unittest.TestCase):
 
         v1 = Algorithm("RUR'U'")
         v2 = Algorithm("U")
-        v3 = Algorithm("\t  D D \t D        D\n")  # silly whitespace
 
         self.assertListEqual(v1.alg(), ["R", "U", "R'", "U'"])
         self.assertListEqual(v1.invert(), ["U", "R", "U'", "R'"])
         self.assertListEqual(v2.alg(), ["U"])
         self.assertListEqual(v2.invert(), ["U'"])
-        self.assertListEqual(v3.alg(), ["D"] * 4)
-        self.assertListEqual(v3.invert(), ["D'"] * 4)
+
+    def test_illegal_characters(self):
+
+        ic1 = Algorithm("[U: [M', U2]]h")  # removing illegal characters should not interfere with the intended meaning.
+        ic2 = Algorithm("[U: [pooL, U2]]")
+
+        self.assertListEqual(ic1.alg(), ["U", "M'", "U2", "M", "U2", "U'"])
+        self.assertListEqual(ic2.alg(), ["U", "L", "U2", "L'", "U2", "U'"])
 
     def test_commutator(self):
 
@@ -44,7 +49,7 @@ class TestAlgorithm(unittest.TestCase):
         c2_single_set = Algorithm("[U : R U R', D]")
         c2_no_brackets = Algorithm("U : R U R', D")
 
-        c1_expected = ["U", "R'", "E", "R2", "E'", "R2'", "R", "U'"]
+        c1_expected = ["U", "R'", "E", "R2", "E'", "R2", "R", "U'"]
         c2_expected = ["U", "R", "U", "R'", "D", "R", "U'", "R'", "D'", "U'"]
 
         self.assertListEqual(c1.alg(), c1_expected)
@@ -62,10 +67,10 @@ class TestAlgorithm(unittest.TestCase):
 
         t = Algorithm("R U R' U' R' F R2 U' R' U' R U R' F'")
         t_shorthand = Algorithm("[R,U] R' F R2 U' [R': U'] U R' F'")
-        t_complex = Algorithm("[R,U] (R' F R2) U' [R': U'] U R' F'")
+        #t_complex = Algorithm("[R,U] (R' F R2) U' [R': U'] U R' F'")
 
         t_expected = ["R", "U", "R'", "U'", "R'", "F", "R2", "U'", "R'", "U'", "R", "U", "R'", "F'"]
-        t_expected_inverse = ["F", "R", "U'", "R'", "U", "R", "U", "R2'", "F'", "R", "U", "R", "U'", "R'"]
+        t_expected_inverse = ["F", "R", "U'", "R'", "U", "R", "U", "R2", "F'", "R", "U", "R", "U'", "R'"]
 
         self.assertListEqual(t.alg(), t_expected)
         self.assertListEqual(t_shorthand.alg(), t_expected)

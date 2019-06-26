@@ -9,7 +9,8 @@ if __name__ == "__main__":
 
     alg_list = [
 
-        "[R,U] R' F R2 U' [R': U'] U R' F'"
+        "[R,U] R' F R2 U' [R': U'] U R' F'",
+        "[U: [R D' R, .]"
         ]
 
     for alg in alg_list:

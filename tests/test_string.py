@@ -1,5 +1,5 @@
 import unittest
-from parse.utils import count_occurrences
+from parse.utils import count_occurrences, clean_alg
 
 
 class TestUtils(unittest.TestCase):
@@ -17,3 +17,22 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(count_occurrences("ee", test_string), 1)
         self.assertEqual(count_occurrences("Lw", test_string_alg), 4)
         self.assertEqual(count_occurrences("Lw'", test_string_alg), 2)
+
+    def test_clean_alg(self):
+
+        expected = "RDS"
+
+        alg_single_spaced = "R D S"
+        alg_leading_ws = "   RDS"
+        alg_trailing_ws = "RDS   "
+        alg_all_ws = "\t  R \t D \r       S\n"
+        alg_unicode = "RDS\xe5"
+        alg_non_alphanumeric = "[L,R] R D S . (R' D' S')*100 [M:B]"
+
+        self.assertEqual(clean_alg(alg_single_spaced), expected)
+        self.assertEqual(clean_alg(alg_leading_ws), expected)
+        self.assertEqual(clean_alg(alg_trailing_ws), expected)
+        self.assertEqual(clean_alg(alg_all_ws), expected)
+        self.assertEqual(clean_alg(alg_unicode), expected)
+
+        self.assertEqual(clean_alg(alg_non_alphanumeric), "[L,R]RDS.(R'D'S')*100[M:B]")

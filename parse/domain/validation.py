@@ -10,6 +10,7 @@ def validate_move(s):
     """
     move = s.strip()
 
+    # TODO: make configurable.
     if len(move) > 3:
         raise InvalidMoveException("'{0}' contains more than three characters.".format(move))
     # TODO: Replace function call and point to a specific object for performance.
