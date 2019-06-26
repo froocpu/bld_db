@@ -1,5 +1,5 @@
 import unittest
-from parse.utils import count_occurrences, remove_redundant_chars
+from parse.utils import count_occurrences
 
 
 class TestUtils(unittest.TestCase):
@@ -17,15 +17,3 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(count_occurrences("ee", test_string), 1)
         self.assertEqual(count_occurrences("Lw", test_string_alg), 4)
         self.assertEqual(count_occurrences("Lw'", test_string_alg), 2)
-
-    def test_remove_redundant_chars(self):
-
-        test_string_change = "[R, U]"
-        test_string_change_ws = "[ U : [ R' D' R , U ] ]"
-        test_string_no_change = "L: [L U L' U', D]"
-        test_string_excessive_brackets = "((((((HI))))))"
-
-        self.assertEqual(remove_redundant_chars("[", "]", test_string_no_change), test_string_no_change)
-        self.assertEqual(remove_redundant_chars("[", "]", test_string_change), "R, U")
-        self.assertEqual(remove_redundant_chars("[", "]", test_string_change_ws), "U : [ R' D' R , U ]")
-        self.assertEqual(remove_redundant_chars("(", ")", test_string_excessive_brackets), "HI")

@@ -38,6 +38,9 @@ class Algorithm(BaseMove):
 
             self.moves = [Move(m) for m in split_sequence(cleaned)]
 
+    def alg(self):
+        return [m.move for m in self.moves]
+
     def invert(self):
         moves = [self.inverse(m.move) for m in self.moves]
         moves.reverse()

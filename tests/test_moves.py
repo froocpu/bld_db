@@ -30,4 +30,4 @@ class TestMoveClass(unittest.TestCase):
         expected_moves = ["u", "l2", "r'", "d'", "b2'", "d", "l", "f2", "U"]
         for i, move in enumerate(test_moves):
             this_move = Move(move)
-            self.assertEqual(this_move.SiGN(), expected_moves[i])
+            self.assertEqual(this_move.to_SiGN(), expected_moves[i])
