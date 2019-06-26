@@ -1,5 +1,5 @@
 from .validation import validate_move
-from .notation import Notation
+from .config import Notation
 
 
 class BaseMove:

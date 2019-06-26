@@ -1,7 +1,7 @@
 import re
 
 from .moves import Move, BaseMove
-from .notation import Notation
+from .config import Notation
 from .sanitise import sanitise
 from parse.utils import split_sequence, clean_alg, split_ab, parse_brackets, multiplier
 

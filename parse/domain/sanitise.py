@@ -1,4 +1,4 @@
-from .notation import Notation
+from .config import Notation
 
 
 def sanitise(s):

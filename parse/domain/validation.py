@@ -1,5 +1,5 @@
 from parse.exceptions import InvalidMoveException
-from .notation import Notation
+from .config import Notation, Validation
 
 
 def validate_move(s):
@@ -10,8 +10,7 @@ def validate_move(s):
     """
     move = s.strip()
 
-    # TODO: make configurable.
-    if len(move) > 3:
+    if len(move) > Validation.MOVE_MAX_CHAR_LENGTH:
         raise InvalidMoveException("'{0}' contains more than three characters.".format(move))
     # TODO: Replace function call and point to a specific object for performance.
     # Simple string manipulations will have a negligible effect on performance, but this could be more elegant.

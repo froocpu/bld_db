@@ -1,4 +1,4 @@
-from ..domain.notation import Notation
+from ..domain.config import Notation
 from parse.exceptions import AmbiguousStatementException, BadSeparatorException, BadMultiplierException
 from .string import count_occurrences
 

@@ -23,3 +23,7 @@ class Notation:
     EXPRESSION_CB = ")"
     MULTIPLIER_REGEX = r'\([A-Z\'0-9]+\)\*[0-9]+'
     EMPTY = ""
+
+
+class Validation:
+    MOVE_MAX_CHAR_LENGTH = 3
