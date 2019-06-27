@@ -2,7 +2,7 @@ def count_occurrences(pattern, s):
     """
     Count the number of occurrences of a string pattern in a string.
     :param pattern: str
-    :param s: str
+    :param s: string to check against.
     :return: int
     """
     s_len = len(s)

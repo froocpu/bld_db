@@ -1,5 +1,5 @@
 import unittest
-from parse.domain import sanitise
+from parse.algorithm.sanitise import sanitise
 
 
 class TestSanitise(unittest.TestCase):

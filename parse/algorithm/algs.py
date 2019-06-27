@@ -7,20 +7,29 @@ from .sanitise import sanitise
 from .validation import generate_valid_moves, validate_move
 
 from parse.utils import clean_alg, count_occurrences
-from parse.exceptions import BadMultiplierException, BadSeparatorException, AmbiguousStatementException, EmptyAlgorithmException
+from parse.exceptions import *
 
 
 class Algorithm(BaseMove):
 
     def __init__(self, s):
+
         # Throw some early exceptions.
         if s is None or s == Notation.EMPTY:
             raise EmptyAlgorithmException("Alg is either completely empty at initialisation, or just missing.")
 
+        if isinstance(s, str) is False:
+            raise TypeError("Input must be a string.")
+
+        # Check for unmatched brackets.
+        detect_unclosed_brackets(s, Notation.COMM_CONJ_OB, Notation.COMM_CONJ_CB)
+        detect_unclosed_brackets(s, Notation.EXPRESSION_OB, Notation.EXPRESSION_CB)
+
+        # Begin
         self.raw = s
+
         # Remove whitespace and any 'illegal' characters from the raw string.
         cleaned = sanitise(clean_alg(s))
-        self.cleaned = cleaned
 
         # Scan the cleaned string for instances of (A)*n, where A needs to be repeated n times.
         # Expand each match and reset the string.
@@ -32,7 +41,9 @@ class Algorithm(BaseMove):
 
         # If there are still multiplier symbols present, then raise an exception.
         if Notation.MULTIPLIER in cleaned:
-            raise BadMultiplierException("Regex did not replace the multiplier statements, probably due to an invalid number of iterations specified.".format(cleaned))
+            raise BadMultiplierException(
+                "Regex did not replace the multiplier statements, probably due to an invalid number of iterations specified."
+                    .format(cleaned))
 
         # Presumably, at this point, brackets don't mean anything significant, so remove them.
         cleaned = cleaned.replace(Notation.EXPRESSION_OB, Notation.EMPTY).replace(Notation.EXPRESSION_CB, Notation.EMPTY)
@@ -40,7 +51,6 @@ class Algorithm(BaseMove):
         # Scan the alg for occurrences of conjugates and commutators. Sort them by their depth.
         # If there aren't any, simply finish processing the alg.
         inner_algs = sorted(list(parse_brackets(cleaned)))
-        self.alg_depth = len(inner_algs)
 
         if len(inner_algs) == 0:
             tidy = handle_bracketless_statement(cleaned)
@@ -84,8 +94,6 @@ def expand_algorithm(s):
     Until I know where to put this, this will take a raw string and split it into A and B components.
     :param s: raw algorithm.
     :return: str - expanded algorithm
-    TODO: remove repeated code.
-    TODO: process nested brackets.
     """
     if Notation.COMMUTATOR in s:
         sep = Notation.COMMUTATOR
@@ -235,3 +243,22 @@ def multiplier(string):
         return cleaned * n
     except IndexError:
         print("Could not split using the multiplier statement provided: {}".format(splits[0]))
+
+
+def detect_unclosed_brackets(s, ob, cb):
+    """
+    A helper function to detect whether any any brackets exist that are unclosed.
+    :param s: the string to check
+    :type s: str
+    :param ob: the type of open bracket to check
+    :type ob: str
+    :param cb: the type of closed bracket to check
+    :type cb: str
+    :return: None
+    """
+    count_ob = count_occurrences(ob, s)
+    count_cb = count_occurrences(cb, s)
+
+    if count_ob != count_cb:
+        raise UnclosedBracketsException(
+            "Unmatched brackets found: '{0}':{1}, '{2}':{3}".format(ob, count_ob, cb, count_cb))

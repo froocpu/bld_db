@@ -1,6 +1,6 @@
 import unittest
 
-from parse.domain.moves import Move
+from parse.algorithm.moves import Move
 
 
 class TestMoveClass(unittest.TestCase):

@@ -1,5 +1,5 @@
 import unittest
-from parse.utils import count_occurrences, clean_alg
+from parse.utils.string import count_occurrences, clean_alg
 
 
 class TestUtils(unittest.TestCase):

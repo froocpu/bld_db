@@ -1,6 +1,6 @@
 import unittest
 
-from parse.domain.validation import validate_move, generate_valid_moves
+from parse.algorithm.validation import validate_move, generate_valid_moves
 from parse.exceptions.moves import InvalidMoveException
 
 

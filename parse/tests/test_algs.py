@@ -1,7 +1,8 @@
 import unittest
 
-from parse.domain import Algorithm, Validation
-from parse.exceptions import AmbiguousStatementException, EmptyAlgorithmException, BadMultiplierException
+from parse.algorithm.config import Validation, Notation
+from parse.algorithm.algs import Algorithm
+from parse.exceptions.validation import AmbiguousStatementException, EmptyAlgorithmException, BadMultiplierException, UnclosedBracketsException
 
 
 class TestAlgorithm(unittest.TestCase):
@@ -146,6 +147,16 @@ class TestAlgorithm(unittest.TestCase):
     def test_brackets_success(self):
         br = Algorithm("M U' (M U) M U")
         self.assertListEqual(br.alg(), ["M", "U'", "M", "U", "M", "U"])
+
+    def test_brackets_failed(self):
+        with self.assertRaises(UnclosedBracketsException):
+            Algorithm("M U' (M U M U")
+        with self.assertRaises(UnclosedBracketsException):
+            Algorithm("(M U' M U M U))")
+        with self.assertRaises(UnclosedBracketsException):
+            Algorithm("M U' [M, U M U")
+        with self.assertRaises(UnclosedBracketsException):
+            Algorithm("[S, R2]]")
 
 
 if __name__ == "__main__":
