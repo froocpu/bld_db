@@ -4,6 +4,8 @@ from .config import Notation, Validation
 from .moves import Move, BaseMove
 from .config import Notation
 from .sanitise import sanitise
+from .validation import generate_valid_moves, validate_move
+
 from parse.utils import clean_alg, count_occurrences
 from parse.exceptions import BadMultiplierException, BadSeparatorException, AmbiguousStatementException, EmptyAlgorithmException
 
@@ -55,8 +57,12 @@ class Algorithm(BaseMove):
                 ab = expand_algorithm(replacement)
                 cleaned = cleaned.replace("[" + original + "]", ab)
 
-        # Once there are no more work to do, split the final string into individual move objects.
-        self.moves = [Move(m) for m in split_sequence(cleaned)]
+        # Once the alg is expanded, split the final string into individual moves and validate them.
+        validation_set = generate_valid_moves()
+        validated_moves = [validate_move(m, validation_set) for m in split_sequence(cleaned)]
+
+        # Create a Move instance for each move, provided they are all valid.
+        self.moves = [Move(m) for m in validated_moves]
 
     def alg(self):
         return [m.move for m in self.moves]

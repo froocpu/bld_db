@@ -1,26 +1,13 @@
 import unittest
 
-from parse.domain import Move
-from parse.exceptions import InvalidMoveException
+from parse.domain.moves import Move
 
 
 class TestMoveClass(unittest.TestCase):
 
-    def test_move_init_good(self):
-        good_moves = ["Uw", "L'", "r", "D2", ".", "S'", "x"]
-        for move in good_moves:
-            this_move = Move(move)
-            self.assertEqual(this_move.move, move)
-
-    def test_move_init_bad(self):
-        bad_moves = ["Sw2", "s2'", "X", "L'2", "D'2", "uw'2", "lw"]
-        for move in bad_moves:
-            with self.assertRaises(InvalidMoveException):
-                Move(move)
-
     def test_inverse(self):
         test_moves = ["U", "L2", "R'", "D'", "B2'", "d", "Lw", "R"]
-        expected_moves = ["U'", "L2'", "R", "D", "B2", "d'", "Lw'", "R'"]
+        expected_moves = ["U'", "L2", "R", "D", "B2", "d'", "Lw'", "R'"]
         for i, move in enumerate(test_moves):
             this_move = Move(move)
             self.assertEqual(this_move.invert(), expected_moves[i])

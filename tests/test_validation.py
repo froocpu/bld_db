@@ -1,10 +1,13 @@
 import unittest
 
-from parse.domain import validate_move
+from parse.domain.validation import validate_move, generate_valid_moves
 from parse.exceptions.moves import InvalidMoveException
 
 
 class TestValidate(unittest.TestCase):
+
+    def setUp(self):
+        self.validation_set = generate_valid_moves()
 
     def test_good_moves(self):
         good_moves = ['.',
@@ -30,7 +33,7 @@ class TestValidate(unittest.TestCase):
                       'z', "z'", 'z2']
 
         for move in good_moves:
-            self.assertEqual(validate_move(move), move)
+            self.assertEqual(validate_move(move, self.validation_set), move)
 
     def test_bad_moves(self):
         bad_letters = 'acghijknopqtvw'
@@ -38,4 +41,4 @@ class TestValidate(unittest.TestCase):
         all_bad_moves = list(bad_letters) + list(bad_letters.upper()) + bad_moves
         for move in all_bad_moves:
             with self.assertRaises(InvalidMoveException):
-                validate_move(move)
+                validate_move(move, self.validation_set)

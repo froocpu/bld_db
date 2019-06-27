@@ -16,8 +16,11 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(v2.invert(), ["U'"])
 
     def test_vanilla_failed(self):
+
         with self.assertRaises(EmptyAlgorithmException):
             Algorithm("")
+        with self.assertRaises(EmptyAlgorithmException):
+            Algorithm(None)
 
     def test_illegal_characters_success(self):
         ic1 = Algorithm("[U: [M', U2]]h")  # removing illegal characters should not interfere with the intended meaning.
@@ -128,6 +131,7 @@ class TestAlgorithm(unittest.TestCase):
     def test_multiplier_failed(self):
         negative_n = Validation.MULTIPLIER_MIN_REPITITIONS - 100
         too_large_n = Validation.MULTIPLIER_MAX_REPITITIONS * 100
+
         with self.assertRaises(BadMultiplierException):
             Algorithm("(M' U M U)*{}".format(negative_n))
         with self.assertRaises(BadMultiplierException):

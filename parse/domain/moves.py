@@ -1,4 +1,3 @@
-from .validation import validate_move
 from .config import Notation
 
 
@@ -30,7 +29,7 @@ class BaseMove:
 class Move(BaseMove):
 
     def __init__(self, s):
-        self.move = validate_move(s)
+        self.move = s
 
     def invert(self):
         return self.inverse(self.move)

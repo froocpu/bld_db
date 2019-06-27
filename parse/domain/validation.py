@@ -2,19 +2,21 @@ from parse.exceptions import InvalidMoveException
 from .config import Notation, Validation
 
 
-def validate_move(s):
+def validate_move(s, validation_set):
     """
     Check whether the letter provided confirms to valid SiGN or WCA notation. Returns the original letter and the type.
-    :param s: str
-    :return: str, str
+    :param s: a string object denoting a single move.
+    :type s: str
+    :param validation_set: a set of moves to check against for validity.
+    :type validation_set: tuple
+    :return: str
     """
     move = s.strip()
 
     if len(move) > Validation.MOVE_MAX_CHAR_LENGTH:
-        raise InvalidMoveException("'{0}' contains more than three characters.".format(move))
-    # TODO: Replace function call and point to a specific object for performance.
-    # Simple string manipulations will have a negligible effect on performance, but this could be more elegant.
-    if move not in generate_valid_moves():
+        raise InvalidMoveException("'{0}' contains more than {1} characters.".format(move, Validation.MOVE_MAX_CHAR_LENGTH))
+
+    if move not in validation_set:
         raise InvalidMoveException("'{0}' not a valid move in SiGN or WCA notation.".format(move))
 
     return move
@@ -23,7 +25,7 @@ def validate_move(s):
 def generate_valid_moves():
     """
     Generate all possible "valid" moves as a list from the AlgPart class.
-    :return: list(str)
+    :return: tuple(str)
     """
 
     outer_turns = list(Notation.BLOCKS)
@@ -52,4 +54,4 @@ def generate_valid_moves():
 
     valid_moves.append(pause)
 
-    return valid_moves
+    return tuple(valid_moves)
