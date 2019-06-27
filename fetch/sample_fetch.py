@@ -1,8 +1,11 @@
 import pickle
 import os.path
+import json
+
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
@@ -64,14 +67,20 @@ def main():
     SPREADSHEET_ID = ollie
 
     sheet_metadata = sheet.get(spreadsheetId=SPREADSHEET_ID).execute()
-    print(sheet_metadata)
+
+    print(sheet_metadata.keys())
+    for i in list(sheet_metadata.keys()):
+        if isinstance(sheet_metadata[i], dict):
+            print(sheet_metadata[i].keys())
+
+    print(json.dumps(sheet_metadata))
     sheets = sheet_metadata.get('sheets', '')
     titles = collect_sheets(sheets)
     print(titles)
 
     for t in titles:
         RANGE_FORMAT = '{0}!{1}'
-        RANGE_NAME = RANGE_FORMAT.format(t, 'C4:C20')
+        RANGE_NAME = RANGE_FORMAT.format(t, 'A1:AZ200')
 
         result = sheet.values().get(spreadsheetId=SPREADSHEET_ID,
                                     range=RANGE_NAME).execute()
