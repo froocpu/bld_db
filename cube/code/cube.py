@@ -288,10 +288,36 @@ def commutator(cube):
     cube.render("test.png")
 
 
+def MU2MU2(cube):
+    """
+    Execute a commutator.
+    """
+    cube.move("R", 0, -1)
+    cube.move("L", 0, 1)
+    cube.move("F", 0, 2)
+    cube.move("R", 0, 1)
+    cube.move("L", 0, -1)
+    cube.move("U", 0, 2)
+
+    cube.render("test.png")
+
+
 if __name__ == "__main__":
     """
     Functional testing.
     """
     np.random.seed(42)
     c = Cube(3, whiteplastic=False)
-    commutator(c)
+    #commutator(c)
+    #c.move("U", 0, 1)
+    MU2MU2(c)
+    print(c.stickers)  # UF
+
+    print(c.stickers[0][1][2]) # UF
+    print(c.stickers[2][1][0]) # FU
+
+    print(c.stickers[0][1][0]) # UB
+    print(c.stickers[3][1][2]) # BU
+
+    print(c.stickers[1][1][2]) # DF
+    print(c.stickers[2][1][2]) # FU

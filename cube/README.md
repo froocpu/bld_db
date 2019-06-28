@@ -28,7 +28,7 @@ This will be translated to:
 
 `["M'", "U2", "M", "U2"]`
 
-The resulting delta will look something like:
+The resulting 3-cycles will look something like:
 
 ```
 UF -> UB -> DF // or
@@ -36,7 +36,7 @@ UB -> DF -> UF // or
 DF -> UF -> UB
 ```
 
-If we use the other sticker as a reference, we have three more potential algs:
+If we use the other sticker as a reference, we have three more potential 3-cycles:
 
 ```
 FU -> BU -> FD // or
@@ -44,11 +44,52 @@ BU -> FD -> FU // or
 FD -> FU -> BU
 ```
 
-What this means is that as long as the deltas are stored, that it shouldn't matter what the user's buffer preferences are. As long as they have the capacity to search with three pieces, the database will return algs based on the delta that commutator case would leave.
+However, `print(Cube.stickers)` will return this nested array:
+
+    [[[0 0 0]
+      [0 0 1]
+      [0 0 0]]
+    
+     [[1 1 1]
+      [1 1 0]
+      [1 1 1]]
+    
+     [[2 2 2]
+      [2 2 3]
+      [2 2 2]]
+    
+     [[3 3 3]
+      [3 3 2]
+      [3 3 3]]
+    
+     [[4 4 4]
+      [4 4 4]
+      [4 4 4]]
+    
+     [[5 5 5]
+      [5 5 5]
+      [5 5 5]]]
+
+This signature is unique to that cube state, regardless of the alg that takes you there.
+
+What this means is that as long as the lists of arrays are stored, that it shouldn't matter what the user's buffer preferences or sticker naming conventions are. As long as they have the capacity to search for three pieces to cycle, then the database can return algs based on the delta that cube state would generate.
+
+    GIVEN 
+        that a user selects their starting buffer (or buffer sticker)
+    AND 
+        that user selects their next two targets for a commutator
+    WHEN 
+        they send the query to the database
+    THEN 
+        the stickers will be converted to a stickers signature
+    AND 
+        all of the algs matching that signature will be returned.
+
+This also opens up the possibility of 
 
 ## TODO
 
-- [ ] Write a wrapper for the Cube class:
+- [ ] Write a wrapper for the `Cube` class:
     - [ ] Configure the rendering properties.
     - [ ] Create wrapper methods for M moves, S moves, E moves, rotations etc.
 - [ ] Decide on a method of storing and querying the deltas rather than individual algs.
@@ -58,3 +99,19 @@ What this means is that as long as the deltas are stored, that it shouldn't matt
     - [ ] Space, query time considerations.
 - [ ] People:
     - [ ] Are permissions required?
+    
+    
+## Notes
+
+### Mapping
+
+    Print view:
+    
+    UDFBRL
+    
+    U: x' z
+    D: x z
+    F: x
+    B: x2 z'
+    R: x y
+    L: x' y
