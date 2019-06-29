@@ -1,13 +1,19 @@
 import unittest
 
-from parse.algorithm.config import Validation, Notation
+from parse.algorithm.config import Validation
 from parse.algorithm.algs import Algorithm
-from parse.exceptions.validation import AmbiguousStatementException, EmptyAlgorithmException, BadMultiplierException, UnclosedBracketsException
+from parse.exceptions.validation import AmbiguousStatementException, EmptyAlgorithmException, BadMultiplierException, \
+    UnclosedBracketsException
 
 
 class TestAlgorithm(unittest.TestCase):
 
     def test_vanilla_success(self):
+        """
+        When simple algorithms are passed as inputs...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
         v1 = Algorithm("RUR'U'")
         v2 = Algorithm("U")
 
@@ -17,13 +23,21 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(v2.invert(), ["U'"])
 
     def test_vanilla_failed(self):
-
+        """
+        When input is None or empty...
+        Then the Algorithm class should raise an EmptyAlgorithmException.
+        """
         with self.assertRaises(EmptyAlgorithmException):
             Algorithm("")
         with self.assertRaises(EmptyAlgorithmException):
             Algorithm(None)
 
     def test_illegal_characters_success(self):
+        """
+        When small typos are present, or illegal characters are passed...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
         ic1 = Algorithm("[U: [M', U2]]h")  # removing illegal characters should not interfere with the intended meaning.
         ic2 = Algorithm("[U: [pooL, U2]]")
 
@@ -31,6 +45,11 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(ic2.alg(), ["U", "L", "U2", "L'", "U2", "U'"])
 
     def test_commutator_success(self):
+        """
+        When commutator notation is provided...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
         comm1 = Algorithm("[S, R2]")
         comm2_nested = Algorithm("[[M', U],[M, D]]")
         comm2_nested_expected = ["M'", "U", "M", "U'", "M", "D", "M'", "D'", "U", "M'", "U'", "M", "D", "M", "D'", "M'"]
@@ -39,6 +58,13 @@ class TestAlgorithm(unittest.TestCase):
         self.assertEqual(comm2_nested.alg(), comm2_nested_expected)
 
     def test_commutator_failed(self):
+        """
+        When commutator input is not standard, or ambiguous...
+        Then the Algorithm class should raise an AmbiguousStatementException.
+
+        When the commutator notation provided is missing important data...
+        Then the Algorithm class should raise an EmptyAlgorithmException.
+        """
         with self.assertRaises(AmbiguousStatementException):
             Algorithm("[S, R2, S]")
         with self.assertRaises(AmbiguousStatementException):
@@ -49,6 +75,11 @@ class TestAlgorithm(unittest.TestCase):
             Algorithm(",S")
 
     def test_conjugate_success(self):
+        """
+        When conjugate notation is provided...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
         conj1 = Algorithm("[S: R2]")
         conj2_nested = Algorithm("[U: [M: D]]")
         conj2_nested_expected = ["U", "M", "D", "M'", "U'"]
@@ -57,6 +88,13 @@ class TestAlgorithm(unittest.TestCase):
         self.assertEqual(conj2_nested.alg(), conj2_nested_expected)
 
     def test_conjugate_failed(self):
+        """
+        When conjugated input is not standard, or ambiguous...
+        Then the Algorithm class should raise an AmbiguousStatementException.
+
+        When the conjugated notation provided is missing important data...
+        Then the Algorithm class should raise an EmptyAlgorithmException.
+        """
         with self.assertRaises(AmbiguousStatementException):
             Algorithm("[S: R2: S]")
         with self.assertRaises(AmbiguousStatementException):
@@ -67,6 +105,11 @@ class TestAlgorithm(unittest.TestCase):
             Algorithm("S:")
 
     def test_combined_success(self):
+        """
+        When both conjugate and commutator notation is provided in the same alg...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
         c1 = Algorithm("[U R': [E, R2]]")
         c2_single_set = Algorithm("[U : R U R', D]")
         c2_no_brackets = Algorithm("U : R U R', D")
@@ -79,6 +122,13 @@ class TestAlgorithm(unittest.TestCase):
         self.assertEqual(c2_no_brackets.alg(), c2_expected)
 
     def test_combined_failed(self):
+        """
+        When combined input is not standard, or ambiguous...
+        Then the Algorithm class should raise an AmbiguousStatementException.
+
+        When the combined notation provided is missing important data...
+        Then the Algorithm class should raise an EmptyAlgorithmException.
+        """
         with self.assertRaises(AmbiguousStatementException):
             Algorithm("[U R': [E, R2] : U]")
         with self.assertRaises(AmbiguousStatementException):
@@ -91,12 +141,23 @@ class TestAlgorithm(unittest.TestCase):
             Algorithm("[: [,]]")
 
     def test_M2_success(self):
+        """
+        When M2 method notation is provided...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
         m2 = Algorithm("[U R U': M2][U' R' U: M2]")
         m2_expected = ["U", "R", "U'", "M2", "U", "R'", "U'", "U'", "R'", "U", "M2", "U'", "R", "U"]
 
         self.assertListEqual(m2.alg(), m2_expected)
 
     def test_tperm_success(self):
+        """
+        When variations of the T-perm algorithm is provided...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg....
+        And the inverted algorithm should match the expected inverted alg.
+        """
         t = Algorithm("R U R' U' R' F R2 U' R' U' R U R' F'")
         t_shorthand = Algorithm("[R,U] R' F R2 U' [R': U'] U R' F'")
         t_complex = Algorithm("[R,U] (R' F R2) U' [R': U'] U R' F'")
@@ -113,6 +174,11 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(t_complex.invert(), t_expected_inverse)
 
     def test_multiplier_success(self):
+        """
+        When multiplier notation is provided...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
         test_int = 2
 
         mult1 = Algorithm("(M' U M U)*{}".format(test_int))  # simple multiplier alg
@@ -130,6 +196,15 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(mult6.alg(), ["U"])
 
     def test_multiplier_failed(self):
+        """
+        When expanded multiplier input is too long...
+        Or expanded multipler output is provided with a nonsense value...
+        Then the Algorithm class should raise a BadMultiplierException.
+
+        When the multiplier input is missing information...
+        Or multiplier input contains a non-integer...
+        Then the Algorithm class should raise an EmptyAlgorithmException.
+        """
         negative_n = Validation.MULTIPLIER_MIN_REPITITIONS - 100
         too_large_n = Validation.MULTIPLIER_MAX_REPITITIONS * 100
 
@@ -145,10 +220,19 @@ class TestAlgorithm(unittest.TestCase):
             Algorithm("(M' U M U)*{}".format(None))
 
     def test_brackets_success(self):
+        """
+        When brackets are provided...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
         br = Algorithm("M U' (M U) M U")
         self.assertListEqual(br.alg(), ["M", "U'", "M", "U", "M", "U"])
 
     def test_brackets_failed(self):
+        """
+         When input contains unclosed brackets...
+         Then the Algorithm class should raise an UnclosedBracketsException.
+         """
         with self.assertRaises(UnclosedBracketsException):
             Algorithm("M U' (M U M U")
         with self.assertRaises(UnclosedBracketsException):
