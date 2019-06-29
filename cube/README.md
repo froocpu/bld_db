@@ -102,16 +102,3 @@ This also opens up the possibility of
     
     
 ## Notes
-
-### Mapping
-
-    Print view:
-    
-    UDFBRL
-    
-    U: x' z
-    D: x z
-    F: x
-    B: x2 z'
-    R: x y
-    L: x' y
