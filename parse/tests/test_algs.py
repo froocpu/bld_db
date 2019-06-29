@@ -37,8 +37,10 @@ class TestAlgorithm(unittest.TestCase):
         When small typos are present, or illegal characters are passed...
         Then the Algorithm class should initialise with no errors...
         And the output algorithm should match the expected alg.
+
+        Removing illegal characters should not interfere with the intended meaning.
         """
-        ic1 = Algorithm("[U: [M', U2]]h")  # removing illegal characters should not interfere with the intended meaning.
+        ic1 = Algorithm("[U: [M', U2]]h")
         ic2 = Algorithm("[U: [pooL, U2]]")
 
         self.assertListEqual(ic1.alg(), ["U", "M'", "U2", "M", "U2", "U'"])

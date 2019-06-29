@@ -52,11 +52,14 @@ class BaseCube(object):
         `d=-1` for counter-clockwise.
         """
         for l in range(self.N):
-            self.move(f, l, d)
+            self.base_move(f, l, d)
         return None
 
-    def move(self, f, l, d):
+    def base_move(self, f, l, d):
         """
+        :param f: face
+        :param l: which layer?
+        :param d: direction.
         Make a layer move of layer `l` parallel to face `f` through
         `d` 90-degree turns in the clockwise direction.  Layer `0` is
         the face itself, and higher `l` values are for layers deeper
@@ -76,7 +79,7 @@ class BaseCube(object):
                               (self.facedict[Notation.BACK_FACE_CHAR], range(self.N), l2),
                               (self.facedict[Notation.LEFT_FACE_CHAR], range(self.N), l2)])
         if f == Notation.DOWN_FACE_CHAR:
-            return self.move(Notation.UP_FACE_CHAR, l2, -d)
+            return self.base_move(Notation.UP_FACE_CHAR, l2, -d)
         if f == Notation.FRONT_FACE_CHAR:
             f2 = Notation.BACK_FACE_CHAR
             i2 = self.facedict[f2]
@@ -86,7 +89,7 @@ class BaseCube(object):
                               (self.facedict[Notation.DOWN_FACE_CHAR], range(self.N)[::-1], l2),
                               (self.facedict[Notation.RIGHT_FACE_CHAR], l, range(self.N)[::-1])])
         if f == Notation.BACK_FACE_CHAR:
-            return self.move(Notation.FRONT_FACE_CHAR, l2, -d)
+            return self.base_move(Notation.FRONT_FACE_CHAR, l2, -d)
         if f == Notation.RIGHT_FACE_CHAR:
             f2 = Notation.LEFT_FACE_CHAR
             i2 = self.facedict[f2]
@@ -96,7 +99,7 @@ class BaseCube(object):
                               (self.facedict[Notation.DOWN_FACE_CHAR], l2, range(self.N)),
                               (self.facedict[Notation.BACK_FACE_CHAR], l, range(self.N)[::-1])])
         if f == Notation.LEFT_FACE_CHAR:
-            return self.move(Notation.RIGHT_FACE_CHAR, l2, -d)
+            return self.base_move(Notation.RIGHT_FACE_CHAR, l2, -d)
         for d in ds:
             if l == 0:
                 self.stickers[i] = np.rot90(self.stickers[i], 3)
@@ -118,7 +121,8 @@ class BaseCube(object):
         self.stickers[a] = foo
         return None
 
-    def _render_points(self, points, viewpoint):
+    @staticmethod
+    def _render_points(points, viewpoint):
         """
         Internal function for the `render()` function.  Clunky
         projection from 3-d to 2-d, but also return a zorder variable.

@@ -8,12 +8,20 @@ class Notation:
     12a4c) 180 degrees: [f2] or z2, [b2] or z2, [r2] or x2, [l2] or x2, [u2] or y2, [d2] or y2.
     """
     WIDE = 'w'
-    PRIME = '\''
+    PRIME = "'"
     DOUBLE = '2'
     PAUSE = '.'
+    # Define rotations and which face they should follow.
     ROTATIONS = 'xyz'
+    ROTATION_FOLLOWS_R = ROTATIONS[0]
+    ROTATION_FOLLOWS_U = ROTATIONS[1]
+    ROTATION_FOLLOWS_F = ROTATIONS[2]
+    # Define slices, and the rules on which face the slice move should follow.
     SLICES = 'MES'
-    # TODO: consider splitting out blocks into individual fields.
+    SLICE_FOLLOWS_L = SLICES[0]
+    SLICE_FOLLOWS_F = SLICES[2]
+    SLICE_FOLLOWS_D = SLICES[1]
+    # Define face turns and which one denotes which cube side.
     BLOCKS = 'UDFBRL'
     UP_FACE_CHAR = BLOCKS[0]
     DOWN_FACE_CHAR = BLOCKS[1]
@@ -21,6 +29,7 @@ class Notation:
     BACK_FACE_CHAR = BLOCKS[3]
     RIGHT_FACE_CHAR = BLOCKS[4]
     LEFT_FACE_CHAR = BLOCKS[5]
+    # Define other syntax
     CONJUGATE = ':'
     COMMUTATOR = ','
     MULTIPLIER = '*'

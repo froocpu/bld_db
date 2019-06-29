@@ -1,22 +1,26 @@
 from .base_cube import BaseCube
+from parse import Notation
+
+"""
+    Print view:
+
+    UDFBRL
+
+    U: x' z
+    D: x z
+    F: z
+    B: x2 z'
+    R: x y
+    L: x' y'
+"""
 
 
 class Cube(BaseCube):
     def __init__(self, nxnxn=3, white_plastic=False):
         super(Cube, self).__init__(N=nxnxn, white_plastic=white_plastic)
-        """
-            Print view:
-    
-            UDFBRL
-            
-            U: x' z
-            D: x z
-            F: z
-            B: x2 z'
-            R: x y
-            L: x' y'
-        """
 
+        # TODO: these currently produce a hard-coded object with solved cube mappings. Needs to be abstract.
+        # Generate edge mappings.
         good_edge_mappings = {
             "UB": (self.stickers[0][1][2], self.stickers[3][1][2]),
             "UR": (self.stickers[0][2][1], self.stickers[4][1][2]),
@@ -38,14 +42,78 @@ class Cube(BaseCube):
             new_tuple = (good_edge_mappings[k][1], good_edge_mappings[k][0])
             bad_edge_mappings.update({k[::-1]: new_tuple})
 
+        # Generate corner sticker mappings.
+        good_corner_mappings = {
+            "ULF": (self.stickers[0][0][0], self.stickers[5][2][2], self.stickers[2][0][2]),
+            "UFR": (self.stickers[0][2][0], self.stickers[2][2][2], self.stickers[4][0][2]),
+            "URB": (self.stickers[0][2][2], self.stickers[4][2][2], self.stickers[3][0][2]),
+            "ULB": (self.stickers[0][0][2], self.stickers[5][0][2], self.stickers[3][2][2]),
+            "DLF": (self.stickers[1][0][2], self.stickers[5][2][0], self.stickers[2][0][0]),
+            "DFR": (self.stickers[1][2][2], self.stickers[2][2][0], self.stickers[4][0][0]),
+            "DRB": (self.stickers[1][2][0], self.stickers[4][2][0], self.stickers[3][0][0]),
+            "DLB": (self.stickers[1][0][0], self.stickers[5][0][0], self.stickers[3][2][0])
+        }
+
+        # Two clockwise rotations == one counter-clockwise rotation.
+        bad_corner_mappings_cw = corner_mapping_rotation_cw(mappings=good_corner_mappings)
+        bad_corner_mappings_ccw = corner_mapping_rotation_cw(mappings=bad_corner_mappings_cw)
+
+        # Create final mapping dicts.
         self.edge_mappings = {**good_edge_mappings, **bad_edge_mappings}
+        self.corner_mappings = {**good_corner_mappings, **bad_corner_mappings_cw, **bad_corner_mappings_ccw}
 
-        print(self.edge_mappings)
+    def move(self, m):
+        """
+        Wrapper for base_move. Call the inherited base_move and update the stickers field.
+        :param m: face/slice/block to turn. Should be a validated and sanitised move string from Algorithm.
+        :type m: str
+        :return: None
+        """
+        direction = 1
+        if m.endswith(Notation.PRIME):
+            direction = -1
+            m = m.replace(Notation.PRIME, Notation.EMPTY)
+        if m.endswith(Notation.DOUBLE):
+            direction = 2
+            m = m.replace(Notation.DOUBLE, Notation.EMPTY)
+
+        if m in Notation.BLOCKS:
+            self.base_move(m, 0, direction)
+        elif m in Notation.SLICES:
+            # Note: slice convention is weird and counter-intuitive.
+            face = None
+            if m == Notation.SLICE_FOLLOWS_D:
+                face = Notation.DOWN_FACE_CHAR
+            elif m == Notation.SLICE_FOLLOWS_L:
+                face = Notation.LEFT_FACE_CHAR
+            else:
+                face = Notation.FRONT_FACE_CHAR
+            self.base_move(face, 1, direction)
+        elif m in Notation.ROTATIONS:
+            if m == Notation.ROTATION_FOLLOWS_U:
+                self.turn(Notation.UP_FACE_CHAR, direction)
+            elif m == Notation.ROTATION_FOLLOWS_F:
+                self.turn(Notation.FRONT_FACE_CHAR, direction)
+            else:
+                self.turn(Notation.RIGHT_FACE_CHAR, direction)
+        # TODO: add wide turns.
 
 
 
 
-
+def corner_mapping_rotation_cw(mappings):
+    """
+    Perform a clockwise rotation on a mappings object, generating new keys and tuples. Required for corners only.
+    :param mappings: a dictionary of mappings of human-readable notation to multi-dimensional array indices.
+    :type: dict
+    :return: dict
+    """
+    new_dict = {}
+    for k in mappings:
+        new_key = "".join([k[1], k[2], k[0]])
+        new_tuple = (mappings[k][1], mappings[k][2], mappings[k][0])
+        new_dict.update({new_key: new_tuple})
+    return new_dict
 
 
 
