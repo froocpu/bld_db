@@ -2,7 +2,6 @@ import re
 
 from .config import Notation, Validation
 from .moves import Move, BaseMove
-from .config import Notation
 from .sanitise import sanitise
 from .validation import generate_valid_moves, validate_move
 
@@ -35,7 +34,6 @@ class Algorithm(BaseMove):
         # Expand each match and reset the string.
         multiplier_pattern_matches = list(set(re.findall(Notation.MULTIPLIER_REGEX, cleaned)))
 
-        print(multiplier_pattern_matches)
         for m in multiplier_pattern_matches:
             expanded_expression = multiplier(m)
             cleaned = cleaned.replace(m, expanded_expression)
@@ -229,19 +227,22 @@ def parse_brackets(string, ob="[", cb="]"):
 def multiplier(string):
     """
     Parse parentheses and replicate it n times according to its multiplier, if one exists.
+    Multiplier symbol is now optional.
     :param string: raw algorithm
     :type string: str
     :return: str
-    TODO: handle ([M',U2])*2?
     """
+    if Notation.MULTIPLIER not in string:
+        string = string.replace(Notation.EXPRESSION_CB, Notation.EXPRESSION_CB + Notation.MULTIPLIER)
     splits = string.split(Notation.MULTIPLIER)
     try:
         n = int(splits[1])
-        cleaned = splits[0].replace(Notation.EXPRESSION_OB, Notation.EMPTY)\
-            .replace(Notation.EXPRESSION_OB, Notation.EMPTY)
+        cleaned = splits[0].replace(Notation.EXPRESSION_OB, Notation.EMPTY).replace(Notation.EXPRESSION_CB, Notation.EMPTY)
         if n < Validation.MULTIPLIER_MIN_REPITITIONS or n > Validation.MULTIPLIER_MAX_REPITITIONS or len(splits) != 2:
             raise BadMultiplierException("Multiplier statement '{}' provided is invalid or illegal.".format(splits[0]))
         return cleaned * n
+    except ValueError:
+        print("Too many multiplier symbols used. Function tried to convert an empty string into an int.")
     except IndexError:
         print("Could not split using the multiplier statement provided: {}".format(splits[0]))
 

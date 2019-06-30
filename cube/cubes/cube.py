@@ -3,7 +3,7 @@ from parse import Notation
 
 
 class Cube(BaseCube):
-    def __init__(self, nxnxn=3, white_plastic=False, debug=False):
+    def __init__(self, nxnxn=3, white_plastic=True, debug=False):
         """
         Initialised in a similar way to the underlying BaseCube class, so inherting the BaseClass will also transfer
         all of the same fields and methods over.

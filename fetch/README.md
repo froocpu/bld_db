@@ -21,3 +21,8 @@ A Python module for making requests to the Google Sheets API and pulling data.
     - Best site ever (Roman)
     - AlgDB?
     
+    
+## What should it do?
+
+- Snapshot sheets.
+- Detect if a change has been made between one pass and the next. If change, store snapshot and delta.

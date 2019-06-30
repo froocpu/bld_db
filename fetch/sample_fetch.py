@@ -5,6 +5,7 @@ import json
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+from parse import Validation
 
 
 # If modifying these scopes, delete the file token.pickle.
@@ -49,7 +50,6 @@ def authenticate():
 
 def collect_sheets(sheets):
     """
-
     :param sheets:
     :return:
     """
@@ -58,13 +58,14 @@ def collect_sheets(sheets):
 
 
 def main():
-    """Shows basic usage of the Sheets API.
+    """
+    Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
     creds = authenticate()
     sheet = service_builder(creds=creds)
 
-    SPREADSHEET_ID = ollie
+    SPREADSHEET_ID = graham
 
     sheet_metadata = sheet.get(spreadsheetId=SPREADSHEET_ID).execute()
 
@@ -78,6 +79,8 @@ def main():
     titles = collect_sheets(sheets)
     print(titles)
 
+    final_data = {}
+
     for t in titles:
         RANGE_FORMAT = '{0}!{1}'
         RANGE_NAME = RANGE_FORMAT.format(t, 'A1:AZ200')
@@ -87,8 +90,16 @@ def main():
         values = result.get('values')
         if not values:
             print('No data found.')
-        else:
-            print(values)
+
+        filtered = []
+        for v1 in values:
+            these = [v2 for v2 in v1 if len(v2) > Validation.ALG_CHAR_MIN_LENGTH and len(v2) <= Validation.ALG_CHAR_MAX_LENGTH]
+            if len(these) > 0:
+                for i in these:
+                    filtered.append(i)
+        final_data.update({t: filtered})
+        with open("data.json", "w") as dt:
+            json.dump(final_data, dt, indent=4)
 
 
 if __name__ == '__main__':

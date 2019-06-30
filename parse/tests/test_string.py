@@ -28,6 +28,7 @@ class TestUtils(unittest.TestCase):
         alg_all_ws = "\t  R \t D \r       S\n"
         alg_unicode = "RDS\xe5"
         alg_non_alphanumeric = "[L,R] R D S . (R' D' S')*100 [M:B]"
+        alg_fancy_single_quote = "R U R\u2019 U\u2019"
 
         self.assertEqual(clean_alg(alg_single_spaced), expected)
         self.assertEqual(clean_alg(alg_leading_ws), expected)
@@ -36,3 +37,4 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(clean_alg(alg_unicode), expected)
 
         self.assertEqual(clean_alg(alg_non_alphanumeric), "[L,R]RDS.(R'D'S')*100[M:B]")
+        self.assertEqual(clean_alg(alg_fancy_single_quote), "RUR'U'")

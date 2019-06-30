@@ -175,9 +175,9 @@ class TestAlgorithm(unittest.TestCase):
         self.assertListEqual(t_shorthand.invert(), t_expected_inverse)
         self.assertListEqual(t_complex.invert(), t_expected_inverse)
 
-    def test_multiplier_success(self):
+    def test_multiplier_star_success(self):
         """
-        When multiplier notation is provided...
+        When multiplier notation is provided with a multiplier symbol...
         Then the Algorithm class should initialise with no errors...
         And the output algorithm should match the expected alg.
         """
@@ -189,6 +189,28 @@ class TestAlgorithm(unittest.TestCase):
         mult4 = Algorithm("(M' U M U)*1")  # one iteration
         mult5 = Algorithm("(M' U)*4")  # four iterations
         mult6 = Algorithm("U (M' U)*0")  # zero iterations is valid.
+
+        self.assertListEqual(mult1.alg(), ["M'", "U", "M", "U"] * test_int)
+        self.assertListEqual(mult2.alg(), ["M'", "U'"] + ["M'", "D'"] * test_int + ["U", "M'"])
+        self.assertListEqual(mult3.alg(), ["L"] + ["U", "M'", "U", "M"] * test_int + ["L'"])
+        self.assertListEqual(mult4.alg(), ["M'", "U", "M", "U"])
+        self.assertListEqual(mult5.alg(), ["M'", "U"] * 4)
+        self.assertListEqual(mult6.alg(), ["U"])
+
+    def test_multiplier_no_star_success(self):
+        """
+        When multiplier notation is provided without a multipler symbol...
+        Then the Algorithm class should initialise with no errors...
+        And the output algorithm should match the expected alg.
+        """
+        test_int = 2
+
+        mult1 = Algorithm("(M' U M U){}".format(test_int))  # simple multiplier alg
+        mult2 = Algorithm("M' U' (M' D'){} U M'".format(test_int))  # multiplier in middle of normal alg
+        mult3 = Algorithm("[L: (U M' U M){}]".format(test_int))  # nested inside conjugate
+        mult4 = Algorithm("(M' U M U)1")  # one iteration
+        mult5 = Algorithm("(M' U) 4")  # four iterations
+        mult6 = Algorithm("U (M' U)0")  # zero iterations is valid.
 
         self.assertListEqual(mult1.alg(), ["M'", "U", "M", "U"] * test_int)
         self.assertListEqual(mult2.alg(), ["M'", "U'"] + ["M'", "D'"] * test_int + ["U", "M'"])
