@@ -48,7 +48,7 @@ def prepare_data_try_parse(sheet, meta):
                         alg = Algorithm(cell)
                         cube = Cube(3)
                         cube.apply(alg.alg())
-                        if cube.unsolved_corner_count > 5 or cube.unsolved_edge_count > 6:
+                        if cube.unsolved_corner_count >= 5 or cube.unsolved_edge_count >= 6 or (cube.unsolved_corner_count + cube.unsolved_edge_count == 0):
                             continue
                         successes.append({"original": cell,
                                           "unsolved_corners": cube.unsolved_corner_count,
@@ -63,13 +63,13 @@ def prepare_data_try_parse(sheet, meta):
                     except BadSeparatorException:
                         failures.append({"original": cell, "failure_reason": 3})
                     except EmptyAlgorithmException:
-                        failures.append({"original": cell, "failure_reason": 4})
+                        continue
                     except UnclosedBracketsException:
-                        failures.append({"original": cell, "failure_reason": 5})
+                        failures.append({"original": cell, "failure_reason": 4})
                     except InvalidSequenceException:
-                        failures.append({"original": cell, "failure_reason": 6})
+                        failures.append({"original": cell, "failure_reason": 5})
                     except Exception:
-                        failures.append({"original": cell, "failure_reason": 7})
+                        continue
 
                 filtered.update({ind: {"cells": cells, "successes": successes, "failures": failures}})
 

@@ -30,7 +30,7 @@ if __name__ == '__main__':
             # Write it out to a file.
             # write_json(sheet_metadata, "data/metadata.json")
             filename = row[1].lower().encode('ascii', errors='ignore').decode('utf-8').replace(" ", "_")
-            fn = "../data/json/{}.json".format(filename)
+            fn = "../data/json/{0}_{1}.json".format(filename, row[0][0:7])
 
             print("Writing out to {}...".format(fn))
             write_json(final_data, fn)

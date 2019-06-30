@@ -102,7 +102,8 @@ class Cube(BaseCube):
         if self.debug:
             print("Performed move() for {}".format(orig))
 
-    def _generate_good_mappings(self, stickers):
+    @staticmethod
+    def _generate_good_mappings(stickers):
         """
         Internal function. Used to take a snapshot of the cube and calculate metadata on states.
         :param stickers: a set of stickers (m-n array), solved or not.
@@ -127,12 +128,21 @@ class Cube(BaseCube):
             "DF": (stickers[1][1][2], stickers[2][1][0]),
             "DR": (stickers[1][2][1], stickers[4][1][0]),
             "DB": (stickers[1][1][0], stickers[3][1][0]),
-            "DL": (stickers[1][0][1], stickers[5][0][1]),
-            "FL": (stickers[2][0][1], stickers[5][2][0]),
+            "DL": (stickers[1][0][1], stickers[5][1][0]),
+            "FL": (stickers[2][0][1], stickers[5][2][1]),
             "FR": (stickers[2][2][1], stickers[4][0][1]),
             "BL": (stickers[3][2][1], stickers[5][0][1]),
             "BR": (stickers[3][0][1], stickers[4][2][1])
         }
+
+        """
+    U: x' z
+    D: x z
+    F: z
+    B: x2 z'
+    R: x y
+    L: x' y'
+        """
 
         return good_corner_mappings, good_edge_mappings
 

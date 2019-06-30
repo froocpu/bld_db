@@ -1,0 +1,6070 @@
+{
+  "id": "1t27cXMVJoyOE2CNvT8Tt9V5k2XWTLSz4jhT1QL0xfx4",
+  "spreadsheet_metadata": {
+    "spreadsheetId": "1t27cXMVJoyOE2CNvT8Tt9V5k2XWTLSz4jhT1QL0xfx4",
+    "properties": {
+      "title": "DFr buffer wing commutators",
+      "locale": "en_US",
+      "timeZone": "America/Los_Angeles"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 0,
+          "title": "Wing algs",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 512,
+            "columnCount": 8,
+            "frozenRowCount": 6
+          }
+        }
+      },
+      {
+        "properties": {
+          "sheetId": 1,
+          "title": "CHANGEABLE letter scheme",
+          "index": 1,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 26,
+            "columnCount": 6
+          }
+        }
+      }
+    ],
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1t27cXMVJoyOE2CNvT8Tt9V5k2XWTLSz4jhT1QL0xfx4/edit"
+  },
+  "data": {
+    "0": {
+      "range": "'Wing algs'!A1:H512",
+      "values": {
+        "1": {
+          "cells": [
+            "File -> DOWNLOAD AS -> Excel file to change the lettering scheme to your own.",
+            "Commutator notation -[z: [a,b] = (Z) A [B] A' [B'] (Z')"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "File -> DOWNLOAD AS -> Excel file to change the lettering scheme to your own.",
+              "failure_reason": 2
+            },
+            {
+              "original": "Commutator notation -[z: [a,b] = (Z) A [B] A' [B'] (Z')",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "5": {
+          "cells": [
+            "TARGET 1",
+            "TARGET 2",
+            "LETTER PAIR",
+            "COMMUTATOR",
+            "MOVE OPTIMAL?",
+            "COMMENT/ALTERNATE ALG"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "TARGET 1",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "6": {
+          "cells": [
+            "[y x2 [U r2 U', L2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "7": {
+          "cells": [
+            "Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw U2",
+            "Credit for this alg goes to Matt Sheerin :)"
+          ],
+          "successes": [
+            {
+              "original": "Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw U2",
+              "unsolved_corners": 3,
+              "unsolved_edges": 4,
+              "signature": "100000000111111110222323322332232333444444445555555554"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Credit for this alg goes to Matt Sheerin :)",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "8": {
+          "cells": [
+            "[y' x2 [U' r2 U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "9": {
+          "cells": [
+            "[U2: [r2, U' L' U]]"
+          ],
+          "successes": [
+            {
+              "original": "[U2: [r2, U' L' U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100500111112114202522222333333333040444444555555524"
+            }
+          ],
+          "failures": []
+        },
+        "10": {
+          "cells": [
+            "[x': [D2, l' U' l]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [D2, l' U' l]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100000111110110222522522333333335344444444552552554"
+            }
+          ],
+          "failures": []
+        },
+        "11": {
+          "cells": [
+            "[x': [D2, l' U l]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [D2, l' U l]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100005111113113222422422300333333044444422555555554"
+            }
+          ],
+          "failures": []
+        },
+        "12": {
+          "cells": [
+            "[U2: [r2, U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "13": {
+          "cells": [
+            "[y': [R2, U' r2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "14": {
+          "cells": [
+            "z2 U2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw z2"
+          ],
+          "successes": [
+            {
+              "original": "z2 U2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw z2",
+              "unsolved_corners": 3,
+              "unsolved_edges": 4,
+              "signature": "100000000011111111222323322333232233544444444555555554"
+            }
+          ],
+          "failures": []
+        },
+        "15": {
+          "cells": [
+            "[y': [R2, U l2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y': [R2, U l2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100000111111001222422422533333333344244244555555554"
+            }
+          ],
+          "failures": []
+        },
+        "16": {
+          "cells": [
+            "[l': [l' D2 l, U2]]",
+            "Move optimal [l' y x R2 U' [r] U R2 U' [r'] x' y' l]"
+          ],
+          "successes": [
+            {
+              "original": "[l': [l' D2 l, U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100001200111110112222223020333332333445444444555555554"
+            }
+          ],
+          "failures": []
+        },
+        "17": {
+          "cells": [
+            "[U2 x': [r2, U' R U]]",
+            "This is just the advanced r2 alg"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "18": {
+          "cells": [
+            "[y: [L2, U r U']]",
+            "[l': [D2, r U2 r']] =  a set-up to a vital wing commutator"
+          ],
+          "successes": [
+            {
+              "original": "[y: [L2, U r U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "102102000111113113222022022333330330544444444555555554"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[l': [D2, r U2 r']] =  a set-up to a vital wing commutator",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "19": {
+          "cells": [
+            "[y x2 U: [r', U' L2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y x2 U: [r', U' L2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100022111114114222022022335333333344440440555555554"
+            }
+          ],
+          "failures": []
+        },
+        "20": {
+          "cells": [
+            "[U2 x': [r2, U L2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[U2 x': [r2, U L2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100000115115115222222222333333333144444444555555004"
+            }
+          ],
+          "failures": []
+        },
+        "21": {
+          "cells": [
+            "[U2 x': [D L2 D', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[U2 x': [D L2 D', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100500111115114222322222333333323040444444505555554"
+            }
+          ],
+          "failures": []
+        },
+        "22": {
+          "cells": [
+            "[U2 x': [D' R2 D, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "23": {
+          "cells": [
+            "[U2 x': [r2, U' R2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "24": {
+          "cells": [
+            "[l2: [r U2 r', D2]]",
+            "Set-ups with l-slice are important here for speed + optimalization."
+          ],
+          "successes": [
+            {
+              "original": "[l2: [r U2 r', D2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100001000112011112022223122333233333544444444555555554"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Set-ups with l-slice are important here for speed + optimalization.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "25": {
+          "cells": [
+            "[y: [L2, U r' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [L2, U r' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100000221115115222122122333333533344444444055055554"
+            }
+          ],
+          "failures": []
+        },
+        "26": {
+          "cells": [
+            "[y' x2: [U' r U, R2]]",
+            "[U' x2: [r, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "27": {
+          "cells": [
+            "[y': [R2, U' r' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "28": {
+          "cells": [
+            "[y x2: [L2, U r2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y x2: [L2, U r2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000111110110225225222333333334544444444552552553"
+            }
+          ],
+          "failures": []
+        },
+        "29": {
+          "cells": [
+            "[y2: [R' U' R U, l2]]",
+            "Move optimal [r2, D' L2 D]"
+          ],
+          "successes": [
+            {
+              "original": "[y2: [R' U' R U, l2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000111110110222322322335335334444444443552552555"
+            }
+          ],
+          "failures": []
+        },
+        "30": {
+          "cells": [
+            "[L2 y': [r2, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "31": {
+          "cells": [
+            "[U r2 U', L']"
+          ],
+          "successes": [
+            {
+              "original": "[U r2 U', L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "311000000111112112200522522333333334044444444552552555"
+            }
+          ],
+          "failures": []
+        },
+        "32": {
+          "cells": [
+            "[U r2 U', L]"
+          ],
+          "successes": [
+            {
+              "original": "[U r2 U', L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000311113113222522522333333004144444444552552555"
+            }
+          ],
+          "failures": []
+        },
+        "33": {
+          "cells": [
+            "[U: [r2, U R' U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "34": {
+          "cells": [
+            "[U: [r2, U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "35": {
+          "cells": [
+            "[U r2 U', L2]"
+          ],
+          "successes": [
+            {
+              "original": "[U r2 U', L2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000100111111322522522333333334244444444552552555"
+            }
+          ],
+          "failures": []
+        },
+        "36": {
+          "cells": [
+            "[y2 F2: [R' U' R U, l2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y2 F2: [R' U' R U, l2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "010000000111011111222322322433533433544444244355552555"
+            }
+          ],
+          "failures": []
+        },
+        "37": {
+          "cells": [
+            "[y: [U' L2 U, r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [U' L2 U, r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000111111001222422422333333334344544544552552555"
+            }
+          ],
+          "failures": []
+        },
+        "38": {
+          "cells": [
+            "[r', D' L2 D]"
+          ],
+          "successes": [
+            {
+              "original": "[r', D' L2 D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011500500111112112222020020333333334443444444552552555"
+            }
+          ],
+          "failures": []
+        },
+        "39": {
+          "cells": [
+            "[y r': [r' D r, U2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y r': [r' D r, U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "511000000101111115223522022333333334244444444552552550"
+            }
+          ],
+          "failures": []
+        },
+        "40": {
+          "cells": [
+            "[L2: [r U2 r', D]]"
+          ],
+          "successes": [
+            {
+              "original": "[L2: [r U2 r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000115110112022225122333333334544444444552552355"
+            }
+          ],
+          "failures": []
+        },
+        "41": {
+          "cells": [
+            "[y: [U' L2 U, r]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [U' L2 U, r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000055111114114222022022333333334344440440552552555"
+            }
+          ],
+          "failures": []
+        },
+        "42": {
+          "cells": [
+            "[y' x2: [R', U l2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y' x2: [R', U l2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000113115115552222222333333334144444444552552005"
+            }
+          ],
+          "failures": []
+        },
+        "43": {
+          "cells": [
+            "[x' 2Uw': [U' R U, r2]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[x' 2Uw': [U' R U, r2]]",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "44": {
+          "cells": [
+            "[z U': [U' L' U, l]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "45": {
+          "cells": [
+            "[z U: [U L' U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[z U: [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000300111114114222222255333333334000444444552552555"
+            }
+          ],
+          "failures": []
+        },
+        "46": {
+          "cells": [
+            "[Lw2: [r U2 r', D]]"
+          ],
+          "successes": [
+            {
+              "original": "[Lw2: [r U2 r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "001001000115011112022222122333533334544444444552553355"
+            }
+          ],
+          "failures": []
+        },
+        "47": {
+          "cells": [
+            "[y: [U' L2 U, r']]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [U' L2 U, r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000551115115222122122333333334344444444052052555"
+            }
+          ],
+          "failures": []
+        },
+        "48": {
+          "cells": [
+            "[x2: [r, U' L2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [r, U' L2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000111513513222122122033033334444444344552552555"
+            }
+          ],
+          "failures": []
+        },
+        "49": {
+          "cells": [
+            "[y' U2: [U R2 U', r']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "50": {
+          "cells": [
+            "U2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw",
+            "Credit for this alg goes to Matt Sheerin :)"
+          ],
+          "successes": [
+            {
+              "original": "U2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw",
+              "unsolved_corners": 3,
+              "unsolved_edges": 4,
+              "signature": "000000001111111110223323222332232333544444444555555554"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Credit for this alg goes to Matt Sheerin :)",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "51": {
+          "cells": [
+            "[y2: [l2, R' U' R U]]",
+            "Move optimal [D' L2 D, r2]"
+          ],
+          "successes": [
+            {
+              "original": "[y2: [l2, R' U' R U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001001111110110222522522332332334344444444553553555"
+            }
+          ],
+          "failures": []
+        },
+        "52": {
+          "cells": [
+            "[r2, R' U R U']",
+            "The majority of these cases are just M2 cases where the target UB is involved. Should be easy."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "The majority of these cases are just M2 cases where the target UB is involved. Should be easy.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "53": {
+          "cells": [
+            "[r2, U' L' U]"
+          ],
+          "successes": [
+            {
+              "original": "[r2, U' L' U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004001001111112115202522322332332333044444444550555535"
+            }
+          ],
+          "failures": []
+        },
+        "54": {
+          "cells": [
+            "[r2, U' L U]"
+          ],
+          "successes": [
+            {
+              "original": "[r2, U' L U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001001411113113222522522332332003144444444335555555"
+            }
+          ],
+          "failures": []
+        },
+        "55": {
+          "cells": [
+            "[r2, U R' U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "56": {
+          "cells": [
+            "[r2, U R U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "57": {
+          "cells": [
+            "[r2, U' L2 U]"
+          ],
+          "successes": [
+            {
+              "original": "[r2, U' L2 U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001001100111111422522522332332333244444444555355355"
+            }
+          ],
+          "failures": []
+        },
+        "58": {
+          "cells": [
+            "x2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw U2 x2"
+          ],
+          "successes": [
+            {
+              "original": "x2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw U2 x2",
+              "unsolved_corners": 3,
+              "unsolved_edges": 4,
+              "signature": "000000001011111111222323322332232333544444444455555555"
+            }
+          ],
+          "failures": []
+        },
+        "59": {
+          "cells": [
+            "[r2, U R2 U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "60": {
+          "cells": [
+            "[y U: [U R2 U', r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "61": {
+          "cells": [
+            "[x': [r2, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [r2, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "330001001111115115224022022332332333244444444555550550"
+            }
+          ],
+          "failures": []
+        },
+        "62": {
+          "cells": [
+            "[U' y r': [r' D r, U2]]",
+            "Similarly, this is a one move set up to the 9-mover DFr -> ULb -> LUf case. "
+          ],
+          "successes": [
+            {
+              "original": "[U' y r': [r' D r, U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "003001001101111113222522022332332330544444444554355555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Similarly, this is a one move set up to the 9-mover DFr -> ULb -> LUf case. ",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "63": {
+          "cells": [
+            "[x': [r2, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "64": {
+          "cells": [
+            "[x': [r2, U L2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [r2, U L2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001001114115115332222222332332333144444444555555005"
+            }
+          ],
+          "failures": []
+        },
+        "65": {
+          "cells": [
+            "[y' x': [R D2 R', u2]]",
+            "[x': [D L2 D', r2]] though this alg requires regrips, thus slowing it down."
+          ],
+          "successes": [
+            {
+              "original": "[y' x': [R D2 R', u2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004001001111115115222322322332332333044444444500555555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[x': [D L2 D', r2]] though this alg requires regrips, thus slowing it down.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "66": {
+          "cells": [
+            "[x': [r2, R' U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "67": {
+          "cells": [
+            "[x': [r2, U' R2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "68": {
+          "cells": [
+            "[l2 U' y r': [r' D r, U2]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 U' y r': [r' D r, U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "010000001113110112022322122332335333544444444555552455"
+            }
+          ],
+          "failures": []
+        },
+        "69": {
+          "cells": [
+            "[x': [r2, U L U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [r2, U L U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001001131115110222122522332332334344444444553055555"
+            }
+          ],
+          "failures": []
+        },
+        "70": {
+          "cells": [
+            "[x2 y' U: [r, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "71": {
+          "cells": [
+            "[x': [r2, U' R' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "72": {
+          "cells": [
+            "[y' x2: [R2, U' r2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "73": {
+          "cells": [
+            "[L2 y': [U R2 U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "74": {
+          "cells": [
+            "[R' U R U', r2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "75": {
+          "cells": [
+            "[U': [r2, U' L' U]]"
+          ],
+          "successes": [
+            {
+              "original": "[U': [r2, U' L' U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000112111112113202522424330333333042442444555555545"
+            }
+          ],
+          "failures": []
+        },
+        "76": {
+          "cells": [
+            "[U': [r2, U' L U]]"
+          ],
+          "successes": [
+            {
+              "original": "[U': [r2, U' L U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000110211113113222522524333333003142442444445555555"
+            }
+          ],
+          "failures": []
+        },
+        "77": {
+          "cells": [
+            "[U' r2 U, R']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "78": {
+          "cells": [
+            "[U' r2 U, R]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "79": {
+          "cells": [
+            "[y': [U R2 U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "80": {
+          "cells": [
+            "[B2: [R' U R U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "81": {
+          "cells": [
+            "[U' r2 U, R2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "82": {
+          "cells": [
+            "[x2: [r', U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "83": {
+          "cells": [
+            "[y': [U R2 U', r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "84": {
+          "cells": [
+            "[R2: [r U2 r', D']]",
+            "[D2: [l', D' R2 D] which cancels to an A9 and can be directly applied to 333 edges and 555 midges"
+          ],
+          "successes": [
+            {
+              "original": "[R2: [r U2 r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000013111110111222224224330333330443442445552555555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[D2: [l', D' R2 D] which cancels to an A9 and can be directly applied to 333 edges and 555 midges",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "85": {
+          "cells": [
+            "[y' r': [r' D' r, U2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y' r': [r' D' r, U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400100004111111101220224225332333333442442440555555553"
+            }
+          ],
+          "failures": []
+        },
+        "86": {
+          "cells": [
+            "[z' U': [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "87": {
+          "cells": [
+            "[z' U: [U R U', l]]"
+          ],
+          "successes": [
+            {
+              "original": "[z' U: [U R U', l]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002000015111115111222322224333333344443442440500555555"
+            }
+          ],
+          "failures": []
+        },
+        "88": {
+          "cells": [
+            "[x' Uw: [U L' U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x' Uw: [U L' U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "200000010111114214224322322043333333144442504555555551"
+            }
+          ],
+          "failures": []
+        },
+        "89": {
+          "cells": [
+            "[y x2: [L, U' l2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "90": {
+          "cells": [
+            "[l' y' x2: [R2, U' r2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "91": {
+          "cells": [
+            "[y U2: [U' L2 U, r']]"
+          ],
+          "successes": [
+            {
+              "original": "[y U2: [U' L2 U, r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000110441115115222122124333333233342442444055055555"
+            }
+          ],
+          "failures": []
+        },
+        "92": {
+          "cells": [
+            "[x2: [r, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "93": {
+          "cells": [
+            "[y: [U R2 U', r']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "94": {
+          "cells": [
+            "[U2: [U' L' U, r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[U2: [U' L' U, r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400200400111110110212225222333333333541444444555555520"
+            }
+          ],
+          "failures": []
+        },
+        "95": {
+          "cells": [
+            "[L', U r2 U']"
+          ],
+          "successes": [
+            {
+              "original": "[L', U r2 U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "422000000111110110211522522333333330344444444555555522"
+            }
+          ],
+          "failures": []
+        },
+        "96": {
+          "cells": [
+            "[U' L' U, r2]"
+          ],
+          "successes": [
+            {
+              "original": "[U' L' U, r2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004002005111110110212322322333335332444444440551555525"
+            }
+          ],
+          "failures": []
+        },
+        "97": {
+          "cells": [
+            "[U': [U' L' U, r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[U': [U' L' U, r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000324111110110212422420331333333244445442555555525"
+            }
+          ],
+          "failures": []
+        },
+        "98": {
+          "cells": [
+            "[x': [L2, U r' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [L2, U r' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000011113113211522522333333223144444444555555522"
+            }
+          ],
+          "failures": []
+        },
+        "99": {
+          "cells": [
+            "[z: [U L' U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [U L' U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000111113113211422422322333333044444455555555522"
+            }
+          ],
+          "failures": []
+        },
+        "100": {
+          "cells": [
+            "[z' U2: [r2, U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "101": {
+          "cells": [
+            "[L2 U: [U' L U, r2]]",
+            "Cancels to a sexy 9-move alg. Work it out yourself. If not, ask."
+          ],
+          "successes": [
+            {
+              "original": "[L2 U: [U' L U, r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000122111111011522522333333333244444444555555522"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a sexy 9-move alg. Work it out yourself. If not, ask.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "102": {
+          "cells": [
+            "[B2: [U' L' U, r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[B2: [U' L' U, r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000411211411212322322233533333544444144155555525"
+            }
+          ],
+          "failures": []
+        },
+        "103": {
+          "cells": [
+            "[z': [U' l2 U, R]]"
+          ],
+          "successes": [
+            {
+              "original": "[z': [U' l2 U, R]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000111111221211422422033333333344544544555555522"
+            }
+          ],
+          "failures": []
+        },
+        "104": {
+          "cells": [
+            "[x2: [r', U' L U]]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [r', U' L U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400500500111112112211022022333333333440444444555555522"
+            }
+          ],
+          "failures": []
+        },
+        "105": {
+          "cells": [
+            "[Uw': [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "106": {
+          "cells": [
+            "[L: [r U2 r', D]]",
+            "Optimal = [D2: [l', D L D']] which cancels to a 9-mover."
+          ],
+          "successes": [
+            {
+              "original": "[L: [r U2 r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400200000211110111211225322333333533544444444055555522"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Optimal = [D2: [l', D L D']] which cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "107": {
+          "cells": [
+            "[z D': [U L' U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[z D': [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000055111114111212022224330333333443442442555555520"
+            }
+          ],
+          "failures": []
+        },
+        "108": {
+          "cells": [
+            "[L' y r': [r' D r, U2]]",
+            "Optimal = [d' x' U: [U' L2 U, r']] cancels to 10 moves."
+          ],
+          "successes": [
+            {
+              "original": "[L' y r': [r' D r, U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000110113115511522222333333323144444444555555222"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Optimal = [d' x' U: [U' L2 U, r']] cancels to 10 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "109": {
+          "cells": [
+            "[z: [U L' U', r']]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [U L' U', r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000111115115211322322333333355044444444522555522"
+            }
+          ],
+          "failures": []
+        },
+        "110": {
+          "cells": [
+            "[z D2: [U L' U', r]]",
+            "Optimal 9-mover [z' D2: [D' R' D, r]]"
+          ],
+          "successes": [
+            {
+              "original": "[z D2: [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000004111114011210322222553333333444444221555555523"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Optimal 9-mover [z' D2: [D' R' D, r]]",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "111": {
+          "cells": [
+            "[z: [U L' U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000111114114211222255333333333022444444555555522"
+            }
+          ],
+          "failures": []
+        },
+        "112": {
+          "cells": [
+            "[l2 L: [r U2 r', D]]",
+            "Cancels to a 10-mover"
+          ],
+          "successes": [
+            {
+              "original": "[l2 L: [r U2 r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "300001000411311110225222222333533103544444444235555551"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a 10-mover",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "113": {
+          "cells": [
+            "[Uw x' [U' r2 U, L]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "114": {
+          "cells": [
+            "[x2: [r, U' L U]]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [r, U' L U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000111513513211122122233233333444444044555555522"
+            }
+          ],
+          "failures": []
+        },
+        "115": {
+          "cells": [
+            "[z D: [U L' U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[z D: [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000111114155213122022433333333244244244555555521"
+            }
+          ],
+          "failures": []
+        },
+        "116": {
+          "cells": [
+            "[x': [l' U' l, D2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [l' U' l, D2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000111110110225225222333333334544444444552552553"
+            }
+          ],
+          "failures": []
+        },
+        "117": {
+          "cells": [
+            "[L, U r2 U']"
+          ],
+          "successes": [
+            {
+              "original": "[L, U r2 U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "033000000411110110222522522333333111344444444225555555"
+            }
+          ],
+          "failures": []
+        },
+        "118": {
+          "cells": [
+            "[U' L U, r2]"
+          ],
+          "successes": [
+            {
+              "original": "[U' L U, r2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000003003411110110222322322335335113444444441225555555"
+            }
+          ],
+          "failures": []
+        },
+        "119": {
+          "cells": [
+            "[U': [U' L U, r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[U': [U' L U, r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000330411110110222422421333333113245445444225555555"
+            }
+          ],
+          "failures": []
+        },
+        "120": {
+          "cells": [
+            "[x': [U r' U', L2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [U r' U', L2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100000000411112112233522522333333113044444444225555555"
+            }
+          ],
+          "failures": []
+        },
+        "121": {
+          "cells": [
+            "[x y: [D2, r U' r']]"
+          ],
+          "successes": [
+            {
+              "original": "[x y: [D2, r U' r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000001411113113222422422333333113044444455225555555"
+            }
+          ],
+          "failures": []
+        },
+        "122": {
+          "cells": [
+            "[z': [r2, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "123": {
+          "cells": [
+            "[x': [U r' U', L]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [U r' U', L]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000433111111122522522333333113244444444225555555"
+            }
+          ],
+          "failures": []
+        },
+        "124": {
+          "cells": [
+            "[y' z': [R2, U r U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "125": {
+          "cells": [
+            "[z': [U r2 U', R]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "126": {
+          "cells": [
+            "[x2: [r', U' L' U]]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [r', U' L' U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000500200114112112222023025333333313441444444525555155"
+            }
+          ],
+          "failures": []
+        },
+        "127": {
+          "cells": [
+            "[Uw': [U L' U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[Uw': [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "250000000114115115221022022333333313244444444525553155"
+            }
+          ],
+          "failures": []
+        },
+        "128": {
+          "cells": [
+            "[y' z' [r U r', D]]",
+            "[D2: [l', D L' D']] which cancels to a 9-mover."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[D2: [l', D L' D']] which cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "129": {
+          "cells": [
+            "[z D: [U' L' U, l]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "130": {
+          "cells": [
+            "[z: [U' L' U, l']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "131": {
+          "cells": [
+            "[y z' l: [U2, l D' l']]"
+          ],
+          "successes": [
+            {
+              "original": "[y z' l: [U2, l D' l']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "001000000411115115222322322333333125044444444253555515"
+            }
+          ],
+          "failures": []
+        },
+        "132": {
+          "cells": [
+            "[z: [U' L' U, l]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "133": {
+          "cells": [
+            "[x': [D, r' U r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [D, r' U r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000100411114114222222255333333113033444444225555555"
+            }
+          ],
+          "failures": []
+        },
+        "134": {
+          "cells": [
+            "[x' l': [l' U' l, D2]]",
+            "Cancels to 9 moves."
+          ],
+          "successes": [
+            {
+              "original": "[x' l': [l' U' l, D2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000115115112231222122333233333544444444555555012"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to 9 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "135": {
+          "cells": [
+            "[4Uw' L': [L', U' r U]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[4Uw' L': [L', U' r U]]",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "136": {
+          "cells": [
+            "[x2: [r, U' L' U]]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [r, U' L' U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000114513213222122122533333313444444144525555155"
+            }
+          ],
+          "failures": []
+        },
+        "137": {
+          "cells": [
+            "[Uw x': [r2, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "138": {
+          "cells": [
+            "[x': [l' U l, D2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [l' U l, D2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "300300004111110110224224222311333333544444422555555550"
+            }
+          ],
+          "failures": []
+        },
+        "139": {
+          "cells": [
+            "[U: [U R' U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "140": {
+          "cells": [
+            "[U R' U', r2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "141": {
+          "cells": [
+            "[R', U' r2 U]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "142": {
+          "cells": [
+            "[z: [r2, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [r2, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000004111112112233522522311333333044444422555555544"
+            }
+          ],
+          "failures": []
+        },
+        "143": {
+          "cells": [
+            "[x y: [r U' r', D2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x y: [r U' r', D2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000004011113113222522522311333333144444422445555555"
+            }
+          ],
+          "failures": []
+        },
+        "144": {
+          "cells": [
+            "[x': [U' r' U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "145": {
+          "cells": [
+            "[z: [U' r2 U, L']]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [U' r2 U, L']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000004133111111022522522311333333244444422555455455"
+            }
+          ],
+          "failures": []
+        },
+        "146": {
+          "cells": [
+            "[y z U': [U L2 U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[y z U': [U L2 U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000004311311111222322322311433433544444422055555555"
+            }
+          ],
+          "failures": []
+        },
+        "147": {
+          "cells": [
+            "[x': [U' r' U, R']]",
+            "[x': [U' r' U, R']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "148": {
+          "cells": [
+            "[x2: [r', U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "149": {
+          "cells": [
+            "[Uw': [U L U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[Uw': [U L U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "344000000111115115220022022313333332244444424551553555"
+            }
+          ],
+          "failures": []
+        },
+        "150": {
+          "cells": [
+            "[R: [r U2 r', D']]",
+            "[D2: [l', D' R D] cancels to 9 moves = optimal."
+          ],
+          "successes": [
+            {
+              "original": "[R: [r U2 r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004300004111110011222224222313333333444444521550555555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[D2: [l', D' R D] cancels to 9 moves = optimal.",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "151": {
+          "cells": [
+            "[Uw: [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "152": {
+          "cells": [
+            "[x': [D', r' U' r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [D', r' U' r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000113115115442222222433333333144244244555555115"
+            }
+          ],
+          "failures": []
+        },
+        "153": {
+          "cells": [
+            "[z': [U R U', l]]"
+          ],
+          "successes": [
+            {
+              "original": "[z': [U R U', l]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000004111115311222322222513333344444444021533555555"
+            }
+          ],
+          "failures": []
+        },
+        "154": {
+          "cells": [
+            "[y' z l: [U2, l D l']]"
+          ],
+          "successes": [
+            {
+              "original": "[y' z l: [U2, l D l']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000005411411011222222232421333333414444343155555555"
+            }
+          ],
+          "failures": []
+        },
+        "155": {
+          "cells": [
+            "[z': [U R U', l']]"
+          ],
+          "successes": [
+            {
+              "original": "[z': [U R U', l']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000004111114211222222244413333333433444021555555555"
+            }
+          ],
+          "failures": []
+        },
+        "156": {
+          "cells": [
+            "[x' l': [l' U l, D2]]",
+            "Cancels to 9 moves."
+          ],
+          "successes": [
+            {
+              "original": "[x' l': [l' U l, D2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000004114114112322322122331233333544444412555555055"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to 9 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "157": {
+          "cells": [
+            "[L z': [U R U', l]]"
+          ],
+          "successes": [
+            {
+              "original": "[L z': [U R U', l]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000004441115111222122222513333033444444321355355555"
+            }
+          ],
+          "failures": []
+        },
+        "158": {
+          "cells": [
+            "[x2: [r, U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "159": {
+          "cells": [
+            "[2Uw R: [U r U', R]]",
+            "Horrible case, but cancels to 10 moves."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[2Uw R: [U r U', R]]",
+              "failure_reason": 2
+            },
+            {
+              "original": "Horrible case, but cancels to 10 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "160": {
+          "cells": [
+            "[U2: [U R U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "161": {
+          "cells": [
+            "[U: [U R U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "162": {
+          "cells": [
+            "[U R U', r2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "163": {
+          "cells": [
+            "[R, U' r2 U]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "164": {
+          "cells": [
+            "[z' U2: [U R U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "165": {
+          "cells": [
+            "[z': [U' R U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "166": {
+          "cells": [
+            "[x': [R2, U' r' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "167": {
+          "cells": [
+            "[z: [U r2 U',L']"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[z: [U r2 U',L']",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "168": {
+          "cells": [
+            "[B2: [U R U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "169": {
+          "cells": [
+            "[R2 U': [U R U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "170": {
+          "cells": [
+            "[x2: [r', U R' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "171": {
+          "cells": [
+            "[L z': [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "172": {
+          "cells": [
+            "[R': [r U2 r', D']]",
+            "[D2: [l', D' R' D] cancels to 9 moves = optimal."
+          ],
+          "successes": [
+            {
+              "original": "[R': [r U2 r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004200000111110114222224213333333332025444444551555555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[D2: [l', D' R' D] cancels to 9 moves = optimal.",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "173": {
+          "cells": [
+            "[Uw: [U L' U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[Uw: [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000042114114114222022012331333333324442445555555155"
+            }
+          ],
+          "failures": []
+        },
+        "174": {
+          "cells": [
+            "[z': [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "175": {
+          "cells": [
+            "[z' D2: [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "176": {
+          "cells": [
+            "[z': [U' R U, r']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "177": {
+          "cells": [
+            "[Uw' x': [R2, U' r' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "178": {
+          "cells": [
+            "[l2 R': [r U2 r', D']]",
+            "Cancels to a 10-mover"
+          ],
+          "successes": [
+            {
+              "original": "[l2 R': [r U2 r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001100114211114222222202333433333035444444555555155"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a 10-mover",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "179": {
+          "cells": [
+            "[L' z': [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "180": {
+          "cells": [
+            "[x2: [r, U R' U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "181": {
+          "cells": [
+            "[4Uw' x': [U r2 U', R']",
+            "Horrible case, but cancels to 10 moves."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[4Uw' x': [U r2 U', R']",
+              "failure_reason": 4
+            },
+            {
+              "original": "Horrible case, but cancels to 10 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "182": {
+          "cells": [
+            "[y': [U' r2 U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "183": {
+          "cells": [
+            "[L2, U r2 U']"
+          ],
+          "successes": [
+            {
+              "original": "[L2, U r2 U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "011000000111110110422522522333333332344444444555255255"
+            }
+          ],
+          "failures": []
+        },
+        "184": {
+          "cells": [
+            "[U' L2 U, r2]"
+          ],
+          "successes": [
+            {
+              "original": "[U' L2 U, r2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001001111110110422322322335335333444444442555255255"
+            }
+          ],
+          "failures": []
+        },
+        "185": {
+          "cells": [
+            "[y': [r2, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "186": {
+          "cells": [
+            "[L2 U: [r2, U' L U]]",
+            "Cancels to a sexy 9-move alg. Work it out yourself. If not, ask."
+          ],
+          "successes": [
+            {
+              "original": "[L2 U: [r2, U' L U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "200000000111112112411522522333333333044444444555255255"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a sexy 9-move alg. Work it out yourself. If not, ask.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "187": {
+          "cells": [
+            "[x': [L, U r' U']]",
+            "Similar to FLu -> DLf alg."
+          ],
+          "successes": [
+            {
+              "original": "[x': [L, U r' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000211113113422522522333333113144444444555255255"
+            }
+          ],
+          "failures": []
+        },
+        "188": {
+          "cells": [
+            "[z: [L', U' r2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [L', U' r2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000002111113113422422422311333333044444455555255255"
+            }
+          ],
+          "failures": []
+        },
+        "189": {
+          "cells": [
+            "[z: [L', U r2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [L', U r2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000300112112111422422211333333533455444444255255055"
+            }
+          ],
+          "failures": []
+        },
+        "190": {
+          "cells": [
+            "[l: [r U2 r', D]]"
+          ],
+          "successes": [
+            {
+              "original": "[l: [r U2 r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400005000211111111221223322333332533544444444055555502"
+            }
+          ],
+          "failures": []
+        },
+        "191": {
+          "cells": [
+            "[y' F2: [r2, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "192": {
+          "cells": [
+            "[y' [D', r U r']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "193": {
+          "cells": [
+            "[r U' r', D]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[r U' r', D]]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "194": {
+          "cells": [
+            "[r U2 r', D]"
+          ],
+          "successes": [
+            {
+              "original": "[r U2 r', D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "005100000111110113422225022333333331544444444552255255"
+            }
+          ],
+          "failures": []
+        },
+        "195": {
+          "cells": [
+            "[r U r', D]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[r U r', D]]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "196": {
+          "cells": [
+            "[z' R U: [r, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "197": {
+          "cells": [
+            " [y' z' [U' l2 U, R]]",
+            "Cancels to an 8-mover."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Cancels to an 8-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "198": {
+          "cells": [
+            "[z: [L', U l U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "199": {
+          "cells": [
+            "[z: [L', U r U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [L', U r U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "055000000115115111022022222333333533444444444251251355"
+            }
+          ],
+          "failures": []
+        },
+        "200": {
+          "cells": [
+            "[l2: [r U2 r', D]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2: [r U2 r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "001001000115011112022222122333533334544444444552553355"
+            }
+          ],
+          "failures": []
+        },
+        "201": {
+          "cells": [
+            "[Bw2: [r U r', D]]"
+          ],
+          "successes": [
+            {
+              "original": "[Bw2: [r U r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000210111114114422222245333333333001442444555555255"
+            }
+          ],
+          "failures": []
+        },
+        "202": {
+          "cells": [
+            "[x F2: [U' R U, l']]",
+            "Optimal = [x z2: [U' R U, r]] though F2 eliminates the need for a z2 rotation."
+          ],
+          "successes": [
+            {
+              "original": "[x F2: [U' R U, l']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000111513513422122122133133333444444244555255255"
+            }
+          ],
+          "failures": []
+        },
+        "203": {
+          "cells": [
+            "[x z': [l', U L' U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "204": {
+          "cells": [
+            "z2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw U2 z2"
+          ],
+          "successes": [
+            {
+              "original": "z2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw U2 z2",
+              "unsolved_corners": 3,
+              "unsolved_edges": 4,
+              "signature": "100000000111111110223323222333232233544444444455555555"
+            }
+          ],
+          "failures": []
+        },
+        "205": {
+          "cells": [
+            "[y2 F2: [l2, R' U' R U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y2 F2: [l2, R' U' R U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "010000000111110111222522422533233233344444344455553555"
+            }
+          ],
+          "failures": []
+        },
+        "206": {
+          "cells": [
+            "x2 U2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw x2"
+          ],
+          "successes": [
+            {
+              "original": "x2 U2 Lw' U2 r U2 Lw U2 Lw' U2 r' U2 Lw x2",
+              "unsolved_corners": 3,
+              "unsolved_edges": 4,
+              "signature": "000000001111111110222323322333232233444444445455555555"
+            }
+          ],
+          "failures": []
+        },
+        "207": {
+          "cells": [
+            "[B2: [r2, R' U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "208": {
+          "cells": [
+            "[B2: [r2, U' L' U]]"
+          ],
+          "successes": [
+            {
+              "original": "[B2: [r2, U' L' U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000111112514212522322333233233144444144455555535"
+            }
+          ],
+          "failures": []
+        },
+        "209": {
+          "cells": [
+            "[y': [U r U', R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "210": {
+          "cells": [
+            "[y z U': [r, U L2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y z U': [r, U L2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000005111113113222422422311233233044444433455555555"
+            }
+          ],
+          "failures": []
+        },
+        "211": {
+          "cells": [
+            "[B2: [r2, U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "212": {
+          "cells": [
+            "[l: [D, r U2 r']]"
+          ],
+          "successes": [
+            {
+              "original": "[l: [D, r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "500500000111111112231222522333332233044444444455555503"
+            }
+          ],
+          "failures": []
+        },
+        "213": {
+          "cells": [
+            "[l: [D', r U2 r']]"
+          ],
+          "successes": [
+            {
+              "original": "[l: [D', r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000400000111111131222221422533332233344044344455555555"
+            }
+          ],
+          "failures": []
+        },
+        "214": {
+          "cells": [
+            "[x y: [U l' U', L2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "215": {
+          "cells": [
+            "[r U' r', D2]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[r U' r', D2]]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "216": {
+          "cells": [
+            "[r U2 r', D2]"
+          ],
+          "successes": [
+            {
+              "original": "[r U2 r', D2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "003100000111110113222223022333233231544444444455555555"
+            }
+          ],
+          "failures": []
+        },
+        "217": {
+          "cells": [
+            "[r U r', D2]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[r U r', D2]]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "218": {
+          "cells": [
+            "[x' U2: [r2, U L2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x' U2: [r2, U L2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000115115115332222222333233233144444444455555115"
+            }
+          ],
+          "failures": []
+        },
+        "219": {
+          "cells": [
+            "[y' z' [U' l2 U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "220": {
+          "cells": [
+            "[x y [U l2 U', L2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "221": {
+          "cells": [
+            "[x' U2: [r2, U' R2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "222": {
+          "cells": [
+            "[l: [r U2 r', D]]"
+          ],
+          "successes": [
+            {
+              "original": "[l: [r U2 r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400005000211111111221223322333332533544444444055555502"
+            }
+          ],
+          "failures": []
+        },
+        "223": {
+          "cells": [
+            "[x' U2: [r2, U L U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x' U2: [r2, U L U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000131115111222122422533233233344444344455155555"
+            }
+          ],
+          "failures": []
+        },
+        "224": {
+          "cells": [
+            "[l2 y' x2: [U' r U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "225": {
+          "cells": [
+            "[x' U2: [r2, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "226": {
+          "cells": [
+            "[y': [U l2 U', R2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y': [U l2 U', R2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100100000111110110224224222433333333544244244555555553"
+            }
+          ],
+          "failures": []
+        },
+        "227": {
+          "cells": [
+            "[y: [r2, U' L2 U]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[y: [r2, U' L2 U]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "228": {
+          "cells": [
+            "[U R2 U', r2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "229": {
+          "cells": [
+            "[R2, U' r2 U]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "230": {
+          "cells": [
+            "[z': [R, U' l2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[z': [R, U' l2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "300000000111112112211522522433333333044244244555555544"
+            }
+          ],
+          "failures": []
+        },
+        "231": {
+          "cells": [
+            "[z': [R, U r2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "232": {
+          "cells": [
+            "[x': [R', U' r' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "233": {
+          "cells": [
+            "[R2 U': [r2, U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "234": {
+          "cells": [
+            "[y' F2: [U R2 U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "235": {
+          "cells": [
+            "[l: [r U2 r', D']]"
+          ],
+          "successes": [
+            {
+              "original": "[l: [r U2 r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000004000111111121222223322433331433544044244355555555"
+            }
+          ],
+          "failures": []
+        },
+        "236": {
+          "cells": [
+            "[y: [D, r U' r']]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [D, r U' r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000400400111112112222021021433333333443244244555555555"
+            }
+          ],
+          "failures": []
+        },
+        "237": {
+          "cells": [
+            "[r U' r', D']]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[r U' r', D']]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "238": {
+          "cells": [
+            "[r U2 r', D']"
+          ],
+          "successes": [
+            {
+              "original": "[r U2 r', D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004100000111110113222224022433333331544244244553555555"
+            }
+          ],
+          "failures": []
+        },
+        "239": {
+          "cells": [
+            "[r U r', D']"
+          ],
+          "successes": [
+            {
+              "original": "[r U r', D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000300111114114222222244433333333011244244555555555"
+            }
+          ],
+          "failures": []
+        },
+        "240": {
+          "cells": [
+            "[z': [R, U r U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "241": {
+          "cells": [
+            "[z': [R, U' l U]]"
+          ],
+          "successes": [
+            {
+              "original": "[z': [R, U' l U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "003000000111115115222322322433333344044244244511555555"
+            }
+          ],
+          "failures": []
+        },
+        "242": {
+          "cells": [
+            "[x y [U l2 U', L']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "243": {
+          "cells": [
+            "[z L' U', [r, U L' U']]",
+            "Cancels to a sexy 9-mover"
+          ],
+          "successes": [
+            {
+              "original": "[z L' U', [r, U L' U']]",
+              "unsolved_corners": 4,
+              "unsolved_edges": 5,
+              "signature": "000200200110112114222025345433333333111244244555555445"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a sexy 9-mover",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "244": {
+          "cells": [
+            "[l2: [r U2 r', D']]"
+          ],
+          "successes": [
+            {
+              "original": "[l2: [r U2 r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001000114111102122222122433433333544344244555555355"
+            }
+          ],
+          "failures": []
+        },
+        "245": {
+          "cells": [
+            "[x z U: [l', U' R U]]"
+          ],
+          "successes": [
+            {
+              "original": "[x z U: [l', U' R U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000113115115442222222433333333144244244555555115"
+            }
+          ],
+          "failures": []
+        },
+        "246": {
+          "cells": [
+            "[x F2: [U L' U', l']]",
+            "Optimal = [x z2: [U L' U', r]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Optimal = [x z2: [U L' U', r]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "247": {
+          "cells": [
+            "[f2: [r U' r', D']]"
+          ],
+          "successes": [
+            {
+              "original": "[f2: [r U' r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400400000111111054221221322533333333144044244555552552"
+            }
+          ],
+          "failures": []
+        },
+        "248": {
+          "cells": [
+            "[l': [U2, l' D2 l]]"
+          ],
+          "successes": [
+            {
+              "original": "[l': [U2, l' D2 l]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "200100200111110110220322221333332333544444444555555554"
+            }
+          ],
+          "failures": []
+        },
+        "249": {
+          "cells": [
+            "[D' L2 D, r']"
+          ],
+          "successes": [
+            {
+              "original": "[D' L2 D, r']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "022200200111110110222521521333333334344444444550550555"
+            }
+          ],
+          "failures": []
+        },
+        "250": {
+          "cells": [
+            "[y U: [r, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "251": {
+          "cells": [
+            "[x2: [U R2 U', r']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "252": {
+          "cells": [
+            "[x2: [U' L U, r']]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [U' L U, r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400200200111112112222521521333333333044444444555555500"
+            }
+          ],
+          "failures": []
+        },
+        "253": {
+          "cells": [
+            "[x2: [U' L' U, r']]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [U' L' U, r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000200200114113115022521221333333323144444444505555255"
+            }
+          ],
+          "failures": []
+        },
+        "254": {
+          "cells": [
+            "[x2: [U R U', r']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "255": {
+          "cells": [
+            "[x2: [U R' U, r']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "256": {
+          "cells": [
+            "[y' [r U r', D']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "257": {
+          "cells": [
+            "[x y: [L2, U, l' U']]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[x y: [L2, U, l' U']]",
+              "failure_reason": 0
+            }
+          ]
+        },
+        "258": {
+          "cells": [
+            "[y: [r U' r', D]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [r U' r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000200200111111221222421421433333333344044044555555555"
+            }
+          ],
+          "failures": []
+        },
+        "259": {
+          "cells": [
+            "[y': [U, r' D' r]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[y': [U, r' D' r]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "260": {
+          "cells": [
+            "[z y: [U' r U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "261": {
+          "cells": [
+            "[y: [U', r' D r]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [U', r' D r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000200200111114114222021021334333333344442442555555555"
+            }
+          ],
+          "failures": []
+        },
+        "262": {
+          "cells": [
+            "[r, U L' U']",
+            "Good alg for understanding how useful the [r] interchange move is."
+          ],
+          "successes": [
+            {
+              "original": "[r, U L' U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000200200114115115002221221333333333144444444555555225"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Good alg for understanding how useful the [r] interchange move is.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "263": {
+          "cells": [
+            "[r, U L U']",
+            "Good alg for understanding how useful the [r] interchange move is."
+          ],
+          "successes": [
+            {
+              "original": "[r, U L U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400200200111115112222321521333333303044444444525555550"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Good alg for understanding how useful the [r] interchange move is.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "264": {
+          "cells": [
+            "[r, U' R' U]",
+            "Good alg for understanding how useful the [r] interchange move is."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Good alg for understanding how useful the [r] interchange move is.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "265": {
+          "cells": [
+            "[r, U' R U]",
+            "Good alg for understanding how useful the [r] interchange move is."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Good alg for understanding how useful the [r] interchange move is.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "266": {
+          "cells": [
+            "[l2 z y: [U' r U, R2]]",
+            "Cancels to a 10-mover"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Cancels to a 10-mover",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "267": {
+          "cells": [
+            "[r, U L2 U']"
+          ],
+          "successes": [
+            {
+              "original": "[r, U L2 U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000200200001115115222121121333333433344444444255255555"
+            }
+          ],
+          "failures": []
+        },
+        "268": {
+          "cells": [
+            "[x y' U: [r, U R2 U']]",
+            "Cancels to a fast 9-mover."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Cancels to a fast 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "269": {
+          "cells": [
+            "[r, U' R2 U]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "270": {
+          "cells": [
+            "[y' x2 [R2, U' r' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "271": {
+          "cells": [
+            "[y r': [U2, r' D r]]"
+          ],
+          "successes": [
+            {
+              "original": "[y r': [U2, r' D r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "215000000111110110224522522333333332344444444550255551"
+            }
+          ],
+          "failures": []
+        },
+        "272": {
+          "cells": [
+            "[x': [U L' U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [U L' U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "220005005111110110224322322330330333444444442555551551"
+            }
+          ],
+          "failures": []
+        },
+        "273": {
+          "cells": [
+            "[y': [r, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "274": {
+          "cells": [
+            "[Uw': [r, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "275": {
+          "cells": [
+            "[Uw': [r, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[Uw': [r, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "220000000112113115024522222333333353144444444505551551"
+            }
+          ],
+          "failures": []
+        },
+        "276": {
+          "cells": [
+            "[Uw': [r, U L U']]"
+          ],
+          "successes": [
+            {
+              "original": "[Uw': [r, U L U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "222000000111113115224422322353333330044444404555551551"
+            }
+          ],
+          "failures": []
+        },
+        "277": {
+          "cells": [
+            "[L z': [r, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "278": {
+          "cells": [
+            "[D, r U' r']]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[D, r U' r']]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "279": {
+          "cells": [
+            "[D2, r U' r']]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[D2, r U' r']]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "280": {
+          "cells": [
+            "[D', r U' r']]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[D', r U' r']]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "281": {
+          "cells": [
+            "[y': [r' D' r, U]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[y': [r' D' r, U]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "282": {
+          "cells": [
+            "[y':  [r' D' r, U']"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[y':  [r' D' r, U']",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "283": {
+          "cells": [
+            "[y': [r' D' r, U2]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[y': [r' D' r, U2]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "284": {
+          "cells": [
+            "[U' r U, L']"
+          ],
+          "successes": [
+            {
+              "original": "[U' r U, L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "220000000112115115004222222333333333144444444555551551"
+            }
+          ],
+          "failures": []
+        },
+        "285": {
+          "cells": [
+            "[U' r U, L]"
+          ],
+          "successes": [
+            {
+              "original": "[U' r U, L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "222000000111115115224322322333333300044444444555551551"
+            }
+          ],
+          "failures": []
+        },
+        "286": {
+          "cells": [
+            "[U': [r, U' R' U]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[U': [r, U' R' U]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "287": {
+          "cells": [
+            "[U': [r, U' R U]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[U': [r, U' R U]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "288": {
+          "cells": [
+            "[l2 y': [r' D' r, U']"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[l2 y': [r' D' r, U']",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "289": {
+          "cells": [
+            "[U' r U, L2]"
+          ],
+          "successes": [
+            {
+              "original": "[U' r U, L2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "220000000001115115224122122333333233344444444555551551"
+            }
+          ],
+          "failures": []
+        },
+        "290": {
+          "cells": [
+            "[x2: [U L2 U', r']]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [U L2 U', r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "220000000111013013224122122533533333444444244555551551"
+            }
+          ],
+          "failures": []
+        },
+        "291": {
+          "cells": [
+            "[y x' [U L U', l2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "292": {
+          "cells": [
+            "[y [U r U', L2]",
+            "[l': [r U2 r', D2]] =  a set-up to a vital wing commutator"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[y [U r U', L2]",
+              "failure_reason": 4
+            },
+            {
+              "original": "[l': [r U2 r', D2]] =  a set-up to a vital wing commutator",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "293": {
+          "cells": [
+            "[L2: [D, r U2 r']]"
+          ],
+          "successes": [
+            {
+              "original": "[L2: [D, r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002100000112110110122522522333333335344444444551552455"
+            }
+          ],
+          "failures": []
+        },
+        "294": {
+          "cells": [
+            "[U' y r': [U2, r' D r]]",
+            "Similarly, this is a one move set up to the 9-mover DFr -> ULb -> LUf case. "
+          ],
+          "successes": [
+            {
+              "original": "[U' y r': [U2, r' D r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002001003111110110222322322330335331444444445554255555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Similarly, this is a one move set up to the 9-mover DFr -> ULb -> LUf case. ",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "295": {
+          "cells": [
+            "[R2: [D', r U2 r']]",
+            "[D2: [D' R2 D, l'] which cancels to an A9"
+          ],
+          "successes": [
+            {
+              "original": "[R2: [D', r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "003100300111110111222422225334333330440442442554555555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[D2: [D' R2 D, l'] which cancels to an A9",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "296": {
+          "cells": [
+            "[L: [D, r U2 r']]",
+            "Optimal = [D2: [l', D L D']] which cancels to a 9-mover."
+          ],
+          "successes": [
+            {
+              "original": "[L: [D, r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "500100000111112112201522522333333233044444444455555523"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Optimal = [D2: [l', D L D']] which cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "297": {
+          "cells": [
+            "[y' x: [D, r U r']]",
+            "[D2: [D L' D', l']] which cancels to a 9-mover."
+          ],
+          "successes": [
+            {
+              "original": "[y' x: [D, r U r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000111111533422422122113333333444444224555555255"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[D2: [D L' D', l']] which cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "298": {
+          "cells": [
+            "[R: [D', r U2 r']]",
+            "[D2: [D' R D, l'] cancels to 9 moves = optimal."
+          ],
+          "successes": [
+            {
+              "original": "[R: [D', r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "001100005111113411222422222303333333444444020554555555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[D2: [D' R D, l'] cancels to 9 moves = optimal.",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "299": {
+          "cells": [
+            "[R': [D', r U2 r']]",
+            "[D2: [D' R' D, l'] cancels to 9 moves = optimal."
+          ],
+          "successes": [
+            {
+              "original": "[R': [D', r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000100400111112115222422302333333332021444444554555555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[D2: [D' R' D, l'] cancels to 9 moves = optimal.",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "300": {
+          "cells": [
+            "[D, r U2 r']"
+          ],
+          "successes": [
+            {
+              "original": "[D, r U2 r']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002100000103111111522522522333333331244444444554255055"
+            }
+          ],
+          "failures": []
+        },
+        "301": {
+          "cells": [
+            "[D2, r U2 r']"
+          ],
+          "successes": [
+            {
+              "original": "[D2, r U2 r']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002100000311011111222322322333233031544444444554555555"
+            }
+          ],
+          "failures": []
+        },
+        "302": {
+          "cells": [
+            "[D', r U2 r']"
+          ],
+          "successes": [
+            {
+              "original": "[D', r U2 r']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002100000111111301222422422533333331344244044554555555"
+            }
+          ],
+          "failures": []
+        },
+        "303": {
+          "cells": [
+            "[z y [R2, U' r U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "304": {
+          "cells": [
+            "[y': [U', r' D' r]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[y': [U', r' D' r]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "305": {
+          "cells": [
+            "[y: [U, r' D r]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [U, r' D r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002002000111114114222022022335331331344443443554555555"
+            }
+          ],
+          "failures": []
+        },
+        "306": {
+          "cells": [
+            "[x': [D', r' U2 r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [D', r' U2 r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002000000115115115032222222333233331144444444554555315"
+            }
+          ],
+          "failures": []
+        },
+        "307": {
+          "cells": [
+            "[U2: [r, U L U']]"
+          ],
+          "successes": [
+            {
+              "original": "[U2: [r, U L U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002002005111115113222322422333331301044444440534555555"
+            }
+          ],
+          "failures": []
+        },
+        "308": {
+          "cells": [
+            "[U2: [r, U' R' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "309": {
+          "cells": [
+            "[x': [D, r' U2 r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [D, r' U2 r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002000500111114114222222230333233331013444444554555555"
+            }
+          ],
+          "failures": []
+        },
+        "310": {
+          "cells": [
+            "[x y' U r': [r' D r, U2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x y' U r': [r' D r, U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "202004000111111111220223223323333330445444404555555554"
+            }
+          ],
+          "failures": []
+        },
+        "311": {
+          "cells": [
+            "[U2: [r, U L2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[U2: [r, U L2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002002000001115115222122122333331531344444444354355555"
+            }
+          ],
+          "failures": []
+        },
+        "312": {
+          "cells": [
+            "[x2 y: [L2, U l' U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "313": {
+          "cells": [
+            "[U2: [r, U' R2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "314": {
+          "cells": [
+            "[y x2: [L2, U r' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y x2: [L2, U r' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400400022111110110220220222334333333544441441555555553"
+            }
+          ],
+          "failures": []
+        },
+        "315": {
+          "cells": [
+            "[y: [r, U' L2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [r, U' L2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "044000022111110110222522522334333333344441441550550555"
+            }
+          ],
+          "failures": []
+        },
+        "316": {
+          "cells": [
+            "[x': [U' R U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "317": {
+          "cells": [
+            "[y' r': [r' D' r, U2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y' r': [r' D' r, U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400100004111111101220224225332333333442442440555555553"
+            }
+          ],
+          "failures": []
+        },
+        "318": {
+          "cells": [
+            "[z D': [r, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z D': [r, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "300000520111112111244522222334333333440441442555555500"
+            }
+          ],
+          "failures": []
+        },
+        "319": {
+          "cells": [
+            "[z D: [l, U' L' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "320": {
+          "cells": [
+            "[Uw: [r, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "321": {
+          "cells": [
+            "[Uw: [r, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[Uw: [r, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000022113112115022422242334333333104441441555555455"
+            }
+          ],
+          "failures": []
+        },
+        "322": {
+          "cells": [
+            "[D, r U r']]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[D, r U r']]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "323": {
+          "cells": [
+            "[D2, r U r']]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[D2, r U r']]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "324": {
+          "cells": [
+            "[D', r U r']"
+          ],
+          "successes": [
+            {
+              "original": "[D', r U r']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000400111111441222422422033333333311244244555555555"
+            }
+          ],
+          "failures": []
+        },
+        "325": {
+          "cells": [
+            "[y: [r' D r, U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [r' D r, U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000022111112112222024024334333333443441441555555555"
+            }
+          ],
+          "failures": []
+        },
+        "326": {
+          "cells": [
+            "[y': [U2, r' D' r]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[y': [U2, r' D' r]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "327": {
+          "cells": [
+            "[y: [r' D r, U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [r' D r, U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000022111113113222022022334334334544441441553555555"
+            }
+          ],
+          "failures": []
+        },
+        "328": {
+          "cells": [
+            "[y x' U: [r2, U' L U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y x' U: [r2, U' L U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000022113115115002222222334333333144441441555555445"
+            }
+          ],
+          "failures": []
+        },
+        "329": {
+          "cells": [
+            "[U: [r, U L U']]"
+          ],
+          "successes": [
+            {
+              "original": "[U: [r, U L U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000322111115114222322220334333303044441441545555555"
+            }
+          ],
+          "failures": []
+        },
+        "330": {
+          "cells": [
+            "[U r U', R']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "331": {
+          "cells": [
+            "[U r U', R]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "332": {
+          "cells": [
+            "[l2 y: [r' D r, U]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 y: [r' D r, U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000002032110110112422422122334331333544440441555555355"
+            }
+          ],
+          "failures": []
+        },
+        "333": {
+          "cells": [
+            "[y' x': [U' R' U, l2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y' x': [U' R' U, l2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000120001115111222122225334333333443441442455455555"
+            }
+          ],
+          "failures": []
+        },
+        "334": {
+          "cells": [
+            "[x2: [U' R2 U, r']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "335": {
+          "cells": [
+            "[U r U', R2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "336": {
+          "cells": [
+            "[U2 x': [U L2 U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[U2 x': [U L2 U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "500500000114110110222222222333333333544444444555555111"
+            }
+          ],
+          "failures": []
+        },
+        "337": {
+          "cells": [
+            "[y' x2: [U l2 U', R']]"
+          ],
+          "successes": [
+            {
+              "original": "[y' x2: [U l2 U', R']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "055000000114110110222522522333333331344444444552552115"
+            }
+          ],
+          "failures": []
+        },
+        "338": {
+          "cells": [
+            "[x': [U L2 U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [U L2 U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000005005114110110222322322332332333444444441555555115"
+            }
+          ],
+          "failures": []
+        },
+        "339": {
+          "cells": [
+            "[z' U': [r, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "340": {
+          "cells": [
+            "[L' y r': [U2, r' D r]]",
+            "Optimal = [d' x' U: [r', U' L2 U]] cancels to 10 moves."
+          ],
+          "successes": [
+            {
+              "original": "[L' y r': [U2, r' D r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100000000114112112235522522333333313044444444525555152"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Optimal = [d' x' U: [r', U' L2 U]] cancels to 10 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "341": {
+          "cells": [
+            "[z: [l', U' L' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "342": {
+          "cells": [
+            "[x': [r' U' r, D']]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [r' U' r, D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000114111551222422422133333333344244244555555115"
+            }
+          ],
+          "failures": []
+        },
+        "343": {
+          "cells": [
+            "[z': [r, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "344": {
+          "cells": [
+            "[z' R U: [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "345": {
+          "cells": [
+            "[x' U2: [U L2 U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x' U2: [U L2 U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000514511111222322322333233233544444444155555115"
+            }
+          ],
+          "failures": []
+        },
+        "346": {
+          "cells": [
+            "[z': [U r U', R]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "347": {
+          "cells": [
+            "[U L' U', r]",
+            "Good alg for understanding how useful the [r] interchange move is."
+          ],
+          "successes": [
+            {
+              "original": "[U L' U', r]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000200200114112112222025025333333333441444444555555115"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Good alg for understanding how useful the [r] interchange move is.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "348": {
+          "cells": [
+            "[L', U' r U]"
+          ],
+          "successes": [
+            {
+              "original": "[L', U' r U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "220000000114115115221022022333333333244444444555555115"
+            }
+          ],
+          "failures": []
+        },
+        "349": {
+          "cells": [
+            "[x': [r' U2 r, D']]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [r' U2 r, D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002000000114511113222322022333233335544444444551555115"
+            }
+          ],
+          "failures": []
+        },
+        "350": {
+          "cells": [
+            "[y x' U: [U' L U, r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y x' U: [U' L U, r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000022114114114222022022331333333344445445555555115"
+            }
+          ],
+          "failures": []
+        },
+        "351": {
+          "cells": [
+            "[x': [L2, U' r2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [L2, U' r2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "001000000114115115222322322333333322044444444555555115"
+            }
+          ],
+          "failures": []
+        },
+        "352": {
+          "cells": [
+            "[y z': [r2, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "353": {
+          "cells": [
+            "[y z' F2: [r2, U' r2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "354": {
+          "cells": [
+            "[l2 x': [r' U2 r, D']]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 x': [r' U2 r, D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004500000113111112522223122333332332544444444501555055"
+            }
+          ],
+          "failures": []
+        },
+        "355": {
+          "cells": [
+            "[L' U': [r, U L' U']]",
+            "Cancels to a 9-mover."
+          ],
+          "successes": [
+            {
+              "original": "[L' U': [r, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000224115115222122122333333133344444444555555115"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "356": {
+          "cells": [
+            "[x2: [U L U', r']]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [U L U', r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000411213513222122122333533133444444144255555515"
+            }
+          ],
+          "failures": []
+        },
+        "357": {
+          "cells": [
+            "[y x': [L ,U' l2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "358": {
+          "cells": [
+            "[U2 x': [r2, D L2 D']]"
+          ],
+          "successes": [
+            {
+              "original": "[U2 x': [r2, D L2 D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400500400111110110222223222333333323541444444515555550"
+            }
+          ],
+          "failures": []
+        },
+        "359": {
+          "cells": [
+            "[x' 2Uw': [r2, U' r U]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[x' 2Uw': [r2, U' r U]]",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "360": {
+          "cells": [
+            "[y' x': [u2, R D2 R']]",
+            "[x': [D L2 D', r2]] though this alg requires regrips, thus slowing it down."
+          ],
+          "successes": [
+            {
+              "original": "[y' x': [u2, R D2 R']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004005005111110110222322322333333322444444440511555555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[x': [D L2 D', r2]] though this alg requires regrips, thus slowing it down.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "361": {
+          "cells": [
+            "[z' U: [l, U R U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z' U: [l, U R U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000550111110111222422220334333323443443442510555555"
+            }
+          ],
+          "failures": []
+        },
+        "362": {
+          "cells": [
+            "[z: [r', U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [r', U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000111112112255522522333333322044444444511555533"
+            }
+          ],
+          "failures": []
+        },
+        "363": {
+          "cells": [
+            "[y z' l: [l D' l', U2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y z' l: [l D' l', U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000011115113232222522333333522144444444311555555"
+            }
+          ],
+          "failures": []
+        },
+        "364": {
+          "cells": [
+            "[z': [l, U R U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z': [l, U R U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000111113411222422222355333321444444033513555555"
+            }
+          ],
+          "failures": []
+        },
+        "365": {
+          "cells": [
+            "[B': [r2, U R U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "366": {
+          "cells": [
+            "[y' z': [R, U' l2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y' z': [R, U' l2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000155111111022522522333333322244444444511355355"
+            }
+          ],
+          "failures": []
+        },
+        "367": {
+          "cells": [
+            "[y' z': [R2, U' l2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y' z': [R2, U' l2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000511511111222322322333333322544444444011555555"
+            }
+          ],
+          "failures": []
+        },
+        "368": {
+          "cells": [
+            "[z': [U' l U, R]]"
+          ],
+          "successes": [
+            {
+              "original": "[z': [U' l U, R]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000111111551222422422033333322344344344511555555"
+            }
+          ],
+          "failures": []
+        },
+        "369": {
+          "cells": [
+            "[U L U', r]",
+            "Good alg for understanding how useful the [r] interchange move is."
+          ],
+          "successes": [
+            {
+              "original": "[U L U', r]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400300500111112112221025022333333323440444444515555552"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Good alg for understanding how useful the [r] interchange move is.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "370": {
+          "cells": [
+            "[L, U' r U]"
+          ],
+          "successes": [
+            {
+              "original": "[L, U' r U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "334000000111115115220022022333333322244444444511555555"
+            }
+          ],
+          "failures": []
+        },
+        "371": {
+          "cells": [
+            "[U2: [U L U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[U2: [U L U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004003004111113113222022022331335323544444442510555555"
+            }
+          ],
+          "failures": []
+        },
+        "372": {
+          "cells": [
+            "[U: [U L U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[U: [U L U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000432111114114222022022330333323341445444515555555"
+            }
+          ],
+          "failures": []
+        },
+        "373": {
+          "cells": [
+            "[x': [U' r2 U, L2]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[x': [U' r2 U, L2]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "374": {
+          "cells": [
+            "[L2 y z': [r2, U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "375": {
+          "cells": [
+            "[y z': [U R2 U', l2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y z': [U R2 U', l2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000111114114222222233333333322055444444511555555"
+            }
+          ],
+          "failures": []
+        },
+        "376": {
+          "cells": [
+            "[Lw2 x': [r' U2 r, D']]"
+          ],
+          "successes": [
+            {
+              "original": "[Lw2 x': [r' U2 r, D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004500000113111112522223122333332332544444444501555055"
+            }
+          ],
+          "failures": []
+        },
+        "377": {
+          "cells": [
+            "[x': [U' r2 U, L]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [U' r2 U, L]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000331115115222122122333333022344444444511555555"
+            }
+          ],
+          "failures": []
+        },
+        "378": {
+          "cells": [
+            "[x2: [U L' U', r']]",
+            "The advanced M2 alternative is just as fast here too."
+          ],
+          "successes": [
+            {
+              "original": "[x2: [U L' U', r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000111313313222122122533533322444444044511555555"
+            }
+          ],
+          "failures": []
+        },
+        "379": {
+          "cells": [
+            "[x' U': [r2, U' R' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "380": {
+          "cells": [
+            "[U2 x': [r2, D' R2 D,]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[U2 x': [r2, D' R2 D,]]",
+              "failure_reason": 0
+            }
+          ]
+        },
+        "381": {
+          "cells": [
+            "[z U': [l, U' L' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "382": {
+          "cells": [
+            "[x': [R' U' R U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "383": {
+          "cells": [
+            "[x' Uw: [r2, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x' Uw: [r2, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "300000040111110415221422022223333333244443114555555554"
+            }
+          ],
+          "failures": []
+        },
+        "384": {
+          "cells": [
+            "[z D2: [r, U L' U']]",
+            "Optimal 9-mover [z' D2: [D' R' D, r]] - cancellations!"
+          ],
+          "successes": [
+            {
+              "original": "[z D2: [r, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "100000002111112411244522222325333333444444010555555533"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Optimal 9-mover [z' D2: [D' R' D, r]] - cancellations!",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "385": {
+          "cells": [
+            "[z: [l, U' L' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "386": {
+          "cells": [
+            "[y' z l: [l D l', U2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y' z l: [l D l', U2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000001311411511222222232334233433444444113055555555"
+            }
+          ],
+          "failures": []
+        },
+        "387": {
+          "cells": [
+            "[z': [r', U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "388": {
+          "cells": [
+            "[z: [U l U', L']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "389": {
+          "cells": [
+            "[x y: [L2, U l2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "390": {
+          "cells": [
+            "[x y: [L', U l2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "391": {
+          "cells": [
+            "[U' R' U, r]",
+            "Good alg for understanding how useful the [r] interchange move is."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Good alg for understanding how useful the [r] interchange move is.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "392": {
+          "cells": [
+            "[U': [U' R' U, r]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[U': [U' R' U, r]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "393": {
+          "cells": [
+            "[U2: [U' R' U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "394": {
+          "cells": [
+            "[R', U r U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "395": {
+          "cells": [
+            "[y z': [U R2 U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "396": {
+          "cells": [
+            "[L2 y z': [U R2 U', r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "397": {
+          "cells": [
+            "[x' [U r2 U', R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "398": {
+          "cells": [
+            "[l2 U2: [U' R' U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "399": {
+          "cells": [
+            "[x' U: [r2, U L U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x' U: [r2, U L U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000003131115414222122022221333333344444114555455555"
+            }
+          ],
+          "failures": []
+        },
+        "400": {
+          "cells": [
+            "[x2: [U' R U, r']",
+            "The advanced M2 alternative is just as fast here too."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[x2: [U' R U, r']",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "401": {
+          "cells": [
+            "[x': [U r2 U', R']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "402": {
+          "cells": [
+            "[U2 x': [U' R2 U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "403": {
+          "cells": [
+            "[z U: [r', U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z U: [r', U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "055000000221110110222522522333333433344444444151151555"
+            }
+          ],
+          "failures": []
+        },
+        "404": {
+          "cells": [
+            "[x': [U' R2 U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "405": {
+          "cells": [
+            "[x2 y: [U' r2 U, R]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "406": {
+          "cells": [
+            "[z: [r, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [r, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000400111112112244522522333333333011444444555555522"
+            }
+          ],
+          "failures": []
+        },
+        "407": {
+          "cells": [
+            "[x': [r' U r, D]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [r' U r, D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000400011113113222522522333333443111444444225555555"
+            }
+          ],
+          "failures": []
+        },
+        "408": {
+          "cells": [
+            "[z': [l', U R U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z': [l', U R U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000400111113411222422221344333333413444022555555555"
+            }
+          ],
+          "failures": []
+        },
+        "409": {
+          "cells": [
+            "[Uw' x': [U' r' U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "410": {
+          "cells": [
+            "[z: [U' r U, L']]"
+          ],
+          "successes": [
+            {
+              "original": "[z: [U' r U, L']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000400144111111022522522333333333211444444555255255"
+            }
+          ],
+          "failures": []
+        },
+        "411": {
+          "cells": [
+            "[x' U2: [U' R2 U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "412": {
+          "cells": [
+            "[z L' U', [U L' U', r]]",
+            "Cancels to a sexy 9-mover"
+          ],
+          "successes": [
+            {
+              "original": "[z L' U', [U L' U', r]]",
+              "unsolved_corners": 4,
+              "unsolved_edges": 5,
+              "signature": "000400400111115445402221221033333333113244244555555225"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a sexy 9-mover",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "413": {
+          "cells": [
+            "[U' R U, r]",
+            "Good alg for understanding how useful the [r] interchange move is."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Good alg for understanding how useful the [r] interchange move is.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "414": {
+          "cells": [
+            "[U': [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "415": {
+          "cells": [
+            "[x': [r' U2 r, D]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [r' U2 r, D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "002000400111411113222322022333233334511444444550555555"
+            }
+          ],
+          "failures": []
+        },
+        "416": {
+          "cells": [
+            "[R, U r U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "417": {
+          "cells": [
+            "[y z' F2: [U' r2 U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "418": {
+          "cells": [
+            "[y z': [l2, U R2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y z': [l2, U R2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000400111115115222322322333333322011444444544555555"
+            }
+          ],
+          "failures": []
+        },
+        "419": {
+          "cells": [
+            "[x': [R2, U r2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "420": {
+          "cells": [
+            "[l2 x': [r' U2 r, D]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 x': [r' U2 r, D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000400400112111112422222132333332333501444444555555055"
+            }
+          ],
+          "failures": []
+        },
+        "421": {
+          "cells": [
+            "[y' x': [R', U l2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[y' x': [R', U l2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000400221115115222122122333333033311444444455455555"
+            }
+          ],
+          "failures": []
+        },
+        "422": {
+          "cells": [
+            "[x2: [U' R' U, r']"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[x2: [U' R' U, r']",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "423": {
+          "cells": [
+            "[R U: [r, U' R U]]",
+            "Cancels to a 9-mover."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "424": {
+          "cells": [
+            "[l2: [D2, r U2 r']]",
+            "Set-ups with l-slice are important here for speed + optimalization."
+          ],
+          "successes": [
+            {
+              "original": "[l2: [D2, r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "200100000112011110121223222333332333544444444555555455"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Set-ups with l-slice are important here for speed + optimalization.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "425": {
+          "cells": [
+            "[Lw2: [D, r U2 r']]"
+          ],
+          "successes": [
+            {
+              "original": "[Lw2: [D, r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "012000000112011110122222522333335335344444444551553455"
+            }
+          ],
+          "failures": []
+        },
+        "426": {
+          "cells": [
+            "[l2 U' y r': [U2, r' D r]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 U' y r': [U2, r' D r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001002112110110122522322331332333444444445555553455"
+            }
+          ],
+          "failures": []
+        },
+        "427": {
+          "cells": [
+            "[l2 R2: [r U2 r', D']]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 R2: [r U2 r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001002114011111022222224331433333443443445555555255"
+            }
+          ],
+          "failures": []
+        },
+        "428": {
+          "cells": [
+            "[l2 L: [r U2 r', D]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 L: [r U2 r', D]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "300001000411311110225222222333533103544444444235555551"
+            }
+          ],
+          "failures": []
+        },
+        "429": {
+          "cells": [
+            "[x' l': [D2, l' U' l]]",
+            "Cancels to 9 moves."
+          ],
+          "successes": [
+            {
+              "original": "[x' l': [D2, l' U' l]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "500000000112511112122322522333233333044444444555555411"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to 9 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "430": {
+          "cells": [
+            "[x' l': [D2, l' U l]]",
+            "Cancels to 9 moves."
+          ],
+          "successes": [
+            {
+              "original": "[x' l': [D2, l' U l]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000005112411113122322422322333333044444411555555455"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to 9 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "431": {
+          "cells": [
+            "[l2 R': [r U2 r', D']]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 R': [r U2 r', D']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001100114211114222222202333433333035444444555555155"
+            }
+          ],
+          "failures": []
+        },
+        "432": {
+          "cells": [
+            "[l2: [D, r U2 r']]"
+          ],
+          "successes": [
+            {
+              "original": "[l2: [D, r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "012000000112011110122222522333335335344444444551553455"
+            }
+          ],
+          "failures": []
+        },
+        "433": {
+          "cells": [
+            "[l: [D, r U2 r']]"
+          ],
+          "successes": [
+            {
+              "original": "[l: [D, r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "500500000111111112231222522333332233044444444455555503"
+            }
+          ],
+          "failures": []
+        },
+        "434": {
+          "cells": [
+            "[l2: [D', r U2 r']]"
+          ],
+          "successes": [
+            {
+              "original": "[l2: [D', r U2 r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000001000112011211122222422533334333344344144555555455"
+            }
+          ],
+          "failures": []
+        },
+        "435": {
+          "cells": [
+            "[l2 z y: [R2, U' r U]]",
+            "Cancels to a 10-mover"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Cancels to a 10-mover",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "436": {
+          "cells": [
+            "[l2 y': [U', r' D' r]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[l2 y': [U', r' D' r]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "437": {
+          "cells": [
+            "[x y' U r': [U2, r' D r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x y' U r': [U2, r' D r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "300400200111111111220223220333332332445444404554555555"
+            }
+          ],
+          "failures": []
+        },
+        "438": {
+          "cells": [
+            "[l2 y: [U, r' D r]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 y: [U, r' D r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000004011112113114122022022335330333344442442555555455"
+            }
+          ],
+          "failures": []
+        },
+        "439": {
+          "cells": [
+            "[l2 x': [D', r' U2 r]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 x': [D', r' U2 r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "005005000112111115122223322333333321044444444502555455"
+            }
+          ],
+          "failures": []
+        },
+        "440": {
+          "cells": [
+            "[Lw2 x': [D', r' U2 r]]"
+          ],
+          "successes": [
+            {
+              "original": "[Lw2 x': [D', r' U2 r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "005005000112111115122223322333333321044444444502555455"
+            }
+          ],
+          "failures": []
+        },
+        "441": {
+          "cells": [
+            "[l2 U2: [r, U' R' U]]",
+            "Cancels to 10-moves."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Cancels to 10-moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "442": {
+          "cells": [
+            "[l2 x': [D, r' U2 r]]"
+          ],
+          "successes": [
+            {
+              "original": "[l2 x': [D, r' U2 r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000004500112111114122223221333332333002444444555555455"
+            }
+          ],
+          "failures": []
+        },
+        "443": {
+          "cells": [
+            "[l' y: [L2, U r' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[l' y: [L2, U r' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "005000000112311115122322322333533311044444444522555455"
+            }
+          ],
+          "failures": []
+        },
+        "444": {
+          "cells": [
+            "[l' y' x2: [U' r U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "445": {
+          "cells": [
+            "[l' y': [r2, U' r' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "446": {
+          "cells": [
+            "[y: [U r' U', L2]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [U r' U', L2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "500500000221110110221221222333333433544444444155155553"
+            }
+          ],
+          "failures": []
+        },
+        "447": {
+          "cells": [
+            "[y: [r', U' L2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y: [r', U' L2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "055000000221110110222522522333333433344444444151151555"
+            }
+          ],
+          "failures": []
+        },
+        "448": {
+          "cells": [
+            "[x': [U L U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [U L U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "001005000121110110222322322335331334444444443552155555"
+            }
+          ],
+          "failures": []
+        },
+        "449": {
+          "cells": [
+            "[y U2: [r', U' L2 U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y U2: [r', U' L2 U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000550221110110222422423333333433241441444155155555"
+            }
+          ],
+          "failures": []
+        },
+        "450": {
+          "cells": [
+            "[4Uw x' U': [U L U', r2]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[4Uw x' U': [U L U', r2]]",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "451": {
+          "cells": [
+            "[4Bw' U: [r2, U' L U]]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[4Bw' U: [r2, U' L U]]",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "452": {
+          "cells": [
+            "[L z': [l, U R U']]"
+          ],
+          "successes": [
+            {
+              "original": "[L z': [l, U R U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000003121113411222422222355333433444444011355155555"
+            }
+          ],
+          "failures": []
+        },
+        "453": {
+          "cells": [
+            "[L' z': [r, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "454": {
+          "cells": [
+            "[Bw2: [D, r U r']]"
+          ],
+          "successes": [
+            {
+              "original": "[Bw2: [D, r U r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000440114110111022422522333333333211442444555555255"
+            }
+          ],
+          "failures": []
+        },
+        "455": {
+          "cells": [
+            "[x' U2: [U L U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x' U2: [U L U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000121511111222322322433133433544444244355155555"
+            }
+          ],
+          "failures": []
+        },
+        "456": {
+          "cells": [
+            "[x z U: [U' R U, l']]"
+          ],
+          "successes": [
+            {
+              "original": "[x z U: [U' R U, l']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000114111551222422422133333333344244244555555115"
+            }
+          ],
+          "failures": []
+        },
+        "457": {
+          "cells": [
+            "[U L2 U', r]"
+          ],
+          "successes": [
+            {
+              "original": "[U L2 U', r]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000100100221112112222025025333333433443444444155155555"
+            }
+          ],
+          "failures": []
+        },
+        "458": {
+          "cells": [
+            "[L2, U' r U]"
+          ],
+          "successes": [
+            {
+              "original": "[L2, U' r U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "110000000221115115223022022333333433244444444155155555"
+            }
+          ],
+          "failures": []
+        },
+        "459": {
+          "cells": [
+            "[U2: [U L2 U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[U2: [U L2 U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "001001000221113113222022022333335435544444444153155555"
+            }
+          ],
+          "failures": []
+        },
+        "460": {
+          "cells": [
+            "[y' x': [l2, U' R' U]]"
+          ],
+          "successes": [
+            {
+              "original": "[y' x': [l2, U' R' U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000011021114111222022224333333433443445445255155555"
+            }
+          ],
+          "failures": []
+        },
+        "461": {
+          "cells": [
+            "[L' U': [U L' U', r]]",
+            "Cancels to a 9-mover."
+          ],
+          "successes": [
+            {
+              "original": "[L' U': [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000223115115112222222333333433144444444155155555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "462": {
+          "cells": [
+            "[x': [L, U' r U]]"
+          ],
+          "successes": [
+            {
+              "original": "[x': [L, U' r U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "003300300001111111222225225333333411440444444255255555"
+            }
+          ],
+          "failures": []
+        },
+        "463": {
+          "cells": [
+            "[x' U: [U L U', r2]]"
+          ],
+          "successes": [
+            {
+              "original": "[x' U: [U L U', r2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000002121114314222322322014333333144444451555155555"
+            }
+          ],
+          "failures": []
+        },
+        "464": {
+          "cells": [
+            "[y' x': [U l2 U', R']]"
+          ],
+          "successes": [
+            {
+              "original": "[y' x': [U l2 U', R']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000300221114114222222211333333433055444444155155555"
+            }
+          ],
+          "failures": []
+        },
+        "465": {
+          "cells": [
+            "[l' y: [U r' U', L2]]"
+          ],
+          "successes": [
+            {
+              "original": "[l' y: [U r' U', L2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000113113112522522122333233312544444444531555055"
+            }
+          ],
+          "failures": []
+        },
+        "466": {
+          "cells": [
+            "[x: [r, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x: [r, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000221113113222122122533533433444444344155155555"
+            }
+          ],
+          "failures": []
+        },
+        "467": {
+          "cells": [
+            "[y' x' U2: [l2, U' R' U]]",
+            "Cancels to a 9-mover."
+          ],
+          "successes": [
+            {
+              "original": "[y' x' U2: [l2, U' R' U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000121114111222122322433333433544544244355155555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "468": {
+          "cells": [
+            "[y' x2: [R2, U' r U]]",
+            "[U' x2: [U R2 U', r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "469": {
+          "cells": [
+            "[x2: [U' L2 U, r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [U' L2 U, r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "033000000111210210222522522133133334344444444551551555"
+            }
+          ],
+          "failures": []
+        },
+        "470": {
+          "cells": [
+            "[x2 y' U: [U R2 U', r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "471": {
+          "cells": [
+            "[x2: [U R2 U', r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "472": {
+          "cells": [
+            "[x2: [U' L U, r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [U' L U, r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "400000000111212212233522522133133333044444444555555511"
+            }
+          ],
+          "failures": []
+        },
+        "473": {
+          "cells": [
+            "[x2: [U' L' U, r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [U' L' U, r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000114213215122522222133133333144444444515555355"
+            }
+          ],
+          "failures": []
+        },
+        "474": {
+          "cells": [
+            "[x2: [U R U', r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "475": {
+          "cells": [
+            "[x2: [U R' U', r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "476": {
+          "cells": [
+            "[x F2: [l', U' R U]]",
+            "Optimal = [x z2: [r, U' R U]] though F2 eliminates the need for a z2 rotation."
+          ],
+          "successes": [
+            {
+              "original": "[x F2: [l', U' R U]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000133211211422522522133133333244444444555155155"
+            }
+          ],
+          "failures": []
+        },
+        "477": {
+          "cells": [
+            "[l2 y' x2: [R2, U' r' U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "478": {
+          "cells": [
+            "[x F2: [l', U L' U']]",
+            "Optimal = [x z2: [r, U L' U']"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Optimal = [x z2: [r, U L' U']",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "479": {
+          "cells": [
+            "[x y' U: [U R2 U', r]]",
+            "Cancels to a fast 9-mover."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Cancels to a fast 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "480": {
+          "cells": [
+            "[x2: [r', U L2 U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [r', U L2 U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "110000000111215215224022022133133333244444444555553553"
+            }
+          ],
+          "failures": []
+        },
+        "481": {
+          "cells": [
+            "[x2 y: [U l' U', L2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "482": {
+          "cells": [
+            "[x2: [r', U' R2 U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "483": {
+          "cells": [
+            "[x2: [r', U L U']]"
+          ],
+          "successes": [
+            {
+              "original": "[x2: [r', U L U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000411215213212222522133133333144444444155555535"
+            }
+          ],
+          "failures": []
+        },
+        "484": {
+          "cells": [
+            "[x2: [r', U L' U']]",
+            "The advanced M2 alternative is just as fast here too."
+          ],
+          "successes": [
+            {
+              "original": "[x2: [r', U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "004000000111215215222322322133133311044444444533555555"
+            }
+          ],
+          "failures": []
+        },
+        "485": {
+          "cells": [
+            "[x2: [r', U' R U]",
+            "The advanced M2 alternative is just as fast here too."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[x2: [r', U' R U]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "486": {
+          "cells": [
+            "[x2: [r', U' R' U]"
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "[x2: [r', U' R' U]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "487": {
+          "cells": [
+            "[l' y' x2: [R2, U' r U]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "488": {
+          "cells": [
+            "[x: [U L' U', r]]"
+          ],
+          "successes": [
+            {
+              "original": "[x: [U L' U', r]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000111215215222122122133133433344444444355355555"
+            }
+          ],
+          "failures": []
+        },
+        "489": {
+          "cells": [
+            "[x: [U' R U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "490": {
+          "cells": [
+            "[y': [U' r' U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "491": {
+          "cells": [
+            "[y' U2: [r', U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "492": {
+          "cells": [
+            "[x': [U' R' U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "493": {
+          "cells": [
+            "[y: [r' U R2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "494": {
+          "cells": [
+            "[z D: [r, U L' U']]"
+          ],
+          "successes": [
+            {
+              "original": "[z D: [r, U L' U']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "200000000111112521244522422233333333344144044555555511"
+            }
+          ],
+          "failures": []
+        },
+        "495": {
+          "cells": [
+            "[Uw x': [U' R U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "496": {
+          "cells": [
+            "[f' U': [r2, U R' U']]",
+            "Horrible case, but cancels to 10 moves."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Horrible case, but cancels to 10 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "497": {
+          "cells": [
+            "[Uw' x' U: [U' R' U, r2]]",
+            "Horrible case, but cancels to 10 moves."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Horrible case, but cancels to 10 moves.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "498": {
+          "cells": [
+            "[x z': [U L' U', l']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "499": {
+          "cells": [
+            "[x' U2: [U' R U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "500": {
+          "cells": [
+            "[f2: [D', r U' r']]"
+          ],
+          "successes": [
+            {
+              "original": "[f2: [D', r U' r']]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "140000000111111422224225522233333333044044144555551553"
+            }
+          ],
+          "failures": []
+        },
+        "501": {
+          "cells": [
+            "[U' R2 U, r]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "502": {
+          "cells": [
+            "[y x': [l2, U L U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "503": {
+          "cells": [
+            "[U2: [U' R2 U, r]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "504": {
+          "cells": [
+            "[R2, U r U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "505": {
+          "cells": [
+            "[y x': [U' l2 U, L]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "506": {
+          "cells": [
+            "[x' U': [U' R' U, r2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "507": {
+          "cells": [
+            "[x': [R', U r2 U']]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "508": {
+          "cells": [
+            "[R U: [U' R U, r]]",
+            "Cancels to a 9-mover."
+          ],
+          "successes": [],
+          "failures": [
+            {
+              "original": "Cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "509": {
+          "cells": [
+            "[l' y': [U' r' U, R2]]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "510": {
+          "cells": [
+            "[y' x' U2: [U' R' U, l2]]",
+            "Cancels to a 9-mover."
+          ],
+          "successes": [
+            {
+              "original": "[y' x' U2: [U' R' U, l2]]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 3,
+              "signature": "000000000111115121222122422533333233344144344455455555"
+            }
+          ],
+          "failures": [
+            {
+              "original": "Cancels to a 9-mover.",
+              "failure_reason": 2
+            }
+          ]
+        },
+        "511": {
+          "cells": [
+            "[x: [r, U' R U]]"
+          ],
+          "successes": [],
+          "failures": []
+        }
+      }
+    },
+    "1": {
+      "range": "'CHANGEABLE letter scheme'!A1:F26",
+      "values": {
+        "1": {
+          "cells": [
+            "change me!"
+          ],
+          "successes": [],
+          "failures": []
+        }
+      }
+    }
+  }
+}

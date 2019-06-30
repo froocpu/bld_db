@@ -1,0 +1,3156 @@
+{
+  "id": "17sL1RuiYijTMiQkBn_d5xthdgAoxGE8oaH-Po-PZ58s",
+  "spreadsheet_metadata": {
+    "spreadsheetId": "17sL1RuiYijTMiQkBn_d5xthdgAoxGE8oaH-Po-PZ58s",
+    "properties": {
+      "title": "Porky's comms",
+      "locale": "it_IT",
+      "timeZone": "Etc/GMT"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 1327888555,
+          "title": "Edges",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 1000,
+            "columnCount": 26
+          }
+        }
+      },
+      {
+        "properties": {
+          "sheetId": 1971450133,
+          "title": "Corners",
+          "index": 1,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 1000,
+            "columnCount": 26
+          }
+        }
+      }
+    ],
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/17sL1RuiYijTMiQkBn_d5xthdgAoxGE8oaH-Po-PZ58s/edit"
+  },
+  "data": {
+    "1327888555": {
+      "range": "Edges!A1:Z1000",
+      "values": {
+        "1": {
+          "cells": [
+            "[M U: M', U2]",
+            "r U R' U' M U R U R'",
+            "[l u': M' u2 M' u2]",
+            "[U2 r U: M, U2]",
+            "[S, R' F R]",
+            "[U r' U: M', U2]",
+            "[r: U R' U', M']",
+            "[L F' L' U: M, U2]",
+            "[r U' R': S, R2]",
+            "[l L2 U: M', U2]",
+            "[r U\u2019 L: E, L2]",
+            "[R2: S', R F R']",
+            "[U' M' U: M, U2]",
+            "[r U' R' U: M', U2]",
+            "[l U: M', U2]",
+            "[R' F: R, U M' U']",
+            "[F\u2019 L\u2019 U\u2019: M\u2019, U2]",
+            "[r: E', R' U R]",
+            "[S\u2019, R\u2019 F R]",
+            "[U r' R2 U: M', U2]"
+          ],
+          "successes": [
+            {
+              "original": "[M U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "020400000111111111222220222333333333444445444555550555"
+            },
+            {
+              "original": "r U R' U' M U R U R'",
+              "unsolved_corners": 4,
+              "unsolved_edges": 5,
+              "signature": "222204200111111113220220000333330331555443444554554554"
+            },
+            {
+              "original": "[l u': M' u2 M' u2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400020111110111222220222333333333444441444555555555"
+            },
+            {
+              "original": "[U2 r U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400020111111111222220222333333333404444444555555555"
+            },
+            {
+              "original": "[S, R' F R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400050111111111222220222333333333444440444555552555"
+            },
+            {
+              "original": "[U r' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400040111111111222220222303333333444443424555555555"
+            },
+            {
+              "original": "[r: U R' U', M']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400010111112111222020222333333333444442444555555555"
+            },
+            {
+              "original": "[L F' L' U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400010111211111222220222333033333444443444555555555"
+            },
+            {
+              "original": "[r U' R': S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400010111111121222220222333333333444044444555555555"
+            },
+            {
+              "original": "[l L2 U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400020111111111222220222333333333444445444555555505"
+            },
+            {
+              "original": "[r U\u2019 L: E, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400010121111111222220222333333333444445444555055555"
+            },
+            {
+              "original": "[R2: S', R F R']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400050101111111222220222333333333444441444555255555"
+            },
+            {
+              "original": "[U' M' U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400030111111111222220222333332333444440444555555555"
+            },
+            {
+              "original": "[r U' R' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000100020111411111222223222333033333444440444555555555"
+            },
+            {
+              "original": "[l U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400030111111111222220222333333323444445444505555555"
+            },
+            {
+              "original": "[R' F: R, U M' U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400030111111111222220222323333333444444404555555555"
+            },
+            {
+              "original": "[F\u2019 L\u2019 U\u2019: M\u2019, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400050111111111202220222333333333444442444555555525"
+            },
+            {
+              "original": "[r: E', R' U R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400050111111111222220222333333303444443444525555555"
+            },
+            {
+              "original": "[S\u2019, R\u2019 F R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400040111111101222220222333333333444241444555555555"
+            },
+            {
+              "original": "[U r' R2 U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000400040111111111222220202333333333424442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "2": {
+          "cells": [
+            "[M2 U': M, U2]",
+            "[R2 U\u2019: S, R2]",
+            "[R U\u2019 R\u2019 U, M\u2019]",
+            "[M: R, U M' U']",
+            "[S, L' U' L]",
+            "[U2: L' E L, U']",
+            "U M U2 M U' M' U2 M'",
+            "[R U R' U: M, U2]",
+            "[R U R\u2019: S, R2]",
+            "[l2 L U': M, U2]",
+            "[l2 U': M, U2]",
+            "[U2: L E L', U']",
+            "[R\u2019 U\u2019 R U, M]",
+            "M U' M' U' M U' M' U'",
+            "[l M U': M, U2]",
+            "[r': U M' U', R]",
+            "[R' E R, U']",
+            "[R E' R', U']",
+            "[R' E' R, U']",
+            "[U2: R' E' R, U']"
+          ],
+          "successes": [
+            {
+              "original": "[M2 U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000000111111111222224222333333333444445444555552555"
+            },
+            {
+              "original": "[R2 U\u2019: S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000000111111111222224222333332333444443444555555555"
+            },
+            {
+              "original": "[R U\u2019 R\u2019 U, M\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111112111222024222333333333444441444555555555"
+            },
+            {
+              "original": "[M: R, U M' U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111222224202333333333424444444555555555"
+            },
+            {
+              "original": "[S, L' U' L]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "020000050111111111222224222333333333444440444555550555"
+            },
+            {
+              "original": "[U2: L' E L, U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111222224222323333333444443404555555555"
+            },
+            {
+              "original": "U M U2 M U' M' U2 M'",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111110111222224222333333333444442444555555555"
+            },
+            {
+              "original": "[R U R' U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111011111222224222333233333444443444555555555"
+            },
+            {
+              "original": "[R U R\u2019: S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111111101222224222333333333444244444555555555"
+            },
+            {
+              "original": "[l2 L U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111202224222333333333444445444555555525"
+            },
+            {
+              "original": "[l2 U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010101111111222224222333333333444445444555255555"
+            },
+            {
+              "original": "[U2: L E L', U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050121111111222224222333333333444441444555055555"
+            },
+            {
+              "original": "[R\u2019 U\u2019 R U, M]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000002030111111111222224222333330333444440444555555555"
+            },
+            {
+              "original": "M U' M' U' M U' M' U'",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111211111222224222333033333444441444555555555"
+            },
+            {
+              "original": "[l M U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222224222333333303444445444525555555"
+            },
+            {
+              "original": "[r': U M' U', R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222224222303333333444444424555555555"
+            },
+            {
+              "original": "[R' E R, U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111222224222333333333444442444555555505"
+            },
+            {
+              "original": "[R E' R', U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111222224222333333323444443444505555555"
+            },
+            {
+              "original": "[R' E' R, U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111121222224222333333333444041444555555555"
+            },
+            {
+              "original": "[U2: R' E' R, U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000000111111131222222222333335333444044444555551555"
+            }
+          ],
+          "failures": []
+        },
+        "3": {
+          "cells": [
+            "L2 U L U L' U' L' U' L' U L'",
+            "[M U: M, U2]",
+            "[U R' U': S, R2]",
+            "[L' E L, U2]",
+            "[U': M', U2]",
+            "[U: M, U2]",
+            "[S, R2]",
+            "[U L U: S', L2]",
+            "[U' D: M', U2]",
+            "[U2, L E L']",
+            "[M' U: M, U2]",
+            "[M' U': M', U2]",
+            "[U' L' U': S', L2]",
+            "[U' R U: S, R2]",
+            "[R' E R, U2]",
+            "[R E' R', U2]",
+            "[R' E' R,U2]",
+            "[L E' L', U2]"
+          ],
+          "successes": [
+            {
+              "original": "L2 U L U L' U' L' U' L' U L'",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000000111111111222222222333335333444443444555554555"
+            },
+            {
+              "original": "[M U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111115111222022222333333333444441444555554555"
+            },
+            {
+              "original": "[U R' U': S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111222222202333333333454444444555554555"
+            },
+            {
+              "original": "[L' E L, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000000111111111222222222343333333444445404555553555"
+            },
+            {
+              "original": "[U': M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111110111222522222333333333444442444555554555"
+            },
+            {
+              "original": "[U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111011111222222222333533333444443444555554555"
+            },
+            {
+              "original": "[S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111111101222222222333333333444544444555554555"
+            },
+            {
+              "original": "[U L U: S', L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111202222222333333333444445444555554555"
+            },
+            {
+              "original": "[U' D: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010101111111222222222333333333444445444555554555"
+            },
+            {
+              "original": "[U2, L E L']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050151111111222222222333333333444441444555054555"
+            },
+            {
+              "original": "[M' U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000005030111111111222222222333330333444440444555554555"
+            },
+            {
+              "original": "[M' U': M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111511111222222222333033333444441444555554555"
+            },
+            {
+              "original": "[U' L' U': S', L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222222222333333303444445444555554555"
+            },
+            {
+              "original": "[U' R U: S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222222222303333333444444454555554555"
+            },
+            {
+              "original": "[R' E R, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111252222222333333333444442444555554505"
+            },
+            {
+              "original": "[R E' R', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111222222222333333353444443444505554555"
+            },
+            {
+              "original": "[R' E' R,U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111151222222222333333333444041444555554555"
+            },
+            {
+              "original": "[L E' L', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000000111111111222222242333333333404445444555552555"
+            }
+          ],
+          "failures": []
+        },
+        "4": {
+          "cells": [
+            "M' U M U M' U M U",
+            "[r: U' M U, R']",
+            "[r' U r, S']",
+            "[U2: L' E L, U]",
+            "[R U' R' U': M', U2]",
+            "U' M' U2 M' U M U2 M",
+            "[R U\u2019 R\u2019: S, R2]",
+            "[l' M' U: M', U2]",
+            "[l2 U: M', U2]",
+            "[U2: L E L, U]",
+            "[R\u2019 U R U\u2019, M]",
+            "[l2 L' U: M', U2]",
+            "[M': R', U' M U]",
+            "[R' E R, U]",
+            "[R E' R', U]",
+            "[R' E' R, U]",
+            "[U2 L E' L', U]"
+          ],
+          "successes": [
+            {
+              "original": "M' U M U M' U M U",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111113111222022222333334333444441444555555555"
+            },
+            {
+              "original": "[r: U' M U, R']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111222222202333334333434444444555555555"
+            },
+            {
+              "original": "[r' U r, S']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "030000050111111111222222222333334333444440444555550555"
+            },
+            {
+              "original": "[U2: L' E L, U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111222222222333334333444443404555555555"
+            },
+            {
+              "original": "[R U' R' U': M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111110111222322222333334333444442444555555555"
+            },
+            {
+              "original": "U' M' U2 M' U M U2 M",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111011111222222222333334333444443444555555555"
+            },
+            {
+              "original": "[R U\u2019 R\u2019: S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111111101222222222333334333444344444555555555"
+            },
+            {
+              "original": "[l' M' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111202222222333334333444445444555555535"
+            },
+            {
+              "original": "[l2 U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010101111111222222222333334333444445444555355555"
+            },
+            {
+              "original": "[R\u2019 U R U\u2019, M]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111311111222222222333034333444441444555555555"
+            },
+            {
+              "original": "[l2 L' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222222222333334303444445444535555555"
+            },
+            {
+              "original": "[M': R', U' M U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222222222303334333444444434555555555"
+            },
+            {
+              "original": "[R' E R, U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111232222222333334333444442444555555505"
+            },
+            {
+              "original": "[R E' R', U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111222222222333334333444443444505555555"
+            },
+            {
+              "original": "[R' E' R, U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111131222222222333334333444041444555555555"
+            },
+            {
+              "original": "[U2 L E' L', U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111222222232333334333404442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "5": {
+          "cells": [
+            "[R, U M' U']",
+            "[S, R\u2019 F\u2019 R]",
+            "[S' R' U': M', U2]",
+            "[r: M', U' R' U]",
+            "[R2, U M' U']",
+            "[M L\u2019 U\u2019: M, U2]",
+            "[r U L: E, L2]",
+            "[M' U M, D]",
+            "[r U R' U': M, U2]",
+            "M\u2019 U M U2 M U\u2019 M\u2019 U2",
+            "[l U': M, U2]",
+            "[R', U M' U']",
+            "[l' U': M', R U R' U'] ",
+            "[r: E', R' U' R]",
+            "[S', R' F' R]",
+            "[S' R U\u2019: M\u2019, U]"
+          ],
+          "successes": [
+            {
+              "original": "[R, U M' U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111114111222022222333333333414444444555555555"
+            },
+            {
+              "original": "[S, R\u2019 F\u2019 R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "010000050111114111222022222333333333444440444555552555"
+            },
+            {
+              "original": "[S' R' U': M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111114111222022222313333333444443424555555555"
+            },
+            {
+              "original": "[r: M', U' R' U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111013111222122222333433333444441444555555555"
+            },
+            {
+              "original": "[R2, U M' U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111114121222022222333333333444144444555555555"
+            },
+            {
+              "original": "[M L\u2019 U\u2019: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111114111222022222333333333444445444555555515"
+            },
+            {
+              "original": "[r U L: E, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010121114111222022222333333333444445444555155555"
+            },
+            {
+              "original": "[M' U M, D]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111114111222022222333333333444441444555255555"
+            },
+            {
+              "original": "[r U R' U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004020111110111222322222333330333444441444555555555"
+            },
+            {
+              "original": "M\u2019 U M U2 M U\u2019 M\u2019 U2",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111114111222022222333233333444441444555555555"
+            },
+            {
+              "original": "[l U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111114111222022222333333323444445444515555555"
+            },
+            {
+              "original": "[R', U M' U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111114111222022222323333333444444414555555555"
+            },
+            {
+              "original": "[l' U': M', R U R' U'] ",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111114111212022222333333333444442444555555525"
+            },
+            {
+              "original": "[r: E', R' U' R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111114111222022222333333313444443444525555555"
+            },
+            {
+              "original": "[S', R' F' R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111114111222022222333333333444241444555555555"
+            },
+            {
+              "original": "[S' R U\u2019: M\u2019, U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 5,
+              "signature": "000302010111112111222020202333334333444442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "6": {
+          "cells": [
+            "[U' M' U, R]",
+            "U R U\u2019 R\u2019 E\u2019 R U R\u2019 u\u2019",
+            "[U2 R U: M', U2]",
+            "[r: U M' U', R']",
+            "[R U2 l\u2019: S, R2]",
+            "[L U2 L: E\u2019, L2]",
+            "[U2 L: E\u2019, L2]",
+            "[D': U' M\u2019 U, R]",
+            "[S': U', L E' L']",
+            "[U' M U, R]",
+            "[L\u2019 U2 L: E\u2019, L2]",
+            "[U2 R': S, R2]",
+            "[R', F' M' F]",
+            "[l: U' M' U, R]",
+            "[D\u2019: U M\u2019 U\u2019, R]"
+          ],
+          "successes": [
+            {
+              "original": "[U' M' U, R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000050111111111222222202333333333444440444555552555"
+            },
+            {
+              "original": "U R U\u2019 R\u2019 E\u2019 R U R\u2019 u\u2019",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111222222202343333333444443424555555555"
+            },
+            {
+              "original": "[U2 R U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111112111222422202333333333444442444555555555"
+            },
+            {
+              "original": "[r: U M' U', R']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111011111222222212333433333434444444555555555"
+            },
+            {
+              "original": "[R U2 l\u2019: S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "030000000111111111202222222323333333444444454555554555"
+            },
+            {
+              "original": "[L U2 L: E\u2019, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111222222202333333333444445444555555545"
+            },
+            {
+              "original": "[U2 L: E\u2019, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010121111111222222202333333333444445444555455555"
+            },
+            {
+              "original": "[D': U' M\u2019 U, R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000050111111111222222202333333333444440444555552555"
+            },
+            {
+              "original": "[S': U', L E' L']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004030111111111222222202333332333444440444555555555"
+            },
+            {
+              "original": "[U' M U, R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111411111222222202333233333444441444555555555"
+            },
+            {
+              "original": "[L\u2019 U2 L: E\u2019, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222222202333333323444445444545555555"
+            },
+            {
+              "original": "[U2 R': S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222222202323333333444444444555555555"
+            },
+            {
+              "original": "[R', F' M' F]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111242222202333333333444442444555555525"
+            },
+            {
+              "original": "[l: U' M' U, R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111222222202333333343444443444525555555"
+            },
+            {
+              "original": "[D\u2019: U M\u2019 U\u2019, R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111141222222202333333333444241444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "7": {
+          "cells": [
+            "[U\u2019: M, U\u2019 R\u2019 U]",
+            "[S\u2019, L F L\u2019]",
+            "[S\u2019, L\u2019 B\u2019 L]",
+            "[R2, U' M' U]",
+            "[R\u2019 F2 R, S]",
+            "[R' S: R, U' M' U]",
+            "[U' M U, L2]",
+            "[S, R U' R']",
+            "[R B R\u2019, S]",
+            "[R B2 R\u2019, S]",
+            "[R', U' M' U]",
+            "[U' M U, L']",
+            "[U M' U', L]",
+            "[U': M, U R2 U']",
+            "[U\u2019: M, U\u2019 R U]"
+          ],
+          "successes": [
+            {
+              "original": "[U\u2019: M, U\u2019 R\u2019 U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000040111111111222222222303333333444443454555550555"
+            },
+            {
+              "original": "[S\u2019, L F L\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000010111115111222022222333333333444442444555550555"
+            },
+            {
+              "original": "[S\u2019, L\u2019 B\u2019 L]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000010111511111222222222333033333444443444555550555"
+            },
+            {
+              "original": "[R2, U' M' U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000010111111151222222222333333333444044444555550555"
+            },
+            {
+              "original": "[R\u2019 F2 R, S]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000020111111111252222222333333333444445444555550505"
+            },
+            {
+              "original": "[R' S: R, U' M' U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000010151111111222222222333333333444445444555050555"
+            },
+            {
+              "original": "[U' M U, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000050101111111222222222333333333444441444555550555"
+            },
+            {
+              "original": "[S, R U' R']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "050000000131111111222222222333335333444444444555051555"
+            },
+            {
+              "original": "[R B R\u2019, S]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000030111011111222222222333533333444441444555550555"
+            },
+            {
+              "original": "[R B2 R\u2019, S]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000030111111111222222222333333353444445444505550555"
+            },
+            {
+              "original": "[R', U' M' U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000030111111111222222222353333333444444404555550555"
+            },
+            {
+              "original": "[U' M U, L']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000050111111111202222222333333333444442444555550555"
+            },
+            {
+              "original": "[U M' U', L]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000050111111111222222222333333303444443444555550555"
+            },
+            {
+              "original": "[U': M, U R2 U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111411101222222222333133333444441444555555555"
+            },
+            {
+              "original": "[U\u2019: M, U\u2019 R U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "040000040111111111222222202333333333454442444555550555"
+            }
+          ],
+          "failures": []
+        },
+        "8": {
+          "cells": [
+            "[R' S' R U': M', U2]",
+            "[R' S' R U': M, U2]",
+            "[E R: E\u2019, R2]",
+            "[L2: E, L U2 L']",
+            "[R' S R: U' M' U, R]",
+            "[S R2: U' M' U, R]",
+            "[U' R' M' U: M, U2]",
+            "[S R' U\u2019: M, U2]",
+            "[E, L U2 L\u2019]",
+            "[L' U2: R', U\u2019 M\u2019 U]",
+            "[U x' U': M', U2]",
+            "[U R U', S]",
+            "[S\u2019 R\u2019: S, R2]"
+          ],
+          "successes": [
+            {
+              "original": "[R' S' R U': M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111114111222322222343333333444442404555555555"
+            },
+            {
+              "original": "[R' S' R U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111011111222222222333433333444443414555555555"
+            },
+            {
+              "original": "[E R: E\u2019, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111111141222222222343333333444344404555555555"
+            },
+            {
+              "original": "[L2: E, L U2 L']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111242222222343333333444445404555555535"
+            },
+            {
+              "original": "[R' S R: U' M' U, R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010141111111222222222343333333444445404555355555"
+            },
+            {
+              "original": "[S R2: U' M' U, R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050131111111222222222343333333444441404555455555"
+            },
+            {
+              "original": "[U' R' M' U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000003030111111111222222222343334333444440404555555555"
+            },
+            {
+              "original": "[S R' U\u2019: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000000131311111222222222353433333444444414555155555"
+            },
+            {
+              "original": "[E, L U2 L\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111222222222343333343444445404535555555"
+            },
+            {
+              "original": "[L' U2: R', U\u2019 M\u2019 U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111232222222343333333444442404555555545"
+            },
+            {
+              "original": "[U x' U': M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111222222222343333333444443404545555555"
+            },
+            {
+              "original": "[U R U', S]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111131222222222343333333444441404555555555"
+            },
+            {
+              "original": "[S\u2019 R\u2019: S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111222222242323333333404443444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "9": {
+          "cells": [
+            "u M' u2 M' u'",
+            "[R D R: S\u2019, R2]",
+            "[L' U: M', U2]",
+            "[L2 U: M', U2]",
+            "[R' S R U: M', U2]",
+            "[r' U r U: M\u2019, U2]",
+            "[r': M, U R U']",
+            "[R' U: M', U2]",
+            "[M: U' M U, R']",
+            "[l': S, R' F R]",
+            "[E L' U: M', U2]",
+            "[l D' l', S]",
+            "[R S' R' U: M', U2]"
+          ],
+          "successes": [
+            {
+              "original": "[R D R: S\u2019, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111011111222222222333433333444344444555555555"
+            },
+            {
+              "original": "[L' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111110111212422222333333333444445444555555525"
+            },
+            {
+              "original": "[L2 U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111110111222422222333333333444445444555255555"
+            },
+            {
+              "original": "[R' S R U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050121110111222422222333333333444441444555155555"
+            },
+            {
+              "original": "[r' U r U: M\u2019, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000002030111110111222422222333331333444440444555555555"
+            },
+            {
+              "original": "[r': M, U R U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111210111222422222333133333444441444555555555"
+            },
+            {
+              "original": "[R' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "010000000111113111222422222303333333444444454555552555"
+            },
+            {
+              "original": "[M: U' M U, R']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111113111222422222303333333444442444555555555"
+            },
+            {
+              "original": "[l': S, R' F R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111110111222422222333333333444442444555555515"
+            },
+            {
+              "original": "[E L' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111110111222422222333333323444443444515555555"
+            },
+            {
+              "original": "[l D' l', S]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111110121222422222333333333444141444555555555"
+            },
+            {
+              "original": "[R S' R' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111110111222422222333333333414442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "10": {
+          "cells": [
+            "[R D R: S\u2019, R2]",
+            "[L' U': M, U2]",
+            "[l2 U': M, U2]",
+            "[R' S R U': M, U2]",
+            "[r': U' R U, M]",
+            "[L U': M, U2]",
+            "[U2 R' U: M, U2]",
+            "[E' L U: M, U2]",
+            "[x\u2019: U\u2019, L E\u2019 L\u2019]",
+            "[l' D l, S]",
+            "[R S' R' U': M, U2]"
+          ],
+          "successes": [
+            {
+              "original": "[R D R: S\u2019, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111011111222222222333433333444344444555555555"
+            },
+            {
+              "original": "[L' U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111011111212222222333433333444445444555555535"
+            },
+            {
+              "original": "[l2 U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010101111111222224222333333333444445444555255555"
+            },
+            {
+              "original": "[R' S R U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050131011111222222222333433333444441444555155555"
+            },
+            {
+              "original": "[r': U' R U, M]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004010111311111222222222333030333444443444555555555"
+            },
+            {
+              "original": "[L U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111011111222222222333433313444445444535555555"
+            },
+            {
+              "original": "[U2 R' U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111011111222222222313433333444444434555555555"
+            },
+            {
+              "original": "[E' L U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111511111242222222333233333444443444555555505"
+            },
+            {
+              "original": "[x\u2019: U\u2019, L E\u2019 L\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111011111222222222333433333444443444515555555"
+            },
+            {
+              "original": "[l' D l, S]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111011131222222222333433333444141444555555555"
+            },
+            {
+              "original": "[R S' R' U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111011111222222232333433333414442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "11": {
+          "cells": [
+            "[R: E, R2]",
+            "[S\u2019, R2]",
+            "[R2, D M D\u2019]",
+            "[r' U R': S, R2]",
+            "[U' M U, R2]",
+            "[R\u2019: E\u2019, R2]",
+            "[R' U2 R\u2019: S, R2]",
+            "[E' R': E', R2]",
+            "[E R: E, R2]",
+            "[E\u2019 R: E, R2]"
+          ],
+          "successes": [
+            {
+              "original": "[R: E, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111101212222222333333333444445444555555545"
+            },
+            {
+              "original": "[S\u2019, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010111111101222222222333333333444445444555455555"
+            },
+            {
+              "original": "[R2, D M D\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050141111101222222222333333333444441444555155555"
+            },
+            {
+              "original": "[r' U R': S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004030111111101222222222333331333444440444555555555"
+            },
+            {
+              "original": "[U' M U, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111411101222222222333133333444441444555555555"
+            },
+            {
+              "original": "[R\u2019: E\u2019, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111101222222222333333313444445444545555555"
+            },
+            {
+              "original": "[R' U2 R\u2019: S, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111101222222222313333333444444444555555555"
+            },
+            {
+              "original": "[E' R': E', R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111101242222222333333333444442444555555515"
+            },
+            {
+              "original": "[E R: E, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111101222222222333333343444443444515555555"
+            },
+            {
+              "original": "[E\u2019 R: E, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111101222222242333333333414442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "12": {
+          "cells": [
+            "[D L' U': M', U2]",
+            "[D' l' U': M', U2",
+            "[l' U: M, U2]",
+            "[l' U': M', U2]",
+            "r E r2 E' r",
+            "[L U2 L: E, L2]",
+            "[L' U2 L, E]",
+            "[S\u2019: R\u2019 F2 R]",
+            "[L\u2019 U2 L, E\u2019]"
+          ],
+          "successes": [
+            {
+              "original": "[D L' U': M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000010121111111202222222333333333444445444555555545"
+            },
+            {
+              "original": "[l' U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000005030111111111202222222333332333444440444555555545"
+            },
+            {
+              "original": "[l' U': M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111511111202222222333233333444441444555555545"
+            },
+            {
+              "original": "r E r2 E' r",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000010020111101101212222222333333333444455444555545545"
+            },
+            {
+              "original": "[L U2 L: E, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111111111202222222323333333444444454555555545"
+            },
+            {
+              "original": "[L' U2 L, E]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111202222222333333353444443444525555545"
+            },
+            {
+              "original": "[S\u2019: R\u2019 F2 R]",
+              "unsolved_corners": 4,
+              "unsolved_edges": 4,
+              "signature": "200100202113110151040222220331333333445244445555555414"
+            },
+            {
+              "original": "[L\u2019 U2 L, E\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111202222252333333333424442444555555545"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[D' l' U': M', U2",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "13": {
+          "cells": [
+            "[r\u2019 U L\u2019: E\u2019, L2]",
+            "[r\u2019 U\u2019 L: E\u2019, L2]",
+            "[D' L U': M, U2]",
+            "[U2 L: E, L2]",
+            "[L' U': M', U' L' U]",
+            "[L U': M', U' L U]",
+            "[D\u2019 r: M\u2019, U\u2019 R\u2019 U]",
+            "[R S R': R', U' M' U]"
+          ],
+          "successes": [
+            {
+              "original": "[r\u2019 U L\u2019: E\u2019, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004010131111111222222222333330333444445444555055555"
+            },
+            {
+              "original": "[r\u2019 U\u2019 L: E\u2019, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030101511111222222222333133333444441444555455555"
+            },
+            {
+              "original": "[D' L U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030101111111222222222333333313444445444555455555"
+            },
+            {
+              "original": "[U2 L: E, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030101111111222222222313333333444444454555455555"
+            },
+            {
+              "original": "[L' U': M', U' L' U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050101111111252222222333333333444442444555455515"
+            },
+            {
+              "original": "[L U': M', U' L U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050101111111222222222333333353444443444515455555"
+            },
+            {
+              "original": "[D\u2019 r: M\u2019, U\u2019 R\u2019 U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040101111151222222222333333333444141444555455555"
+            },
+            {
+              "original": "[R S R': R', U' M' U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040101111111222222252333333333414442444555455555"
+            }
+          ],
+          "failures": []
+        },
+        "14": {
+          "cells": [
+            "[l: U', R E' R']",
+            "[M U' M', D']",
+            "[D l U': M, U2]",
+            "[D\u2019: R\u2019, U\u2019 M U]",
+            "[L2: U' M U, L]",
+            "[L2: U' M U, L']",
+            "D M\u2019 U M U2 M U\u2019 M\u2019 U2 D\u2019",
+            "[S R: U' M' U, R]"
+          ],
+          "successes": [
+            {
+              "original": "[l: U', R E' R']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000001030141111111222222222333335333444440444555055555"
+            },
+            {
+              "original": "[M U' M', D']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111411111222222222333033333444441444555355555"
+            },
+            {
+              "original": "[D l U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030141111111222222222333333353444445444515055555"
+            },
+            {
+              "original": "[D\u2019: R\u2019, U\u2019 M U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030141111111222222222353333333444444414555055555"
+            },
+            {
+              "original": "[L2: U' M U, L]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050141111111212222222333333333444442444555055555"
+            },
+            {
+              "original": "[L2: U' M U, L']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050141111111222222222333333313444443444555055555"
+            },
+            {
+              "original": "D M\u2019 U M U2 M U\u2019 M\u2019 U2 D\u2019",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040141111111222222222333333333444541444555055555"
+            },
+            {
+              "original": "[S R: U' M' U, R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040141111111222222212333333333454442444555055555"
+            }
+          ],
+          "failures": []
+        },
+        "15": {
+          "cells": [
+            "l' u M u2 M l",
+            "[L M' U': M, U2]",
+            "[U2 r\u2019 U\u2019: M\u2019, U]",
+            "[L': S, l U' l']",
+            "[U l U: M', U2]",
+            "[S\u2019, R B\u2019 R\u2019]",
+            "[U' r U': M, U2]"
+          ],
+          "successes": [
+            {
+              "original": "[L M' U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004030111111111222222222333330333444445444505555555"
+            },
+            {
+              "original": "[U2 r\u2019 U\u2019: M\u2019, U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 5,
+              "signature": "000302000111411111222221222343330333444443404555555555"
+            },
+            {
+              "original": "[L': S, l U' l']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004050111111111202222222333330333444442444555555535"
+            },
+            {
+              "original": "[U l U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000003030111111111222222222333335343444440444505555555"
+            },
+            {
+              "original": "[S\u2019, R B\u2019 R\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004040111111101222222222333330333444341444555555555"
+            },
+            {
+              "original": "[U' r U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000004040111111111222222202333330333434442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "16": {
+          "cells": [
+            "[L M' U: M', U2]",
+            "[L, U' M U]",
+            "[L': S, l U l']",
+            "[l U': M', L' U L U]",
+            "[S', l U l']",
+            "[S' R U: M, U2]"
+          ],
+          "successes": [
+            {
+              "original": "[L M' U: M', U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000030111411111222222222333033333444445444515555555"
+            },
+            {
+              "original": "[L, U' M U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "030000050111111111222222222333333343444440444505555555"
+            },
+            {
+              "original": "[L': S, l U l']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111411111212222222333033333444442444555555535"
+            },
+            {
+              "original": "[l U': M', L' U L U]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 4,
+              "signature": "000500010111411111222223222333033303444443444525555555"
+            },
+            {
+              "original": "[S', l U l']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111411111222222222333033333444341444555555555"
+            },
+            {
+              "original": "[S' R U: M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111411111222222212333033333434442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "17": {
+          "cells": [
+            "[L\u2019 U2 L: E, R2]",
+            "[L U2 L', E']",
+            "[S\u2019, R B2 R\u2019]",
+            "[L: U2, L E' L']"
+          ],
+          "successes": [
+            {
+              "original": "[L\u2019 U2 L: E, R2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000020111111111222222232303333333444444444555555555"
+            },
+            {
+              "original": "[L U2 L', E']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111252222222333333303444442444545555535"
+            },
+            {
+              "original": "[S\u2019, R B2 R\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111151222222222333333303444341444545555555"
+            },
+            {
+              "original": "[L: U2, L E' L']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111222222252333333303434442444545555555"
+            }
+          ],
+          "failures": []
+        },
+        "18": {
+          "cells": [
+            "[l': U' M' U, R']",
+            "[R, B' M' B]",
+            "[D: U\u2019 M U, R\u2019]",
+            "U\u2019 R\u2019 U R E R\u2019 U\u2019 R u"
+          ],
+          "successes": [
+            {
+              "original": "[l': U' M' U, R']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111242222222303333333444442444555555535"
+            },
+            {
+              "original": "[R, B' M' B]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111222222222303333343444443444535555555"
+            },
+            {
+              "original": "[D: U\u2019 M U, R\u2019]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111141222222222303333333444341444555555555"
+            },
+            {
+              "original": "U\u2019 R\u2019 U R E R\u2019 U\u2019 R u",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111222222242303333333434442444555555555"
+            }
+          ],
+          "failures": []
+        },
+        "19": {
+          "cells": [
+            "[L': U' M U, L2]",
+            "[S': U' M U, L']",
+            "[U' x U': M, U2]"
+          ],
+          "successes": [
+            {
+              "original": "[L': U' M U, L2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000050111111111242222222333333323444443444555555505"
+            },
+            {
+              "original": "[S': U' M U, L']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111121242222222333333333444541444555555505"
+            },
+            {
+              "original": "[U' x U': M, U2]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111242222222333333333454442444555555505"
+            }
+          ],
+          "failures": []
+        },
+        "20": {
+          "cells": [
+            "[S': U' M U, L]",
+            "[L U2: U M U', R]"
+          ],
+          "successes": [
+            {
+              "original": "[S': U' M U, L]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111131222222222333333343444541444505555555"
+            },
+            {
+              "original": "[L U2: U M U', R]",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111111222222232333333343454442444505555555"
+            }
+          ],
+          "failures": []
+        },
+        "21": {
+          "cells": [
+            "[S, U R. U']"
+          ],
+          "successes": [
+            {
+              "original": "[S, U R. U']",
+              "unsolved_corners": 0,
+              "unsolved_edges": 3,
+              "signature": "000000040111111141222222222313333333444043444555555555"
+            }
+          ],
+          "failures": []
+        }
+      }
+    },
+    "1971450133": {
+      "range": "Corners!A1:Z1000",
+      "values": {
+        "1": {
+          "cells": [
+            "[L\u2019: D\u2019 L\u2019 D L, U2]",
+            "[L, F R' F']",
+            "[D L' U: L U' L', D]",
+            "[L, F R F\u2019]",
+            "[L, U' R' U]",
+            "[U R U', L']",
+            "[L U': D', L' U L]",
+            "[D' L U': D', L' U L]",
+            "[D L U': L' U L, D']",
+            "[L U': L' U L, D]",
+            "[l U' R U': R' D R, U2]",
+            "[U R U R': U, R' D R]",
+            "[L: D L D\u2019 L\u2019, U2]",
+            "[D' L' U: D, L U' L']",
+            "[U R' U', L']",
+            "[D': U R' U', L']",
+            "[L' U: D, L U' L']",
+            "[L, U' R U]"
+          ],
+          "successes": [
+            {
+              "original": "[L\u2019: D\u2019 L\u2019 D L, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "300000200111111111220222220333333332445444444554555555"
+            },
+            {
+              "original": "[L, F R' F']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "300000002111111111220222222335333334444444440553555555"
+            },
+            {
+              "original": "[D L' U: L U' L', D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "102000000111111113222222022333333330544444444555555554"
+            },
+            {
+              "original": "[L, F R F\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "304000000111111111220222225333333330442444444552555555"
+            },
+            {
+              "original": "[L, U' R' U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "302000500111111111220222222333333334440444444550555555"
+            },
+            {
+              "original": "[U R U', L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "304000005111111111220222222330333333444444442550555555"
+            },
+            {
+              "original": "[L U': D', L' U L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "402000000111111110221222522333333330344444444555555552"
+            },
+            {
+              "original": "[D' L U': D', L' U L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "302000000111111011221222222333333330444444544555555554"
+            },
+            {
+              "original": "[D L U': L' U L, D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "301000000112111111020222222333333332444444444555555555"
+            },
+            {
+              "original": "[L U': L' U L, D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "302000000115111111220222222333333335444444444551555055"
+            },
+            {
+              "original": "[l U' R U': R' D R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "301000000211111111220222222333333535444444444053555555"
+            },
+            {
+              "original": "[U R U R': U, R' D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "305000000110111111520222222333333331444444444552555255"
+            },
+            {
+              "original": "[L: D L D\u2019 L\u2019, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000003111111111223222222330333330444444445555555554"
+            },
+            {
+              "original": "[D' L' U: D, L U' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "303000000011111111220222222333333231444444444555555555"
+            },
+            {
+              "original": "[U R' U', L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "303000000111111511220222222233333334444444044551555555"
+            },
+            {
+              "original": "[D': U R' U', L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "305000000511111111220222222333333033444444444251555555"
+            },
+            {
+              "original": "[L' U: D, L U' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "304000000111111011220222222533333331444444244553555555"
+            },
+            {
+              "original": "[L, U' R U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "304000000111111115220222022333333332244444444551555555"
+            }
+          ],
+          "failures": []
+        },
+        "2": {
+          "cells": [
+            "[r\u2019 D: U, L\u2019 D L]",
+            "[l\u2019 D\u2019: U\u2019, R D R\u2019]",
+            "[U2, D\u2019 R\u2019 D R]",
+            "[F: R' D' R, U2]",
+            "[F: R2, U' L' U]",
+            "[L\u2019 D\u2019 L: D, L U2 L\u2019]",
+            "[R D' R': U2, R' D R]",
+            "[L D' L': L' D L, U2]",
+            "[D: R\u2019 D\u2019 R, U2]",
+            "[R' D\u2019 R: D, R U2 R\u2019]",
+            "[U2, R' D R]",
+            "[R\u2019: D\u2019 R\u2019 D R, U2]",
+            "[D\u2019 L\u2019 D L, U2]",
+            "[D: L\u2019 D\u2019 L, U2]",
+            "[L' D' L, U2]",
+            "[L' D L, U2]",
+            "[U2, R' D' R]"
+          ],
+          "successes": [
+            {
+              "original": "[r\u2019 D: U, L\u2019 D L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000000111111111224222223333333335445444444552555552"
+            },
+            {
+              "original": "[l\u2019 D\u2019: U\u2019, R D R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000000111111111222222223334333334445444442553555555"
+            },
+            {
+              "original": "[U2, D\u2019 R\u2019 D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000111111112222222023333333331445444444554555555"
+            },
+            {
+              "original": "[F: R' D' R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "405000000111111111222222223333333332445444444550555550"
+            },
+            {
+              "original": "[F: R2, U' L' U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000004111111111222222223332333333445444440550555555"
+            },
+            {
+              "original": "[L\u2019 D\u2019 L: D, L U2 L\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000100111111110222222524333333332342444444554555555"
+            },
+            {
+              "original": "[R D' R': U2, R' D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000111111011222222223233333333445444444554555555"
+            },
+            {
+              "original": "[L D' L': L' D L, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000110111111222222223333333332445444444555555455"
+            },
+            {
+              "original": "[D: R\u2019 D\u2019 R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000200115111111022222225333333332441444444554555355"
+            },
+            {
+              "original": "[R' D\u2019 R: D, R U2 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000011111111222222223333333435445444444253555555"
+            },
+            {
+              "original": "[U2, R' D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000112111111422222223333333331445444444552555055"
+            },
+            {
+              "original": "[R\u2019: D\u2019 R\u2019 D R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000002111111111222222223330333330445444444554555555"
+            },
+            {
+              "original": "[D\u2019 L\u2019 D L, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000211111111222222223333333031445444444455555555"
+            },
+            {
+              "original": "[D: L\u2019 D\u2019 L, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000111111411222222223033333334445444244551555555"
+            },
+            {
+              "original": "[L' D' L, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000411111111222222223333333233445444444051555555"
+            },
+            {
+              "original": "[L' D L, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111211222222223433333331445444044553555555"
+            },
+            {
+              "original": "[U2, R' D' R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111114222222223333333332045444444551555555"
+            }
+          ],
+          "failures": []
+        },
+        "3": {
+          "cells": [
+            "[r D: L\u2019 D\u2019 L, U]",
+            "[D: L\u2019 D L, U]",
+            "[L' B' L, F]",
+            "[L2: D', L U2 L']",
+            "[B, L F L']",
+            "[r' D: L' D' L, U]",
+            "[r D: L' D L, U]",
+            "[D r' D: L' D' L, U]",
+            "[U' D: L D' L', U]",
+            "[D' r D: U', L' D L]",
+            "[U', L D L']",
+            "[L: U2, L D L]",
+            "[D': L' D L, U]",
+            "[D: L\u2019 D\u2019 L, U]",
+            "[L' D' L, U]",
+            "[L' D L, U]",
+            "[U', L D' L']"
+          ],
+          "successes": [
+            {
+              "original": "[r D: L\u2019 D\u2019 L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000000111111111225222222332333334444444445553555553"
+            },
+            {
+              "original": "[D: L\u2019 D L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000111111115225222022333333331244444444554555553"
+            },
+            {
+              "original": "[L' B' L, F]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000115111111225222222333333331444444444552555053"
+            },
+            {
+              "original": "[L2: D', L U2 L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000200111111111225222220333333334445444444550555553"
+            },
+            {
+              "original": "[B, L F L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000002111111111225222222335333333444444440550555553"
+            },
+            {
+              "original": "[r' D: L' D' L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000111111110225222222333333334544444444552555553"
+            },
+            {
+              "original": "[r D: L' D L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000111111011225222222533333333444444244554555553"
+            },
+            {
+              "original": "[D r' D: L' D' L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000110111111525222222333333332444444444555555253"
+            },
+            {
+              "original": "[U' D: L D' L', U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000112111111025222222333333335444444444551555553"
+            },
+            {
+              "original": "[D' r D: U', L' D L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000300011111111222222221333333534445444444350555555"
+            },
+            {
+              "original": "[U', L D L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000115111111225222222333333331444444444552555053"
+            },
+            {
+              "original": "[D': L' D L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000511111111225222222333333031444444444255555553"
+            },
+            {
+              "original": "[D: L\u2019 D\u2019 L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000111111211225222222033333334444444544551555553"
+            },
+            {
+              "original": "[L' D' L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000211111111225222222333333533444444444051555553"
+            },
+            {
+              "original": "[L' D L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111511225222222233333331444444044553555553"
+            },
+            {
+              "original": "[U', L D' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111112225222522333333332044444444551555553"
+            }
+          ],
+          "failures": []
+        },
+        "4": {
+          "cells": [
+            "[D: U, R D R\u2019]",
+            "[U' L2: D, L' U2 L]",
+            "[R', F' L F]",
+            "[U' L': U2, L' D' L]",
+            "[R' D R: U, R D' R']",
+            "[U\u2019 r D: L' D L, U]",
+            "[R' U R2: D, R U' R']",
+            "[D\u2019: U, R D\u2019 R\u2019]",
+            "[U l' D': U', R D' R']",
+            "[U2: R' D R, U']",
+            "[D\u2019: U, R D R\u2019]",
+            "[D: U, R D\u2019 R\u2019]",
+            "[U, R D' R']",
+            "[U, R D R\u2019]",
+            "[U2: R\u2019 D\u2019 R, U\u2019]"
+          ],
+          "successes": [
+            {
+              "original": "[D: U, R D R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000111111114222222022335333331344444443554555555"
+            },
+            {
+              "original": "[U' L2: D, L' U2 L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000400111111111222222223335333330440444443552555555"
+            },
+            {
+              "original": "[R', F' L F]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000300111111111222222220335333334444444443550555555"
+            },
+            {
+              "original": "[U' L': U2, L' D' L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "305000000111111111224222222335333332444444443550555550"
+            },
+            {
+              "original": "[R' D R: U, R D' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000111111110222222322335333334444444443552555555"
+            },
+            {
+              "original": "[U\u2019 r D: L' D L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000001111111011222222222334333334444444543553555555"
+            },
+            {
+              "original": "[R' U R2: D, R U' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000110111111422222222335333332444444443555555355"
+            },
+            {
+              "original": "[D\u2019: U, R D\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000113111111022222222335333335444444443551555455"
+            },
+            {
+              "original": "[U l' D': U', R D' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000001011111111222222222333333534444444445353555555"
+            },
+            {
+              "original": "[U2: R' D R, U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000114111111322222222335333331444444443552555055"
+            },
+            {
+              "original": "[D\u2019: U, R D R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000411111111222222222335333031444444443355555555"
+            },
+            {
+              "original": "[D: U, R D\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000111111311222222222035333334444444443551555555"
+            },
+            {
+              "original": "[U, R D' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000311111111222222222335333433444444443051555555"
+            },
+            {
+              "original": "[U, R D R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111411222222222335333331444444043553555555"
+            },
+            {
+              "original": "[U2: R\u2019 D\u2019 R, U\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111113222222422335333332044444443551555555"
+            }
+          ],
+          "failures": []
+        },
+        "5": {
+          "cells": [
+            "[U' D' R2: D, R U' R']",
+            "[D' R U: R' D R, U]",
+            "[U\u2019 L\u2019 U: L D\u2019 L\u2019, U2]",
+            "[D: R', U' L' U]",
+            "[R: D\u2019 R\u2019 D R, U2]",
+            "[U' L' U L2: D', L' U2 L]",
+            "[U': L', U' R U]",
+            "[D\u2019 R: D, R U2 R\u2019]",
+            "[R U2 R', D]",
+            "[D' R2: D, R U2 R']",
+            "[R U2 R', D2]",
+            "[D R U' R2: D, R U' R']",
+            "[r U2 r': B']",
+            "[R U2 R', D']"
+          ],
+          "successes": [
+            {
+              "original": "[U' D' R2: D, R U' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000100111111113222222024333333330542444444552555555"
+            },
+            {
+              "original": "[D' R U: R' D R, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000400111111113222222022333333334541444444550555555"
+            },
+            {
+              "original": "[U\u2019 L\u2019 U: L D\u2019 L\u2019, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "405000000111111113221222022333333332544444444550555552"
+            },
+            {
+              "original": "[D: R', U' L' U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000004111111113222222022331333333544444442550555555"
+            },
+            {
+              "original": "[R: D\u2019 R\u2019 D R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000111111013222222122333333331444444544554555555"
+            },
+            {
+              "original": "[U' L' U L2: D', L' U2 L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000112111113122222022333333332544444444555555455"
+            },
+            {
+              "original": "[U': L', U' R U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000114111113222222022333333335544444444551555155"
+            },
+            {
+              "original": "[D\u2019 R: D, R U2 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000211111113222222022333333435544444444153555555"
+            },
+            {
+              "original": "[R U2 R', D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000111111113422222022333333331544444444552555255"
+            },
+            {
+              "original": "[D' R2: D, R U2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000001111111113222222022332333330544444444554555555"
+            },
+            {
+              "original": "[R U2 R', D2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000111111113222222022333333231544444444455555555"
+            },
+            {
+              "original": "[D R U' R2: D, R U' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000315111111322222222333333035444444444551555155"
+            },
+            {
+              "original": "[r U2 r': B']",
+              "unsolved_corners": 4,
+              "unsolved_edges": 4,
+              "signature": "000005004411411413222222522331333333144444002115555555"
+            },
+            {
+              "original": "[R U2 R', D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111113222222022433333331544444244553555555"
+            }
+          ],
+          "failures": []
+        },
+        "6": {
+          "cells": [
+            "[R U R' D': U2, R' D R]",
+            "[R, U' L' U]",
+            "[R\u2019: D, R\u2019 U\u2019 R]",
+            "[D\u2019 R\u2019: R, R\u2019 U R]",
+            "[D R\u2019: D, R\u2019 U R]",
+            "[R' D: R' U R, D]",
+            "[U2 R: U, R D' R']",
+            "[U\u2019 R\u2019: U\u2019, R\u2019 D R]",
+            "[R2: D', R U2 R']",
+            "[U D' R2: U', R' D' R]",
+            "[R' U: R\u2019 D\u2019 R, U]",
+            "[U' R' U2: R D' R', U]",
+            "[U R2: U', R D' R']",
+            "[U' R' U2: R D R', U]"
+          ],
+          "successes": [
+            {
+              "original": "[R U R' D': U2, R' D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "205000300111111111220222225333333332440444444550555554"
+            },
+            {
+              "original": "[R, U' L' U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000302111111111222222225330333333440444444550555555"
+            },
+            {
+              "original": "[R\u2019: D, R\u2019 U\u2019 R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000300111111114222222224433333333041444244555555555"
+            },
+            {
+              "original": "[D\u2019 R\u2019: R, R\u2019 U R]",
+              "unsolved_corners": 4,
+              "unsolved_edges": 3,
+              "signature": "001001003311311511222222222005433433444444331054555555"
+            },
+            {
+              "original": "[D R\u2019: D, R\u2019 U R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000300114111111022222225333333332440444444555555255"
+            },
+            {
+              "original": "[R' D: R' U R, D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000300112111111422222225333333335440444444551555055"
+            },
+            {
+              "original": "[U2 R: U, R D' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000500011111111222222223333333530441444444352555555"
+            },
+            {
+              "original": "[U\u2019 R\u2019: U\u2019, R\u2019 D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000300110111111222222225333333331440444444552555455"
+            },
+            {
+              "original": "[R2: D', R U2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000300111111111222222225334333330440444442554555555"
+            },
+            {
+              "original": "[U D' R2: U', R' D' R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000300011111111222222225333333431440444444255555555"
+            },
+            {
+              "original": "[R' U: R\u2019 D\u2019 R, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000300111111211222222225433333334440444044551555555"
+            },
+            {
+              "original": "[U' R' U2: R D' R', U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000300211111111222222225333333033440444444451555555"
+            },
+            {
+              "original": "[U R2: U', R D' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "000000000211111511222222422333333433344444144155555555"
+            },
+            {
+              "original": "[U' R' U2: R D R', U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000300111111112222222025333333332440444444551555555"
+            }
+          ],
+          "failures": []
+        },
+        "7": {
+          "cells": [
+            "[U' R: R D R', U2]",
+            "[x: D, L U' L']",
+            "[U D' R2: D, R U' R']",
+            "[U\u2019 R: D\u2019, R U\u2019 R\u2019]",
+            "[U R2: D, R U\u2019 R\u2019]",
+            "[D\u2019: B\u2019, L F\u2019 L\u2019]",
+            "[U\u2019 D\u2019 R: D\u2019, R U\u2019 R\u2019]",
+            "[R U2: R' D R, U']",
+            "[L F': L D L', U2]",
+            "[R D': U, R D R']",
+            "[D R: U, R D' R']",
+            "[x: D', L U' L']",
+            "[R U: R\u2019 D\u2019 R, U]",
+            "[U2 R2: U, R D R\u2019]"
+          ],
+          "successes": [
+            {
+              "original": "[U' R: R D R', U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000500111111111224222220333333332443444444550555552"
+            },
+            {
+              "original": "[x: D, L U' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000500111111111222222220334333333443444442550555555"
+            },
+            {
+              "original": "[U D' R2: D, R U' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000500111111112222222020333333334443444444552555555"
+            },
+            {
+              "original": "[U\u2019 R: D\u2019, R U\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000500111111211222222220433333333443444044554555555"
+            },
+            {
+              "original": "[U R2: D, R U\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000500112111111422222220333333332443444444555555055"
+            },
+            {
+              "original": "[D\u2019: B\u2019, L F\u2019 L\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000500110111111222222220333333335443444444551555455"
+            },
+            {
+              "original": "[U\u2019 D\u2019 R: D\u2019, R U\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000500211111111222222220333333035443444444453555555"
+            },
+            {
+              "original": "[R U2: R' D R, U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000500114111111022222220333333331443444444552555255"
+            },
+            {
+              "original": "[L F': L D L', U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000504111111111222222220332333330443444440554555555"
+            },
+            {
+              "original": "[R D': U, R D R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000500411111111222222220333333231443444444055555555"
+            },
+            {
+              "original": "[D R: U, R D' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000500111111011222222220233333334443444444551555555"
+            },
+            {
+              "original": "[x: D', L U' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000500011111111222222220333333433443444444251555555"
+            },
+            {
+              "original": "[R U: R\u2019 D\u2019 R, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000300111111311222222224533333334441444044550555555"
+            },
+            {
+              "original": "[U2 R2: U, R D R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000500111111110222222420333333332243444444551555555"
+            }
+          ],
+          "failures": []
+        },
+        "8": {
+          "cells": [
+            "[F': U R U', L2]",
+            "[U D' R2: D, R U2 R']",
+            "[U' L': U2, L' D L]",
+            "[U R2: D, R U2 R']",
+            "[U\u2019 D\u2019 R: U2, R D\u2019 R\u2019]",
+            "[U D R2: D, R U R\u2019]]",
+            "[U\u2019 R U\u2019: R\u2019 D R, U2]",
+            "[R' F: R' D' R, U2]",
+            "[U' D R U': R' D R, U2]",
+            "[U\u2019 D R: U2, R D\u2019 R\u2019]",
+            "[U' R: U2, R D' R']",
+            "[U' R U': R' D' R, U2]",
+            "[U L: U2, L D' L']"
+          ],
+          "successes": [
+            {
+              "original": "[F': U R U', L2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "504000000111111111223222222332333333444444445550555550"
+            },
+            {
+              "original": "[U D' R2: D, R U2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "501000000111111115223222022333333334244444444552555550"
+            },
+            {
+              "original": "[U' L': U2, L' D L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "405000000111111011223222222333333332444444544550555551"
+            },
+            {
+              "original": "[U R2: D, R U2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "501000000115111111223222222333333332444444444555555050"
+            },
+            {
+              "original": "[U\u2019 D\u2019 R: U2, R D\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "502000000110111111523222222333333335444444444551555250"
+            },
+            {
+              "original": "[U\u2019 R U\u2019: R\u2019 D R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "505000000112111111023222222333333331444444444552555550"
+            },
+            {
+              "original": "[R' F: R' D' R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "405000003111111111220222222330333332444444445550555553"
+            },
+            {
+              "original": "[U' D R U': R' D R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "503000000211111111223222222333333531444444444055555550"
+            },
+            {
+              "original": "[U\u2019 D R: U2, R D\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "503000000111111011223222222533333334444444244551555550"
+            },
+            {
+              "original": "[U' R: U2, R D' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "505000000011111111223222222333333233444444444551555550"
+            },
+            {
+              "original": "[U' R U': R' D' R, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "504000000111111211223222222033333331444444544553555550"
+            },
+            {
+              "original": "[U L: U2, L D' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "504000000111111110223222222333333332544444444551555550"
+            }
+          ],
+          "failures": [
+            {
+              "original": "[U D R2: D, R U R\u2019]]",
+              "failure_reason": 4
+            }
+          ]
+        },
+        "9": {
+          "cells": [
+            "[R2 U: R' D' R, U]",
+            "[R: D', R U2 R']",
+            "[L2, U R U']",
+            "[R2 D: R' U R, D]",
+            "[L U L': U2, L' D' L]",
+            "[D': L, U R U']",
+            "[U R U', L]",
+            "[R' U R: U2, R D R']",
+            "[L2: U2, L D L\u2019]",
+            "[U' L' U, R']",
+            "[R' U R2: U', R' D' R]"
+          ],
+          "successes": [
+            {
+              "original": "[R2 U: R' D' R, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000005111111114222222022333333334344444440552555555"
+            },
+            {
+              "original": "[R: D', R U2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000005111111411222222222333333333444444040554555555"
+            },
+            {
+              "original": "[L2, U R U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000005114111111322222222333333332444444440555555055"
+            },
+            {
+              "original": "[R2 D: R' U R, D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000005110111111422222222333333335444444440551555355"
+            },
+            {
+              "original": "[L U L': U2, L' D' L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000400111111111222222223335333330440444443552555555"
+            },
+            {
+              "original": "[D': L, U R U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000005113111111022222222333333331444444440552555455"
+            },
+            {
+              "original": "[U R U', L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000005311111111222222222331333033444444443550555555"
+            },
+            {
+              "original": "[R' U R: U2, R D R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000005111111011222222222433333334444444340551555555"
+            },
+            {
+              "original": "[L2: U2, L D L\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000005011111111222222222333333333444444440451555555"
+            },
+            {
+              "original": "[U' L' U, R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000005111111311222222222033333331444444440553555555"
+            },
+            {
+              "original": "[R' U R2: U', R' D' R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000005111111110222222322333333332444444440551555555"
+            }
+          ],
+          "failures": []
+        },
+        "10": {
+          "cells": [
+            "[lU': R U R', D']",
+            "[R U R2: D, R U' R']",
+            "[R2: U, R D2 R']",
+            "[L U\u2019 L\u2019 U\u2019: L D\u2019 L\u2019 U2]",
+            "[R2 U2: R' D R, U']",
+            "[L: U2, L D' L']",
+            "[x': U R' U', L']",
+            "[R\u2019 D: R D\u2019 R\u2019, U]",
+            "[R2: U, R D\u2019 R\u2019]",
+            "[R U2 R2: U, R D R']"
+          ],
+          "successes": [
+            {
+              "original": "[lU': R U R', D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000111111110222222522433333333344444244554555555"
+            },
+            {
+              "original": "[R U R2: D, R U' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000111111110422222522333333332344444444555555255"
+            },
+            {
+              "original": "[R2: U, R D2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000112111110122222522333333335344444444551555455"
+            },
+            {
+              "original": "[R2 U2: R' D R, U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000114111110222222522333333331344444444552555155"
+            },
+            {
+              "original": "[L: U2, L D' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000004111111110222222522331333330344444442554555555"
+            },
+            {
+              "original": "[x': U R' U', L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000411111110222222522333333131344444444255555555"
+            },
+            {
+              "original": "[R\u2019 D: R D\u2019 R\u2019, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000111111210222222522133333334344444444551555555"
+            },
+            {
+              "original": "[R2: U, R D\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000211111110222222522333333433344444444151555555"
+            },
+            {
+              "original": "[R U2 R2: U, R D R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111410222222522233333331344444144553555555"
+            }
+          ],
+          "failures": []
+        },
+        "11": {
+          "cells": [
+            "[L U' L: D2, L' U L]",
+            "[D' R2: U, R D' R']",
+            "[D' l U': R U R', D']",
+            "[R2: U2, R' D R]",
+            "[D\u2019 L: U2, L D\u2019 \u2018]",
+            "[R2: U2, R' D2 R]",
+            "[L D: L\u2019 D\u2019 L, U]",
+            "[D' R2: U, R D2 R']"
+          ],
+          "successes": [
+            {
+              "original": "[L U' L: D2, L' U L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000411111011222222222333333333444444544151555555"
+            },
+            {
+              "original": "[D' R2: U, R D' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000000114111011122222222333333335444444544551555355"
+            },
+            {
+              "original": "[D' l U': R U R', D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000111111011222222222333333435444444544353555555"
+            },
+            {
+              "original": "[R2: U2, R' D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000113111011422222222333333331444444544552555155"
+            },
+            {
+              "original": "[R2: U2, R' D2 R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000311111011222222222333333131444444544455555555"
+            },
+            {
+              "original": "[L D: L\u2019 D\u2019 L, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000411111011222222222333333333444444544151555555"
+            },
+            {
+              "original": "[D' R2: U, R D2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111014222222322333333332144444544551555555"
+            }
+          ],
+          "failures": []
+        },
+        "12": {
+          "cells": [
+            "[U r' U: L' U' L, D]",
+            "[D L: U2, L D' L']",
+            "[D R2 U2: R' D R, U']",
+            "[D' R2: D', R' U R]",
+            "[D R2: U, R D2 R']",
+            "[U R': U, R' D R]",
+            "[R D R2: U, R D R']"
+          ],
+          "successes": [
+            {
+              "original": "[U r' U: L' U' L, D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000110111111322222222333333535444444444253555555"
+            },
+            {
+              "original": "[D L: U2, L D' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000002110111111322222222331333330444444445554555555"
+            },
+            {
+              "original": "[D R2 U2: R' D R, U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000210111111322222222333333131444444444555555555"
+            },
+            {
+              "original": "[D' R2: D', R' U R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "002000100115111111022222222333333334445444444550555355"
+            },
+            {
+              "original": "[D R2: U, R D2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000510111111322222222333333233444444444151555555"
+            },
+            {
+              "original": "[U R': U, R' D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000110111211322222222533333331444444144553555555"
+            },
+            {
+              "original": "[R D R2: U, R D R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000110111115322222222333333332144444444551555555"
+            }
+          ],
+          "failures": []
+        },
+        "13": {
+          "cells": [
+            "[D' L D: U, L' D' L]",
+            "[l: R D' R', U2]",
+            "[D R U' R': U', R' D R]",
+            "[D2, R' U R]",
+            "[D', L U L']",
+            "[R D2: R' U R, D']",
+            "[D2: R' U R, D']"
+          ],
+          "successes": [
+            {
+              "original": "[D' L D: U, L' D' L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "001000000215111111022222222333333135444444444553555355"
+            },
+            {
+              "original": "[l: R D' R', U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000005115111111022222222332333330444444441554555355"
+            },
+            {
+              "original": "[D R U' R': U', R' D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000515111111022222222333333231444444444155555355"
+            },
+            {
+              "original": "[D2, R' U R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000115111111022222222233333334444444544551555355"
+            },
+            {
+              "original": "[D', L U L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000115111111022222222333333533444444444251555355"
+            },
+            {
+              "original": "[R D2: R' U R, D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000115111511022222222133333331444444244553555355"
+            },
+            {
+              "original": "[D2: R' U R, D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000115111111022222522333333332244444444551555355"
+            }
+          ],
+          "failures": []
+        },
+        "14": {
+          "cells": [
+            "[D' R2: U2, R' D2 R]",
+            "[U2 R: U2, R D\u2019 R\u2019]",
+            "[L U\u2019 L\u2019: U2, L\u2019 D L]",
+            "[U' L': U R' U', L2]",
+            "[D: U R' U, L2]"
+          ],
+          "successes": [
+            {
+              "original": "[D' R2: U2, R' D2 R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000015111111322222222333333531444444444352555155"
+            },
+            {
+              "original": "[U2 R: U2, R D\u2019 R\u2019]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000005011111111222222222331333530444444443354555555"
+            },
+            {
+              "original": "[L U\u2019 L\u2019: U2, L\u2019 D L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000011111311222222222133333534444444544351555555"
+            },
+            {
+              "original": "[U' L': U R' U', L2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000011111511222222222333333531444444144353555555"
+            }
+          ],
+          "failures": []
+        },
+        "15": {
+          "cells": [
+            "[R2: D, R U2 R']",
+            "[U: D', L U' L']",
+            "[R' U: R' D R, U]",
+            "[D': U R' U', L]",
+            "[D: R U2 R', D2]",
+            "[R U' R2: D, R U' R']"
+          ],
+          "successes": [
+            {
+              "original": "[R2: D, R U2 R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000001113111111522222222335333330444444442554555055"
+            },
+            {
+              "original": "[U: D', L U' L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000113111111522222222333333531444444444255555055"
+            },
+            {
+              "original": "[R' U: R' D R, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000113111211522222222533333334444444144551555055"
+            },
+            {
+              "original": "[D': U R' U', L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000213111111522222222333333133444444444551555055"
+            },
+            {
+              "original": "[D: R U2 R', D2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000113111111522222222233333331444444544553555055"
+            },
+            {
+              "original": "[R U' R2: D, R U' R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000113111112522222122333333332544444444551555055"
+            }
+          ],
+          "failures": []
+        },
+        "16": {
+          "cells": [
+            "[D R': U2, R' D R]",
+            "[l: U2, R D R']",
+            "[r': L' D' L, U2]",
+            "[R\u2019 F: R2, U\u2019 L\u2019 U]",
+            "[r': L' D L, U2]"
+          ],
+          "successes": [
+            {
+              "original": "[D R': U2, R' D R]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000003011111111222222222330333331444444445455555555"
+            },
+            {
+              "original": "[l: U2, R D R']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000003111111411222222222330333334444444045551555555"
+            },
+            {
+              "original": "[r': L' D' L, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000003411111111222222222330333033444444445351555555"
+            },
+            {
+              "original": "[R\u2019 F: R2, U\u2019 L\u2019 U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000003111111011222222222430333331444444345553555555"
+            },
+            {
+              "original": "[r': L' D L, U2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000003111111114222222022330333332344444445551555555"
+            }
+          ],
+          "failures": []
+        },
+        "17": {
+          "cells": [
+            "[U R' U', L]",
+            "[x': U R U', L']",
+            "[D R' U: R' D R, U]"
+          ],
+          "successes": [
+            {
+              "original": "[U R' U', L]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000311111511222222222333333034444444144551555555"
+            },
+            {
+              "original": "[x': U R U', L']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "003000000111111311222222222533333431444444044355555555"
+            },
+            {
+              "original": "[D R' U: R' D R, U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000311111115222222122333333032344444444551555555"
+            }
+          ],
+          "failures": []
+        },
+        "18": {
+          "cells": [
+            "[R' U R, D']",
+            "[R' U R, D]"
+          ],
+          "successes": [
+            {
+              "original": "[R' U R, D']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "005000000111111511222222222033333433444444344351555555"
+            },
+            {
+              "original": "[R' U R, D]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111511222222422033333332344444344551555555"
+            }
+          ],
+          "failures": []
+        },
+        "19": {
+          "cells": [
+            "[R D\u2019: R\u2019 U R, D2]",
+            "[D\u2019: R\u2019 U R, D2]"
+          ],
+          "successes": [
+            {
+              "original": "[R D\u2019: R\u2019 U R, D2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000511111311222222222133333331444444544053555555"
+            },
+            {
+              "original": "[D\u2019: R\u2019 U R, D2]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000511111111222222322333333332544444444051555555"
+            }
+          ],
+          "failures": []
+        },
+        "20": {
+          "cells": [
+            "[R U' R' U': R D R', U']"
+          ],
+          "successes": [
+            {
+              "original": "[R U' R' U': R D R', U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 0,
+              "signature": "004000000111111313222222122533333332444444044551555555"
+            }
+          ],
+          "failures": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "id": "1mtgwTouNmIGZr9bJIPx8E7LBSmvQ6oLuOxbqTlBg0ac",
+  "spreadsheet_metadata": {
+    "spreadsheetId": "1mtgwTouNmIGZr9bJIPx8E7LBSmvQ6oLuOxbqTlBg0ac",
+    "properties": {
+      "title": "Speed-optimal centers",
+      "locale": "en_US",
+      "timeZone": "America/Los_Angeles"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 0,
+          "title": "X-centers",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 48,
+            "columnCount": 48,
+            "frozenRowCount": 1,
+            "frozenColumnCount": 1
+          }
+        }
+      },
+      {
+        "properties": {
+          "sheetId": 1,
+          "title": "T-centers",
+          "index": 1,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 48,
+            "columnCount": 48,
+            "frozenRowCount": 1,
+            "frozenColumnCount": 1
+          }
+        }
+      }
+    ],
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1mtgwTouNmIGZr9bJIPx8E7LBSmvQ6oLuOxbqTlBg0ac/edit"
+  },
+  "data": {
+    "0": {
+      "range": "'X-centers'!A1:AV48",
+      "values": {
+        "1": {
+          "cells": [
+            "y' [l u l', U]",
+            "y' [U', l' u' l]",
+            "y' [U', l d' l']",
+            "y' [l' d l, U]",
+            "[U', l u l']",
+            "[r' u r, U]",
+            "[r d r', U]",
+            "[U', l' d l]",
+            "y' [l u' l', U]",
+            "y' [U', l' u l]",
+            "y' [U', l d l']",
+            "y' [l' d' l, U]",
+            "[U', l u' l']",
+            "[r' u' r, U]",
+            "[r d' r', U]",
+            "[U', l' d' l]",
+            "[l2, D r2 D']",
+            "[D' l2 D, r2]",
+            "D [l2, D r2 D']",
+            "D' [D' l2 D, r2]"
+          ],
+          "successes": [
+            {
+              "original": "[r d r', U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000000044111111331222222222553334334444441001553553555"
+            },
+            {
+              "original": "[U', l' d l]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000000044111111331222222222553334334444441001553553555"
+            },
+            {
+              "original": "[r d' r', U]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000000055551111111222222222331334314444443443053053555"
+            },
+            {
+              "original": "[U', l' d' l]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000000055551111111222222222331334314444443443053053555"
+            }
+          ],
+          "failures": []
+        },
+        "2": {
+          "cells": [
+            "y' [l u l', U2]",
+            "[U2, l' u2 l]",
+            "[r d2 r', U2]",
+            "y' [l' d l, U2]",
+            "y' [l u2 l', U2]",
+            "[r' u r, U2]",
+            "[r d r', U2]",
+            "y' [U2, r' d2 r]",
+            "y' [l u' l', U2]",
+            "[r' u2 r, U2]",
+            "[U2, l d2 l']",
+            "y' [l' d' l, U2]",
+            "y' [U2, r u2 r']",
+            "[r' u' r, U2]",
+            "[r d' r', U2]",
+            "y' [l' d2 l, U2]",
+            "Rw' U [U r U', l2]",
+            "Lw U [r2, U l' U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "3": {
+          "cells": [
+            "y' [l u l', U']",
+            "y' [U, r' u r]",
+            "y' [U, r d r']",
+            "y' [l' d l, U']",
+            "[U, r u' r']",
+            "[r' u r, U']",
+            "[r d r', U']",
+            "[U, r' d' r]",
+            "y' [l u' l', U']",
+            "y' [U, r' u' r]",
+            "y' [U, r d' r']",
+            "y' [l' d' l, U']",
+            "[U, r u r']",
+            "[r' u' r, U']",
+            "[r d' r', U']",
+            "[U, r' d r]",
+            "y' [r2, D' l2 D]",
+            "y' D' [r2, D' l2 D]",
+            "y' [D r2 D', l2]",
+            "y' D [D r2 D', l2]"
+          ],
+          "successes": [
+            {
+              "original": "[r d r', U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000004004111111221222224224413333333443043041555555555"
+            },
+            {
+              "original": "[U, r' d' r]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000004004111111124222224224331331333003443442555555555"
+            },
+            {
+              "original": "[r d' r', U']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000005005431111111222224224331331223443443443005555555"
+            },
+            {
+              "original": "[U, r' d r]",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000005005122111111412224224332332333443443441555055055"
+            }
+          ],
+          "failures": []
+        },
+        "4": {
+          "cells": [
+            "[l' U' l, u]",
+            "U' [Uw r Uw', l']",
+            "z' L' [d, l' U l]",
+            "z' L' [d, l' U2 l]",
+            "[l' U' l, u2]",
+            "x' U [l2, U r U']",
+            "[r', U' l' U]",
+            "x' [l2, U r U']",
+            "[l' U' l, u']",
+            "L' [l' U' l, u']",
+            "L [l' U' l, u']",
+            "y' r [r u' r', U2]",
+            "x [U r' U', l']",
+            "[r2, U' l' U]",
+            "x [d2, r' U r]",
+            "D' [D' l D, r2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "5": {
+          "cells": [
+            "x' z' [l' U2 l, u]",
+            "U' [r U r', u]",
+            "z' [u', l' U2 l]",
+            "z' [u', l' U' l]",
+            "F' [l' U' l, u2]",
+            "[u2, l U2 l']",
+            "z x' Uw' [Uw' r2 Uw, l]",
+            "[U' l U, r]",
+            "[Uw' l' Uw, r]",
+            "y' [u, r U r']",
+            "z [d', r U2 r']",
+            "z [d', r U' r']",
+            "x [r', U' l' U]",
+            "y' Uw' [Uw' r2 Uw, l]",
+            "x [l' U2 l, d2]",
+            "Uw [r2, Uw l Uw']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "6": {
+          "cells": [
+            "x r' [r' u r, U2]",
+            "l' [U2, l' u' l]",
+            "y' [d, r' U r]",
+            "x [d, r' U2 r]",
+            "U [r', U l' U']",
+            "U x' [l2, U' r U]",
+            "[l' U2 l, d2]",
+            "x U [U r' U', l2]",
+            "x y' [l' U l, d]",
+            "l' [U2, l' u l]",
+            "[l' U2 l, d]",
+            "x r' [r' u' r, U2]",
+            "x U [U r' U', l']",
+            "F [r2, U' l' U]",
+            "x [d2, r' U2 r]",
+            "U [r2, U l' U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "7": {
+          "cells": [
+            "R2 z' [r, Uw' l' Uw]",
+            "z' U [r, Uw' l' Uw]",
+            "y' R [d, r' U r]",
+            "z' [r, Uw' l' Uw]",
+            "U2 x' [r2, U l' U']",
+            "U [U l U', r]",
+            "x' Uw [r2, Uw l Uw']",
+            "[d2, l U' l']",
+            "y' z' [l' U2 l, d]",
+            "y' R' [u, r U r']",
+            "F [l' U2 l, d]",
+            "y' [d', r U2 r']",
+            "x U' [r', U' l' U]",
+            "D2 x [l' U l, d2]",
+            "x [l' U l, d2]",
+            "F U [r2, U l' U']"
+          ],
+          "successes": [
+            {
+              "original": "[d2, l U' l']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000000033111514114222022022335333223314441441445555555"
+            }
+          ],
+          "failures": []
+        },
+        "8": {
+          "cells": [
+            "y' [r' U2 r, u]",
+            "R [u', l U2 l']",
+            "z' [r' U' r, u]",
+            "R2 [d, l U' l']",
+            "y' [r' U2 r, u2]",
+            "y' x' U' [U' l' U, r2]",
+            "y' U' [l', U' r' U]",
+            "z' U2 [Uw' l' Uw, r2]",
+            "y' x' U' [U' l' U, r']",
+            "y' x' [u2, l' U2 l]",
+            "U2 [l2, Uw' r' Uw]",
+            "y' U' [l2, U' r' U]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "9": {
+          "cells": [
+            "R' y' [r' U2 r, u]",
+            "[u', l U2 l']",
+            "z' [r' U2 r, u]",
+            "x' R [r U r', u]",
+            "L y' [u2, r U r']",
+            "y' [u2, r U r']",
+            "z' r' [r' U2 r, u]",
+            "y' U' [U' r U, l]",
+            "y' x' U [l', U r' U']",
+            "y' x' [r' U' r, u2]",
+            "R2 y' [l2, U r' U']",
+            "D' y' x' [r' U' r, u2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "10": {
+          "cells": [
+            "z' L [l U l', u]",
+            "y' r' [U, r' u' r]",
+            "y' [r' U r, d']",
+            "R' [d, l U' l']",
+            "y' [l', U r' U']",
+            "y' x' [U' l' U, r2]",
+            "y' [r' U r, d2]",
+            "y' x U' [r2, U' l U]",
+            "y' x' [U' l' U, r']",
+            "y' x' [u2, l' U' l]",
+            "y' [l2, U r' U']",
+            "y' D [D r D', l2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "11": {
+          "cells": [
+            "z x' [u', l U2 l']",
+            "z x' [u', l U l']",
+            "R y' [r' U r, d']",
+            "[d, l U' l']",
+            "z' Uw [r', Uw l2 Uw']",
+            "y' [U r U', l]",
+            "y' x' Uw' [Uw' r' Uw, l2]",
+            "z' [Uw' l' Uw, r2]",
+            "y' [U r2 U', l]",
+            "y' x' [r' U2 r, u2]",
+            "y' D [U r2 U', l]",
+            "y' D2 [U r2 U', l]"
+          ],
+          "successes": [
+            {
+              "original": "[d, l U' l']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000000033111511441222222222315333443444041041335555555"
+            }
+          ],
+          "failures": []
+        },
+        "12": {
+          "cells": [
+            "U y' [u', l' U' l]",
+            "y' U [r, Uw' l' Uw]",
+            "z R [d, r' U r]",
+            "y' r [r u r', U2]",
+            "x' U' [r, U' l U]",
+            "D2 x' [l U l', u2]",
+            "x' [l U l', u2]",
+            "D x' [l U l', u2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "13": {
+          "cells": [
+            "x' [u', r U2 r']",
+            "y' [u', r U r']",
+            "L2 [l U2 l', u]",
+            "L' [l U2 l', u]",
+            "x' U [U r U', l]",
+            "y' U2 [r2, Uw l Uw']",
+            "x' [u2, r U2 r']",
+            "U [r2, U l U']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "14": {
+          "cells": [
+            "z x' [r U r', u]",
+            "z [d, l U2 l']",
+            "x' [r, Uw' l' Uw]",
+            "x' z [r U2 r', d']",
+            "[U' l2 U, r']",
+            "D' [U' l2 U, r']",
+            "x' [l U2 l', u2]",
+            "D2 [U' l2 U, r']"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "15": {
+          "cells": [
+            "x' [u', r U r']",
+            "L [l U' l', d']",
+            "L' [l U' l', d']",
+            "[l U' l', d']",
+            "x' [U r U', l]",
+            "[r2, U' l U]",
+            "x' [u2, r U r']",
+            "D' [D' l' D, r2]"
+          ],
+          "successes": [
+            {
+              "original": "[l U' l', d']",
+              "unsolved_corners": 3,
+              "unsolved_edges": 5,
+              "signature": "000000055421411111552222222332033033444441441315555335"
+            }
+          ],
+          "failures": []
+        },
+        "16": {
+          "cells": [
+            "y' [U r2 U', l']",
+            "x' z [l U2 l', d2]",
+            "Uw [Uw l2 Uw', r']",
+            "y' Uw' [l2, Uw' r' Uw]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "17": {
+          "cells": [
+            "y' x [U' l U, r]",
+            "x' z [d2, r U' r']",
+            "y' [l2, U r U']",
+            "y' D [D r' D', l2]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "18": {
+          "cells": [
+            "y' x U [l, U r U']",
+            "x' z [l U' l', d2]",
+            "L2 y' [l2, U r U']",
+            "L' y' U' [l2, U' r U]"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "19": {
+          "cells": [
+            "y' x U' [U' l U, r]",
+            "x' z [d2, r U2 r']",
+            "L' y' [l2, U r U']",
+            "y' U' [l2, U' r U]"
+          ],
+          "successes": [],
+          "failures": []
+        }
+      }
+    }
+  }
+}

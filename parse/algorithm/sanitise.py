@@ -1,5 +1,4 @@
 from .config import Notation
-from ..exceptions.sanitise import IllegalCharactersException
 
 
 def sanitise(s):
@@ -35,6 +34,6 @@ def sanitise(s):
     sanitized = s
     for char in "".join(set(s)):
         if char not in legal_chars:
-            raise IllegalCharactersException("It's for cubing, honey. NEXT!")
+            sanitized = sanitized.replace(char, "")
 
     return sanitized
