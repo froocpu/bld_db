@@ -35,6 +35,7 @@ class Algorithm(BaseMove):
         # Expand each match and reset the string.
         multiplier_pattern_matches = list(set(re.findall(Notation.MULTIPLIER_REGEX, cleaned)))
 
+        print(multiplier_pattern_matches)
         for m in multiplier_pattern_matches:
             expanded_expression = multiplier(m)
             cleaned = cleaned.replace(m, expanded_expression)

@@ -45,7 +45,7 @@ class Notation:
     COMM_CONJ_CB = ']'
     EXPRESSION_OB = '('
     EXPRESSION_CB = ')'
-    MULTIPLIER_REGEX = r'\([A-Z\'0-9]+\)\*[0-9]+'
+    MULTIPLIER_REGEX = r'\([a-zA-Z\'0-9]+\)\*[0-9]+'
     EMPTY = ''
 
 
