@@ -16,9 +16,20 @@ from parse import Notation
 
 
 class Cube(BaseCube):
-    def __init__(self, nxnxn=3, white_plastic=False):
+    def __init__(self, nxnxn=3, white_plastic=False, debug=False):
+        """
+        Initialised in a similar way to the underlying BaseCube class, so inherting the BaseClass will also transfer
+        all of the same fields and methods over.
+        :param nxnxn: 3 for a standard Rubik's Cube, 4 for a Professor Cube, etc.
+        :type nxnxn: int
+        :param white_plastic: when True, rendered images use white plastic, else black.
+        :type white_plastic: bool
+        :param debug: if True, be verbose. Mostly for logging and testing purposes.
+        :type debug: bool
+        """
         super(Cube, self).__init__(N=nxnxn, white_plastic=white_plastic)
-
+        self.nxnxn = nxnxn
+        self.debug = debug
         # TODO: these currently produce a hard-coded object with solved cube mappings. Needs to be abstract.
         # Generate edge mappings.
         good_edge_mappings = {
@@ -68,7 +79,9 @@ class Cube(BaseCube):
         :param m: face/slice/block to turn. Should be a validated and sanitised move string from Algorithm.
         :type m: str
         :return: None
+        TODO: adapt for larger cubes
         """
+        orig = m
         direction = 1
         if m.endswith(Notation.PRIME):
             direction = -1
@@ -77,26 +90,43 @@ class Cube(BaseCube):
             direction = 2
             m = m.replace(Notation.DOUBLE, Notation.EMPTY)
 
-        if m in Notation.BLOCKS:
-            self.base_move(m, 0, direction)
-        elif m in Notation.SLICES:
-            # Note: slice convention is weird and counter-intuitive.
-            face = None
-            if m == Notation.SLICE_FOLLOWS_D:
-                face = Notation.DOWN_FACE_CHAR
-            elif m == Notation.SLICE_FOLLOWS_L:
-                face = Notation.LEFT_FACE_CHAR
+        if self.nxnxn == 3:
+            if m in Notation.BLOCKS:
+                self.base_move(m, 0, direction)
+            elif m in Notation.SLICES:
+                # Note: slice convention is weird and counter-intuitive.
+                if m == Notation.SLICE_FOLLOWS_D:
+                    face = Notation.DOWN_FACE_CHAR
+                elif m == Notation.SLICE_FOLLOWS_L:
+                    face = Notation.LEFT_FACE_CHAR
+                else:
+                    face = Notation.FRONT_FACE_CHAR
+                self.base_move(face, 1, direction)
+            elif m in Notation.ROTATIONS:
+                if m == Notation.ROTATION_FOLLOWS_U:
+                    face = Notation.UP_FACE_CHAR
+                elif m == Notation.ROTATION_FOLLOWS_F:
+                    face = Notation.FRONT_FACE_CHAR
+                else:
+                    face = Notation.RIGHT_FACE_CHAR
+                self.turn(face, direction)
+            # Two variations of wide turn notation to process.
+            elif m.endswith(Notation.WIDE):
+                m = m.replace(Notation.WIDE)
+                for l in range(2):
+                    self.base_move(m, l, direction)
+            elif m in Notation.WIDE_BLOCKS:
+                # Assumes wide turns are written as lowercase.
+                face = m.upper()
+                for l in range(2):
+                    self.base_move(face, l, direction)
             else:
-                face = Notation.FRONT_FACE_CHAR
-            self.base_move(face, 1, direction)
-        elif m in Notation.ROTATIONS:
-            if m == Notation.ROTATION_FOLLOWS_U:
-                self.turn(Notation.UP_FACE_CHAR, direction)
-            elif m == Notation.ROTATION_FOLLOWS_F:
-                self.turn(Notation.FRONT_FACE_CHAR, direction)
-            else:
-                self.turn(Notation.RIGHT_FACE_CHAR, direction)
-        # TODO: add wide turns.
+                print("No move required for '{}'.".format(m))
+        if self.debug:
+            print("Performed move() for {}".format(orig))
+
+
+
 
 
 

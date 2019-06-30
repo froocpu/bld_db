@@ -29,6 +29,14 @@ class Notation:
     BACK_FACE_CHAR = BLOCKS[3]
     RIGHT_FACE_CHAR = BLOCKS[4]
     LEFT_FACE_CHAR = BLOCKS[5]
+    # Define wide turns.
+    WIDE_BLOCKS = BLOCKS.lower()
+    UP_WIDE_CHAR = WIDE_BLOCKS[0]
+    DOWN_WIDE_CHAR = WIDE_BLOCKS[1]
+    FRONT_WIDE_CHAR = WIDE_BLOCKS[2]
+    BACK_WIDE_CHAR = WIDE_BLOCKS[3]
+    RIGHT_WIDE_CHAR = WIDE_BLOCKS[4]
+    LEFT_WIDE_CHAR = WIDE_BLOCKS[5]
     # Define other syntax
     CONJUGATE = ':'
     COMMUTATOR = ','

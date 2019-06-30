@@ -1,6 +1,6 @@
 import unittest
 
-from cube.code import Cube
+from cube.cubes import Cube
 
 
 class TestCubieMappings(unittest.TestCase):

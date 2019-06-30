@@ -105,7 +105,6 @@ class BaseCube(object):
                 self.stickers[i] = np.rot90(self.stickers[i], 3)
             if l == self.N - 1:
                 self.stickers[i2] = np.rot90(self.stickers[i2], 1)
-        print("moved", f, l, len(ds))
         return None
 
     def _rotate(self, args):
@@ -145,7 +144,7 @@ class BaseCube(object):
         """
         Make three projected 3-dimensional views of the cube for the
         `render()` function.  Because of zorder / occulting issues,
-        this code is very brittle; it will not work for all viewpoints
+        this cubes is very brittle; it will not work for all viewpoints
         (the `np.dot(zdir, viewpoint)` test is not general; the corect
         test involves the "handedness" of the projected polygon).
         """
