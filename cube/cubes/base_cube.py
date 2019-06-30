@@ -2,7 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from matplotlib.patches import Polygon
+
 from parse import Notation
+from cube.config import RenderingProperties
 
 
 class BaseCube(object):
@@ -22,9 +24,9 @@ class BaseCube(object):
     xdirs = [np.array([1., 0., 0.]), np.array([1., 0., 0.]),
                np.array([1., 0., 0.]), np.array([-1., 0., 0.]),
                np.array([0., 0., -1.]), np.array([0, 0., 1.])]
-    colordict = {"w":0, "y":1, "b":2, "g":3, "o":4, "r":5}
+    colordict = {"g": 0, "b": 1, "r": 2, "o": 3, "w": 4, "y": 5}
     pltpos = [(0., 1.05), (0., -1.05), (0., 0.), (2.10, 0.), (1.05, 0.), (-1.05, 0.)]
-    labelcolor = "#7f00ff"
+    labelcolor = RenderingProperties.LABEL_COLOUR
 
     def __init__(self, N, white_plastic=False):
         """
@@ -36,7 +38,7 @@ class BaseCube(object):
         """
         self.N = int(N)
         self.stickers = np.array([np.tile(i, (self.N, self.N)) for i in range(6)])
-        self.sticker_colours = ["w", "#ffcf00", "#00008f", "#009f0f", "#ff6f00", "#cf0000"]
+        self.sticker_colours = RenderingProperties.COLOUR_SCHEME
         self.sticker_thickness = 0.001  # sticker thickness in units of total cube size
         self.sticker_width = 0.9  # sticker size relative to cubie size (must be < 1)
         if white_plastic:
