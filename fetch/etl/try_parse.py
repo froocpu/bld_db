@@ -1,5 +1,6 @@
 from ..config import DataSelector
 from .extract_metadata import collect_field
+from .data_prep import signature
 
 from parse import Algorithm
 from parse.exceptions import *
@@ -47,10 +48,12 @@ def prepare_data_try_parse(sheet, meta):
                         alg = Algorithm(cell)
                         cube = Cube(3)
                         cube.apply(alg.alg())
+                        if cube.unsolved_corner_count > 5 or cube.unsolved_edge_count > 6:
+                            continue
                         successes.append({"original": cell,
                                           "unsolved_corners": cube.unsolved_corner_count,
                                           "unsolved_edges": cube.unsolved_edge_count,
-                                          "signature": str(cube.stickers.tolist())})
+                                          "signature": signature(cube.stickers)})
                     except AmbiguousStatementException:
                         failures.append({"original": cell, "failure_reason": 0})
                     except BadMultiplierException:

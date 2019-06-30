@@ -1,6 +1,7 @@
 from json import dump
 from ..config import DataSelector
 from .extract_metadata import collect_field
+from parse import Notation
 
 
 def prepare_data(sheet, meta):
@@ -88,3 +89,6 @@ def write_json(data, fn):
     with open(fn, "w") as dt:
         dump(data, dt, indent=DataSelector.PRETTY_INDENT)
 
+
+def signature(array):
+    return str(array.tolist()).replace(" ", Notation.EMPTY).replace("\n", Notation.EMPTY)
