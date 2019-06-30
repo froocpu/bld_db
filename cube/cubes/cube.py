@@ -1,19 +1,6 @@
 from .base_cube import BaseCube
 from parse import Notation
 
-"""
-    Print view:
-
-    UDFBRL
-
-    U: x' z
-    D: x z
-    F: z
-    B: x2 z'
-    R: x y
-    L: x' y'
-"""
-
 
 class Cube(BaseCube):
     def __init__(self, nxnxn=3, white_plastic=False, debug=False):
@@ -72,6 +59,17 @@ class Cube(BaseCube):
         # Create final mapping dicts.
         self.edge_mappings = {**good_edge_mappings, **bad_edge_mappings}
         self.corner_mappings = {**good_corner_mappings, **bad_corner_mappings_cw, **bad_corner_mappings_ccw}
+
+    def apply(self, alg):
+        """
+        For each move in alg, apply a move to the cube representation.
+        Assumes that alg has been properly parsed, sanitised and validated.
+        :param alg: list of strings representing cleaned moves.
+        :type alg: list of str
+        :return: None
+        """
+        for move in alg:
+            self.move(move)
 
     def move(self, m):
         """

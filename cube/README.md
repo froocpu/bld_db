@@ -85,13 +85,11 @@ What this means is that as long as the lists of arrays are stored, that it shoul
     AND 
         all of the algs matching that signature will be returned.
 
-This also opens up the possibility of 
-
 ## TODO
 
 - [ ] Write a wrapper for the `Cube` class:
     - [ ] Configure the rendering properties.
-    - [ ] Create wrapper methods for M moves, S moves, E moves, rotations etc.
+    - [x] Create wrapper methods for M moves, S moves, E moves, rotations etc.
 - [ ] Decide on a method of storing and querying the deltas rather than individual algs.
 - [ ] Image rendering:
     - [ ] What images should be rendered for each case?
@@ -102,3 +100,14 @@ This also opens up the possibility of
     
     
 ## Notes
+
+    Print view:
+
+    UDFBRL
+
+    U: x' z
+    D: x z
+    F: z
+    B: x2 z'
+    R: x y
+    L: x' y'

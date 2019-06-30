@@ -33,8 +33,7 @@ class TestAlgs(unittest.TestCase):
         """
         t_perm(self.cube)
         expected_r_face = [[4, 4, 3], [4, 4, 5], [4, 4, 2]]
-        self.assertListEqual(self.cube.stickers[0].tolist(), self.solved.stickers[0].tolist())
-        self.assertListEqual(self.cube.stickers[1].tolist(), self.solved.stickers[1].tolist())
+        self.assertListEqual(self.cube.stickers[0:2].tolist(), self.solved.stickers[0:2].tolist())
         self.assertListEqual(self.cube.stickers[4].tolist(), expected_r_face)
 
         t_perm(self.cube)

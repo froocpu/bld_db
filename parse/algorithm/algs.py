@@ -140,12 +140,12 @@ def constructor(a, b=None, alg_type=0):
     if (b is None or len(b) == 0) and alg_type > 0:
         raise EmptyAlgorithmException("This algorithm expected moves in the B part, but none were detected.")
 
-    A = [m.base_move for m in a]
+    A = [m.move for m in a]
 
     if alg_type == 0 or b is None:
         return A
 
-    B = [m.base_move for m in b]
+    B = [m.move for m in b]
 
     Ai = [m.invert() for m in a]
     Ai.reverse()
