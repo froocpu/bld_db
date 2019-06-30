@@ -12,7 +12,7 @@ if __name__ == '__main__':
     credentials = authenticate()
     sheet = service_builder(credentials=credentials)
 
-    with open("config/sheets_to_scan.txt", "r") as txt:
+    with open("../config/sheets_to_scan.txt", "r") as txt:
         sheets_to_extract = csv.reader(txt, delimiter=',')
         next(sheets_to_extract)
         for row in sheets_to_extract:
@@ -30,7 +30,7 @@ if __name__ == '__main__':
             # Write it out to a file.
             # write_json(sheet_metadata, "data/metadata.json")
             filename = row[0].lower().replace(" ", "_")
-            fn = "data/data_{}.json".format(filename)
+            fn = "../data/data_{}.json".format(filename)
 
             print("Writing out to {}...".format(fn))
             write_json(final_data, fn)
