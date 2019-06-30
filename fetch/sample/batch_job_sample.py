@@ -1,5 +1,5 @@
 from fetch.session import authenticate, service_builder
-from fetch.etl import write_json, prepare_data, trim_properties_metadata, trim_sheets_metadata
+from fetch.etl import write_json, prepare_data, trim_properties_metadata, trim_sheets_metadata, prepare_data_try_parse
 
 from time import sleep
 
@@ -17,25 +17,25 @@ if __name__ == '__main__':
         next(sheets_to_extract)
         for row in sheets_to_extract:
 
-            print("Collecting {}'s data...".format(row[0]))
+            print("Collecting {}'s data...".format(row[1]))
 
             # Get metadata and trim it.
-            sheet_metadata = sheet.get(spreadsheetId=row[1]).execute()
+            sheet_metadata = sheet.get(spreadsheetId=row[0]).execute()
             trim_properties_metadata(sheet_metadata)
             trim_sheets_metadata(sheet_metadata)
 
             # Get the rest of the data and trim it.
-            final_data = prepare_data(sheet, sheet_metadata)
+            final_data = prepare_data_try_parse(sheet, sheet_metadata)
 
             # Write it out to a file.
             # write_json(sheet_metadata, "data/metadata.json")
-            filename = row[0].lower().replace(" ", "_")
-            fn = "../data/data_{}.json".format(filename)
+            filename = row[1].lower().encode('ascii', errors='ignore').decode('utf-8').replace(" ", "_")
+            fn = "../data/json/{}.json".format(filename)
 
             print("Writing out to {}...".format(fn))
             write_json(final_data, fn)
 
-            sec = 5
+            sec = 6
             print("Sleeping for {} seconds to avoid the rate limit:".format(sec))
             sleep(sec)
 

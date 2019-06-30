@@ -9,7 +9,7 @@ A Python module for making requests to the Google Sheets API and pulling data.
 - [ ] Sheet metadata and data:
     - [ ] How will it be stored?
     - [ ] How will it be queried?
-    - [ ] What metadata is necessary? What can we ignore and strip out?
+    - [x] What metadata is necessary? What can we ignore and strip out?
     - [ ] How can we determine if a change has been made?
 - [ ] Processed data:
     - [ ] When algs are parsed, how will they be stored?
