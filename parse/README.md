@@ -39,3 +39,4 @@ print("Alg inverse: {0}".format(t_perm.invert()))
 - [x] More tests, specifically on when to throw errors.
 - [ ] Cancellations. i.e. `R2 R -> R'`
 - [ ] Comments allowed in algs?
+- [ ] Mirror algs.

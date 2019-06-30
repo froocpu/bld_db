@@ -53,5 +53,3 @@ class Validation:
     MOVE_MAX_CHAR_LENGTH = 3
     MULTIPLIER_MIN_REPITITIONS = 0
     MULTIPLIER_MAX_REPITITIONS = 10
-    ALG_CHAR_MAX_LENGTH = 100  # arbitrary
-    ALG_CHAR_MIN_LENGTH = 4  # it would exclude references to UFR, UBL etc when parsing a sheet.
