@@ -1,5 +1,5 @@
 class DataSelector:
-    SHEET_FIELDS_TO_REMOVE = ['conditionalFormats', 'filterViews', 'basicFilter', 'sortSpecs']
+    SHEET_FIELDS_TO_REMOVE = ['conditionalFormats', 'filterViews', 'basicFilter', 'sortSpecs', 'merges']
     PROPERTIES_FIELDS_TO_REMOVE = ['autoRecalc', 'defaultFormat']
     # For each sheet, what range of cells should we request data from?
     RANGE = 'A1:AZ1000'
