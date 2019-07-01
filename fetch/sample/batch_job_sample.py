@@ -13,7 +13,7 @@ if __name__ == '__main__':
     credentials = authenticate()
     sheet = service_builder(credentials=credentials)
 
-    with open("../config/resources/sheets_to_scan.txt", "r") as txt:
+    with open("../data/sheets_to_scan.txt", "r") as txt:
         sheets_to_extract = csv.reader(txt, delimiter=',')
         next(sheets_to_extract)
         for row in sheets_to_extract:
