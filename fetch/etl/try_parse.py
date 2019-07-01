@@ -1,6 +1,6 @@
 from ..config import DataSelector
 from .extract_metadata import collect_field
-from .data_prep import signature
+from fetch.etl import signature
 
 from parse import Algorithm
 from parse.exceptions import *
@@ -43,31 +43,31 @@ def prepare_data_try_parse(sheet, meta):
             if len(cells) > 0:
                 successes = []
                 failures = []
-                for cell in cells:
+                for cell_ind, cell in enumerate(cells):
                     try:
                         alg = Algorithm(cell)
                         cube = Cube(3)
                         cube.apply(alg.alg())
                         if cube.unsolved_corner_count >= 5 or cube.unsolved_edge_count >= 6 or (cube.unsolved_corner_count + cube.unsolved_edge_count == 0):
                             continue
-                        successes.append({"original": cell,
+                        successes.append({"original": cell_ind,
                                           "unsolved_corners": cube.unsolved_corner_count,
                                           "unsolved_edges": cube.unsolved_edge_count,
                                           "signature": signature(cube.stickers)})
-                    except AmbiguousStatementException:
-                        failures.append({"original": cell, "failure_reason": 0})
-                    except BadMultiplierException:
-                        failures.append({"original": cell, "failure_reason": 1})
-                    except InvalidMoveException:
-                        failures.append({"original": cell, "failure_reason": 2})
-                    except BadSeparatorException:
-                        failures.append({"original": cell, "failure_reason": 3})
+                    except AmbiguousStatementException as e:
+                        failures.append({"original": cell_ind, "failure_id": 0, "failure_description": e})
+                    except BadMultiplierException as e:
+                        failures.append({"original": cell_ind, "failure_id": 1, "failure_description": e})
+                    except InvalidMoveException as e:
+                        failures.append({"original": cell_ind, "failure_id": 2, "failure_description": e})
+                    except BadSeparatorException as e:
+                        failures.append({"original": cell_ind, "failure_id": 3, "failure_description": e})
+                    except UnclosedBracketsException as e:
+                        failures.append({"original": cell_ind, "failure_id": 4, "failure_description": e})
+                    except InvalidSequenceException as e:
+                        failures.append({"original": cell_ind, "failure_id": 5, "failure_description": e})
                     except EmptyAlgorithmException:
                         continue
-                    except UnclosedBracketsException:
-                        failures.append({"original": cell, "failure_reason": 4})
-                    except InvalidSequenceException:
-                        failures.append({"original": cell, "failure_reason": 5})
                     except Exception:
                         continue
 

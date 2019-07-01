@@ -20,7 +20,9 @@ class Cube(BaseCube):
         self.solved_state_corners, self.solved_state_edges = self._generate_good_mappings(self.stickers)
         self.unsolved_edge_count = 0
         self.unsolved_corner_count = 0
-        # TODO: these currently produce a hard-coded object with solved cube mappings. Needs to be abstract.
+        self.unsolved_corners = []
+        self.unsolved_edges = []
+
         # Generate mappings.
         good_corner_mappings, good_edge_mappings = self.solved_state_corners, self.solved_state_edges
 
@@ -97,8 +99,6 @@ class Cube(BaseCube):
                 face = m.upper()
                 for l in range(2):
                     self.base_move(face, l, direction)
-            #else:
-            #    print("No move required for '{}'.".format(m))
         if self.debug:
             print("Performed move() for {}".format(orig))
 
@@ -135,15 +135,6 @@ class Cube(BaseCube):
             "BR": (stickers[3][0][1], stickers[4][2][1])
         }
 
-        """
-    U: x' z
-    D: x z
-    F: z
-    B: x2 z'
-    R: x y
-    L: x' y'
-        """
-
         return good_corner_mappings, good_edge_mappings
 
     def count_unsolved_pieces(self):
@@ -151,15 +142,21 @@ class Cube(BaseCube):
         Compare the current state against the solved state. Count the number of pieces out of place.
         :return: None
         """
+        # Refresh the existing lists.
+        self.unsolved_edge_count = []
+        self.unsolved_corner_count = []
+
         unsolved_edge_count = 0
         unsolved_corner_count = 0
         current_corner_mappings, current_edge_mappings = self._generate_good_mappings(self.stickers)
         for c in current_corner_mappings:
             if current_corner_mappings[c] != self.solved_state_corners[c]:
                 unsolved_corner_count += 1
+                self.unsolved_corners.append(c)
         for e in current_edge_mappings:
             if current_edge_mappings[e] != self.solved_state_edges[e]:
                 unsolved_edge_count += 1
+                self.unsolved_edges.append(e)
 
         self.unsolved_edge_count = unsolved_edge_count
         self.unsolved_corner_count = unsolved_corner_count
