@@ -133,26 +133,28 @@ class Cube(BaseCube):
         self.edge_mappings = {**current_edge_mappings, **current_bad_edge_mappings}
         self.corner_mappings = {**current_corner_mappings, **current_bad_corner_mappings_cw, **current_bad_corner_mappings_ccw}
 
-        # TODO: cycle discovery.
-
-    def _cycle_discovery(self):
-        reverse_facedict = {}
-        all_cycles = []
+    def cycle_discovery(self):
         # todo: broken
+        reverse_dict = {}
+        all_cycles = []
         for v in self.facedict:
-            reverse_facedict.update({self.facedict[v]: v})
+            reverse_dict.update({self.facedict[v]: v})
 
         unsolved_edges_copy = self.unsolved_edges.copy()
-        this_cycle = [unsolved_edges_copy.pop(0)]
+        for j in unsolved_edges_copy:
+            this_cycle = [j]
+            while True:
+                this_piece = self.edge_mappings[this_cycle[-1]]
+                sticker_a, sticker_b = reverse_dict[this_piece[0]], reverse_dict[this_piece[1]]
+                sticker = "".join([sticker_a, sticker_b])
+                if this_piece not in [this_cycle[0], rotate_sticker(this_cycle[0])]:
+                    this_cycle.append(sticker)
+                    return True
+                else:
+                    all_cycles.append(this_cycle)
+                    return False
+        return all_cycles
 
-        while True:
-            this_piece = self.edge_mappings[this_cycle[-1]]
-            sticker_a, sticker_b = reverse_facedict[this_piece[0]], reverse_facedict[this_piece[1]]
-            sticker = "".join([sticker_a, sticker_b])
-            if this_piece not in [this_cycle[0], rotate_sticker(this_cycle[0])]:
-                this_cycle.append(sticker)
-                return False
-            return True
 
 
 def _generate_good_mappings(stickers):
