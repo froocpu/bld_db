@@ -6,7 +6,6 @@ def sanitise(s):
     """
     A function for performing string sanitation.
     Sanitation is not the same as validation - some characters may be acceptable for sanisation, but not for validation.
-    TODO: should this be the case?
     :param s: raw algorithm string
     :type s: str
     :return: str
