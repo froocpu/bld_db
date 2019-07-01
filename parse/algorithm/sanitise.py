@@ -1,4 +1,5 @@
 from .config import Notation
+from parse.exceptions import IllegalCharactersException
 
 
 def sanitise(s):
@@ -34,6 +35,7 @@ def sanitise(s):
     sanitized = s
     for char in "".join(set(s)):
         if char not in legal_chars:
-            sanitized = sanitized.replace(char, "")
+            # TODO: vectorise this, i.e. not run for each string.
+            raise IllegalCharactersException("Contains characters that don't correspond to anything in cubing notation.")
 
     return sanitized

@@ -1,6 +1,6 @@
 -- TODO: add metadata/warehousing columns
 
-create table spreadsheets(
+create table spreadsheets (
     id varchar(44),
     title varchar(255),
     locale varchar(70),
@@ -14,7 +14,7 @@ create table sheets (
     id bigint,
     spreadsheet_id int,
     index int,
-    title nvarchar(255),
+    title varchar(255),
     sheet_type char(30),
     row_count int,
     column_count int,

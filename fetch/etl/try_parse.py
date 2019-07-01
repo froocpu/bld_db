@@ -37,36 +37,38 @@ def prepare_data_try_parse(sheet, meta):
         filtered = {}
 
         # Filter out cells with strings that are either too short or too long.
-        for ind, col in enumerate(values):
-            cells = [cell for cell in col if
-                     len(cell) > DataSelector.ALG_CHAR_MIN_LENGTH and len(cell) <= DataSelector.ALG_CHAR_MAX_LENGTH]
+        for ind, cells in enumerate(values):
             if len(cells) > 0:
                 successes = []
                 failures = []
                 for cell_ind, cell in enumerate(cells):
+                    if len(cell) <= DataSelector.ALG_CHAR_MIN_LENGTH or len(cell) > DataSelector.ALG_CHAR_MAX_LENGTH:
+                        continue
                     try:
                         alg = Algorithm(cell)
                         cube = Cube(3)
                         cube.apply(alg.alg())
-                        if cube.unsolved_corner_count >= 5 or cube.unsolved_edge_count >= 6 or (cube.unsolved_corner_count + cube.unsolved_edge_count == 0):
+                        if cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES or (cube.unsolved_corner_count + cube.unsolved_edge_count == 0):
                             continue
                         successes.append({"original": cell_ind,
                                           "unsolved_corners": cube.unsolved_corner_count,
                                           "unsolved_edges": cube.unsolved_edge_count,
                                           "signature": signature(cube.stickers)})
                     except AmbiguousStatementException as e:
-                        failures.append({"original": cell_ind, "failure_id": 0, "failure_description": e})
+                        failures.append({"original": cell_ind, "failure_id": 0, "failure_description": str(e)})
                     except BadMultiplierException as e:
-                        failures.append({"original": cell_ind, "failure_id": 1, "failure_description": e})
+                        failures.append({"original": cell_ind, "failure_id": 1, "failure_description": str(e)})
                     except InvalidMoveException as e:
-                        failures.append({"original": cell_ind, "failure_id": 2, "failure_description": e})
+                        failures.append({"original": cell_ind, "failure_id": 2, "failure_description": str(e)})
                     except BadSeparatorException as e:
-                        failures.append({"original": cell_ind, "failure_id": 3, "failure_description": e})
+                        failures.append({"original": cell_ind, "failure_id": 3, "failure_description": str(e)})
                     except UnclosedBracketsException as e:
-                        failures.append({"original": cell_ind, "failure_id": 4, "failure_description": e})
+                        failures.append({"original": cell_ind, "failure_id": 4, "failure_description": str(e)})
                     except InvalidSequenceException as e:
-                        failures.append({"original": cell_ind, "failure_id": 5, "failure_description": e})
+                        failures.append({"original": cell_ind, "failure_id": 5, "failure_description": str(e)})
                     except EmptyAlgorithmException:
+                        continue
+                    except IllegalCharactersException:
                         continue
                     except Exception:
                         continue

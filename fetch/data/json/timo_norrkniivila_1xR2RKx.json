@@ -118,17 +118,19 @@
           "successes": [],
           "failures": []
         },
+        "1": {
+          "cells": [
+            "My lettering scheme for all piece types is similar to Speffz but the order of the faces is U-F-R-B-L-D instead."
+          ],
+          "successes": [],
+          "failures": []
+        },
         "3": {
           "cells": [
             "I'm the Finnish NR holder for MBLD (25/25), 3BLD (25.91 single, 34.31 mean) and 5BLD (8:55)."
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "I'm the Finnish NR holder for MBLD (25/25), 3BLD (25.91 single, 34.31 mean) and 5BLD (8:55).",
-              "failure_reason": 0
-            }
-          ]
+          "failures": []
         },
         "4": {
           "cells": [
@@ -139,36 +141,14 @@
             "Ao12 35.30"
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "Single 20.67",
-              "failure_reason": 2
-            },
-            {
-              "original": "Mo3 27.09",
-              "failure_reason": 2
-            },
-            {
-              "original": "Ao5 25.55",
-              "failure_reason": 2
-            },
-            {
-              "original": "Ao12 35.30",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "5": {
           "cells": [
             "WCA profile"
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "WCA profile",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "7": {
           "cells": [
@@ -198,57 +178,58 @@
           "successes": [],
           "failures": []
         },
+        "12": {
+          "cells": [
+            "There are spots for FU-xy edge flips in the sheet, I will fill these up as I'm learning more algs. These are marked with cyan."
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "13": {
+          "cells": [
+            "Some algs that were particularly hard for me to learn/remember or otherwise illogical are marked with green. (also the ones that are new to me)"
+          ],
+          "successes": [],
+          "failures": []
+        },
         "14": {
           "cells": [
             "In many algs, moves cancel into wide moves (e.g. R M2 -> Rw M'). They are marked with light yellow."
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "In many algs, moves cancel into wide moves (e.g. R M2 -> Rw M'). They are marked with light yellow.",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "15": {
           "cells": [
             "RUf algs are marked separately with red."
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "RUf algs are marked separately with red.",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "16": {
           "cells": [
             "The worst algs are in bright yellow, I need to optimise them soon."
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "The worst algs are in bright yellow, I need to optimise them soon.",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "17": {
           "cells": [
             "I'm regularly checking the list and learning some new algs."
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "I'm regularly checking the list and learning some new algs.",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "19": {
           "cells": [
             "FU-xy UB-UL"
+          ],
+          "successes": [],
+          "failures": []
+        },
+        "20": {
+          "cells": [
+            "For parity, after executing edges I use a 2e2e alg solve the last (odd) target and swap UB-UL at the same time."
           ],
           "successes": [],
           "failures": []
@@ -267,67 +248,70 @@
           "successes": [],
           "failures": []
         },
+        "24": {
+          "cells": [
+            "Lw U' L' U M' U' L U M L' (has the same principle as M2 parity alg: setup the last target to UB without messing the M slice, do M', undo setup, do parity alg)"
+          ],
+          "successes": [],
+          "failures": []
+        },
         "26": {
           "cells": [
             "FUr wings"
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "FUr wings",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "27": {
           "cells": [
             "The algs in the cells are for 4BLD."
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "The algs in the cells are for 4BLD.",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
+        },
+        "28": {
+          "cells": [
+            "Hover over the cells to see some some alternative algs, some of them are are useful for 5BLD, later I'll distinguish the 5BLD algs clearly."
+          ],
+          "successes": [],
+          "failures": []
         },
         "30": {
           "cells": [
             "(Ubr centers WIP)"
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "(Ubr centers WIP)",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "31": {
           "cells": [
             "Don't use this at the moment, just don't",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "new algs"
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "new algs",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         },
         "32": {
           "cells": [
             "I'm filling this up with pretty easy algs first and speed-optimize later.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "good algs"
           ],
           "successes": [],
-          "failures": [
-            {
-              "original": "I'm filling this up with pretty easy algs first and speed-optimize later.",
-              "failure_reason": 2
-            }
-          ]
+          "failures": []
         }
       }
     },
@@ -336,6 +320,7 @@
       "values": {
         "0": {
           "cells": [
+            "  ",
             "UB (A)",
             "UR (B)",
             "UF (C, buffer)",
@@ -364,20 +349,25 @@
           "successes": [],
           "failures": [
             {
-              "original": "DB (W)",
-              "failure_reason": 2
+              "original": 23,
+              "failure_id": 2,
+              "failure_description": "'W' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "DL (X)",
-              "failure_reason": 2
+              "original": 24,
+              "failure_id": 2,
+              "failure_description": "'X' not a valid move in SiGN or WCA notation."
             }
           ]
         },
         "1": {
           "cells": [
             "UB (A)",
+            "",
             "[R U R' U', M']",
+            "",
             "[L' U' L U, M']",
+            "",
             "[U R U', M']",
             "[U[R' F' R, S]]",
             "[U' L' U, M']",
@@ -400,97 +390,73 @@
           ],
           "successes": [
             {
-              "original": "[R U R' U', M']",
+              "original": 2,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300020111111111222220222333334333444440444555555555"
             },
             {
-              "original": "[L' U' L U, M']",
+              "original": 4,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "020300000111111111222220222333335333444444444555550555"
             },
             {
-              "original": "[U R U', M']",
+              "original": 6,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000302000111111111222220222333334333404444444555555555"
             },
             {
-              "original": "[U[R' F' R, S]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "030000020111110111224224224335335335443441443552550552"
-            },
-            {
-              "original": "[U' L' U, M']",
+              "original": 8,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000302000111111111222220222333335333444444444555555505"
             },
             {
-              "original": "[Uw R Uw', M']",
+              "original": 10,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000304000111111111222220222303333333444444424555555555"
             },
             {
-              "original": "[M, U' R U]",
+              "original": 12,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000304000111111111222220202333332333424444444555555555"
             },
             {
-              "original": "M' U' M' U' M' U2 M U' M U' M U2",
+              "original": 13,
               "unsolved_corners": 0,
               "unsolved_edges": 2,
               "signature": "000203000111111111222220222333330333444444444555555555"
             },
             {
-              "original": "[U' L U, M']",
+              "original": 14,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000303000111111111222220222333335323444444444505555555"
             },
             {
-              "original": "[U[R B R', S]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "030000030111011111224224224335235335443441443552550552"
-            },
-            {
-              "original": "[U R' U', M']",
+              "original": 16,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000303000111111111222220222323334333444444404555555555"
             },
             {
-              "original": "[M, U L' U']",
+              "original": 18,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000305000111111111202220222333332333444444444555555525"
             },
             {
-              "original": "[Uw R' Uw', M']",
+              "original": 20,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000305000111111111222220222333333303444444444525555555"
             },
             {
-              "original": "[F[R U R', E]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "500501500114114114202222202333332333030444444555555121"
-            },
-            {
-              "original": "[U'[S, R B R']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "010000030111211111225225225334034334442440442553553553"
-            },
-            {
-              "original": "[U' L2 U, M']",
+              "original": 24,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000301000121111111222220222333335333444444444555055555"
@@ -502,7 +468,10 @@
           "cells": [
             "UR (B)",
             "[M', R U R' U']",
+            "",
+            "",
             "[M U[M', U2]]",
+            "",
             "[S'[L E' L', U]]",
             "M Uw' M' Uw2 M' Uw' M'",
             "[L' M U[M', U2]]",
@@ -525,43 +494,37 @@
           ],
           "successes": [
             {
-              "original": "[M', R U R' U']",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000402000111111111222220222333330333444443444555555555"
             },
             {
-              "original": "M Uw' M' Uw2 M' Uw' M'",
+              "original": 7,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400020111110111222220222333333333444441444555555555"
             },
             {
-              "original": "M2 U' M U2 M' U' M' U' M' U2 M U' M'",
+              "original": 9,
               "unsolved_corners": 0,
               "unsolved_edges": 2,
               "signature": "000200040111111111222220222333333333444440444555555555"
             },
             {
-              "original": "[S', R' F R]",
+              "original": 11,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400040111111101222220222333333333444241444555555555"
             },
             {
-              "original": "R U R' S' R U R' S R U2 R'",
+              "original": 12,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400040111111111222220202333333333424442444555555555"
             },
             {
-              "original": "[U M U[M', U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "050034030111220111223302223332110332445441445554550554"
-            },
-            {
-              "original": "[R U R', S']",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400050111111111222220222333333333444440444555552555"
@@ -581,6 +544,9 @@
             "UL (D)",
             "[M', L' U' L U]",
             "[M U'[M', U2]]",
+            "",
+            "",
+            "",
             "[R M U'[M', U2]]",
             "[Rw' D[L2, S]]",
             "[S[R' E R, U']]",
@@ -592,6 +558,7 @@
             "[S[R U' R', U']]",
             "[D[S, L F' L']]",
             "[Rw' U'[M', U2]]",
+            "",
             "[Rw U2[Rw' E Rw, U']]",
             "[S, L F' L']",
             "[U' Lw U'[M', U2]]",
@@ -602,19 +569,19 @@
           ],
           "successes": [
             {
-              "original": "[M', L' U' L U]",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000502000111111111222220222333330333444444444555553555"
             },
             {
-              "original": "[S', L F' L']",
+              "original": 9,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "040500000111111111222220222333333333444442444555550555"
             },
             {
-              "original": "[S, L F' L']",
+              "original": 19,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "050500000101111111222220222333333333444444444555251555"
@@ -622,8 +589,9 @@
           ],
           "failures": [
             {
-              "original": "U' M U'[M', U2]]",
-              "failure_reason": 4
+              "original": 13,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             }
           ]
         },
@@ -639,12 +607,16 @@
             "FR (F)",
             "[M', U R U']",
             "[S'[U, L E' L']]",
+            "",
             "[R M U[M', U2]]",
+            "",
+            "",
             "[R2 F[E, R2]]",
             "[U E R'[S, R2]]",
             "[U[L E' L', U]]",
             "[E', Rw U Rw']",
             "[L F2[L S L', F]]",
+            "",
             "[U[L E' L', U2]]",
             "[Lw' U' L'[E', L2]]",
             "[M'[U R U', M2]]",
@@ -660,67 +632,55 @@
           ],
           "successes": [
             {
-              "original": "[M', U R U']",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000402000111111111222222202333330333434444444555555555"
             },
             {
-              "original": "[U[L E' L', U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "040000000111111111224222244335335335403443443552552552"
-            },
-            {
-              "original": "[E', Rw U Rw']",
+              "original": 10,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111111222222242303333333434444424555555555"
             },
             {
-              "original": "[U[L E' L', U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "040000000111111111224224234335335335403442443552552552"
-            },
-            {
-              "original": "[M'[U R U', M2]]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000222000111332111222011232333004333414444444555555555"
             },
             {
-              "original": "[U, L E' L']",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111111222222252333333333404444444555552555"
             },
             {
-              "original": "[E, Rw U Rw']",
+              "original": 18,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111111202222252333333333424444444555555525"
             },
             {
-              "original": "[R' S' R, F]",
+              "original": 19,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000101111111222222252333333333414444444555255555"
             },
             {
-              "original": "[M'[U R U', M']]",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000022000111333111222112212333004333424444444555555555"
             },
             {
-              "original": "[D' M D, R']",
+              "original": 22,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111121222222212333333333444044444555555555"
             },
             {
-              "original": "R' D M D M' D M D Rw",
+              "original": 23,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111211111222222212333033333434444444555555555"
@@ -733,8 +693,11 @@
             "FD (G)",
             "[U[S, R' F' R]]",
             "[D[R' F R, S']]",
+            "",
             "[Rw' D'[L2, S]]",
+            "",
             "[R2 F[R2, E]]",
+            "",
             "[L2 F'[L2, E']]",
             "[R2 Fw2 R2 U']2",
             "[U R' U[M', U2]]",
@@ -755,60 +718,39 @@
           ],
           "successes": [
             {
-              "original": "[U[S, R' F' R]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "010000020111113111224024224335335335443440443552552552"
-            },
-            {
-              "original": "[U2, M']",
+              "original": 13,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111110111222322222333332333444444444555555555"
             },
             {
-              "original": "[F[E', L2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "500500500114114114232222222333333323010444444505555151"
-            },
-            {
-              "original": "[M, D2]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111011111222322222333233333444444444555555555"
             },
             {
-              "original": "[F[R2, E]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "500500500114114114232222222323333333010444404555555141"
-            },
-            {
-              "original": "U' M U' M U2 M' U' M' U' M' U2 M",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 2,
               "signature": "000200000111112111222120222333333333444444444555555555"
-            },
-            {
-              "original": "[U' M[R' U R U', M]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000430010111125111225000225334312334442442442553553553"
             }
           ],
           "failures": [
             {
-              "original": "[R2 Fw2 R2 U']2",
-              "failure_reason": 2
+              "original": 9,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[Fw2 R2 U' R2]2",
-              "failure_reason": 2
+              "original": 11,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "R'[Fw2 R2 U' R2]2",
-              "failure_reason": 2
+              "original": 12,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -817,9 +759,12 @@
             "FL (H)",
             "[M', U' L' U]",
             "[L' M U'[M', U2]]",
+            "",
             "[S[U', R' E R]]",
+            "",
             "U' E' Rw E Rw2 E Rw E U",
             "[L2 F'[E', L2]]",
+            "",
             "[U', R' E R]",
             "[R'[U', R' E R]]",
             "[U' E' R'[E', R2]]",
@@ -829,6 +774,7 @@
             "[M'[U' L' U, M2]]",
             "[Rw U R[E, R2]]",
             "[U'[R' E R, U']]",
+            "",
             "[R' F2[R' S' R, F']]",
             "[L U L', E']",
             "[M'[U' L' U, M']]",
@@ -838,55 +784,43 @@
           ],
           "successes": [
             {
-              "original": "[M', U' L' U]",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000502000111111111202222222333330333444444444555555535"
             },
             {
-              "original": "U' E' Rw E Rw2 E Rw E U",
+              "original": 6,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000111111111222222222333333333404444444555555545"
             },
             {
-              "original": "[U', R' E R]",
+              "original": 9,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000111111111242222222333333333444442444555555505"
             },
             {
-              "original": "[R U' R', E]",
+              "original": 12,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000111111111242222202333333333424444444555555525"
             },
             {
-              "original": "[U'[R' E R, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000050111111111235225225334334334442442442553552503"
-            },
-            {
-              "original": "[M'[U' L' U, M2]]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000222000111332111232011222333005333444444444555555515"
             },
             {
-              "original": "[U'[R' E R, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000050111111111255222225334334334442442442553553503"
-            },
-            {
-              "original": "[L U L', E']",
+              "original": 20,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000111111111252222222333333303444444444525555535"
             },
             {
-              "original": "[M'[U' L' U, M']]",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000022000111333111212112222333005333444444444555555525"
@@ -894,8 +828,9 @@
           ],
           "failures": [
             {
-              "original": "[L[D' M D' M']2]",
-              "failure_reason": 2
+              "original": 23,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -904,10 +839,13 @@
             "RU (I)",
             "[R'[U' R U, M]]",
             "M2 U' M U2 M' U' M' U' M' U2 M U' M'",
+            "",
             "[L F' L', S']",
+            "",
             "[U2[L E' L', U']]",
             "[U R2 Fw2 R2]2",
             "[R' E R, U']",
+            "",
             "U R U R U R' U' R' U' R'",
             "[R U R'[S, R2]]",
             "[U2[L' E2 L, U']]",
@@ -926,80 +864,58 @@
           ],
           "successes": [
             {
-              "original": "M2 U' M U2 M' U' M' U' M' U2 M U' M'",
+              "original": 2,
               "unsolved_corners": 0,
               "unsolved_edges": 2,
               "signature": "000200040111111111222220222333333333444440444555555555"
             },
             {
-              "original": "[L F' L', S']",
+              "original": 4,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "020000050111111111222224222333333333444440444555550555"
             },
             {
-              "original": "[U2[L E' L', U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "040000000111111111223223223332334332405445445554552554"
-            },
-            {
-              "original": "[R' E R, U']",
+              "original": 8,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000000050111111111222224222333333333444442444555555505"
             },
             {
-              "original": "U R U R U R' U' R' U' R'",
+              "original": 10,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000000030111111111222224222303333333444444424555555555"
             },
             {
-              "original": "[U2[L' E2 L, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "020000000111111111223223203332334332425445445554554554"
-            },
-            {
-              "original": "[R E' R', U']",
+              "original": 14,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000000050111111111222224222333333323444443444505555555"
             },
             {
-              "original": "[U2[L' E L, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "040000000111111111223223223322334332445445405554553554"
-            },
-            {
-              "original": "M2 U' M U2 M' U' M2",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000000000111111111222224222333333333444445444555552555"
             },
             {
-              "original": "[R' E' R, U']",
+              "original": 22,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000000040111111121222224222333333333444041444555555555"
-            },
-            {
-              "original": "[U2[L' E' L, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "050000000121111111223223223332334332445445445554051554"
             }
           ],
           "failures": [
             {
-              "original": "[U R2 Fw2 R2]2",
-              "failure_reason": 2
+              "original": 7,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[M U' M' U']2",
-              "failure_reason": 2
+              "original": 23,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -1008,16 +924,20 @@
             "RB (J)",
             "[M', Uw R Uw']",
             "[R Uw' R[E', R2]]",
+            "",
             "[R'[L F' L', S']]",
+            "",
             "[Rw U Rw', E']",
             "[U R' U'[M', U2]]",
             "[R'[R' E R, U']]",
             "R U R U R U' R' U' R' U'",
+            "",
             "R' U R U R U R' U' R' U'",
             "[U R'[S, R2]]",
             "[R U[R2, S]]",
             "[E', R' U' R]",
             "[U' R' U, M2]",
+            "",
             "R U R U R' U' R' U' R' U",
             "[R U' R'[E, R2]]",
             "[U L[E, L2]]",
@@ -1029,49 +949,49 @@
           ],
           "successes": [
             {
-              "original": "[M', Uw R Uw']",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000302000111111111222224222333330333444444404555555555"
             },
             {
-              "original": "[Rw U Rw', E']",
+              "original": 6,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111111111222224222343333333404444424555555555"
             },
             {
-              "original": "R U R U R U' R' U' R' U'",
+              "original": 9,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111111111222224222303333333444442444555555555"
             },
             {
-              "original": "R' U R U R U R' U' R' U'",
+              "original": 11,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111111101222224222313333333444244444555555555"
             },
             {
-              "original": "[E', R' U' R]",
+              "original": 14,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111111111222224222353333323444444434505555555"
             },
             {
-              "original": "[U' R' U, M2]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111011111222224222313233333444444434555555555"
             },
             {
-              "original": "R U R U R' U' R' U' R' U",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111111111222224222303333333444444454555552555"
             },
             {
-              "original": "[U' R' U, M']",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111112111222024222323333333444444414555555555"
@@ -1084,12 +1004,15 @@
             "RD (K)",
             "[R'[U' R' U, M]]",
             "[R' F R, S']",
+            "",
             "[L[F', L S L']]",
+            "",
             "[L F'[L S L', F']]",
             "[R2 U R2 Fw2]2",
             "[U' E' R[E', R2]]",
             "[R' U R'[S, R2]]",
             "U R U R U' R' U' R' U' R",
+            "",
             "R2 U R U R U R' U' R' U' R",
             "[U'[S, R2]]",
             "[Uw' R'[E, R2]]",
@@ -1100,42 +1023,37 @@
             "[U[S, L2]]",
             "[U' R[E', R2]]",
             "[R[U' R U, M']]",
+            "",
             "[D' R' F'[R2, E]]",
             "[L' F' L, S]"
           ],
           "successes": [
             {
-              "original": "[R' F R, S']",
+              "original": 2,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100020111111141222224222333333333444040444555555555"
             },
             {
-              "original": "U R U R U' R' U' R' U' R",
+              "original": 10,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111111131222224222303333333444444424555555555"
             },
             {
-              "original": "R2 U R U R U R' U' R' U' R",
+              "original": 12,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111111121222224202333333333424444444555555555"
             },
             {
-              "original": "[U'[S, R2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000010111111101225225225334334334442344442553552553"
-            },
-            {
-              "original": "U R U R' U' R' U' R' U R",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111111101222224222333333333444544444555552555"
             },
             {
-              "original": "[L' F' L, S]",
+              "original": 24,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000121111151222224222333333333444144444555055555"
@@ -1143,8 +1061,9 @@
           ],
           "failures": [
             {
-              "original": "[R2 U R2 Fw2]2",
-              "failure_reason": 2
+              "original": 7,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -1153,12 +1072,16 @@
             "RF (L)",
             "[U' R U, M]",
             "R U2 R' S' R U' R' S R U' R'",
+            "",
             "[S' U L'[E', L2]]",
+            "",
+            "",
             "[U R U'[M', U2]]",
             "[E, R U' R']",
             "[U[L' E2 L, U]]",
             "[U[Lw E Lw2 E Lw]]",
             "U2 R U' R' U' R' U' R U R U'",
+            "",
             "[R' U'[S, R2]]",
             "[R[R E' R', U']]",
             "[U' R U, M2]]",
@@ -1174,49 +1097,43 @@
           ],
           "successes": [
             {
-              "original": "[U' R U, M]",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000202000111111111222224232333330333404444444555555555"
             },
             {
-              "original": "R U2 R' S' R U' R' S R U' R'",
+              "original": 2,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200020111111111222224242333333333404440444555555555"
             },
             {
-              "original": "[E, R U' R']",
+              "original": 8,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111111111222224252333333333424444444555555505"
             },
             {
-              "original": "[U[L' E2 L, U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "020000000111111111224222204335335335443443443552554552"
-            },
-            {
-              "original": "U2 R U' R' U' R' U' R U R U'",
+              "original": 11,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111111101222224212333333333444244444555555555"
             },
             {
-              "original": "[E', R U' R']",
+              "original": 16,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111111111222224242323333333434444404555555555"
             },
             {
-              "original": "[U, L' E2 L]",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111111111222224202333333333454444444555552555"
             },
             {
-              "original": "[U' R U, M']",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111112111222024222333333333414444444555555555"
@@ -1224,8 +1141,9 @@
           ],
           "failures": [
             {
-              "original": "[U' R U, M2]]",
-              "failure_reason": 4
+              "original": 15,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             }
           ]
         },
@@ -1234,7 +1152,9 @@
             "BU (M)",
             "M' U' M' U' M' U2 M U' M U' M U2",
             "[U M U'[M', U2]]",
+            "",
             "[U' M U[M', U2]]",
+            "",
             "[U'[L E' L', U2]]",
             "[M', U2]",
             "[U[R' E R, U2]]",
@@ -1242,6 +1162,7 @@
             "[R U'[R2, S]]",
             "[U[S, R2]]",
             "[R' U[S, R2]]",
+            "",
             "[U[R E' R', U2]]",
             "[U2, M]",
             "[U'[L' E L, U2]]",
@@ -1256,76 +1177,22 @@
           ],
           "successes": [
             {
-              "original": "M' U' M' U' M' U2 M U' M U' M U2",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 2,
               "signature": "000203000111111111222220222333330333444444444555555555"
             },
             {
-              "original": "[U'[L E' L', U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "040000000111111111225225225334334334402443442553552553"
-            },
-            {
-              "original": "[M', U2]",
+              "original": 7,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000001000111110111222223222333332333444444444555555555"
             },
             {
-              "original": "[U[R' E R, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000050111111111224224224335335335443442443552553502"
-            },
-            {
-              "original": "[U[S, R2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000010111111101224224224335335335443244443552553552"
-            },
-            {
-              "original": "[U[R E' R', U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000050111111111224224224335335325443443443502553552"
-            },
-            {
-              "original": "[U2, M]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000001000111011111222223222333233333444444444555555555"
-            },
-            {
-              "original": "[U'[L' E L, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "040000000111111111225225225324334334442443402553553553"
-            },
-            {
-              "original": "[U'[M2 U' M U2 M' U' M2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 2,
-              "signature": "000000000111111111225222225334334334442443442553555553"
-            },
-            {
-              "original": "[U[L2, S']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000010101111111224224224335335335443445443552253552"
-            },
-            {
-              "original": "[U[R' E' R, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000040111111121224224224335335335443041443552553552"
-            },
-            {
-              "original": "[U'[L' E' L, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "050000000121111111225225225334334334442443442553051553"
             }
           ],
           "failures": []
@@ -1335,7 +1202,9 @@
             "BL (N)",
             "[M', U' L U]",
             "[Lw U'[M' ,U2]]",
+            "",
             "[S[U', R E' R']]",
+            "",
             "[Lw' U' L[E', L2]]",
             "[F[L2, E']]",
             "[Rw U[Rw E Rw2 E Rw]]",
@@ -1344,11 +1213,13 @@
             "[Uw' R[E, R2]]",
             "[R[U', R E' R']]",
             "[U'[R E' R', U2]]",
+            "",
             "[M'[U' L U, M2]]",
             "[Uw[Lw' E' Lw2 E' Lw]]",
             "[U'[R E' R', U']]",
             "[L' U L, E]",
             "[Uw L[E, L2]]",
+            "",
             "[M'[U' L U, M']]",
             "[R' F[E', R2]]",
             "[Uw' Lw' U[M', U2]]",
@@ -1356,55 +1227,37 @@
           ],
           "successes": [
             {
-              "original": "[M', U' L U]",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000502000111111111222223222333330303444444444535555555"
             },
             {
-              "original": "[F[L2, E']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "500500500114114114222222232333333323050444444515555101"
-            },
-            {
-              "original": "[U', R E' R']",
+              "original": 9,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000111111111222223222333333343444442444505555555"
             },
             {
-              "original": "[R' U' R, E']",
+              "original": 10,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000111111111222223222303333343444444424535555555"
             },
             {
-              "original": "[U'[R E' R', U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000050111111111225225225334334334442443442503552553"
-            },
-            {
-              "original": "[M'[U' L U, M2]]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000223000111332111222011222333005333444444444515555555"
             },
             {
-              "original": "[U'[R E' R', U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000050111111111225222225334334354442443442503553553"
-            },
-            {
-              "original": "[L' U L, E]",
+              "original": 18,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000111111111202223222333333353444444444525555525"
             },
             {
-              "original": "[M'[U' L U, M']]",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000023000111333111222112222333005313444444444525555555"
@@ -1417,7 +1270,9 @@
             "BD (O)",
             "[U[S, R B R']]",
             "[Rw'[U R U', M2]]",
+            "",
             "[D[L F' L', S]]",
+            "",
             "[M[U R U', M2]]",
             "[D2, M]",
             "[M[U' L' U, M2]]",
@@ -1427,6 +1282,7 @@
             "[M2, U' R U]",
             "[M, U2]",
             "[M[U' L U, M2]]",
+            "",
             "[M[U R' U', M2]]",
             "[M2, L' U L U']",
             "[M2, U L' U']",
@@ -1434,86 +1290,75 @@
             "[M2, U L U']",
             "[D'[L' F' L, S]]",
             "[Rw'[U R' U', M2]]",
+            "",
             "[Lw[U' L U, M2]]"
           ],
           "successes": [
             {
-              "original": "[U[S, R B R']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "010000020111311111224224224335035335443440443552553552"
-            },
-            {
-              "original": "[M[U R U', M2]]",
+              "original": 6,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000332000111223111222100222333114333404444444555555555"
             },
             {
-              "original": "[D2, M]",
+              "original": 7,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111110111222223222333233333444444444555555555"
             },
             {
-              "original": "[M[U' L' U, M2]]",
+              "original": 8,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000332000111223111222100222333115333444444444555555505"
             },
             {
-              "original": "[M2, U' R' U]",
+              "original": 10,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111311111222223222303433333444444424555555555"
             },
             {
-              "original": "[M2, U' R U]",
+              "original": 12,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111211111222223202333433333424444444555555555"
             },
             {
-              "original": "[M, U2]",
+              "original": 13,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111011111222223222333332333444444444555555555"
             },
             {
-              "original": "[M[U' L U, M2]]",
+              "original": 14,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000333000111223111222100222333115323444444444505555555"
             },
             {
-              "original": "[M[U R' U', M2]]",
+              "original": 16,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000333000111223111222100222323114333444444404555555555"
             },
             {
-              "original": "[M2, L' U L U']",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111011111222223222333533333444444444555552555"
             },
             {
-              "original": "[M2, U L' U']",
+              "original": 18,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111211111202223222333533333444444444555555525"
             },
             {
-              "original": "[M2, U L U']",
+              "original": 20,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111311111222223222333533303444444444525555555"
-            },
-            {
-              "original": "[D'[L' F' L, S]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000100000121111121422423422533533533344144344255055255"
             }
           ],
           "failures": []
@@ -1523,16 +1368,20 @@
             "BR (P)",
             "[U R' U', M']",
             "[S'[U, L' E L]]",
+            "",
             "[Rw' U[M', U2]]",
+            "",
             "Lw' U' Lw' E' Lw2 E' Lw' U Lw",
             "[F[E, R2]]",
             "[Rw U R'[E, R2]]",
             "[U[L' E L, U]]",
+            "",
             "[Uw' R'[E', R2]]",
             "[R U' R', E']",
             "[U[L' E L, U2]]",
             "[Uw'[Rw E Rw2 E Rw']]",
             "[M'[U R' U', M2]]",
+            "",
             "[U, L' E L]",
             "[L'[U, L' E L]]",
             "[Uw L'[E', L2]]",
@@ -1544,67 +1393,49 @@
           ],
           "successes": [
             {
-              "original": "[U R' U', M']",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000303000111111111222220222323334333444444404555555555"
             },
             {
-              "original": "Lw' U' Lw' E' Lw2 E' Lw' U Lw",
+              "original": 6,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111111222223222323333333404444444555555555"
             },
             {
-              "original": "[F[E, R2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "500500500114114114222222232323333333040444414555555101"
-            },
-            {
-              "original": "[U[L' E L, U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "040000000111111111224222224345335335443443403552553552"
-            },
-            {
-              "original": "[R U' R', E']",
+              "original": 12,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111111222223202343333333424444424555555555"
             },
             {
-              "original": "[U[L' E L, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "040000000111111111224224224335335335443442403552553552"
-            },
-            {
-              "original": "[M'[U R' U', M2]]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000223000111332111222011222333004333444444414555555555"
             },
             {
-              "original": "[U, L' E L]",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111111222223222353333333444444404555552555"
             },
             {
-              "original": "[L U L', E]",
+              "original": 20,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111111222223222353333303444444434525555555"
             },
             {
-              "original": "[M'[U R' U', M']]",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000023000111333111222112222313004333444444424555555555"
             },
             {
-              "original": "[D' M D, R]",
+              "original": 22,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111121222223222313333333444044444555555555"
@@ -1617,6 +1448,9 @@
             "LU (Q)",
             "[L[U L' U', M]]",
             "[R' F R, S]",
+            "",
+            "",
+            "",
             "[L E' L', U]",
             "[U' R2 Fw2 R2]2",
             "[U2[R' E R, U]]",
@@ -1628,6 +1462,7 @@
             "[U2[R E' R', U]]",
             "[L' U L U', M2]",
             "[L' E L, U]",
+            "",
             "[E[L E' L', U]]",
             "[L' U'[Rw E Rw2 E Rw]]",
             "[E'[L' E L, U]]",
@@ -1638,79 +1473,55 @@
           ],
           "successes": [
             {
-              "original": "[R' F R, S]",
+              "original": 2,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "040000020111111111222225222333333333444440444555550555"
             },
             {
-              "original": "[L E' L', U]",
+              "original": 6,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "040000000111111111222225222333333333404444444555552555"
             },
             {
-              "original": "[U2[R' E R, U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000050111111111223223223332335332445442445554554504"
-            },
-            {
-              "original": "M2 U M U2 M' U M2",
+              "original": 9,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000000000111111111222225222333333333444442444555554555"
             },
             {
-              "original": "U' R U R U R U' R' U' R'",
+              "original": 10,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "030000000111111111222225222303333333444444424555554555"
             },
             {
-              "original": "R' U' R U R U R U' R' U'",
+              "original": 11,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "010000000111111101222225222333333333444244444555554555"
             },
             {
-              "original": "[L' E2 L, U]",
+              "original": 12,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "020000000111111111222225202333333333424444444555554555"
             },
             {
-              "original": "[U'[M2 U M U2 M' U M2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000000111111111225223225334334334442445442553552553"
-            },
-            {
-              "original": "[U2[R E' R', U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000050111111111223223223332335322445443445504554554"
-            },
-            {
-              "original": "[L' U L U', M2]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "010000000111011111222225222333233333444444444555553555"
             },
             {
-              "original": "[L' E L, U]",
+              "original": 16,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "040000000111111111222225222323333333444444404555553555"
             },
             {
-              "original": "[U2[R' E' R, U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000040111111121223223223332335332445041445554554554"
-            },
-            {
-              "original": "[L' E' L, U]",
+              "original": 24,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "050000000121111111222225222333333333444444444555051555"
@@ -1718,8 +1529,9 @@
           ],
           "failures": [
             {
-              "original": "[U' R2 Fw2 R2]2",
-              "failure_reason": 2
+              "original": 7,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -1728,9 +1540,12 @@
             "LF (R)",
             "[U L' U', M]",
             "[R'[Rw U Rw', E]]",
+            "",
             "[Rw U[Rw' E Rw, U]]",
+            "",
             "[Rw U Rw', E]",
             "[Rw U[Rw' E Rw, U2]]",
+            "",
             "[E'[U', R E' R']]",
             "[R U' R[E, R2]]",
             "[U' R[E, R2]]",
@@ -1740,6 +1555,7 @@
             "[U L' U', M2]",
             "[L'[L' E L, U]]",
             "[E[U, L U' L']]",
+            "",
             "[D2 U' R[E, R2]]",
             "[U'[Rw' E' Rw2 E' Rw']]",
             "[U L' U', M']",
@@ -1749,31 +1565,31 @@
           ],
           "successes": [
             {
-              "original": "[U L' U', M]",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000202000111111111232225222333330333444444444555555505"
             },
             {
-              "original": "[Rw U Rw', E]",
+              "original": 6,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111111111242225222333333333404444444555555525"
             },
             {
-              "original": "[E, L' U L]",
+              "original": 14,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111111111252225222333333323444444444505555535"
             },
             {
-              "original": "[U L' U', M2]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111011111212225222333233333444444444555555535"
             },
             {
-              "original": "[U L' U', M']",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111112111222025222333333333444444444555555515"
@@ -1786,7 +1602,9 @@
             "LD (S)",
             "[L[U L U', M]]",
             "[R'[F, R' S' R]]",
+            "",
             "[L F' L', S]",
+            "",
             "[F, R' S' R]",
             "[R' F[R' S' R, F2]]",
             "[R' F[R' S' R, F]]",
@@ -1800,6 +1618,7 @@
             "[Uw L[E', L2]]",
             "[L U'[Rw E Rw2 E Rw]]",
             "[D2 U' R'[E, R2]]",
+            "",
             "U' L' U' L' U L U L U L'",
             "[L'[U L' U', M']]",
             "[R F R', S']",
@@ -1807,43 +1626,37 @@
           ],
           "successes": [
             {
-              "original": "[L F' L', S]",
+              "original": 4,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "020100000151111111222225222333333333444444444555050555"
             },
             {
-              "original": "[F, R' S' R]",
+              "original": 6,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000141111111222225222333333333404444444555255555"
             },
             {
-              "original": "[U[S', L2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "010000000101111111224224224335335335443442443552355552"
-            },
-            {
-              "original": "[U Rw2 D', M2]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000111011111222225222333233333444444444555355555"
             },
             {
-              "original": "U' L' U' L' U L U L U L'",
+              "original": 20,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000131111111222225222333333303444444444525555555"
             },
             {
-              "original": "[R F R', S']",
+              "original": 22,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000100000141111121222225222333333333444044444555155555"
             },
             {
-              "original": "[U S U'[M, U2]]",
+              "original": 23,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000155000141241131222223222333031333444004444555115555"
@@ -1856,7 +1669,9 @@
             "LB (T)",
             "[M', Uw R' Uw']",
             "[Rw[R' U R, E']]",
+            "",
             "[U' Lw U[M', U2]]",
+            "",
             "[Rw[U, Rw E' Rw']]",
             "[Rw U[Rw E' Rw', U2]]",
             "[E', L U L']",
@@ -1865,11 +1680,13 @@
             "[U' R'[E', R2]]",
             "[R' U' R'[E', R2]]",
             "[Rw' F'[Rw2 E Rw2 E]]",
+            "",
             "[U L U', M2]",
             "[E, L U L']",
             "[E'[U, L' E L]]",
             "[U'[Rw E Rw2 E Rw]]",
             "L U' L' U' L' U' L U L U",
+            "",
             "[U L U', M']",
             "[R' E'[R U' R', E']]",
             "[U[L, U M U']]",
@@ -1877,37 +1694,37 @@
           ],
           "successes": [
             {
-              "original": "[M', Uw R' Uw']",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000302000111111111222225222333330333444444444505555555"
             },
             {
-              "original": "[E', L U L']",
+              "original": 8,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111111111222225222333333353444444444525555505"
             },
             {
-              "original": "[U L U', M2]",
+              "original": 15,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111011111222225222333233313444444444535555555"
             },
             {
-              "original": "[E, L U L']",
+              "original": 16,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111111111222225222323333343444444404535555555"
             },
             {
-              "original": "L U' L' U' L' U' L U L U",
+              "original": 19,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000101111111222225222333333313444444444555255555"
             },
             {
-              "original": "[U L U', M']",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111112111222025222333333323444444444515555555"
@@ -1920,7 +1737,9 @@
             "DF (U)",
             "[F[E, R U R']]",
             "[Rw[M', U R' U']]",
+            "",
             "[L F[L' U L, E']]",
+            "",
             "[M2[U R U', M]",
             "U' M U' M U2 M' U' M' U' M' U2 M",
             "[M2[U' L' U, M]]",
@@ -1936,73 +1755,62 @@
             "[M', U L' U']",
             "[L'[M', U L' U']]",
             "[M', U L U']",
+            "",
             "[Rw[M', U R U']]",
             "U M U M' U2 M' U' M U",
             "[U[Rw U Rw', S]]"
           ],
           "successes": [
             {
-              "original": "[F[E, R U R']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "500502500114114114232222212333330333020444444555555101"
-            },
-            {
-              "original": "U' M U' M U2 M' U' M' U' M' U2 M",
+              "original": 7,
               "unsolved_corners": 0,
               "unsolved_edges": 2,
               "signature": "000200000111112111222120222333333333444444444555555555"
             },
             {
-              "original": "[M2[U' L' U, M]]",
+              "original": 8,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000112000111200111222333222333125333444444444555555505"
             },
             {
-              "original": "[M', U' R' U]",
+              "original": 10,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111114111222321222303333333444444424555555555"
             },
             {
-              "original": "[M', U' R U]",
+              "original": 12,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111114111222221202333333333424444444555555555"
             },
             {
-              "original": "[M2[U' L U, M]]",
+              "original": 14,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000113000111200111222333222333125323444444444505555555"
             },
             {
-              "original": "[D'[S, L' F' L]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000200000131111101422421422533533533344244344255155255"
-            },
-            {
-              "original": "[M2[U R' U', M]]",
+              "original": 16,
               "unsolved_corners": 0,
               "unsolved_edges": 5,
               "signature": "000113000111200111222333222323124333444444404555555555"
             },
             {
-              "original": "[M', U L' U']",
+              "original": 18,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111115111202221222333333333444444444555555525"
             },
             {
-              "original": "[M', U L U']",
+              "original": 20,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111115111222321222333333303444444444525555555"
             },
             {
-              "original": "U M U M' U2 M' U' M U",
+              "original": 23,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000200000111211111222321222333033333444444444555555555"
@@ -2010,8 +1818,9 @@
           ],
           "failures": [
             {
-              "original": "[M2[U R U', M]",
-              "failure_reason": 4
+              "original": 6,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':2.0, ']':1.0"
             }
           ]
         },
@@ -2020,12 +1829,15 @@
             "DR (V)",
             "[R[M', U R U']]",
             "[F' R[E, R2]]",
+            "",
             "M' U' R' U' R U R U R U' Rw'",
+            "",
             "[z'[U', R' E R]]",
             "[R' F[E, R2]]",
             "[M' U R'[E, R2]]",
             "[U', R' E' R]",
             "[D'[M', U' R' U]]",
+            "",
             "[R' Uw' R'[E', R2]]",
             "[U'[R' E' R, U2]]",
             "[R' F[R2, E']]",
@@ -2036,42 +1848,31 @@
             "[S', R F R']",
             "[R' E2[R U' R', E]]",
             "[Rw[U R U', M']]",
+            "",
             "[D M D M']2",
             "[L F' L'[S, L2]]"
           ],
           "successes": [
             {
-              "original": "M' U' R' U' R U R U R U' Rw'",
+              "original": 4,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "020400000111111101222221222333333333444544444555550555"
             },
             {
-              "original": "[U', R' E' R]",
+              "original": 9,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111141222221222333333333444042444555555555"
             },
             {
-              "original": "[U'[R' E' R, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000040111111131225225225334334334442041442553552553"
-            },
-            {
-              "original": "[R, D' M D]",
+              "original": 16,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000111111131222221222323333333444444404555555555"
             },
             {
-              "original": "[U'[R' E' R, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000040111111151225222225334334334442041442553553553"
-            },
-            {
-              "original": "[S', R F R']",
+              "original": 19,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000400000101111151222221222333333333444144444555255555"
@@ -2079,8 +1880,9 @@
           ],
           "failures": [
             {
-              "original": "[D M D M']2",
-              "failure_reason": 2
+              "original": 23,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -2089,7 +1891,9 @@
             "DB (W)",
             "[U'[R B R', S]]",
             "M' U' M' U' M U' M' U' M2",
+            "",
             "[U' Rw[U R' U', M2]]",
+            "",
             "[Rw[U' M' U' M]2]",
             "[U' M2[R' U R U', M']]",
             "[U' M[U, R' E R]]",
@@ -2099,6 +1903,7 @@
             "[U'[U' M U, R]]",
             "[U' M' U'[M' U2]]",
             "[Uw' Lw' U'[M', U2]]",
+            "",
             "[Uw Rw U[M', U2]]",
             "[U' M U' M']2",
             "[U' Lw' U'[M', U2]]",
@@ -2106,52 +1911,38 @@
             "[U[U M U', L]]",
             "U M' U' M U2 M U M' U",
             "[M D' M' D']2",
+            "",
             "[M D M' D]2"
           ],
           "successes": [
             {
-              "original": "[U'[R B R', S]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "020000030111011111225225225334334334442441442553550553"
-            },
-            {
-              "original": "M' U' M' U' M U' M' U' M2",
+              "original": 2,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300020111011111222221222333433333444440444555555555"
             },
             {
-              "original": "[U'[R' U R U', M]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000000030111411111225225225334032334442441442553553553"
-            },
-            {
-              "original": "U M' U' M U2 M U M' U",
+              "original": 21,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000300000111112111222021222333233333444444444555555555"
-            },
-            {
-              "original": "[M D M' D]2",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000500000121411121422321422533133533344144344255055255"
             }
           ],
           "failures": [
             {
-              "original": "DB (W)",
-              "failure_reason": 2
+              "original": 0,
+              "failure_id": 2,
+              "failure_description": "'W' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[U' M U' M']2",
-              "failure_reason": 2
+              "original": 17,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[M D' M' D']2",
-              "failure_reason": 2
+              "original": 22,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -2160,7 +1951,9 @@
             "DL (X)",
             "[M', U' L2 U]",
             "[L F' L'[S', L2]]",
+            "",
             "[F L'[E', L2]]",
+            "",
             "[M' U' L[E' L2]]",
             "[L F'[E', L2]]",
             "[z[U, L E' L']]",
@@ -2174,6 +1967,7 @@
             "[L F'[L2, E]]",
             "[U, L' E' L]",
             "[L Fw' L[S, L2]]",
+            "",
             "[S' U' R[E', R2]]",
             "[U[S, Rw U Rw']]",
             "[L F' L[S, L2]]",
@@ -2181,31 +1975,19 @@
           ],
           "successes": [
             {
-              "original": "[M', U' L2 U]",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000502000101111111222221222333330333444444444555355555"
             },
             {
-              "original": "[U[L' E' L, U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "050000000141111111224222224335335335443443443552051552"
-            },
-            {
-              "original": "[S, L' F' L]",
+              "original": 11,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000141111101222221222333333333444244444555155555"
             },
             {
-              "original": "[U[L' E' L, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "050000000131111111224224224335335335443442443552051552"
-            },
-            {
-              "original": "[U, L' E' L]",
+              "original": 17,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000500000151111111222221222333333333444444444555052555"
@@ -2213,12 +1995,14 @@
           ],
           "failures": [
             {
-              "original": "DL (X)",
-              "failure_reason": 2
+              "original": 0,
+              "failure_id": 2,
+              "failure_description": "'X' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[D' M D' M']2",
-              "failure_reason": 2
+              "original": 23,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         }
@@ -2258,16 +2042,14 @@
           "successes": [],
           "failures": [
             {
-              "original": "2nd   \\   1st",
-              "failure_reason": 2
+              "original": 23,
+              "failure_id": 2,
+              "failure_description": "'W' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "DBR (W)",
-              "failure_reason": 2
-            },
-            {
-              "original": "DBL (X)",
-              "failure_reason": 2
+              "original": 24,
+              "failure_id": 2,
+              "failure_description": "'X' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -2281,6 +2063,8 @@
         "2": {
           "cells": [
             "UBR (B)",
+            "",
+            "",
             "[x R2[D2, R U R']]",
             "[F' U[R' D R, U]]",
             "[L, F R' F']",
@@ -2288,10 +2072,14 @@
             "[D[R D R', U]]",
             "[R D2 R', U]",
             "[U R[U2, R D R']]",
+            "",
             "[R D R', U]",
             "[U[R' D' R, U]]",
+            "",
+            "",
             "[D'[R D R', U]]",
             "[D[R D' R', U]]",
+            "",
             "[U R'[R' D' R, U2]]",
             "[U[R' D R, U]]",
             "[R D' R', U]",
@@ -2302,37 +2090,25 @@
           ],
           "successes": [
             {
-              "original": "[L, F R' F']",
+              "original": 5,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "300000002111111111220222222335333334444444440553555555"
             },
             {
-              "original": "[R D2 R', U]",
+              "original": 8,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "000000002115111111022222222331333334444444445553555355"
             },
             {
-              "original": "[R D R', U]",
+              "original": 11,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "000000004111111311222222222533333334444444041553555555"
             },
             {
-              "original": "[U[R' D' R, U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000400111111115224224322333335335041443444552552552"
-            },
-            {
-              "original": "[U[R' D R, U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000500113111111524224221333335335442443444552552052"
-            },
-            {
-              "original": "[R D' R', U]",
+              "original": 20,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "000000005511111111222222222331333334444444443053555555"
@@ -2340,25 +2116,32 @@
           ],
           "failures": [
             {
-              "original": "[R2 D R2 D' R2, U]]",
-              "failure_reason": 4
+              "original": 23,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             }
           ]
         },
         "3": {
           "cells": [
             "UFR (C)",
+            "",
             "[x R2[R U R', D2]]",
+            "",
             "[R'[L' D2 L, U]]",
             "[Lw'[U2, R' D2 R]]",
+            "",
             "[D'[R' D R, U2]]",
             "[D[R' D' R, U2]]",
+            "",
             "[U R D[R D' R', U2]]",
             "[U'[R D R', U2]]",
             "[R' D' R, U2]",
             "[R' D'[U2, R' D R]]",
+            "",
             "[R' D2 R, U2]]",
             "[D'[U2, R' D' R]]",
+            "",
             "[F[U2, R' D' R]]",
             "[R' D R, U2]",
             "[U'[R D' R', U2]]",
@@ -2369,13 +2152,13 @@
           ],
           "successes": [
             {
-              "original": "[R' D' R, U2]",
+              "original": 12,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "000000400111111115222222322333333332041444444554555555"
             },
             {
-              "original": "[R' D R, U2]",
+              "original": 19,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "000000500113111111522222221333333332442444444554555055"
@@ -2383,16 +2166,20 @@
           ],
           "failures": [
             {
-              "original": "[R' D2 R, U2]]",
-              "failure_reason": 4
+              "original": 15,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             }
           ]
         },
         "4": {
           "cells": [
             "UFL (D)",
+            "",
             "[R D' U'[R' D' R, U']]",
             "[R' D' U'[R' D R, U']]",
+            "",
+            "",
             "[L'[U2, L' D' L]]",
             "[D' U'[R' D R, U']]",
             "[D U'[R' D' R, U']]",
@@ -2401,8 +2188,11 @@
             "[U[U, R D R']]",
             "[U'[R' D' R, U']]",
             "[Lw U[U2, R' D R]]",
+            "",
             "[U'[R' D2 R, U']]",
             "[D U[U, R D' R']]",
+            "",
+            "",
             "[U'[R' D R, U']]",
             "[U[U, R D' R']]",
             "[U R D R'[D', R' U R]]",
@@ -2412,28 +2202,10 @@
           ],
           "successes": [
             {
-              "original": "Lw U' R' D R U R' D' x",
+              "original": 9,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "400000300111111111222222225333333335440444444552555550"
-            },
-            {
-              "original": "[U'[R' D' R, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000400111111115222225322334334334041442442553553555"
-            },
-            {
-              "original": "[U'[R' D2 R, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000300311111111222225221334334034445442442553553555"
-            },
-            {
-              "original": "[U'[R' D R, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000500113111111522225221334334334442442442553553055"
             }
           ],
           "failures": []
@@ -2441,8 +2213,11 @@
         "5": {
           "cells": [
             "FUL (E)",
+            "",
             "[F R' F', L]",
             "[Lw'[R' D2 R, U2]]",
+            "",
+            "",
             "[U' R' U, L]",
             "[F R[R D2 R', U]]",
             "[U' R' U'[D, R U R']]",
@@ -2451,8 +2226,11 @@
             "[F2[D', R U2 R']",
             "[R U' R2[R U' R', D']]",
             "[Lw D'[U2, R D' R']]",
+            "",
             "[F2[D2, R U2 R']]",
             "[L', U R' U']",
+            "",
+            "",
             "[U2 R' U[R U' R', D]]",
             "[D'[L', U R' U']]",
             "[F2 D'[U2, R' D R]]",
@@ -2462,31 +2240,31 @@
           ],
           "successes": [
             {
-              "original": "[F R' F', L]",
+              "original": 2,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "402000000111111111220222222335333330444444443555555553"
             },
             {
-              "original": "[U' R' U, L]",
+              "original": 6,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "402000500111111111222222220333333330443444444555555550"
             },
             {
-              "original": "[L', U R U']",
+              "original": 10,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "302000005111111111224222222333333330444444440555555550"
             },
             {
-              "original": "[L', U R' U']",
+              "original": 16,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "402000000111111511223222222033333330444444344555555551"
             },
             {
-              "original": "[L', U R2 U']",
+              "original": 22,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "402000000111111110221222522333333330344444444555555552"
@@ -2494,25 +2272,32 @@
           ],
           "failures": [
             {
-              "original": "[F2[D', R U2 R']",
-              "failure_reason": 4
+              "original": 11,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':2.0, ']':1.0"
             }
           ]
         },
         "6": {
           "cells": [
             "FUR (F)",
+            "",
             "[R', F' R' F]",
+            "",
             "[L'[L' D' L, U2]]",
             "[L, U' R' U]",
+            "",
             "[U R' U'[U', R D R']]",
             "[R[R D2 R', U]]",
+            "",
             "[R[R D R', U]]",
             "[R U[R' D' R, U]]",
             "[D2 R[R D' R', U]]",
             "[R[R2 D R2 D' R2, U]]",
+            "",
             "[R D'[R D R', U]]",
             "[D R[R D' R', U]]",
+            "",
             "[U' R[U2, R D R']]",
             "[R U[R' D R, U]]",
             "[R[R D' R', U]]",
@@ -2523,13 +2308,13 @@
           ],
           "successes": [
             {
-              "original": "[L, U' R' U]",
+              "original": 5,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "302000500111111111220222222333333334440444444550555555"
             },
             {
-              "original": "[R, F' L F]",
+              "original": 22,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "002000200111111110222222521333333334344444444550555555"
@@ -2540,46 +2325,52 @@
         "7": {
           "cells": [
             "FDR (G)",
+            "",
             "[D[U, R D R']]",
             "[D'[U2, R' D R]]",
             "[L' D2 L, U]",
             "[F R[U, R D2 R']]",
             "[U R' U'[R D R', U']]",
+            "",
             "[R D[R' D' R, U2]]",
             "[U' D' R2[R U' R', D]]",
             "[R U'[R D R', U2]]",
             "[D', R U2 R']",
+            "",
             "[D' R'[U2, R' D R]]",
+            "",
             "[D2, R U2 R']",
             "[F[R' U R, D2]]",
+            "",
             "[D' U' R U[U2, R' D R]",
             "[D, R U2 R']",
             "[R U[U2, R D' R']]",
             "[U R' U'[D2, R' U' R]]",
+            "",
             "[R D'[R' D R, U2]]",
             "[D' R[D, R U2 R']]"
           ],
           "successes": [
             {
-              "original": "[L' D2 L, U]",
+              "original": 4,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "002000000111111115225222022333333331244444444554555553"
             },
             {
-              "original": "[D', R U2 R']",
+              "original": 11,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "002000000111111311222222422533333331344444044554555555"
             },
             {
-              "original": "[D2, R U2 R']",
+              "original": 15,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "002000000311111111222222322333333031544444444554555555"
             },
             {
-              "original": "[D, R U2 R']",
+              "original": 19,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "002000000113111111522222522333333331244444444554555055"
@@ -2587,50 +2378,46 @@
           ],
           "failures": [
             {
-              "original": "[D' U' R U[U2, R' D R]",
-              "failure_reason": 4
+              "original": 18,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':2.0, ']':1.0"
             }
           ]
         },
         "8": {
           "cells": [
             "FDL (H)",
+            "",
+            " ",
             "[D[U2, R' D' R]]",
             "[D U'[U', R' D R]]",
             "[U' R' U'[R U R', D]]",
             "[R[U, R D2 R']]",
             "[R D[U2, R' D' R]]",
+            "",
             "[R' D[R' U R, D]]",
             "[D[U' L' U, R2]]",
             "[R D[R' U R, D]]",
             "[D[R' U R, D]]",
             "[R' D[U2, R' D' R]]",
+            "",
             "[F'[D2, R U2 R']]",
             "[R' U R, D2]",
+            "",
             "[D' U' R[U2, R D' R']]",
+            "",
             "[D'[R' U R, D']]",
+            "",
             "[R'[R' U R, D2]]",
             "[D' R'[R' U R, D']]",
             "[D F'[R' D' R, U2]]"
           ],
           "successes": [
             {
-              "original": "[D[R' U R, D]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "002000000111111511522522222033433435444244344351355355"
-            },
-            {
-              "original": "[R' U R, D2]",
+              "original": 16,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "002000000111111511322222222033333335444444344551555455"
-            },
-            {
-              "original": "[D'[R' U R, D']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "002000000111111511422422422033533335344344344551255255"
             }
           ],
           "failures": []
@@ -2638,17 +2425,23 @@
         "9": {
           "cells": [
             "RUF (I)",
+            "",
             "[U R[R D R', U2]]",
+            "",
             "x' D R U' R' D' R U Lw'",
             "[U' R2[D', R U' R']]",
+            "",
             "[U' D' R2[D, R U' R']]",
             "[R' D[D, R' U R]]",
+            "",
             "[U' L' U, R]",
             "[U R2[R' D' R, U']]",
             "[R[R, U' L' U]",
             "[R'[U2, R' D' R]]",
+            "",
             "[U' D R'[R' D R, U']]",
             "[R' U[U, R' D' R]]",
+            "",
             "[R U R' D'[R' D R, U2]]",
             "[U' R'[R' D R, U']]",
             "[R' D'[R' U R, D2]]",
@@ -2659,13 +2452,13 @@
           ],
           "successes": [
             {
-              "original": "x' D R U' R' D' R U Lw'",
+              "original": 4,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000500111111111225222222333333330440444444552555553"
             },
             {
-              "original": "[U' L' U, R]",
+              "original": 10,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000305111111111222222220333333330444444440552555555"
@@ -2673,14 +2466,17 @@
           ],
           "failures": [
             {
-              "original": "[R[R, U' L' U]",
-              "failure_reason": 4
+              "original": 12,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':2.0, ']':1.0"
             }
           ]
         },
         "10": {
           "cells": [
             "RUB (J)",
+            "",
+            "",
             "[U R D[U2, R D' R']]",
             "[R U[R D R', U]]",
             "[U R U', L']",
@@ -2688,10 +2484,14 @@
             "[R U[R D R', U2]]",
             "[D[R2, U' L' U]]",
             "[R, U' L' U]",
+            "",
             "[R', U' L' U]",
             "[R2, U' L' U]",
+            "",
+            "",
             "[U R U', L]",
             "[D'[R2, U' L' U]]",
+            "",
             "[U R' D'[R' D R, U2]]",
             "[R U[D2, R' U' R]]",
             "[U R U'[R' U R, D']]",
@@ -2702,43 +2502,43 @@
           ],
           "successes": [
             {
-              "original": "[U R U', L']",
+              "original": 5,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "304000005111111111220222222330333333444444442550555555"
             },
             {
-              "original": "[R, U' L' U]",
+              "original": 9,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000302111111111222222225330333333440444444550555555"
             },
             {
-              "original": "[R', U' L' U]",
+              "original": 11,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000003111111311222222222531333333444444044550555555"
             },
             {
-              "original": "[R2, U' L' U]",
+              "original": 12,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000001111111115222222322332333333044444444550555555"
             },
             {
-              "original": "[U R U', L]",
+              "original": 15,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000005311111111222222222331333033444444443550555555"
             },
             {
-              "original": "U R U' Rw2 D R' D' Rw2",
+              "original": 21,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000005110111111322222222332333333444444441550555555"
             },
             {
-              "original": "D' U R U' Rw2 D R' D' Rw2 D",
+              "original": 22,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000002111111110222222522334333333344444441550555555"
@@ -2749,6 +2549,7 @@
         "11": {
           "cells": [
             "RDB (K)",
+            "",
             "[U, R D R']",
             "[U[R D R', U2]]",
             "[U[R D R', U]]",
@@ -2758,43 +2559,42 @@
             "[R D[D, R' U R]]",
             "[U R2[U', R' D' R]]",
             "[U' L' U, R']",
+            "",
             "[U R U'[D, R' U' R]]",
             "[D R'[U2, R' D2 R]]",
+            "",
             "[U[D', R' U' R]]",
+            "",
+            "",
             "[U' R U[U2, R' D' R]]",
             "[U[D2, R' U' R]]",
             "[R D'[R' U R, D2]]",
             "[U R'[U, R' D R]]",
             "[D R[R U2 R', D2]]",
+            "",
             "[U R'[U, R' D2 R]]"
           ],
           "successes": [
             {
-              "original": "[U, R D R']",
+              "original": 2,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000000111111411222222222335333331444444043553555555"
             },
             {
-              "original": "[U[R D R', U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000004111111511224224224233335333443443041555552552"
-            },
-            {
-              "original": "[R U2 R', D']",
+              "original": 7,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000000111111113222222022433333331544444244553555555"
             },
             {
-              "original": "[U' L' U, R']",
+              "original": 10,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000005111111311222222222033333331444444440553555555"
             },
             {
-              "original": "[U R U'[D, R' U' R]]",
+              "original": 12,
               "unsolved_corners": 3,
               "unsolved_edges": 4,
               "signature": "004002003111111331222222212400334333444444135550555555"
@@ -2802,66 +2602,61 @@
           ],
           "failures": [
             {
-              "original": "[F2[R U2 R', D']",
-              "failure_reason": 4
+              "original": 5,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':2.0, ']':1.0"
             }
           ]
         },
         "12": {
           "cells": [
             "RDF (L)",
+            "",
             "[U[U, R' D' R]]",
             "[U2, R' D' R]",
             "[U'[U', R' D' R]]",
             "[R U' R2[D', R U' R']]",
             "[D2 R[U, R D' R']]",
+            "",
             "[D[D, R' U R]]",
             "[R[U' L' U, R]]",
             "[U' L' U, R2]",
             "[U R U'[R' U' R, D]]",
+            "",
             "[R' U'[U2, R D R']]",
+            "",
             "[R' U[D', R' U' R]]",
             "[R' U R, D]",
+            "",
             "[R' U' R U[U2, R' D' R]]",
             "[R U' R'[R' D R, U']]",
             "[D'[R' U R, D2]]",
             "Rw2 U R U' Rw2 D R' D'",
+            "",
             "[D' R'[R' U R, D2]]",
             "[D2 R'[R' U R, D']]"
           ],
           "successes": [
             {
-              "original": "[U2, R' D' R]",
+              "original": 3,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000000111111114222222223333333332045444444551555555"
             },
             {
-              "original": "[R[U' L' U, R]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "004000025111111333222222112003333332444444440551555555"
-            },
-            {
-              "original": "[U' L' U, R2]",
+              "original": 10,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000005111111110222222322333333332444444440551555555"
             },
             {
-              "original": "[U R U'[R' U' R, D]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "004002001111111135222222312404334333044444233550555555"
-            },
-            {
-              "original": "[R' U R, D]",
+              "original": 16,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000000111111511222222422033333332344444344551555555"
             },
             {
-              "original": "Rw2 U R U' Rw2 D R' D'",
+              "original": 21,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "004000000110111115322222222333333332144444444551555555"
@@ -2872,6 +2667,8 @@
         "13": {
           "cells": [
             "BUR (M)",
+            "",
+            "",
             "[R' D'[R' D R, U2]]",
             "[Lw U[R' D R, U2]]",
             "[Lw D'[R D' R', U2]]",
@@ -2879,10 +2676,14 @@
             "[D' R'[R' D R, U2]]",
             "[R' D[R' D' R, U2]]",
             "[R'[R' D' R, U2]]",
+            "",
             "[D R'[R' D2 R, U2]]",
             "[R' U'[R D R', U2]]",
+            "",
+            "",
             "[R'[R' D2 R, U2]]",
             "[D R' U'[R D' R', U2]]",
+            "",
             "[R' F[U2, R' D' R]]",
             "[R'[R' D R, U2]]",
             "[R' U'[R D' R', U2]]",
@@ -2904,6 +2705,7 @@
         "15": {
           "cells": [
             "BDL (O)",
+            "",
             "[D'[U, R D R']]",
             "[U2, R' D2 R]",
             "[U'[U', R' D2 R]]",
@@ -2916,43 +2718,41 @@
             "[U[R' U' R, D']]",
             "[R' U[R' U' R, D']]",
             "[R'[U2, R' D2 R]]",
+            "",
+            "",
             "[L, U R\u2019 U\u2019]",
+            "",
             "[U R' U[U2, R D' R']]",
             "[D[R U2 R', D]]",
+            "",
             "[D' U R'[U, R' D2 R]]",
             "[L, U R2 U]",
             "[R[R U2 R', D2]]"
           ],
           "successes": [
             {
-              "original": "[U2, R' D2 R]",
+              "original": 3,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000000211111111222222223333333031445444444455555555"
             },
             {
-              "original": "[R U2 R', D2]",
+              "original": 7,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000000111111113222222022333333231544444444455555555"
             },
             {
-              "original": "[L, U R U']",
+              "original": 10,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000005311111111222222222333333431444444440055555555"
             },
             {
-              "original": "[L, U R\u2019 U\u2019]",
+              "original": 16,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000000411111511222222222033333331444444344155555555"
-            },
-            {
-              "original": "[D[R U2 R', D]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "003000000111111113222522022433433431544244244355355555"
             }
           ],
           "failures": []
@@ -2960,6 +2760,7 @@
         "16": {
           "cells": [
             "BDR (P)",
+            "",
             "[D[U, R D R']]",
             "[D'[U2, R' D' R]]",
             "[D U[R D' R', U]]",
@@ -2969,49 +2770,54 @@
             "[D2, R' U R]",
             "[R' U[R' D' R, U]]",
             "[D'[U' L' U, R2]]",
+            "",
             "[D, R' U R]",
             "[D R' U'[U2, R D' R']]",
+            "",
             "[U R\u2019 U\u2019, L]",
+            "",
+            "",
             "[D U' R[U2, R D' R']]",
             "[R' U[R' D R, U']]",
             "[D', R' U R]",
             "[U R' U', L2]",
             "[R' D[R D' R', U]]",
+            "",
             "[D2 R'[R' U R, D2]]"
           ],
           "successes": [
             {
-              "original": "[U R' U', L']",
+              "original": 5,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "303000000111111511220222222233333334444444044551555555"
             },
             {
-              "original": "[D2, R' U R]",
+              "original": 8,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000000115111111022222222233333334444444544551555355"
             },
             {
-              "original": "[D, R' U R]",
+              "original": 12,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000000111111115222222322433333334044444244551555555"
             },
             {
-              "original": "[U R\u2019 U\u2019, L]",
+              "original": 15,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000000311111511222222222333333034444444144551555555"
             },
             {
-              "original": "[D', R' U R]",
+              "original": 20,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000000511111111222222222533333334444444344051555555"
             },
             {
-              "original": "[U R' U', L2]",
+              "original": 21,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "003000000110111511322222222133333334444444244551555555"
@@ -3029,8 +2835,11 @@
         "18": {
           "cells": [
             "LUF (R)",
+            "",
             "[U R'[U2, R' D' R]]",
             "[F[R' D' R, U2]]",
+            "",
+            "",
             "[U' R[R D R', U2]]",
             "[D' U' R U[U2, R' D R]]",
             "[D' U' R[R D' R', U2]]",
@@ -3039,8 +2848,11 @@
             "[U' R U[R' D' R, U2]]",
             "[R' U' R U[R' D' R, U2]]",
             "[R' F[R' D' R, U2]]",
+            "",
             "[U R' U[R D' R', U2]]",
             "[D U' R[R D' R', U2]]",
+            "",
+            "",
             "[U' R U'[U2, R' D R]]",
             "[U' R[R D' R', U2]]",
             "[U R'[U2, R' D R]]",
@@ -3048,53 +2860,52 @@
             "[R U R' U'[U2, R D R']]",
             "[D U R'[U2, R' D R]]"
           ],
-          "successes": [
-            {
-              "original": "[F[R' D' R, U2]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "505500000114114115222222322333333332004444444550555111"
-            }
-          ],
+          "successes": [],
           "failures": []
         },
         "19": {
           "cells": [
             "LDF (S)",
+            "",
             "[U[U, R' D R]]",
             "[U2, R' D R]",
             "[U'[U', R' D R]]",
             "U2 R U' Rw2 D R' D' Rw2 U'",
             "[R U[U, R' D R]]",
             "[R U2 R', D]",
+            "",
             "[U' R'[U, R' D R]]",
             "[R U[R' U' R, D2]]",
             "[U[R' U' R, D2]]",
             "[R U' R'[U', R' D R]]",
             "[R'[U2, R' D R]]",
+            "",
             "[D[D, R U2 R']]",
             "[R' U[U, R' D R]]",
+            "",
             "[U' R U'[R' D R, U2]]",
+            "",
             "[D'[L, U R' U']]",
+            "",
             "[R2 U[U, R' D R]]",
             "[R2[U2, R' D R]]",
             "[D' R[R U2 R', D2]]"
           ],
           "successes": [
             {
-              "original": "[U2, R' D R]",
+              "original": 3,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "005000000112111111422222223333333331445444444552555055"
             },
             {
-              "original": "U2 R U' Rw2 D R' D' Rw2 U'",
+              "original": 5,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "305000000110111111520222222333333331444444444552555255"
             },
             {
-              "original": "[R U2 R', D]",
+              "original": 7,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "005000000111111113422222022333333331544444444552555255"
@@ -3105,6 +2916,7 @@
         "20": {
           "cells": [
             "LDB (T)",
+            "",
             "[U, R D' R']",
             "[U[R D' R', U2]]",
             "[U[R D' R', U]]",
@@ -3117,34 +2929,26 @@
             "[R D[R' U R, D2]]",
             "[D[R' U R, D2]]",
             "[R' U[R D' R', U2]]",
+            "",
+            "",
             "[R' U R, D']",
+            "",
             "[U' R[U2, R D' R']]",
             "[D'[U R' U', L]]",
+            "",
             "[D R'[R' U R, D2]]",
             "[R'[R' U R, D']]",
             "[R2 U'[U2, R D' R']]"
           ],
           "successes": [
             {
-              "original": "[U, R D' R']",
+              "original": 2,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "005000000311111111222222222335333433444444443051555555"
             },
             {
-              "original": "[U[R D' R', U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000000005211111111224224224331335533443443443055552552"
-            },
-            {
-              "original": "[U R U'[D', R' U R]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "000002002011111133222222112504334333444444331455555555"
-            },
-            {
-              "original": "[R' U R, D']",
+              "original": 16,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "005000000111111511222222222033333433444444344351555555"
@@ -3155,40 +2959,46 @@
         "21": {
           "cells": [
             "DFL (U)",
+            "",
             "[R' U R'[R' D R, U']]",
             "[R D R' D'[U2, R' D' R]]",
             "[U R D R'[R' U R, D']]",
             "[F2 D'[R' D R, U2]]",
             "[U R2[D, R U' R']]",
             "[U R' U'[R' U' R, D2]]",
+            "",
             "[D R'[D, R' U R]]",
             "[L2, U R U']",
             "[U R'[R' D R, U]]",
             "D R D' Rw2 U R' U' Rw2",
             "[D R' D'[U2, R' D' R]]",
+            "",
             "[D' U R'[R' D2 R, U]]",
             "[L2, U R' U']",
+            "",
             "[U R'[R' D R, U2]]",
+            "",
             "[D R'[D2, R' U R]]",
+            "",
             "[R U R'[R' D R, U']]",
             "[D R U R'[U', R' D2 R]]",
             "[D R U R'[U', R' D R]]"
           ],
           "successes": [
             {
-              "original": "[L2, U R U']",
+              "original": 10,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "001000005114111111322222222333333332444444440555555055"
             },
             {
-              "original": "D R D' Rw2 U R' U' Rw2",
+              "original": 12,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "001000000114111115222222322333333332044444444555555155"
             },
             {
-              "original": "[L2, U R' U']",
+              "original": 16,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "001000000113111511422222222033333332444444344555555155"
@@ -3199,34 +3009,40 @@
         "22": {
           "cells": [
             "DFR (V)",
+            "",
             "[R' D R[U, R D' R']]",
             "[R2[R2 D R2 D' R2, U]]",
             "[R' D' U'[U', R' D' R]]",
             "[U R2 U', L']",
             "[F' L F, R]",
+            "",
             "[R'[D2, R' U R]]",
             "[R'[D, R' U R]]",
             "[R2 U[R' D' R, U]]",
             "[D R[D2, R U2 R']]",
+            "",
             "[R' D'[U2, R' D' R]]",
+            "",
             "[U R2 U, L]",
             "[R' D[U, R D' R']]",
+            "",
             "[D' U R'[R' D R, U2]]",
             "[R2 U[R' D R, U]]",
             "[R2[R D' R', U]]",
             "[R U R'[U', R' D R]]",
+            "",
             "[x[D2, R U R']]",
             "[R U R'[U', R' D2 R]]"
           ],
           "successes": [
             {
-              "original": "[U R2 U', L']",
+              "original": 5,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "301000000111111112220222522333333334044444444552555555"
             },
             {
-              "original": "[F' L F, R]",
+              "original": 6,
               "unsolved_corners": 3,
               "unsolved_edges": 0,
               "signature": "001000500111111112222222020333333334443444444552555555"
@@ -3237,6 +3053,7 @@
         "23": {
           "cells": [
             "DBR (W)",
+            "",
             "[U, R2 D R2 D' R2]]",
             "[R D' R'[U2, R' D R]]",
             "[R D' U'[U', R' D R]]",
@@ -3246,31 +3063,39 @@
             "[D' R'[D', R' U R]]",
             "[D' R'[D, R' U R]]",
             "[R2[R' D' R, U2]]",
+            "",
             "[D' R'[D2, R' U R]]",
             "[R2 D'[R' D R, U2]]",
+            "",
             "[R[D2, R U2 R']]",
+            "",
+            "",
             "[R U R' U'[R D R', U2]]",
             "[R2[R' D R, U2]]",
             "[R2 U'[R D' R', U2]]",
             "[D R U R'[R' D2 R, U']]",
             "[x[R U R', D2]]",
+            "",
             "[R D' R[R U2 R', D]]"
           ],
           "successes": [],
           "failures": [
             {
-              "original": "DBR (W)",
-              "failure_reason": 2
+              "original": 0,
+              "failure_id": 2,
+              "failure_description": "'W' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[U, R2 D R2 D' R2]]",
-              "failure_reason": 4
+              "original": 2,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             }
           ]
         },
         "24": {
           "cells": [
             "DBL (X)",
+            "",
             "[R' U D R'[R' D R, U']]",
             "[R D2 R' D'[U2, R' D' R]]",
             "[D' R D' U'[U', R' D R]]",
@@ -3283,9 +3108,13 @@
             "[U R'[R' D2 R, U]]",
             "[D2 R'[D', R' U R]]",
             "[D2 R' D'[U2, R' D' R]]",
+            "",
+            "",
             "[D2 R'[D2, R' U R]]",
+            "",
             "[D U R'[R' D R, U2]]",
             "[D' R[D2, R U2 R']]",
+            "",
             "[D R U R'[R' D R, U']]",
             "[R U R'[R' D2 R, U']]",
             "[R D' R[D, R U2 R']]"
@@ -3293,8 +3122,9 @@
           "successes": [],
           "failures": [
             {
-              "original": "DBL (X)",
-              "failure_reason": 2
+              "original": 0,
+              "failure_id": 2,
+              "failure_description": "'X' not a valid move in SiGN or WCA notation."
             }
           ]
         }
@@ -3305,18 +3135,20 @@
       "values": {
         "0": {
           "cells": [
-            "last edge target"
+            "last edge target",
+            "alg"
           ],
           "successes": [],
           "failures": []
         },
         "1": {
           "cells": [
+            "A",
             "[L' U' L U, M']"
           ],
           "successes": [
             {
-              "original": "[L' U' L U, M']",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "020300000111111111222220222333335333444444444555550555"
@@ -3326,11 +3158,12 @@
         },
         "2": {
           "cells": [
+            "B",
             "(F R U R' U' F') (U' R') (F' U' F) (U R U)"
           ],
           "successes": [
             {
-              "original": "(F R U R' U' F') (U' R') (F' U' F) (U R U)",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000400020111111111222220222333335333444440444555553555"
@@ -3340,11 +3173,12 @@
         },
         "3": {
           "cells": [
+            "D",
             "[M', L' U' L U]"
           ],
           "successes": [
             {
-              "original": "[M', L' U' L U]",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000502000111111111222220222333330333444444444555553555"
@@ -3354,11 +3188,12 @@
         },
         "4": {
           "cells": [
+            "F",
             "R (F R U R' U' F' U' R' F' U' F U R U) R'"
           ],
           "successes": [
             {
-              "original": "R (F R U R' U' F' U' R' F' U' F U R U) R'",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000400000111111111222222222333335333404444444555553555"
@@ -3368,18 +3203,21 @@
         },
         "5": {
           "cells": [
+            "G",
             "[Rw2 U' R2 B2]2"
           ],
           "successes": [],
           "failures": [
             {
-              "original": "[Rw2 U' R2 B2]2",
-              "failure_reason": 2
+              "original": 1,
+              "failure_id": 2,
+              "failure_description": "'2' not a valid move in SiGN or WCA notation."
             }
           ]
         },
         "6": {
           "cells": [
+            "H",
             "[F2[Rw U Rw' F R S R' F' R S' U' R']]"
           ],
           "successes": [],
@@ -3387,11 +3225,12 @@
         },
         "7": {
           "cells": [
+            "I",
             "M2 U2 M' U' M2 U' M2 U' M' U"
           ],
           "successes": [
             {
-              "original": "M2 U2 M' U' M2 U' M2 U' M' U",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000000000111111111222224222333335333444442444555553555"
@@ -3401,11 +3240,12 @@
         },
         "8": {
           "cells": [
+            "J",
             "R2 U' R2 U R U R' U' R U R U' R U' R' U2 R"
           ],
           "successes": [
             {
-              "original": "R2 U' R2 U R U R' U' R U R U' R U' R' U2 R",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000300000111111111222224222303335333444444424555553555"
@@ -3415,11 +3255,12 @@
         },
         "9": {
           "cells": [
+            "K",
             "Rw2 U2 M' U' M2 U' M2 U' M' U R2"
           ],
           "successes": [
             {
-              "original": "Rw2 U2 M' U' M2 U' M2 U' M' U R2",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000100000111111101222224222333335333444244444555553555"
@@ -3429,11 +3270,12 @@
         },
         "10": {
           "cells": [
+            "L",
             "U' R2 U R U R' U' R U R U' R U' R' U2 R'"
           ],
           "successes": [
             {
-              "original": "U' R2 U R U R' U' R U R U' R U' R' U2 R'",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000200000111111111222224202333335333424444444555553555"
@@ -3443,11 +3285,12 @@
         },
         "11": {
           "cells": [
+            "M",
             "U' (M2 U' M U2 M' U' M2) U"
           ],
           "successes": [
             {
-              "original": "U' (M2 U' M U2 M' U' M2) U",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000000000111111111222223222333335333444444444555552555"
@@ -3457,11 +3300,12 @@
         },
         "12": {
           "cells": [
+            "N",
             "U2 R E' R' U R E (R' M2) U M U2 M' U M2 U"
           ],
           "successes": [
             {
-              "original": "U2 R E' R' U R E (R' M2) U M U2 M' U M2 U",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000500000111111111222223222333335323444444444505553555"
@@ -3471,11 +3315,12 @@
         },
         "13": {
           "cells": [
+            "O",
             "M U2 M' U' M' U2 M' U' M U2 M"
           ],
           "successes": [
             {
-              "original": "M U2 M' U' M' U2 M' U' M U2 M",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000100000111011111222223222333235333444444444555553555"
@@ -3485,11 +3330,12 @@
         },
         "14": {
           "cells": [
+            "P",
             "R' (F R U R' U' F' U' R' F' U' F U R U) R"
           ],
           "successes": [
             {
-              "original": "R' (F R U R' U' F' U' R' F' U' F U R U) R",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000400000111111111222223222323335333444444404555553555"
@@ -3499,11 +3345,12 @@
         },
         "15": {
           "cells": [
+            "Q",
             "U' (M2 U M U2 M' U M2) U"
           ],
           "successes": [
             {
-              "original": "U' (M2 U M U2 M' U M2) U",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 3,
               "signature": "000000000111111111222225222333332333444444444555553555"
@@ -3513,11 +3360,12 @@
         },
         "16": {
           "cells": [
+            "R",
             "U2 L' (M2 U2 M' U' M2 U' M2 U' M' U) L U2"
           ],
           "successes": [
             {
-              "original": "U2 L' (M2 U2 M' U' M2 U' M2 U' M' U) L U2",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000200000111111111202225222333335333444444444555553525"
@@ -3527,6 +3375,7 @@
         },
         "17": {
           "cells": [
+            "S",
             "[D[Rw2 U' R2 B2 Rw2 U' R2 B2]]"
           ],
           "successes": [],
@@ -3534,11 +3383,12 @@
         },
         "18": {
           "cells": [
+            "T",
             "L U F2 (R U R' U') F2 L' U'"
           ],
           "successes": [
             {
-              "original": "L U F2 (R U R' U') F2 L' U'",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000300000111111111222225222333335303444444444525553555"
@@ -3548,11 +3398,12 @@
         },
         "19": {
           "cells": [
+            "U",
             "U M' U' Lw F' L' S' Rw U Rw' S"
           ],
           "successes": [
             {
-              "original": "U M' U' Lw F' L' S' Rw U Rw' S",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000200000111112111222021222333335333444444444555553555"
@@ -3562,6 +3413,7 @@
         },
         "20": {
           "cells": [
+            "V",
             "[x'[R U' R' E' R U R' F' E F]]"
           ],
           "successes": [],
@@ -3569,6 +3421,7 @@
         },
         "21": {
           "cells": [
+            "W",
             "[D' x'[R U' R' E' R U R' F' E F]]"
           ],
           "successes": [],
@@ -3576,11 +3429,12 @@
         },
         "22": {
           "cells": [
+            "X",
             "D (U M' U' Lw F' L' S' Rw U Rw' S) D'"
           ],
           "successes": [
             {
-              "original": "D (U M' U' Lw F' L' S' Rw U Rw' S) D'",
+              "original": 1,
               "unsolved_corners": 0,
               "unsolved_edges": 4,
               "signature": "000500000121111111222221222333335333444444444555053555"
@@ -3624,16 +3478,14 @@
           "successes": [],
           "failures": [
             {
-              "original": "2nd   \\   1st",
-              "failure_reason": 2
+              "original": 23,
+              "failure_id": 2,
+              "failure_description": "'W' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "DBl (W)",
-              "failure_reason": 2
-            },
-            {
-              "original": "DLf (X)",
-              "failure_reason": 2
+              "original": 24,
+              "failure_id": 2,
+              "failure_description": "'X' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -3670,7 +3522,7 @@
           ],
           "successes": [
             {
-              "original": "[r, Lw' U' L U]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "020200502111110111222521220330333334443444444553550555"
@@ -3696,8 +3548,9 @@
           "successes": [],
           "failures": [
             {
-              "original": "[3Lw[U' r2 U, R]]",
-              "failure_reason": 2
+              "original": 2,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -3708,6 +3561,7 @@
             "[D[R' F R, f']]",
             "[Rw[r D2 r', U2]]",
             "[Rw[r D2 r', U]]",
+            "",
             "[Rw[r D2 r', U']]"
           ],
           "successes": [],
@@ -3720,14 +3574,16 @@
             "[r' U'[r2, U' L' U]]",
             "[Rw' U2[r2, U' L' U]]",
             "[3Rw'[U r2 U', L]]",
+            "",
             "[Rw[U, Rw u2 Rw']]",
             "[Rw U'[L', U' l' U]]"
           ],
           "successes": [],
           "failures": [
             {
-              "original": "[3Rw'[U r2 U', L]]",
-              "failure_reason": 2
+              "original": 4,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -3738,13 +3594,14 @@
             "[U' Rw U2[r2, U' R' U]]",
             "[Rw' Lw' U2[r, U' R U]]",
             "[U'[l', Rw U R' U']]",
+            "",
             "[R' D'[U' R U, r]]",
             "[Lw[U, r' D2 r]]",
             "[R' u' R, U']"
           ],
           "successes": [
             {
-              "original": "[U'[l', Rw U R' U']]",
+              "original": 4,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "205200050111110111220221225333334330442440444553553554"
@@ -3759,23 +3616,18 @@
             "[Rw D[r', U R' U']]",
             "[Rw[r D r', U2]]",
             "[Rw[r D r', U]]",
+            "",
             "[R'[U, r' D' r]]",
             "[U'[R', U' l2 U]]",
             "[R'[R' u' R, U']]",
             "[3Lw[U r U', R']]"
           ],
-          "successes": [
-            {
-              "original": "[R'[U, r' D' r]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000300344111111224222224024112333333301440440555555555"
-            }
-          ],
+          "successes": [],
           "failures": [
             {
-              "original": "[3Lw[U r U', R']]",
-              "failure_reason": 2
+              "original": 9,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -3786,6 +3638,7 @@
             "[R' F R, f']",
             "[r[r D r', U2]]",
             "[r[r D r', U]]",
+            "",
             "[y'[U r2 U', R']]",
             "[3Lw' U[R u' R', U2]]",
             "[R' F[R f' R', F]]",
@@ -3795,12 +3648,14 @@
           "successes": [],
           "failures": [
             {
-              "original": "[3Lw' U[R u' R', U2]]",
-              "failure_reason": 2
+              "original": 7,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[3Lw[U r U', R2]]",
-              "failure_reason": 2
+              "original": 9,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -3811,6 +3666,7 @@
             "[F[R, U' r2 U]]",
             "[Lw U'[R, U' l2 U]]",
             "[L[u', R U' R']]",
+            "",
             "[Dw x'[U r U', R2]]",
             "[Lw U'[R, U' l U]]",
             "[u', R U' R']",
@@ -3821,8 +3677,9 @@
           "successes": [],
           "failures": [
             {
-              "original": "3Lw[U r U', R]]",
-              "failure_reason": 4
+              "original": 9,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             }
           ]
         },
@@ -3833,6 +3690,7 @@
             "[x' U'[R, U' r2 U]]",
             "[Lw'[r' D2 r, U2]]",
             "[x' U[L', U r2 U']]",
+            "",
             "[R'[U2, r' D' r]]",
             "[U2', Rw U2 l' U2 Rw']]",
             "[U[R' u' R, U2]]",
@@ -3840,13 +3698,24 @@
             "[Lw' U2[l, U R' U']]",
             "[Rw' U[R', U r U']]",
             "[Lw' U2[l, U R U']]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[D[U2, r' D r]]"
           ],
           "successes": [],
           "failures": [
             {
-              "original": "[U2', Rw U2 l' U2 Rw']]",
-              "failure_reason": 4
+              "original": 7,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             }
           ]
         },
@@ -3857,6 +3726,7 @@
             "[x' U[U R U', r2]]",
             "[Lw'[r' D r, U2]]",
             "[3Rw'[U r2 U', L]]",
+            "",
             "[x'[U2[R2, U' r2 U]]",
             "[Rw U'[L, U' l' U]]",
             "[U' L'[U r U', L2]]",
@@ -3868,7 +3738,7 @@
           ],
           "successes": [
             {
-              "original": "[r, U' L U]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000502502411111111222223223330330003441444444335555555"
@@ -3876,12 +3746,14 @@
           ],
           "failures": [
             {
-              "original": "[3Rw'[U r2 U', L]]",
-              "failure_reason": 2
+              "original": 4,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[x'[U2[R2, U' r2 U]]",
-              "failure_reason": 4
+              "original": 6,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':3.0, ']':2.0"
             }
           ]
         },
@@ -3892,6 +3764,7 @@
             "[Rw'[U R U', r2]]",
             "[D Rw[r D' r', U2]]",
             "[x'[U' L' U, r2]]",
+            "",
             "[r'[U R U', r2]]",
             "[x[U2, Lw' U2 r U2 Lw]]",
             "[r'[U' L' U, r2]]",
@@ -3899,24 +3772,20 @@
             "[r2, U' R' U]]",
             "[R[r2, U' R U]]",
             "[r2, U' R U]",
+            "",
             "[r'[U' L U, r2]]"
           ],
-          "successes": [
-            {
-              "original": "[R[r2, U' R U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 5,
-              "signature": "000200211111011112223224000332433333425344444555555554"
-            }
-          ],
+          "successes": [],
           "failures": [
             {
-              "original": "[r2, R U' R' U]]",
-              "failure_reason": 4
+              "original": 9,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             },
             {
-              "original": "[r2, U' R' U]]",
-              "failure_reason": 4
+              "original": 10,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':1.0, ']':2.0"
             }
           ]
         },
@@ -3927,6 +3796,7 @@
             "[3Lw[U' r2 U, R']]",
             "[r' U2[r2, U R' U']]",
             "[x' U2[L', U r2 U']]",
+            "",
             "[x'[R2, U' r2 U]]",
             "[r U[R', U l' U']]",
             "[z r[U R U', r2]]",
@@ -3938,18 +3808,12 @@
             "[Rw' U2[L, U r2 U']]",
             "[r[U R' U', r2]]"
           ],
-          "successes": [
-            {
-              "original": "[U[L' u' L, U]]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "301004000113111111000222222352333332444443425555555445"
-            }
-          ],
+          "successes": [],
           "failures": [
             {
-              "original": "[3Lw[U' r2 U, R']]",
-              "failure_reason": 2
+              "original": 2,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -3960,6 +3824,7 @@
             "[R' F R, f]",
             "[Lw U[L', U l2 U']]",
             "[U' Lw2[r' D2 r, U]]",
+            "",
             "[R'[U', r' D' r]]",
             "[Lw U[L', U l U']]",
             "[U2[R' u' R, U]]",
@@ -3974,13 +3839,13 @@
           ],
           "successes": [
             {
-              "original": "[Lw U L' U', r']",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "310005002111311111224222225330030333442444444555553550"
             },
             {
-              "original": "[r2, D Rw2 U']",
+              "original": 15,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "110000000111011011224225225233233333442444444555553553"
@@ -3995,6 +3860,7 @@
             "[L'[R' F R, f]]",
             "[Lw2 U[L, U l U']]",
             "[F'[L', U r2 U']]",
+            "",
             "[z[l', U' R U]]",
             "[U[L', U l2 U']]",
             "[Uw2 x'[l D l', U]]",
@@ -4010,13 +3876,13 @@
           ],
           "successes": [
             {
-              "original": "[U L' U', r']",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000202202114111111332225225330330333441444444555555005"
             },
             {
-              "original": "[U L' U', r2]",
+              "original": 15,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000200200114011011112225225233233333441444444555555335"
@@ -4024,8 +3890,9 @@
           ],
           "failures": [
             {
-              "original": "[3Rw'[U' r U, L']]",
-              "failure_reason": 2
+              "original": 17,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -4036,6 +3903,7 @@
             "[Rw D'[r', U R' U']]",
             "[Rw[r D' r', U2]]",
             "[Rw[r D' r', U]]",
+            "",
             "[Rw[U, r D' r']]",
             "[Rw[l' U2 l, D]]",
             "[y'[U' l2 U, R]]",
@@ -4052,13 +3920,13 @@
           ],
           "successes": [
             {
-              "original": "[U L2 U', r']",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000102102331111111222225225330330433443444444055055555"
             },
             {
-              "original": "[L, D' r2 D]",
+              "original": 18,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000100100224111111002225225333333133443444444555555225"
@@ -4066,8 +3934,9 @@
           ],
           "failures": [
             {
-              "original": "[3Rw'[U' r  U, L2]]",
-              "failure_reason": 2
+              "original": 17,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -4078,6 +3947,7 @@
             "[L[R' F R, f]]",
             "[Lw2 U[L', U l U']]",
             "[x D'[r', U' L U]]",
+            "",
             "[x'[r U' r', D']]",
             "[x[U2, l D l']]",
             "[z[r, U R U']]",
@@ -4095,13 +3965,13 @@
           ],
           "successes": [
             {
-              "original": "[U L U', r']",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "400302502111111111220225222330330333440444444505555553"
             },
             {
-              "original": "[U L U', r2]",
+              "original": 15,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "400300500111011011223225222233233313440444444535555551"
@@ -4109,8 +3979,9 @@
           ],
           "failures": [
             {
-              "original": "[3Rw'[U' r U, L]]",
-              "failure_reason": 2
+              "original": 17,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -4121,6 +3992,7 @@
             "[Rw[r, U R' U']]",
             "[l'[U2, l' D2 l]]",
             "[3Lw'[r, U' L U]]",
+            "",
             "[r2[U R U', r']]",
             "[Lw U[D2, r U' r']]",
             "[r2[U' L' U, r']]",
@@ -4136,23 +4008,25 @@
             "[r, U L' U']",
             "[r, U L2 U']",
             "[r, U L U']",
+            "",
+            "",
             "[U[l U l', D2]]"
           ],
           "successes": [
             {
-              "original": "[r, U L' U']",
+              "original": 18,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000200200114115115002221221333333333144444444555555225"
             },
             {
-              "original": "[r, U L2 U']",
+              "original": 19,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000200200001115115222121121333333433344444444255255555"
             },
             {
-              "original": "[r, U L U']",
+              "original": 20,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "400200200111115112222321521333333303044444444525555550"
@@ -4160,8 +4034,9 @@
           ],
           "failures": [
             {
-              "original": "[3Lw'[r, U' L U]]",
-              "failure_reason": 2
+              "original": 4,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -4172,11 +4047,13 @@
             "[3Lw[U' r2 U, R2]]",
             "[Rw' U2[r2, U R' U']]",
             "[Rw' U[r2, U R' U']]",
+            "",
             "[R', D' r' D]",
             "[y'[U' l U, R2]]",
             "[y'[U' l U, R]]",
             "[U', R' u R]",
             "[D'[r, U' R' U]]",
+            "(r2)",
             "[D'[r, U' R U]]",
             "[U'[R' u R, U2]]",
             "[y U'[r, U' R' U]]",
@@ -4188,22 +4065,17 @@
             "[D'[r, U L U']]",
             "[Rw[U R U', r]]"
           ],
-          "successes": [
-            {
-              "original": "[U'[R' u R, U']]",
-              "unsolved_corners": 4,
-              "unsolved_edges": 4,
-              "signature": "404004300111111541222222225203331331440344054553553550"
-            }
-          ],
+          "successes": [],
           "failures": [
             {
-              "original": "[R[r, U R2 U']",
-              "failure_reason": 4
+              "original": 1,
+              "failure_id": 4,
+              "failure_description": "Unmatched brackets found: '[':2.0, ']':1.0"
             },
             {
-              "original": "[3Lw[U' r2 U, R2]]",
-              "failure_reason": 2
+              "original": 2,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -4214,6 +4086,7 @@
             "[B2[R U R' U', r]]",
             "[D' Rw' U2[r2, U R' U']]",
             "[x U2[l', U L U']]",
+            "",
             "[x'[r U2 r', D']]",
             "[Lw[U2, r' D2 r]]",
             "[3Lw'[r D2 r', U]]",
@@ -4234,7 +4107,7 @@
           ],
           "successes": [
             {
-              "original": "[r' D2 r, U']",
+              "original": 17,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000100300511110111224522221333333033445444444255552552"
@@ -4242,12 +4115,14 @@
           ],
           "failures": [
             {
-              "original": "DBl (W)",
-              "failure_reason": 2
+              "original": 0,
+              "failure_id": 2,
+              "failure_description": "'W' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[3Lw'[r D2 r', U]]",
-              "failure_reason": 2
+              "original": 8,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -4258,6 +4133,7 @@
             "[D Rw[r, U R' U']]",
             "[l'[U2, l' D' l]]",
             "[3Rw'[U r2 U', L2]]",
+            "",
             "[y'[U r U', R']]",
             "[y'[U r U', R2]]",
             "[y'[U r U', R]]",
@@ -4279,19 +4155,19 @@
           ],
           "successes": [
             {
-              "original": "[r, U' L2 U]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000502502100111111422221221330330333442444444555355355"
             },
             {
-              "original": "[r' D r, U]",
+              "original": 9,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000500500144111111322221221334333333442442442555055055"
             },
             {
-              "original": "[L', D r' D']",
+              "original": 14,
               "unsolved_corners": 3,
               "unsolved_edges": 3,
               "signature": "000500500433111111122221221333333223442444444005555555"
@@ -4299,16 +4175,19 @@
           ],
           "failures": [
             {
-              "original": "DLf (X)",
-              "failure_reason": 2
+              "original": 0,
+              "failure_id": 2,
+              "failure_description": "'X' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[3Rw'[U r2 U', L2]]",
-              "failure_reason": 2
+              "original": 4,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "[3Lw'[U' L' U, r2]]",
-              "failure_reason": 2
+              "original": 15,
+              "failure_id": 2,
+              "failure_description": "'3' not a valid move in SiGN or WCA notation."
             }
           ]
         }
@@ -4319,6 +4198,7 @@
       "values": {
         "0": {
           "cells": [
+            "",
             "Ubl (A)",
             "Ubr (B, buffer)",
             "Ufr (C)",
@@ -4347,20 +4227,40 @@
           "successes": [],
           "failures": [
             {
-              "original": "Dbr (W)",
-              "failure_reason": 2
+              "original": 23,
+              "failure_id": 2,
+              "failure_description": "'W' not a valid move in SiGN or WCA notation."
             },
             {
-              "original": "Dbl (X)",
-              "failure_reason": 2
+              "original": 24,
+              "failure_id": 2,
+              "failure_description": "'X' not a valid move in SiGN or WCA notation."
             }
           ]
         },
         "1": {
           "cells": [
             "Ubl (A)",
+            "",
+            "",
+            "",
+            "",
             "[u'[l u l', U']]",
             "[u[U, r' u' r]]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[Rw'[l2, U r U']]",
             "[Lw[U' l' U, r2]]",
             "[D' Lw[U' l' U, r2]]",
@@ -4379,6 +4279,10 @@
         "3": {
           "cells": [
             "Ufr (C)",
+            "",
+            "",
+            "",
+            "",
             "[r u2 r', U]"
           ],
           "successes": [],
@@ -4387,6 +4291,10 @@
         "4": {
           "cells": [
             "Ufl (D)",
+            "",
+            "",
+            "",
+            "",
             "[y'[U2, l u l']]"
           ],
           "successes": [],
@@ -4396,10 +4304,25 @@
           "cells": [
             "Ful (E)",
             "[u'[U', l u l']]",
+            "",
             "[U, r u2 r']",
             "[y'[l u l', U2]]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[u2, l' U' l]",
             "[x' U[U r U', l2]]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[x[l', U r' U']]",
             "[U' l' U, r2]",
             "[D'[U' l' U, r2]]"
@@ -4411,8 +4334,25 @@
           "cells": [
             "Fur (F)",
             "[u[r' u' r, U]]",
+            "",
             "[y'[U, r' u r]]",
             "[U2, l' u2 l]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[x[U' l' U, r']]"
           ],
           "successes": [],
@@ -4422,12 +4362,13 @@
           "cells": [
             "Fdr (G)",
             "[U', l' d2 l]",
+            "",
             "[y[r' d r, U']]",
             "[y'[U2, r' d' r]]"
           ],
           "successes": [
             {
-              "original": "[U', l' d2 l]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000000012111211113222222002334434334554443441553553555"
@@ -4439,18 +4380,19 @@
           "cells": [
             "Fdl (H)",
             "[r d2 r', U]",
+            "",
             "[r d2 r', U']",
             "[r d2 r', U2]"
           ],
           "successes": [
             {
-              "original": "[r d2 r', U]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000000022115011111012222222331534334444445445553553335"
             },
             {
-              "original": "[r d2 r', U']",
+              "original": 3,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000001002114211111002224224331533333443443445555555225"
@@ -4462,6 +4404,7 @@
           "cells": [
             "Ruf (I)",
             "[U', l u l']",
+            "",
             "[U, r u' r']",
             "[U'[l u l', U2]]",
             "[l' U' l, u]"
@@ -4473,6 +4416,7 @@
           "cells": [
             "Rub (J)",
             "[r' u r, U]",
+            "",
             "[r' u r, U']",
             "[r' u r, U2]",
             "[R'[l' U' l, u]]"
@@ -4484,19 +4428,20 @@
           "cells": [
             "Rdb (K)",
             "[U', l' d l]",
+            "",
             "[U, r' d' r]",
             "[U[r' d' r, U2]]",
             "[R2[l' U' l, u]]"
           ],
           "successes": [
             {
-              "original": "[U', l' d l]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000000044111111331222222222553334334444441001553553555"
             },
             {
-              "original": "[U, r' d' r]",
+              "original": 3,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000004004111111124222224224331331333003443442555555555"
@@ -4508,19 +4453,20 @@
           "cells": [
             "Rdf (L)",
             "[r d r', U]",
+            "",
             "[r d r', U']",
             "[U2, l d' l]",
             "[R[l' U' l, u]]"
           ],
           "successes": [
             {
-              "original": "[r d r', U]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000000044111111331222222222553334334444441001553553555"
             },
             {
-              "original": "[r d r', U']",
+              "original": 3,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000004004111111221222224224413333333443043041555555555"
@@ -4532,9 +4478,25 @@
           "cells": [
             "Bur (M)",
             "[U', l u2 l']",
+            "",
             "[y'[l u' l', U']]",
             "[y'[l u' l', U2]]",
             "[l' U' l, u2]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[l'[l' U' l, u2]]"
           ],
           "successes": [],
@@ -4544,9 +4506,25 @@
           "cells": [
             "Bul (N)",
             "[r' u2 r, U]",
+            "",
             "[r' u2 r, U']",
             "[r' u2 r, U2]",
             "[x' U[l2, U r U']]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[y' r[r U r', d]]"
           ],
           "successes": [],
@@ -4556,9 +4534,26 @@
           "cells": [
             "Bdl (O)",
             "[y[r' d' r, U]]",
+            "",
             "[U, r' u2 r]",
             "[y'[U2, r' d r]]",
             "[F2[d2, l U' l']]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[U' l U, r2]"
           ],
           "successes": [],
@@ -4568,6 +4563,7 @@
           "cells": [
             "Bdr (P)",
             "[y'[U', l d l']]",
+            "",
             "[y[U, l d' l']]",
             "[U2, l d2 l']",
             "[F'[l' U2 l, d2]]"
@@ -4579,6 +4575,7 @@
           "cells": [
             "Lub (Q)",
             "[U', l u' l']",
+            "",
             "[U, r u r']",
             "[U[r u r', U2]]",
             "[l' U' l, u']"
@@ -4590,9 +4587,25 @@
           "cells": [
             "Luf (R)",
             "[r' u' r, U]",
+            "",
             "[r' u' r, U']",
             "[r' u' r, U2]",
             "[L'[l' U' l, u']]",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "[Lw'[l' U' l, u']]"
           ],
           "successes": [],
@@ -4602,19 +4615,20 @@
           "cells": [
             "Ldf (S)",
             "[U', l' d' l]",
+            "",
             "[U, r' d r]",
             "[U[r' d r, U2]]",
             "[L2[l' U' l, u']]"
           ],
           "successes": [
             {
-              "original": "[U', l' d' l]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000000055551111111222222222331334314444443443053053555"
             },
             {
-              "original": "[U, r' d r]",
+              "original": 3,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000005005122111111412224224332332333443443441555055055"
@@ -4626,19 +4640,20 @@
           "cells": [
             "Ldb (T)",
             "[r d' r', U]",
+            "",
             "[r d' r', U']",
             "[r d' r', U2]",
             "[L[l' U' l, u']]"
           ],
           "successes": [
             {
-              "original": "[r d' r', U]",
+              "original": 1,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000000055551111111222222222331334314444443443053053555"
             },
             {
-              "original": "[r d' r', U']",
+              "original": 3,
               "unsolved_corners": 3,
               "unsolved_edges": 5,
               "signature": "000005005431111111222224224331331223443443443005555555"
@@ -4650,6 +4665,9 @@
           "cells": [
             "Dfl (U)",
             "[Rw'[U r U', l2]]",
+            "",
+            "",
+            "",
             "[x[U r' U', l']]"
           ],
           "successes": [],
@@ -4659,6 +4677,9 @@
           "cells": [
             "Dfr (V)",
             "[Lw[r2, U' l' U]]",
+            "",
+            "",
+            "",
             "[r2, U' l' U]"
           ],
           "successes": [],
@@ -4668,13 +4689,17 @@
           "cells": [
             "Dbr (W)",
             "[D' Lw[r2, U' l' U]]",
+            "",
+            "",
+            "",
             "[D'[r2, U' l' U]]"
           ],
           "successes": [],
           "failures": [
             {
-              "original": "Dbr (W)",
-              "failure_reason": 2
+              "original": 0,
+              "failure_id": 2,
+              "failure_description": "'W' not a valid move in SiGN or WCA notation."
             }
           ]
         },
@@ -4682,13 +4707,16 @@
           "cells": [
             "Dbl (X)",
             "[D Rw'[U r U', l2]]",
+            "",
+            "",
             "[D2, r' B2 d2 B2 r]"
           ],
           "successes": [],
           "failures": [
             {
-              "original": "Dbl (X)",
-              "failure_reason": 2
+              "original": 0,
+              "failure_id": 2,
+              "failure_description": "'X' not a valid move in SiGN or WCA notation."
             }
           ]
         }
