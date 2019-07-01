@@ -9,4 +9,4 @@ class DataSelector:
     PRETTY_INDENT = 2
     SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
     MAX_ALLOWED_UNSOLVED_EDGES = 6
-    MAX_ALLOWED_UNSOLVED_CORNERS = 4
+    MAX_ALLOWED_UNSOLVED_CORNERS = 5

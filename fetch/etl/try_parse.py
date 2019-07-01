@@ -1,6 +1,6 @@
 from ..config import DataSelector
 from .extract_metadata import collect_field
-from fetch.etl import signature
+from .strings import signature
 
 from parse import Algorithm
 from parse.exceptions import *
@@ -51,8 +51,10 @@ def prepare_data_try_parse(sheet, meta):
                         if cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES or (cube.unsolved_corner_count + cube.unsolved_edge_count == 0):
                             continue
                         successes.append({"original": cell_ind,
-                                          "unsolved_corners": cube.unsolved_corner_count,
-                                          "unsolved_edges": cube.unsolved_edge_count,
+                                          "unsolved_edge_pieces": (),
+                                          "unsolved_corner_pieces": cube.unsolved_corners,
+                                          "unsolved_corners_count": cube.unsolved_corner_count,
+                                          "unsolved_edges_count": cube.unsolved_edge_count,
                                           "signature": signature(cube.stickers)})
                     except AmbiguousStatementException as e:
                         failures.append({"original": cell_ind, "failure_id": 0, "failure_description": str(e)})

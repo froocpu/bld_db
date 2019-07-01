@@ -1,5 +1,6 @@
 from .base_cube import BaseCube
 from parse import Notation
+from ..utils.strings import rotate_sticker
 
 
 class Cube(BaseCube):
@@ -17,20 +18,16 @@ class Cube(BaseCube):
         super(Cube, self).__init__(N=nxnxn, white_plastic=white_plastic)
         self.nxnxn = nxnxn
         self.debug = debug
-        self.solved_state_corners, self.solved_state_edges = self._generate_good_mappings(self.stickers)
         self.unsolved_edge_count = 0
         self.unsolved_corner_count = 0
         self.unsolved_corners = []
         self.unsolved_edges = []
+        self.solved_state_corners, self.solved_state_edges = _generate_good_mappings(self.stickers)
 
         # Generate mappings.
         good_corner_mappings, good_edge_mappings = self.solved_state_corners, self.solved_state_edges
 
-        bad_edge_mappings = {}
-
-        for k in good_edge_mappings:
-            new_tuple = (good_edge_mappings[k][1], good_edge_mappings[k][0])
-            bad_edge_mappings.update({k[::-1]: new_tuple})
+        bad_edge_mappings = flip_edge_mappings(good_edge_mappings)
 
         # Two clockwise rotations == one counter-clockwise rotation.
         bad_corner_mappings_cw = corner_mapping_rotation_cw(mappings=good_corner_mappings)
@@ -50,7 +47,7 @@ class Cube(BaseCube):
         """
         for move in alg:
             self.move(move)
-        self.count_unsolved_pieces()
+        self.update()
 
     def move(self, m):
         """
@@ -102,44 +99,9 @@ class Cube(BaseCube):
         if self.debug:
             print("Performed move() for {}".format(orig))
 
-    @staticmethod
-    def _generate_good_mappings(stickers):
+    def update(self):
         """
-        Internal function. Used to take a snapshot of the cube and calculate metadata on states.
-        :param stickers: a set of stickers (m-n array), solved or not.
-        :return: dict
-        """
-        good_corner_mappings = {
-            "ULF": (stickers[0][0][0], stickers[5][2][2], stickers[2][0][2]),
-            "UFR": (stickers[0][2][0], stickers[2][2][2], stickers[4][0][2]),
-            "URB": (stickers[0][2][2], stickers[4][2][2], stickers[3][0][2]),
-            "ULB": (stickers[0][0][2], stickers[5][0][2], stickers[3][2][2]),
-            "DLF": (stickers[1][0][2], stickers[5][2][0], stickers[2][0][0]),
-            "DFR": (stickers[1][2][2], stickers[2][2][0], stickers[4][0][0]),
-            "DRB": (stickers[1][2][0], stickers[4][2][0], stickers[3][0][0]),
-            "DLB": (stickers[1][0][0], stickers[5][0][0], stickers[3][2][0])
-        }
-
-        good_edge_mappings = {
-            "UB": (stickers[0][1][2], stickers[3][1][2]),
-            "UR": (stickers[0][2][1], stickers[4][1][2]),
-            "UF": (stickers[0][1][0], stickers[2][1][2]),
-            "UL": (stickers[0][0][1], stickers[5][1][2]),
-            "DF": (stickers[1][1][2], stickers[2][1][0]),
-            "DR": (stickers[1][2][1], stickers[4][1][0]),
-            "DB": (stickers[1][1][0], stickers[3][1][0]),
-            "DL": (stickers[1][0][1], stickers[5][1][0]),
-            "FL": (stickers[2][0][1], stickers[5][2][1]),
-            "FR": (stickers[2][2][1], stickers[4][0][1]),
-            "BL": (stickers[3][2][1], stickers[5][0][1]),
-            "BR": (stickers[3][0][1], stickers[4][2][1])
-        }
-
-        return good_corner_mappings, good_edge_mappings
-
-    def count_unsolved_pieces(self):
-        """
-        Compare the current state against the solved state. Count the number of pieces out of place.
+        Updates the current mapping states and unsolved piece counts.
         :return: None
         """
         # Refresh the existing lists.
@@ -148,7 +110,8 @@ class Cube(BaseCube):
 
         unsolved_edge_count = 0
         unsolved_corner_count = 0
-        current_corner_mappings, current_edge_mappings = self._generate_good_mappings(self.stickers)
+        current_corner_mappings, current_edge_mappings = _generate_good_mappings(self.stickers)
+
         for c in current_corner_mappings:
             if current_corner_mappings[c] != self.solved_state_corners[c]:
                 unsolved_corner_count += 1
@@ -160,6 +123,84 @@ class Cube(BaseCube):
 
         self.unsolved_edge_count = unsolved_edge_count
         self.unsolved_corner_count = unsolved_corner_count
+
+        current_bad_edge_mappings = flip_edge_mappings(current_edge_mappings)
+
+        # Two clockwise rotations == one counter-clockwise rotation.
+        current_bad_corner_mappings_cw = corner_mapping_rotation_cw(mappings=current_corner_mappings)
+        current_bad_corner_mappings_ccw = corner_mapping_rotation_cw(mappings=current_bad_corner_mappings_cw)
+
+        self.edge_mappings = {**current_edge_mappings, **current_bad_edge_mappings}
+        self.corner_mappings = {**current_corner_mappings, **current_bad_corner_mappings_cw, **current_bad_corner_mappings_ccw}
+
+        # TODO: cycle discovery.
+
+    def _cycle_discovery(self):
+        reverse_facedict = {}
+        all_cycles = []
+        # todo: broken
+        for v in self.facedict:
+            reverse_facedict.update({self.facedict[v]: v})
+
+        unsolved_edges_copy = self.unsolved_edges.copy()
+        this_cycle = [unsolved_edges_copy.pop(0)]
+
+        while True:
+            this_piece = self.edge_mappings[this_cycle[-1]]
+            sticker_a, sticker_b = reverse_facedict[this_piece[0]], reverse_facedict[this_piece[1]]
+            sticker = "".join([sticker_a, sticker_b])
+            if this_piece not in [this_cycle[0], rotate_sticker(this_cycle[0])]:
+                this_cycle.append(sticker)
+                return False
+            return True
+
+
+def _generate_good_mappings(stickers):
+    """
+    Internal function. Used to take a snapshot of the cube and calculate metadata on states.
+    :param stickers: a set of stickers (m-n array), solved or not.
+    :return: dict
+    """
+    corners = {
+        "ULF": (stickers[0][0][0], stickers[5][2][2], stickers[2][0][2]),
+        "UFR": (stickers[0][2][0], stickers[2][2][2], stickers[4][0][2]),
+        "URB": (stickers[0][2][2], stickers[4][2][2], stickers[3][0][2]),
+        "ULB": (stickers[0][0][2], stickers[5][0][2], stickers[3][2][2]),
+        "DLF": (stickers[1][0][2], stickers[5][2][0], stickers[2][0][0]),
+        "DFR": (stickers[1][2][2], stickers[2][2][0], stickers[4][0][0]),
+        "DRB": (stickers[1][2][0], stickers[4][2][0], stickers[3][0][0]),
+        "DLB": (stickers[1][0][0], stickers[5][0][0], stickers[3][2][0])
+    }
+
+    edges = {
+        "UB": (stickers[0][1][2], stickers[3][1][2]),
+        "UR": (stickers[0][2][1], stickers[4][1][2]),
+        "UF": (stickers[0][1][0], stickers[2][1][2]),
+        "UL": (stickers[0][0][1], stickers[5][1][2]),
+        "DF": (stickers[1][1][2], stickers[2][1][0]),
+        "DR": (stickers[1][2][1], stickers[4][1][0]),
+        "DB": (stickers[1][1][0], stickers[3][1][0]),
+        "DL": (stickers[1][0][1], stickers[5][1][0]),
+        "FL": (stickers[2][0][1], stickers[5][2][1]),
+        "FR": (stickers[2][2][1], stickers[4][0][1]),
+        "BL": (stickers[3][2][1], stickers[5][0][1]),
+        "BR": (stickers[3][0][1], stickers[4][2][1])
+    }
+
+    return corners, edges
+
+def flip_edge_mappings(mappings):
+    """
+    Perform a flip on an edges mapping object, generating new keys and tuples.
+    :param mappings: a dictionary of mappings of human-readable notation to multi-dimensional array indices.
+    :type: dict
+    :return: dict
+    """
+    bad_edge_mappings = {}
+    for k in mappings:
+        new_tuple = (mappings[k][1], mappings[k][0])
+        bad_edge_mappings.update({k[::-1]: new_tuple})
+    return bad_edge_mappings
 
 
 def corner_mapping_rotation_cw(mappings):
