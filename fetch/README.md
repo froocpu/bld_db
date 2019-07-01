@@ -17,7 +17,7 @@ A Python module for making requests to the Google Sheets API and pulling data.
     - [ ] Make deleting data easy.
     - [ ] Link to original sheets.
 - [ ] Other data sources:
-    - BH corners
+    - [BH corners](http://www.speedcubing.com/chris/bhcorners.html)
     - Best site ever (Roman)
     - AlgDB?
     
@@ -26,3 +26,4 @@ A Python module for making requests to the Google Sheets API and pulling data.
 
 - Snapshot sheets.
 - Detect if a change has been made between one pass and the next. If change, store snapshot and delta.
+

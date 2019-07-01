@@ -101,13 +101,13 @@ What this means is that as long as the lists of arrays are stored, that it shoul
     
 ## Notes
 
-    Print view:
+When `cube.stickers` is printed, use the following rotations to orient your cube in relation to the output (so that the face will be on U):
 
-    UDFBRL
+    0:U, 1:D, 2:F, 3:B, 4:R, 5:L
 
-    U: x' z
-    D: x z
-    F: z
-    B: x2 z'
-    R: x y
-    L: x' y'
+    U: y
+    D: x2 y
+    F: z x
+    B: x' y'
+    R: z' y2
+    L: z
