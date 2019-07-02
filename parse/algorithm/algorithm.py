@@ -2,7 +2,7 @@ import re
 
 from .algorithm_helpers import expand_algorithm, handle_statement_no_brackets, split_sequence, parse_brackets, multiplier
 from .config import Notation
-from .moves import Move, BaseMove
+from .moves import Move
 from .sanitise import sanitise
 from .validation import generate_valid_moves, validate_move
 
@@ -10,7 +10,7 @@ from ..utils import clean_alg, count_occurrences
 from ..exceptions import *
 
 
-class Algorithm(BaseMove):
+class Algorithm:
 
     def __init__(self, s):
 
@@ -70,15 +70,31 @@ class Algorithm(BaseMove):
         return [m.move for m in self.moves]
 
     def invert(self):
-        moves = [self.inverse(m.move) for m in self.moves]
+        moves = [m.invert() for m in self.moves]
         moves.reverse()
         return moves
 
-    def convert_sign(self):
-        return [self.SiGN(m.move) for m in self.moves]
+    def alg_cancelled(self):
+        """
+        Simple cancellation:
+            Algorithm:
+                - Scan two elements at a time and perform:
+                    - If CW CW or CCW CCW, then replace both elements with a DOUBLE
+                    - If CW CCW or CCW CW or DOUBLE DOUBLE, then remove both elements
+                    - If CW DOUBLE or DOUBLE CW then replace both with CWW.
+                    - If CCW DOUBLE or DOUBLE CCW then replace both with CW.
+                -
+        :return:
+        """
+        new_list = []
+        counter = 1
+        while counter <= len(self.moves):
+            x = self.moves[counter-1:counter+1]
+            if x[0].is_cw() and x[1].is_cw():
+                print("hello")
 
-    def convert_wca(self):
-        return [self.wca(m.move) for m in self.moves]
+
+
 
 
 def _detect_unclosed_brackets(s, ob, cb):
