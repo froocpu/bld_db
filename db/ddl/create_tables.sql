@@ -41,6 +41,11 @@ create table algorithms (
     clean_text char(100),
     edges_unsolved_count smallint,
     corners_unsolved_count smallint,
+    twisted_corners_count smallint,
+    flipped_edges_count smallint,
+    parity_flag boolean,
+    edge_cycles_count smallint,
+    corner_cycles_count smallint,
     comments varchar(255),
     PRIMARY KEY (spreadsheet_id, signature)
 );

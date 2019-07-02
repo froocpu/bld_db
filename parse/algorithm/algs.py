@@ -15,10 +15,13 @@ class Algorithm(BaseMove):
 
         # Throw some early exceptions.
         if s is None or s == Notation.EMPTY:
-            raise EmptyAlgorithmException("Alg is either completely empty at initialisation, or just missing.")
+            raise EmptyAlgorithmException("Alg is either completely empty at initialisation, or just missing entirely.")
 
         if isinstance(s, str) is False:
             raise TypeError("Input must be a string.")
+
+        if s.isdigit() or s.replace('.', '').replace('+', '').replace('+', '').isdigit():
+            raise ValueError("Input appears to be an integer or a numeric value. Silly.")
 
         # Check for unmatched brackets.
         detect_unclosed_brackets(s, Notation.COMM_CONJ_OB, Notation.COMM_CONJ_CB)

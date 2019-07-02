@@ -12,14 +12,14 @@ A Python module for making requests to the Google Sheets API and pulling data.
     - [x] What metadata is necessary? What can we ignore and strip out?
     - [ ] How can we determine if a change has been made?
 - [ ] Processed data:
-    - [ ] When algs are parsed, how will they be stored?
+    - [x] When algs are parsed, how will they be stored?
 - [ ] People
     - [ ] Make deleting data easy.
     - [ ] Link to original sheets.
 - [ ] Other data sources:
-    - [BH corners](http://www.speedcubing.com/chris/bhcorners.html)
-    - Best site ever (Roman)
-    - AlgDB?
+    - [x] [BH corners](http://www.speedcubing.com/chris/bhcorners.html)
+    - [x] Best site ever (Roman)
+    - [ ] AlgDB?
     
     
 ## What should it do?
