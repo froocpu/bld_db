@@ -51,8 +51,8 @@ def prepare_data_try_parse(sheet, meta):
                         if cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES or (cube.unsolved_corner_count + cube.unsolved_edge_count == 0):
                             continue
                         successes.append({"original": cell_ind,
-                                          "unsolved_edge_pieces": cube.cycle_discovery(),
-                                          "unsolved_corner_pieces": cube.unsolved_corners,
+                                          "edge_cycles": cube.edge_cycle_discovery(),
+                                          "corner_cycles": cube.corner_cycle_discovery(),
                                           "unsolved_corners_count": cube.unsolved_corner_count,
                                           "unsolved_edges_count": cube.unsolved_edge_count,
                                           "signature": signature(cube.stickers)})

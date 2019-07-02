@@ -24,6 +24,10 @@ class Cube(BaseCube):
         self.unsolved_edges = []
         self.solved_state_corners, self.solved_state_edges = _generate_good_mappings(self.stickers)
 
+        self.reverse_dict = {}
+        for v in self.facedict:
+            self.reverse_dict.update({self.facedict[v]: v})
+
         # Generate mappings.
         good_corner_mappings, good_edge_mappings = self.solved_state_corners, self.solved_state_edges
 
@@ -133,28 +137,67 @@ class Cube(BaseCube):
         self.edge_mappings = {**current_edge_mappings, **current_bad_edge_mappings}
         self.corner_mappings = {**current_corner_mappings, **current_bad_corner_mappings_cw, **current_bad_corner_mappings_ccw}
 
-    def cycle_discovery(self):
-        # todo: broken
-        reverse_dict = {}
-        all_cycles = []
-        for v in self.facedict:
-            reverse_dict.update({self.facedict[v]: v})
+    def corner_cycle_discovery(self):
+        """
+        # TODO: make dynamic. edges and corners discovery can be combined.
+        """
+        all_corner_cycles = []
 
-        unsolved_edges_copy = self.unsolved_edges.copy()
-        for j in unsolved_edges_copy:
+        for j in self.unsolved_corners:
+
+            if any([j in k for k in all_corner_cycles]) or any([rotate_sticker(j, cw=True) in k for k in all_corner_cycles]) or any([rotate_sticker(j, cw=False) in k for k in all_corner_cycles]):
+                continue
+
             this_cycle = [j]
+            end_cycle_piece = [j, rotate_sticker(j, cw=True), rotate_sticker(j, cw=False)]
+
+            while True:
+                this_piece = self.corner_mappings[this_cycle[-1]]
+                sticker = "".join([self.reverse_dict[this_piece[l]] for l in range(3)])
+                if sticker in end_cycle_piece:
+                    all_corner_cycles.append(this_cycle)
+                    break
+                this_cycle.append(sticker)
+
+        return all_corner_cycles
+
+    def edge_cycle_discovery(self):
+        """
+        Search a cube state for cycles of unsolved pieces.
+
+        Workflow:
+
+            1. Use a reversed copy of self.facedict to use to lookup pieces based on their sticker index.
+               For example, when 012345 == UDFBRL then (0, 2, 4) == UFR.
+            2. Get to work:
+                - If we have already discovered a cycle with this piece inside it, skip it.
+                - Get the starting position and create a 'flipped' version to close the cycle when the buffer is flipped.
+            3. Keep searching for pieces as long as the cycle is not finished:
+                - Get the stickers of the piece in the location of the last piece in the cycle so far.
+                - Convert ints to sticker notation and add to the cycle, unless it's the buffer sticker, then finish off the cycle.
+
+        :return: list
+        """
+        all_edge_cycles = []
+
+        for j in self.unsolved_edges:
+
+            if any([j in k for k in all_edge_cycles]) or any([rotate_sticker(j) in k for k in all_edge_cycles]):
+                continue
+
+            this_cycle = [j]
+            end_cycle_piece = [j, rotate_sticker(j)]
+
             while True:
                 this_piece = self.edge_mappings[this_cycle[-1]]
-                sticker_a, sticker_b = reverse_dict[this_piece[0]], reverse_dict[this_piece[1]]
+                sticker_a, sticker_b = self.reverse_dict[this_piece[0]], self.reverse_dict[this_piece[1]]
                 sticker = "".join([sticker_a, sticker_b])
-                if this_piece not in [this_cycle[0], rotate_sticker(this_cycle[0])]:
-                    this_cycle.append(sticker)
-                    return True
-                else:
-                    all_cycles.append(this_cycle)
-                    return False
-        return all_cycles
+                if sticker in end_cycle_piece:
+                    all_edge_cycles.append(this_cycle)
+                    break
+                this_cycle.append(sticker)
 
+        return all_edge_cycles
 
 
 def _generate_good_mappings(stickers):
