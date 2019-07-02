@@ -86,15 +86,17 @@ class Algorithm:
                 -
         :return:
         """
-        new_list = []
+        new_list = self.moves.copy()
         counter = 1
         while counter <= len(self.moves):
+            change_flag = None
             x = self.moves[counter-1:counter+1]
             if x[0].is_cw() and x[1].is_cw():
-                print("hello")
-
-
-
+                change_flag = True
+                x.pop(0)
+                x[1] = x[1].inverse()
+            else:
+                counter += 1
 
 
 def _detect_unclosed_brackets(s, ob, cb):
