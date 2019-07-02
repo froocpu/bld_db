@@ -88,9 +88,9 @@ What this means is that as long as the lists of arrays are stored, that it shoul
 ## TODO
 
 - [ ] Write a wrapper for the `Cube` class:
-    - [ ] Configure the rendering properties.
+    - [x] Configure the rendering properties.
     - [x] Create wrapper methods for M moves, S moves, E moves, rotations etc.
-- [ ] Decide on a method of storing and querying the deltas rather than individual algs.
+- [x] Decide on a method of storing and querying the deltas rather than individual algs.
 - [ ] Image rendering:
     - [ ] What images should be rendered for each case?
     - [ ] Where to store these images?
