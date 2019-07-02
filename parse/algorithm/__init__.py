@@ -1,4 +1,4 @@
-from .algs import Algorithm
+from .algorithm import Algorithm
 from .config import Notation, Validation
 from .sanitise import sanitise
 from .moves import Move

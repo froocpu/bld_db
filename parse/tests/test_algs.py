@@ -1,7 +1,7 @@
 import unittest
 
 from parse.algorithm.config import Validation
-from parse.algorithm.algs import Algorithm
+from parse.algorithm.algorithm import Algorithm
 from parse.exceptions.validation import AmbiguousStatementException, EmptyAlgorithmException, BadMultiplierException, \
     UnclosedBracketsException
 
