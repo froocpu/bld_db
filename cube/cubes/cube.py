@@ -109,33 +109,26 @@ class Cube(BaseCube):
         :return: None
         """
         # Refresh the existing lists.
-        self.unsolved_edge_count = []
-        self.unsolved_corner_count = []
+        corner_mappings, edge_mappings = _generate_good_mappings(self.stickers)
 
-        unsolved_edge_count = 0
-        unsolved_corner_count = 0
-        current_corner_mappings, current_edge_mappings = _generate_good_mappings(self.stickers)
-
-        for c in current_corner_mappings:
-            if current_corner_mappings[c] != self.solved_state_corners[c]:
-                unsolved_corner_count += 1
+        for c in corner_mappings:
+            if corner_mappings[c] != self.solved_state_corners[c]:
                 self.unsolved_corners.append(c)
-        for e in current_edge_mappings:
-            if current_edge_mappings[e] != self.solved_state_edges[e]:
-                unsolved_edge_count += 1
+        for e in edge_mappings:
+            if edge_mappings[e] != self.solved_state_edges[e]:
                 self.unsolved_edges.append(e)
 
-        self.unsolved_edge_count = unsolved_edge_count
-        self.unsolved_corner_count = unsolved_corner_count
+        self.unsolved_edge_count = len(self.unsolved_edges)
+        self.unsolved_corner_count = len(self.unsolved_corners)
 
-        current_bad_edge_mappings = flip_edge_mappings(current_edge_mappings)
+        edge_mappings_inverse = flip_edge_mappings(edge_mappings)
 
         # Two clockwise rotations == one counter-clockwise rotation.
-        current_bad_corner_mappings_cw = corner_mapping_rotation_cw(mappings=current_corner_mappings)
-        current_bad_corner_mappings_ccw = corner_mapping_rotation_cw(mappings=current_bad_corner_mappings_cw)
+        corner_mappings_cw = corner_mapping_rotation_cw(mappings=corner_mappings)
+        corner_mappings_ccw = corner_mapping_rotation_cw(mappings=corner_mappings_cw)
 
-        self.edge_mappings = {**current_edge_mappings, **current_bad_edge_mappings}
-        self.corner_mappings = {**current_corner_mappings, **current_bad_corner_mappings_cw, **current_bad_corner_mappings_ccw}
+        self.edge_mappings = {**edge_mappings, **edge_mappings_inverse}
+        self.corner_mappings = {**corner_mappings, **corner_mappings_cw, **corner_mappings_ccw}
 
     def corner_cycle_discovery(self):
         """
@@ -149,7 +142,7 @@ class Cube(BaseCube):
                 continue
 
             this_cycle = [j]
-            end_cycle_piece = [j, rotate_sticker(j, cw=True), rotate_sticker(j, cw=False)]
+            end_cycle_piece = [j, rotate_sticker(j, cw=False), rotate_sticker(j, cw=True)]
 
             while True:
                 this_piece = self.corner_mappings[this_cycle[-1]]
@@ -207,13 +200,14 @@ def _generate_good_mappings(stickers):
     :return: dict
     """
     corners = {
+        # TODO: find the source of the weird mapping error.
         "ULF": (stickers[0][0][0], stickers[5][2][2], stickers[2][0][2]),
         "UFR": (stickers[0][2][0], stickers[2][2][2], stickers[4][0][2]),
         "URB": (stickers[0][2][2], stickers[4][2][2], stickers[3][0][2]),
-        "ULB": (stickers[0][0][2], stickers[5][0][2], stickers[3][2][2]),
-        "DLF": (stickers[1][0][2], stickers[5][2][0], stickers[2][0][0]),
-        "DFR": (stickers[1][2][2], stickers[2][2][0], stickers[4][0][0]),
-        "DRB": (stickers[1][2][0], stickers[4][2][0], stickers[3][0][0]),
+        "UBL": (stickers[0][0][2], stickers[3][2][2], stickers[5][0][2]),
+        "DFL": (stickers[1][0][2], stickers[2][0][0], stickers[5][2][0]),
+        "DRF": (stickers[1][2][2], stickers[4][0][0], stickers[2][2][0]),
+        "DBR": (stickers[1][2][0], stickers[3][0][0], stickers[4][2][0]),
         "DLB": (stickers[1][0][0], stickers[5][0][0], stickers[3][2][0])
     }
 
@@ -233,6 +227,7 @@ def _generate_good_mappings(stickers):
     }
 
     return corners, edges
+
 
 def flip_edge_mappings(mappings):
     """

@@ -48,14 +48,26 @@ def prepare_data_try_parse(sheet, meta):
                         alg = Algorithm(cell)
                         cube = Cube(3)
                         cube.apply(alg.alg())
+
                         if cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES or (cube.unsolved_corner_count + cube.unsolved_edge_count == 0):
                             continue
+
+                        edge_cycles = cube.edge_cycle_discovery()
+                        corner_cycles = cube.corner_cycle_discovery()
+
+                        flipped_edge_count = len([j for j in edge_cycles if len(j) == 1])
+                        twisted_corner_count = len([j for j in corner_cycles if len(j) == 1])
+
                         successes.append({"original": cell_ind,
-                                          "edge_cycles": cube.edge_cycle_discovery(),
-                                          "corner_cycles": cube.corner_cycle_discovery(),
+                                          "edge_cycles": edge_cycles,
+                                          "corner_cycles": corner_cycles,
                                           "unsolved_corners_count": cube.unsolved_corner_count,
                                           "unsolved_edges_count": cube.unsolved_edge_count,
+                                          "flipped_edges_count": flipped_edge_count,
+                                          "twisted_corners_count": twisted_corner_count,
+                                          "parity_flag": (True if flipped_edge_count % 2 == 0 and twisted_corner_count % 2 == 0 and twisted_corner_count == 0 and flipped_edge_count == 0 else False),
                                           "signature": signature(cube.stickers)})
+
                     except AmbiguousStatementException as e:
                         failures.append({"original": cell_ind, "failure_id": 0, "failure_description": str(e)})
                     except BadMultiplierException as e:
@@ -70,10 +82,10 @@ def prepare_data_try_parse(sheet, meta):
                         failures.append({"original": cell_ind, "failure_id": 5, "failure_description": str(e)})
                     except EmptyAlgorithmException:
                         continue
-                    except IllegalCharactersException:
-                        continue
-                    except Exception:
-                        continue
+                    except IllegalCharactersException as e:
+                        failures.append({"original": cell_ind, "failure_id": 6, "failure_description": str(e)})
+                    #except Exception as e:
+                    #    failures.append({"original": cell, "failure_id": 7, "failure_description": str(e)})
 
                 filtered.update({ind: {"cells": cells, "successes": successes, "failures": failures}})
 

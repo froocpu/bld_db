@@ -103,26 +103,102 @@
           "successes": [
             {
               "original": 10,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UR",
+                  "RD",
+                  "RB",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "URB",
+                  "RDB",
+                  "UBL"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000044111111331222222222553334334444441001553553555"
             },
             {
               "original": 11,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UR",
+                  "RD",
+                  "RB",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "URB",
+                  "RDB",
+                  "UBL"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000044111111331222222222553334334444441001553553555"
             },
             {
               "original": 18,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UR",
+                  "LB",
+                  "LD",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "URB",
+                  "LBD",
+                  "UBL"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000055551111111222222222331334314444443443053053555"
             },
             {
               "original": 19,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UR",
+                  "LB",
+                  "LD",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "URB",
+                  "LBD",
+                  "UBL"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000055551111111222222222331334314444443443053053555"
             }
           ],
@@ -188,26 +264,102 @@
           "successes": [
             {
               "original": 10,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "RB",
+                  "RD",
+                  "UF",
+                  "UR"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB",
+                  "RDB"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000004004111111221222224224413333333443043041555555555"
             },
             {
               "original": 11,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "RD",
+                  "RF",
+                  "UF",
+                  "UR"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB",
+                  "RFD"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000004004111111124222224224331331333003443442555555555"
             },
             {
               "original": 18,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "LD",
+                  "LB",
+                  "UF",
+                  "UR"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB",
+                  "LBD"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000005005431111111222224224331331223443443443005555555"
             },
             {
               "original": 19,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "LF",
+                  "LD",
+                  "UF",
+                  "UR"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB",
+                  "LDF"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000005005122111111412224224332332333443443441555055055"
             }
           ],
@@ -333,8 +485,27 @@
           "successes": [
             {
               "original": 15,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "BD",
+                  "BL",
+                  "FR",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "URB",
+                  "BDL",
+                  "FDR"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000033111514114222022022335333223314441441445555555"
             }
           ],
@@ -460,8 +631,27 @@
           "successes": [
             {
               "original": 15,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "BD",
+                  "BL",
+                  "RB",
+                  "RD"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "URB",
+                  "BDL",
+                  "RDB"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000033111511441222222222315333443444041041335555555"
             }
           ],
@@ -587,8 +777,27 @@
           "successes": [
             {
               "original": 19,
-              "unsolved_corners": 3,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "LD",
+                  "LF",
+                  "BL",
+                  "BD"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "URB",
+                  "LDF",
+                  "BDL"
+                ]
+              ],
+              "unsolved_corners_count": 3,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000055421411111552222222332033033444441441315555335"
             }
           ],

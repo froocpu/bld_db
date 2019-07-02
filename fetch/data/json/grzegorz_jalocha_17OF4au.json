@@ -74,7 +74,13 @@
             "ALTERNATE| COMMENT"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "2": {
           "cells": [
@@ -84,8 +90,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UL",
+                  "UF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000000111111111222223222333335333444444444555552555"
             }
           ],
@@ -99,8 +116,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "LU",
+                  "FU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000305000111111111222220222333330333444444444555552555"
             }
           ],
@@ -114,8 +142,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UL",
+                  "UF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000000111111111222224222333333333444445444555552555"
             }
           ],
@@ -129,8 +168,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "LU",
+                  "FU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400050111111111222220222333333333444440444555552555"
             }
           ],
@@ -144,8 +194,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FR",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111222224202333333333454444444555552555"
             }
           ],
@@ -159,8 +220,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RF",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111111222222252333333333404444444555552555"
             }
           ],
@@ -174,8 +246,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BR",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222224222303333333444444454555552555"
             }
           ],
@@ -189,8 +272,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RB",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111111222223222353333333444444404555552555"
             }
           ],
@@ -204,8 +298,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BL",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222225222333333303444444444555552555"
             }
           ],
@@ -219,8 +324,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LB",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222223222333333353444444444505552555"
             }
           ],
@@ -234,8 +350,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FL",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111202225222333333333444444444555552555"
             }
           ],
@@ -249,8 +376,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LF",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111252222222333333333444444444555552505"
             }
           ],
@@ -264,8 +402,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111110111222522222333333333444444444555552555"
             }
           ],
@@ -279,8 +428,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111115111222021222333333333444444444555552555"
             }
           ],
@@ -294,8 +454,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000101111111222225222333333333444444444555552555"
             }
           ],
@@ -309,8 +480,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000151111111222221222333333333444444444555052555"
             }
           ],
@@ -324,8 +506,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111011111222223222333533333444444444555552555"
             }
           ],
@@ -339,8 +532,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111511111222221222333033333444444444555552555"
             }
           ],
@@ -354,8 +558,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111101222224222333333333444544444555552555"
             }
           ],
@@ -369,8 +584,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "UL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111151222221222333333333444044444555552555"
             }
           ],
@@ -391,8 +617,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "LU",
+                  "UF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020005000111111111222223222333330333444444444555550555"
             }
           ],
@@ -406,8 +643,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UL",
+                  "FU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020300000111111111222220222333335333444444444555550555"
             }
           ],
@@ -421,8 +669,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "LU",
+                  "UF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020000050111111111222224222333333333444440444555550555"
             }
           ],
@@ -436,8 +695,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UL",
+                  "FU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020400000111111111222220222333333333444445444555550555"
             }
           ],
@@ -451,8 +721,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FR",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020200000111111111222224252333333333404444444555550555"
             }
           ],
@@ -466,8 +747,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RF",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020400000111111111222222202333333333454444444555550555"
             }
           ],
@@ -481,8 +773,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BR",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020300000111111111222224222353333333444444404555550555"
             }
           ],
@@ -496,8 +799,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RB",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020400000111111111222223222303333333444444454555550555"
             }
           ],
@@ -511,8 +825,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BL",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020300000111111111222225222333333353444444444505550555"
             }
           ],
@@ -526,8 +851,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LB",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020500000111111111222223222333333303444444444555550555"
             }
           ],
@@ -542,12 +878,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FL",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020200000111111111252225222333333333444444444555550505"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "34": {
           "cells": [
@@ -557,8 +910,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LF",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020500000111111111202222222333333333444444444555550555"
             }
           ],
@@ -573,12 +937,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020100000111115111222022222333333333444444444555550555"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "36": {
           "cells": [
@@ -588,8 +969,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020200000111110111222521222333333333444444444555550555"
             }
           ],
@@ -603,8 +995,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020100000151111111222225222333333333444444444555050555"
             }
           ],
@@ -618,8 +1021,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020500000101111111222221222333333333444444444555550555"
             }
           ],
@@ -634,12 +1048,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020100000111511111222223222333033333444444444555550555"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "40": {
           "cells": [
@@ -649,8 +1080,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020300000111011111222221222333533333444444444555550555"
             }
           ],
@@ -664,8 +1106,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020100000111111151222224222333333333444044444555550555"
             }
           ],
@@ -679,8 +1132,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020400000111111101222221222333333333444544444555550555"
             }
           ],
@@ -701,8 +1165,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "UR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000000000111111111222224222333332333444443444555555555"
             }
           ],
@@ -716,8 +1191,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "RU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400030111111111222220222333332333444440444555555555"
             }
           ],
@@ -731,8 +1217,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111222224202333332333434444444555555555"
             }
           ],
@@ -746,8 +1243,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111111222222232333332333404444444555555555"
             }
           ],
@@ -761,8 +1269,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222224222303332333444444434555555555"
             }
           ],
@@ -776,8 +1295,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111111222223222333332333444444404555555555"
             }
           ],
@@ -791,8 +1321,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222225222333332303444444444535555555"
             }
           ],
@@ -806,8 +1347,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222223222333332333444444444505555555"
             }
           ],
@@ -821,8 +1373,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111202225222333332333444444444555555535"
             }
           ],
@@ -836,8 +1399,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111232222222333332333444444444555555505"
             }
           ],
@@ -851,8 +1425,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111110111222322222333332333444444444555555555"
             }
           ],
@@ -866,8 +1451,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111113111222021222333332333444444444555555555"
             }
           ],
@@ -881,8 +1477,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000101111111222225222333332333444444444555355555"
             }
           ],
@@ -896,8 +1503,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "LD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000131111111222221222333332333444444444555055555"
             }
           ],
@@ -911,8 +1529,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "DB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111011111222223222333332333444444444555555555"
             }
           ],
@@ -926,8 +1555,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "BD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111311111222221222333032333444444444555555555"
             }
           ],
@@ -941,8 +1581,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "DR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111101222224222333332333444344444555555555"
             }
           ],
@@ -956,8 +1607,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "UF",
+                  "RD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111131222221222333332333444044444555555555"
             }
           ],
@@ -978,8 +1640,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "RU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000002030111111111222224222333330333444440444555555555"
             }
           ],
@@ -993,8 +1666,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "UR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000402000111111111222220222333330333444443444555555555"
             }
           ],
@@ -1008,8 +1692,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000202000111111111222224232333330333404444444555555555"
             }
           ],
@@ -1023,8 +1718,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000402000111111111222222202333330333434444444555555555"
             }
           ],
@@ -1038,8 +1744,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000302000111111111222224222333330333444444404555555555"
             }
           ],
@@ -1053,8 +1770,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000402000111111111222223222303330333444444434555555555"
             }
           ],
@@ -1068,8 +1796,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000302000111111111222225222333330333444444444505555555"
             }
           ],
@@ -1083,8 +1822,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000502000111111111222223222333330303444444444535555555"
             }
           ],
@@ -1098,8 +1848,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000202000111111111232225222333330333444444444555555505"
             }
           ],
@@ -1113,8 +1874,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000502000111111111202222222333330333444444444555555535"
             }
           ],
@@ -1128,8 +1900,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000102000111113111222022222333330333444444444555555555"
             }
           ],
@@ -1143,8 +1926,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000202000111110111222321222333330333444444444555555555"
             }
           ],
@@ -1158,8 +1952,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "LD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000102000131111111222225222333330333444444444555055555"
             }
           ],
@@ -1173,8 +1978,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000502000101111111222221222333330333444444444555355555"
             }
           ],
@@ -1188,8 +2004,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "BD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000102000111311111222223222333030333444444444555555555"
             }
           ],
@@ -1203,8 +2030,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "DB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000302000111011111222221222333330333444444444555555555"
             }
           ],
@@ -1218,8 +2056,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "RD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000102000111111131222224222333330333444044444555555555"
             }
           ],
@@ -1233,8 +2082,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU",
+                  "DR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000402000111111101222221222333330333444344444555555555"
             }
           ],
@@ -1255,8 +2115,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111222224202333333333444442444555555555"
             }
           ],
@@ -1270,8 +2141,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111111222222242333333333404442444555555555"
             }
           ],
@@ -1285,8 +2167,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222224222303333333444442444555555555"
             }
           ],
@@ -1300,8 +2193,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111111222223222343333333444442404555555555"
             }
           ],
@@ -1315,8 +2219,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222225222333333303444442444545555555"
             }
           ],
@@ -1330,8 +2245,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222223222333333343444442444505555555"
             }
           ],
@@ -1345,8 +2271,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111202225222333333333444442444555555545"
             }
           ],
@@ -1360,8 +2297,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111242222222333333333444442444555555505"
             }
           ],
@@ -1375,8 +2323,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111110111222422222333333333444442444555555555"
             }
           ],
@@ -1390,8 +2349,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111114111222021222333333333444442444555555555"
             }
           ],
@@ -1405,8 +2375,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000101111111222225222333333333444442444555455555"
             }
           ],
@@ -1420,8 +2401,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "LD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000141111111222221222333333333444442444555055555"
             }
           ],
@@ -1436,12 +2428,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "DB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111011111222223222333433333444442444555555555"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "95": {
           "cells": [
@@ -1451,8 +2460,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "BD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111411111222221222333033333444442444555555555"
             }
           ],
@@ -1466,8 +2486,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "DR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111101222224222333333333444442444555555555"
             }
           ],
@@ -1481,8 +2512,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "UF",
+                  "RD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111141222221222333333333444042444555555555"
             }
           ],
@@ -1503,8 +2545,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200020111111111222224242333333333404440444555555555"
             }
           ],
@@ -1518,8 +2571,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400020111111111222222202333333333444440444555555555"
             }
           ],
@@ -1533,8 +2597,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300020111111111222224222343333333444440404555555555"
             }
           ],
@@ -1548,8 +2623,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400020111111111222223222303333333444440444555555555"
             }
           ],
@@ -1564,12 +2650,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "LB",
+                  "FU"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400050111111111222220222333333303444443444525555555"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "104": {
           "cells": [
@@ -1579,8 +2682,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500020111111111222223222333333303444440444545555555"
             }
           ],
@@ -1594,8 +2708,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200020111111111242225222333333333444440444555555505"
             }
           ],
@@ -1609,8 +2734,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500020111111111202222222333333333444440444555555545"
             }
           ],
@@ -1625,12 +2761,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100020111114111222022222333333333444440444555555555"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "108": {
           "cells": [
@@ -1640,8 +2793,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200020111110111222421222333333333444440444555555555"
             }
           ],
@@ -1655,8 +2819,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "LD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100020141111111222225222333333333444440444555055555"
             }
           ],
@@ -1671,12 +2846,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500020101111111222221222333333333444440444555455555"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "111": {
           "cells": [
@@ -1686,8 +2878,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "BD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100020111411111222223222333033333444440444555555555"
             }
           ],
@@ -1701,8 +2904,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "DB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300020111011111222221222333433333444440444555555555"
             }
           ],
@@ -1716,8 +2930,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "RD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100020111111141222224222333333333444040444555555555"
             }
           ],
@@ -1731,8 +2956,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU",
+                  "DR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400020111111101222221222333333333444440444555555555"
             }
           ],
@@ -1753,8 +2989,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BR",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222224202323333333424444444555555555"
             }
           ],
@@ -1768,8 +3015,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RB",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111111222223202343333333424444424555555555"
             }
           ],
@@ -1783,8 +3041,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BL",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222225202333333323424444444545555555"
             }
           ],
@@ -1798,8 +3067,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LB",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222223202333333343424444444525555555"
             }
           ],
@@ -1813,8 +3093,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FL",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111222225202333333333424444444555555545"
             }
           ],
@@ -1828,8 +3119,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LF",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111242222202333333333424444444555555525"
             }
           ],
@@ -1843,8 +3145,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111112111222422202333333333424444444555555555"
             }
           ],
@@ -1858,8 +3171,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111114111222221202333333333424444444555555555"
             }
           ],
@@ -1873,8 +3197,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000121111111222225202333333333424444444555455555"
             }
           ],
@@ -1888,8 +3223,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000141111111222221202333333333424444444555255555"
             }
           ],
@@ -1903,8 +3249,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111211111222223202333433333424444444555555555"
             }
           ],
@@ -1918,8 +3275,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111411111222221202333233333424444444555555555"
             }
           ],
@@ -1933,8 +3301,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111121222224202333333333424444444555555555"
             }
           ],
@@ -1948,8 +3327,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111141222221202333333333424244444555555555"
             }
           ],
@@ -1970,8 +3360,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BR",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222224222343333333404444424555555555"
             }
           ],
@@ -1985,8 +3386,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RB",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111111222223222323333333404444444555555555"
             }
           ],
@@ -2000,8 +3412,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BL",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222225222333333343404444444525555555"
             }
           ],
@@ -2016,12 +3439,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LB",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222223222333333323404444444545555555"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "135": {
           "cells": [
@@ -2031,8 +3471,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FL",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111242225222333333333404444444555555525"
             }
           ],
@@ -2046,8 +3497,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LF",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222222222333333333404444444555555545"
             }
           ],
@@ -2061,8 +3523,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111114111222222222333333333404444444555555555"
             }
           ],
@@ -2076,8 +3549,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111112111222421222333333333404444444555555555"
             }
           ],
@@ -2091,8 +3575,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000141111111222225222333333333404444444555255555"
             }
           ],
@@ -2106,8 +3601,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000121111111222221222333333333404444444555455555"
             }
           ],
@@ -2121,8 +3627,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111411111222223222333233333404444444555555555"
             }
           ],
@@ -2136,8 +3653,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111211111222221222333433333404444444555555555"
             }
           ],
@@ -2151,8 +3679,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111141222224222333333333404244444555555555"
             }
           ],
@@ -2166,8 +3705,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "RF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111121222221222333333333404444444555555555"
             }
           ],
@@ -2188,8 +3738,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BL",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222225222303333333444444424545555555"
             }
           ],
@@ -2203,8 +3764,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LB",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222223222303333343444444424535555555"
             }
           ],
@@ -2219,12 +3791,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FL",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111232225222303333333444444424555555545"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "149": {
           "cells": [
@@ -2234,8 +3823,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LF",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111242222222303333333444444424555555535"
             }
           ],
@@ -2249,8 +3849,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111113111222422222303333333444444424555555555"
             }
           ],
@@ -2264,8 +3875,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111114111222321222303333333444444424555555555"
             }
           ],
@@ -2279,8 +3901,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000131111111222225222303333333444444424555455555"
             }
           ],
@@ -2294,8 +3927,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000141111111222221222303333333444444424555355555"
             }
           ],
@@ -2309,8 +3953,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111311111222223222303433333444444424555555555"
             }
           ],
@@ -2324,8 +3979,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111411111222221222303333333444444424555555555"
             }
           ],
@@ -2339,8 +4005,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111131222224222303333333444444424555555555"
             }
           ],
@@ -2354,8 +4031,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "BR"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111141222221222303333333444344424555555555"
             }
           ],
@@ -2376,8 +4064,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BL",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111111111222225222323333343444444404535555555"
             }
           ],
@@ -2391,8 +4090,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LB",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222223222323333333444444404545555555"
             }
           ],
@@ -2406,8 +4116,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FL",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111242225222323333333444444404555555535"
             }
           ],
@@ -2421,8 +4142,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LF",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111232222222323333333444444404555555545"
             }
           ],
@@ -2436,8 +4168,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111114111222322222323333333444444404555555555"
             }
           ],
@@ -2451,8 +4194,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111113111222421222323333333444444404555555555"
             }
           ],
@@ -2466,8 +4220,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000141111111222225222323333333444444404555355555"
             }
           ],
@@ -2481,8 +4246,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000131111111222221222323333333444444404555455555"
             }
           ],
@@ -2496,8 +4272,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111411111222223222323333333444444404555555555"
             }
           ],
@@ -2511,8 +4298,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111311111222221222323433333444444404555555555"
             }
           ],
@@ -2526,8 +4324,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111141222224222323333333444344404555555555"
             }
           ],
@@ -2541,8 +4350,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "RB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111131222221222323333333444444404555555555"
             }
           ],
@@ -2563,8 +4383,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FL",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111232225222333333303444444444525555555"
             }
           ],
@@ -2578,8 +4409,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LF",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111252222222333333303444444444525555535"
             }
           ],
@@ -2593,8 +4435,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111113111222522222333333303444444444525555555"
             }
           ],
@@ -2608,8 +4461,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111115111222321222333333303444444444525555555"
             }
           ],
@@ -2623,8 +4487,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000131111111222225222333333303444444444525555555"
             }
           ],
@@ -2638,8 +4513,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000151111111222221222333333303444444444525355555"
             }
           ],
@@ -2653,8 +4539,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111311111222223222333533303444444444525555555"
             }
           ],
@@ -2668,8 +4565,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111511111222221222333333303444444444525555555"
             }
           ],
@@ -2683,8 +4591,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111121202224222333333333444544444555555525"
             }
           ],
@@ -2698,8 +4617,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "BL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111151222221222333333303444344444525555555"
             }
           ],
@@ -2720,8 +4650,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FL",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111252225222333333323444444444505555535"
             }
           ],
@@ -2735,8 +4676,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LF",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111232222222333333323444444444505555555"
             }
           ],
@@ -2750,8 +4702,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111115111222322222333333323444444444505555555"
             }
           ],
@@ -2765,8 +4728,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111113111222521222333333323444444444505555555"
             }
           ],
@@ -2780,8 +4754,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000151111111222225222333333323444444444505355555"
             }
           ],
@@ -2795,8 +4780,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000131111111222221222333333323444444444505555555"
             }
           ],
@@ -2810,8 +4806,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111511111222223222333333323444444444505555555"
             }
           ],
@@ -2825,8 +4832,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111311111222221222333533323444444444505555555"
             }
           ],
@@ -2840,8 +4858,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111151222224222333333323444344444505555555"
             }
           ],
@@ -2855,8 +4884,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111131222221222333333323444544444505555555"
             }
           ],
@@ -2877,8 +4917,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111112111202522222333333333444444444555555525"
             }
           ],
@@ -2892,8 +4943,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111115111202221222333333333444444444555555525"
             }
           ],
@@ -2907,8 +4969,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000121111111202225222333333333444444444555555525"
             }
           ],
@@ -2922,8 +4995,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000151111111202221222333333333444444444555255525"
             }
           ],
@@ -2937,8 +5021,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111211111202223222333533333444444444555555525"
             }
           ],
@@ -2952,8 +5047,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111511111202221222333233333444444444555555525"
             }
           ],
@@ -2967,8 +5073,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111121202224222333333333444544444555555525"
             }
           ],
@@ -2982,8 +5099,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "FL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111151202221222333333333444244444555555525"
             }
           ],
@@ -3004,8 +5132,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DF",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111115111222222222333333333444444444555555505"
             }
           ],
@@ -3019,8 +5158,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FD",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111112111222521222333333333444444444555555505"
             }
           ],
@@ -3034,8 +5184,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000151111111222225222333333333444444444555255505"
             }
           ],
@@ -3049,8 +5210,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000121111111222221222333333333444444444555555505"
             }
           ],
@@ -3064,8 +5236,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111511111222223222333233333444444444555555505"
             }
           ],
@@ -3079,8 +5262,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111211111222221222333533333444444444555555505"
             }
           ],
@@ -3094,8 +5288,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111111151222224222333333333444244444555555505"
             }
           ],
@@ -3110,12 +5315,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "LF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111111121222221222333333333444544444555555505"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "211": {
           "cells": [
@@ -3132,8 +5354,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111110111222225222333333333444444444555255555"
             }
           ],
@@ -3147,8 +5380,21 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 5,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FD",
+                  "RD",
+                  "FU",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 5,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000512000101101101222421222333331333444254444555345555"
             }
           ],
@@ -3162,8 +5408,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111110111222223222333233333444444444555555555"
             }
           ],
@@ -3177,8 +5434,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000111210111222221222333133333444444444555555555"
             }
           ],
@@ -3192,8 +5460,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111110111222224222333333333444244444555555555"
             }
           ],
@@ -3207,8 +5486,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "DF"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111110121222221222333333333444144444555555555"
             }
           ],
@@ -3229,8 +5519,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DL",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000121112111222025222333333333444444444555155555"
             }
           ],
@@ -3244,8 +5545,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LD",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111112111222021222333333333444444444555255555"
             }
           ],
@@ -3259,8 +5571,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111212111222023222333133333444444444555555555"
             }
           ],
@@ -3282,8 +5605,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111112121222024222333333333444144444555555555"
             }
           ],
@@ -3297,8 +5631,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "FD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111112111222021222333333333444244444555555555"
             }
           ],
@@ -3319,8 +5664,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000101111111222223222333533333444444444555255555"
             }
           ],
@@ -3334,8 +5690,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000101511111222221222333133333444444444555255555"
             }
           ],
@@ -3349,8 +5716,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000101111111222224222333333333444544444555255555"
             }
           ],
@@ -3364,8 +5742,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "DL"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000101111151222221222333333333444144444555255555"
             }
           ],
@@ -3387,8 +5776,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DB",
+                  "LD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000121511111222223222333133333444444444555055555"
             }
           ],
@@ -3402,8 +5802,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "BD",
+                  "LD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000300000121111111222221222333533333444444444555055555"
             }
           ],
@@ -3418,12 +5829,29 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "LD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000121111151222224222333333333444144444555055555"
             }
           ],
-          "failures": []
+          "failures": [
+            {
+              "original": 2,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "234": {
           "cells": [
@@ -3433,8 +5861,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "LD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000121111111222221222333333333444544444555055555"
             }
           ],
@@ -3455,8 +5894,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "DB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111011111222224222333233333444344444555555555"
             }
           ],
@@ -3470,8 +5920,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "DB"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111011131222221222333233333444144444555555555"
             }
           ],
@@ -3492,8 +5953,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "DR",
+                  "BD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000100000111211131222224222333033333444144444555555555"
             }
           ],
@@ -3507,8 +5979,19 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 0,
-              "unsolved_edges": 3,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "RD",
+                  "BD"
+                ]
+              ],
+              "corner_cycles": [],
+              "unsolved_corners_count": 0,
+              "unsolved_edges_count": 3,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400000111211111222221222333033333444344444555555555"
             }
           ],
@@ -3532,7 +6015,13 @@
             "E perm"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "5": {
           "cells": [
@@ -3542,8 +6031,23 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 2,
-              "unsolved_edges": 2,
+              "edge_cycles": [
+                [
+                  "UB",
+                  "FU"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB"
+                ]
+              ],
+              "unsolved_corners_count": 2,
+              "unsolved_edges_count": 2,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000302000111111111222220224334330333443444442555555555"
             }
           ],
@@ -3555,7 +6059,13 @@
             "J perm"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "7": {
           "cells": [
@@ -3565,8 +6075,23 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 2,
-              "unsolved_edges": 2,
+              "edge_cycles": [
+                [
+                  "UR",
+                  "FU"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB"
+                ]
+              ],
+              "unsolved_corners_count": 2,
+              "unsolved_edges_count": 2,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000400020111111111222220224334333333443440442555555555"
             }
           ],
@@ -3578,7 +6103,13 @@
             "U' R perm"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "9": {
           "cells": [
@@ -3588,8 +6119,23 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 2,
-              "unsolved_edges": 2,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LU"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB"
+                ]
+              ],
+              "unsolved_corners_count": 2,
+              "unsolved_edges_count": 2,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "020500000111111111222220224334333333443444442555550555"
             }
           ],
@@ -3601,7 +6147,13 @@
             "L' U' RPerm"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "11": {
           "cells": [
@@ -3619,8 +6171,23 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 2,
-              "unsolved_edges": 2,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "FR"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB"
+                ]
+              ],
+              "unsolved_corners_count": 2,
+              "unsolved_edges_count": 2,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000200000111111111222224204334333333423444442555555555"
             }
           ],
@@ -3632,7 +6199,13 @@
             "R U R' U D R2 U' R' U R2 D' R U2 R'  or inverse"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "14": {
           "cells": [
@@ -3640,7 +6213,13 @@
             "UF-BR-UR canceles with JPERM- R U R' F'..."
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "15": {
           "cells": [
@@ -3648,7 +6227,13 @@
             "UF RB UL + R PERM"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "16": {
           "cells": [
@@ -3656,7 +6241,13 @@
             "L U' RPERM"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "17": {
           "cells": [
@@ -3666,8 +6257,23 @@
           "successes": [
             {
               "original": 1,
-              "unsolved_corners": 2,
-              "unsolved_edges": 2,
+              "edge_cycles": [
+                [
+                  "UF",
+                  "LB"
+                ]
+              ],
+              "corner_cycles": [
+                [
+                  "UFR",
+                  "URB"
+                ]
+              ],
+              "unsolved_corners_count": 2,
+              "unsolved_edges_count": 2,
+              "flipped_edges_count": 0,
+              "twisted_corners_count": 0,
+              "parity_flag": true,
               "signature": "000500000111111111222223224334333323443444442505555555"
             }
           ],
@@ -3679,7 +6285,13 @@
             "l + E PERM, or M' + E PERM"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "19": {
           "cells": [
@@ -3687,7 +6299,13 @@
             "same as BU pairity on x but with cancelation"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "20": {
           "cells": [
@@ -3695,7 +6313,13 @@
             "UF DL UR+ JPERM"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "21": {
           "cells": [
@@ -3703,7 +6327,13 @@
             "UF LD UL + RPERM"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "22": {
           "cells": [
@@ -3711,7 +6341,13 @@
             "M U2 M' U2 x' E perm WITHOUT first and last move"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "23": {
           "cells": [
@@ -3719,7 +6355,13 @@
             "UF BD UR + JPERM"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "24": {
           "cells": [
@@ -3727,7 +6369,13 @@
             "UF DR UR + JPERM"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         },
         "25": {
           "cells": [
@@ -3735,7 +6383,13 @@
             "UF RD UR + JPERM"
           ],
           "successes": [],
-          "failures": []
+          "failures": [
+            {
+              "original": 1,
+              "failure_id": 6,
+              "failure_description": "Contains characters that don't correspond to anything in cubing notation."
+            }
+          ]
         }
       }
     },
