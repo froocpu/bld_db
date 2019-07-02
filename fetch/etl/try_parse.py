@@ -48,8 +48,7 @@ def prepare_data_try_parse(sheet, meta):
                     cells.append({"index": ind,
                                   "row_index": cell_ind + 1,
                                   "column_index": int(ind) + 1,
-                                  "text": cell
-                                 })
+                                  "text": cell})
 
                     if len(cell) <= DataSelector.ALG_CHAR_MIN_LENGTH or len(cell) > DataSelector.ALG_CHAR_MAX_LENGTH:
                         continue

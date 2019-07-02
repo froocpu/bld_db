@@ -51,16 +51,17 @@ create table algorithms (
 );
 
 create table failure_reasons (
-    id smallint,
+    code smallint,
     description varchar(255),
     PRIMARY KEY (id)
 );
 
 create table failures (
     id BIGSERIAL,
+    spreadsheet_id char(44),
     sheet_id bigint,
     cell_id bigint,
-    failure_id int,
+    code int,
     PRIMARY KEY (cell_id, failure_id)
 );
 
