@@ -1,5 +1,5 @@
 from fetch.session import authenticate, service_builder
-from fetch.etl import write_json, prepare_data, trim_properties_metadata, trim_sheets_metadata, prepare_data_try_parse
+from fetch.etl import write_json, trim_properties_metadata, trim_sheets_metadata, prepare_data_try_parse
 from fetch.config import JobConfiguration
 
 from time import sleep

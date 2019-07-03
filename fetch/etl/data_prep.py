@@ -1,6 +1,8 @@
 from json import dump
 from ..config import DataSelector
 from .extract_metadata import collect_field
+from parse import Algorithm
+from cube import Cube, TooManyUnsolvedPiecesException, AlgorithmDoesNothingException
 
 
 def prepare_data(sheet, meta):
@@ -89,3 +91,22 @@ def write_json(data, fn):
         dump(data, dt, indent=DataSelector.PRETTY_INDENT)
 
 
+def init_cube(input_alg):
+    """
+    Initialise a cube, apply the algorithm to it and then for a second time to get to the correct state.
+    :param input_alg: string containing an algorithm to parse.
+    :type input_alg: str
+    :return: Cube, Algorithm
+    """
+    cube = Cube(3)
+    alg = Algorithm(input_alg)
+    cube.apply(alg.alg())
+
+    if cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES:
+        raise TooManyUnsolvedPiecesException(
+            "This algorithm leaves a lot of pieces unsolved. The parser may be behaving incorrectly, or the alg is bad.")
+
+    if cube.unsolved_corner_count + cube.unsolved_edge_count == 0:
+        raise AlgorithmDoesNothingException("This algorithm appears to do nothing.")
+
+    return cube, alg
