@@ -65,12 +65,13 @@ class Algorithm:
 
         # Create a Move instance for each move, provided they are all valid.
         self.moves = [Move(m) for m in validated_moves]
+        self.cancelled = self.moves.copy()
 
     def alg(self):
         return [m.move for m in self.moves]
 
     def invert(self):
-        moves = [m.invert() for m in self.moves]
+        moves = [m.inverse() for m in self.moves]
         moves.reverse()
         return moves
 
@@ -84,19 +85,30 @@ class Algorithm:
                     - If CW DOUBLE or DOUBLE CW then replace both with CWW.
                     - If CCW DOUBLE or DOUBLE CCW then replace both with CW.
                 -
+
+                for i, j in enumerate(self.cancelled):
+            if i+1 == len(self.cancelled):
+                continue
+            j2 = self.cancelled[i+1]
+            if (j.is_cw() and j2.is_cw()) or (j.is_prime() and j2.is_prime()):
+                self.cancelled.pop(i)
+                self.cancelled[i] = Move(j.double())
+
+            if (j.is_double() and j2.is_double()) or (j.is_cw() and j2.is_prime) or (j.is_prime() and j.is_prime):
+                self.cancelled.pop(i)
+                self.cancelled.pop(i)
+            # simplify this
+            if (j.is_cw() and j2.is_double()) or (j.is_double() and j2.is_cw()):
+                self.cancelled.pop(i)
+                self.cancelled[i] = Move((j.inverse() if j.is_cw() else j2.inverse()))
+            if (j.is_prime() and j2.is_double()) or (j.is_double() and j2.is_prime()):
+                self.cancelled.pop(i)
+                self.cancelled[i] = Move((j.inverse() if j.is_cw() else j2.inverse()))
+        print([m.move for m in self.cancelled])
+
         :return:
         """
-        new_list = self.moves.copy()
-        counter = 1
-        while counter <= len(self.moves):
-            change_flag = None
-            x = self.moves[counter-1:counter+1]
-            if x[0].is_cw() and x[1].is_cw():
-                change_flag = True
-                x.pop(0)
-                x[1] = x[1].inverse()
-            else:
-                counter += 1
+        pass
 
 
 def _detect_unclosed_brackets(s, ob, cb):
