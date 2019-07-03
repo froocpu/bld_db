@@ -63,13 +63,13 @@ def constructor(a, b=None, alg_type=0):
 
     B = [m.move for m in b]
 
-    Ai = [m.invert() for m in a]
+    Ai = [m.inverse() for m in a]
     Ai.reverse()
 
     base = A + B + Ai
 
     if alg_type == 1:
-        Bi = [m.invert() for m in b]
+        Bi = [m.inverse() for m in b]
         Bi.reverse()
         return base + Bi
     if alg_type == 2:
