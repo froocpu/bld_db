@@ -8,4 +8,4 @@ if __name__ == "__main__":
 
     #niklas(c)
     c.move("M")
-    print(c.stickers[0, 1, :])
+    print(c.stickers[:, 1, :])

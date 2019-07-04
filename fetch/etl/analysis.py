@@ -19,13 +19,17 @@ def analyze(cube):
     parity_flag = (True if parity_calculation == 1 and flipped_edge_count == 0 else False)
 
     # Determine what kind of 3x3x3 alg this would be.
-    if array_equal(cube.stickers[2:, :, 0:2], cube.stickers_solved[2:, :, 0:2]) and array_equal(cube.stickers[0:2], cube.stickers_solved[0:2]):
-        ll_flag, pll_flag = True, True
-        if array_equal(cube.stickers[0, 1], cube.stickers_solved[0, 1]) and array_equal(cube.stickers[0, 1, :], cube.stickers_solved[0, 1, :]):
+    if array_equal(cube.stickers[2:, :, 0:2], cube.stickers_solved[2:, :, 0:2]) and array_equal(cube.stickers[1], cube.stickers_solved[1]):
+        ll_flag = True
+        if array_equal(cube.stickers[0], cube.stickers_solved[0]):
+            pll_flag = True
+            oll_flag, coll_flag = False, False
+            ell_flag = (True if len(corner_cycles) == 0 else False)
+        elif array_equal(cube.stickers[0, 1], cube.stickers_solved[0, 1]) and array_equal(cube.stickers[0, 1, :], cube.stickers_solved[0, 1, :]):
             coll_flag, oll_flag = True, True
             pll_flag, ell_flag = False, False
-        # if U layer corners are oriented. TODO: Needs to be fixed.
-        elif array_equal(cube.stickers[0, :, :-1:], cube.stickers_solved[0, :, :-1:]):
+        # if U layer corners are oriented.
+        elif len(corner_cycles) == 0:
             coll_flag, pll_flag = False, False
             oll_flag, ell_flag = True, True
         else:
@@ -37,7 +41,7 @@ def analyze(cube):
     return {"edge_cycles": edge_cycles,
             "corner_cycles": corner_cycles,
             "unsolved_edges_count": cube.unsolved_edge_count,
-            "unsolved_corners_count": cube.unsolved_corners,
+            "unsolved_corners_count": cube.unsolved_corner_count,
             "flipped_edges_count": flipped_edge_count,
             "twisted_corners_count": twisted_corner_count,
             "parity_flag": parity_flag,
