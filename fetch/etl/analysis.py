@@ -1,4 +1,5 @@
 from .strings import signature
+from numpy import array_equal
 
 
 def analyze(cube):
@@ -17,6 +18,22 @@ def analyze(cube):
     parity_calculation = sum([len(targets) - 1 for targets in edge_cycles]) % 2
     parity_flag = (True if parity_calculation == 1 and flipped_edge_count == 0 else False)
 
+    # Determine what kind of 3x3x3 alg this would be.
+    if array_equal(cube.stickers[2:, :, 0:2], cube.stickers_solved[2:, :, 0:2]) and array_equal(cube.stickers[0:2], cube.stickers_solved[0:2]):
+        ll_flag, pll_flag = True, True
+        if array_equal(cube.stickers[0, 1], cube.stickers_solved[0, 1]) and array_equal(cube.stickers[0, 1, :], cube.stickers_solved[0, 1, :]):
+            coll_flag, oll_flag = True, True
+            pll_flag, ell_flag = False, False
+        # if U layer corners are oriented. TODO: Needs to be fixed.
+        elif array_equal(cube.stickers[0, :, :-1:], cube.stickers_solved[0, :, :-1:]):
+            coll_flag, pll_flag = False, False
+            oll_flag, ell_flag = True, True
+        else:
+            pll_flag, coll_flag, ell_flag = False, False, False
+            oll_flag = True
+    else:
+        ll_flag, pll_flag, oll_flag, coll_flag, ell_flag = False, False, False, False, False
+
     return {"edge_cycles": edge_cycles,
             "corner_cycles": corner_cycles,
             "unsolved_edges_count": cube.unsolved_edge_count,
@@ -24,4 +41,9 @@ def analyze(cube):
             "flipped_edges_count": flipped_edge_count,
             "twisted_corners_count": twisted_corner_count,
             "parity_flag": parity_flag,
+            "ll_alg_flag": ll_flag,
+            "coll_alg_flag": coll_flag,
+            "oll_alg_flag": oll_flag,
+            "pll_alg_flag": pll_flag,
+            "ell_alg_flag": ell_flag,
             "signature": signature(cube.stickers)}

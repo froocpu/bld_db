@@ -63,18 +63,26 @@ def trim_properties_metadata(data, parent='properties'):
     return data
 
 
-def trim_sheets_metadata(data, parent='sheets'):
+def trim_sheets_metadata(data, parent='sheets', child='properties'):
     """
     Strip out fields that aren't necessary from individual sheets, usually stuff like sorting specs and views.
     :param data: sheet metadata
     :type data: dict
     :param parent: the name of the sheets field.
     :type parent: str
+    :param child: the name of the field inside the parent field from which to remove stuff.
+    :type child: str
     :return: dict
     """
-    for ind in range(len(data[parent])):
-        for col in DataSelector.SHEET_FIELDS_TO_REMOVE:
-            data[parent][ind].pop(col, None)
+    for ind, j in enumerate(data[parent]):
+        for col in DataSelector.SHEET_PARENT_FIELDS_TO_REMOVE:
+            if col in data[parent][ind].keys():
+                data[parent][ind].pop(col, None)
+        if data[parent][ind][child]:
+            for inner_col in DataSelector.SHEET_CHILD_FIELDS_TO_REMOVE:
+                if inner_col in data[parent][ind][child].keys():
+                    data[parent][ind][child].pop(inner_col)
+
     return data
 
 
