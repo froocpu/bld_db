@@ -15,16 +15,16 @@ def signature(array):
         .replace(",", Notation.EMPTY)
 
 
-def split_notes(notes):
+def split_note(note):
     """
     Split notes up by line feeds and remove empty strings.
-    :param notes: string containing notes from a cell
-    :type notes: str
+    :param note: string containing notes from a cell
+    :type note: str
     :return: str
     """
-    if notes is None or notes == Notation.EMPTY:
+    if note is None or note == Notation.EMPTY:
         return None
-    splits = notes.split('\n')
+    splits = note.split('\n')
     if len(splits) == 0:
         return None
     if isinstance(splits, list) and len(splits) == 1:

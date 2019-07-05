@@ -1,4 +1,4 @@
-from .strings import signature, split_notes
+from .strings import signature, split_note
 from numpy import array_equal
 
 
@@ -56,7 +56,8 @@ def analyze(cube, notes=None):
               "ell_alg_flag": ell_flag,
               "signature": signature(cube.stickers)}
 
-    splits = split_notes(notes)
+    splits = split_note(notes)
+
     if splits is not None:
         bundle.update({"notes": splits})
     return bundle

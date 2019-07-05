@@ -567,6 +567,7 @@
               "pll_alg_flag": true,
               "ell_alg_flag": false,
               "signature": "000000000111111111225222222332333334444444445553555553",
+              "notes": "[R D' U2: [R' D' R, U]]",
               "index": 3,
               "cleaned_text": "R'B'RU2RDR'U2RD'R'R'BR"
             },
@@ -751,6 +752,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "004000002111111111225222222335333333444444440550555553",
+              "notes": [
+                "[x': [R' D R, U']]",
+                "[B, r U r]"
+              ],
               "index": 12,
               "cleaned_text": "RURDR'URD'R'U'U'R'"
             },
@@ -1129,6 +1134,7 @@
               "pll_alg_flag": true,
               "ell_alg_flag": false,
               "signature": "000000000111111111223222222335333335444444443552555554",
+              "notes": "[R D' U': [R' D' R, U']]",
               "index": 2,
               "cleaned_text": "R'B'RRDR'U2RD'R'U2R'BR"
             },
@@ -1451,6 +1457,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000001110111111523222222335333333444444442555555254",
+              "notes": "R U2 R' U' L2 U R U' L2 U' R'",
               "index": 19,
               "cleaned_text": "DR'DRRD'R'U2RDR'U2R'D'RD'"
             },
@@ -1474,6 +1481,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000001111111110223222222332333333544444444555555554",
+              "notes": "U2 l' U2 R U2 l U2 l' U2 R' U2 l",
               "index": 20,
               "cleaned_text": "R'DRRD'R'U2RDR'U2R'D'R"
             },
@@ -1965,6 +1973,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000300511111111224222221333333033445444444255555552",
+              "notes": "[R' D2 R, U']",
               "index": 17,
               "cleaned_text": "DR'DRU'R'D'RUD'"
             },
@@ -2503,6 +2512,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "501000000115111111223222222333333332444444444555555050",
+              "notes": "[R' U' R: [U2, R D R']] ",
               "index": 15,
               "cleaned_text": "UR'R'DRU2R'D'RU2RU'"
             },
@@ -2526,6 +2536,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "501000000511111111223222222333333035444444444253555550",
+              "notes": [
+                "Consider changing to a variant of FRU LBU:",
+                "[R U R' U D: [U2, R D R']] // left index push on first U"
+              ],
               "index": 17,
               "cleaned_text": "UDR'R'DRU2R'D'RU2RD'U'"
             },
@@ -2912,6 +2926,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "500000000213111111122222222333333533444444444055555551",
+              "notes": "U' R' D F' D' R D R' F R (U D')",
               "index": 7,
               "cleaned_text": "U'DR'RD'R'DF'D'RDR'FRD'U"
             },
@@ -3073,6 +3088,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "500000005110111111422222222330333333444444442555555351",
+              "notes": "[R' F2: [R U R', D]]",
               "index": 15,
               "cleaned_text": "R'U'R'DRUR'D'RR"
             },
@@ -3096,6 +3112,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "502000000115111111022222222333333330444444444555555351",
+              "notes": "[D: [U' R U, L]]",
               "index": 16,
               "cleaned_text": "U'R'U'DRUR'D'RU'R'URU"
             },
@@ -3377,6 +3394,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "500000000511111111221222222333333335444444444052555553",
+              "notes": [
+                "[U2: [R D' R', U']]",
+                "[r U r', B']"
+              ],
               "index": 2,
               "cleaned_text": "UL'D'LU'L'DL"
             },
@@ -3469,6 +3490,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "500000000215111111221222222333333133444444444555555053",
+              "notes": [
+                "[D: [L', U' R U]]",
+                "// U' D R' F' R D' R' D F D' R U"
+              ],
               "index": 6,
               "cleaned_text": "U'DR'F'RD'R'DFD'RDR'RD'U"
             },
@@ -3538,6 +3563,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "500000000112111111021222222333333533444444444255555553",
+              "notes": "garbo",
               "index": 10,
               "cleaned_text": "U'L'ULDL'U'LUD'"
             },
@@ -3561,6 +3587,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "500000500211111111221222222333333033440444444455555553",
+              "notes": "// I end up doing something like l U2 R' D R U2 R' D' x",
               "index": 11,
               "cleaned_text": "FRB2R'F'RB2R'"
             },
@@ -4568,6 +4595,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "501000000111111115223222022333333334244444444552555550",
+              "notes": "[F: [R' D R, U2]]",
               "index": 5,
               "cleaned_text": "UD'R'R'DRU2R'D'RU2RDU'"
             },
@@ -4660,6 +4688,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200000000112111115024222222333333333144444444555555551",
+              "notes": "[U' R U, L']",
               "index": 10,
               "cleaned_text": "U'R'RD'R'DF'D'RDR'FRU"
             },
@@ -4706,6 +4735,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200000002111111113224222422335333333044444440555555551",
+              "notes": "[l' U: [U, R' D' R]]",
               "index": 12,
               "cleaned_text": "R'FRUR'D'RU'R'DF'R"
             },
@@ -4890,6 +4920,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200000000011111115224222122333333233344444444555555551",
+              "notes": [
+                "[U' R U, L2]",
+                "[z: [R' D R, U2]]"
+              ],
               "index": 22,
               "cleaned_text": "D'RRU'R'DRUR'D'R'D"
             }
@@ -5225,6 +5259,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200000500112111111421222222333333333440444444555555055",
+              "notes": [
+                "[L', U' R' U]",
+                "[F': [R U' R', D]]"
+              ],
               "index": 11,
               "cleaned_text": "R'U'RUR'DRU'R'D'UR"
             },
@@ -5248,6 +5286,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200000002110111111421222222335333333444444440555555355",
+              "notes": "[R2 U': [R U R', D]]",
               "index": 12,
               "cleaned_text": "R'F'RU'R'DRUR'D'FR"
             },
@@ -5317,6 +5356,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200000005114111111321222222330333333444444442555555055",
+              "notes": "[L': [L', U R' U']]",
               "index": 15,
               "cleaned_text": "R'DU'R'D'RUR'DRD'R"
             },
@@ -5386,6 +5426,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200000000111111211321222222033333333444444544555555455",
+              "notes": "[U' D': [R U R', D2]]",
               "index": 18,
               "cleaned_text": "R'U'DR'D'RU2R'DRU2D'UR"
             },
@@ -5441,6 +5482,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "231000000113111110524222202323333332554444444555554051",
+              "notes": [
+                "[R2 D: [U', R' D' R]]",
+                "[L', U' R2 U]"
+              ],
               "index": 21,
               "cleaned_text": "DU'RU'RD'RUR'DR'R'UD'"
             },
@@ -5473,6 +5518,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "011000200113111151554222220333333332445244444555554002",
+              "notes": [
+                "[z R' U' D': [U', R' D R]]"
+              ],
               "index": 22,
               "cleaned_text": "FU2RD'RUR'DR'U'U2F'"
             }
@@ -5672,6 +5720,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000400111111111222222223332333333440444445555555550",
+              "notes": [
+                "[U' l' U' D': [R D' R' U2]]",
+                "[R U R2 U' R', F]"
+              ],
               "index": 3,
               "cleaned_text": "U'R'D'U2R'DRU2R'D'RDRU"
             },
@@ -5741,6 +5793,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000300211111111222222221333333533445444444055555550",
+              "notes": "// technically a rotation: l U2 R' D R U2 R' D' x",
               "index": 7,
               "cleaned_text": "RB2R'FRB2R'F'"
             },
@@ -5764,6 +5817,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000100111111115222222024333333333242444444555555550",
+              "notes": [
+                "[U' D' R' U: [R U' R', D]]",
+                "[R' F2: [R U' R', D']]"
+              ],
               "index": 9,
               "cleaned_text": "RU'R'R'D'RU2R'DRU2RUR'"
             },
@@ -5787,6 +5844,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000500112111111022222221333333333442444444555555550",
+              "notes": [
+                "[L', U' R' U]",
+                "Or [R' U': [D, R U R']]? // No regrips?"
+              ],
               "index": 10,
               "cleaned_text": "R'U'DRUR'D'RU'R'UR"
             },
@@ -5833,6 +5894,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000100111111511222222223233333333444444044555555550",
+              "notes": "[R2, U L U']",
               "index": 13,
               "cleaned_text": "RU'R'DR'URD'R'U'RRUR'"
             },
@@ -5879,6 +5941,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000005111111111222222224330333333443444442555555550",
+              "notes": "[R' F2: [R U' R', D]]",
               "index": 15,
               "cleaned_text": "R'U'R'D'RUR'DRR"
             },
@@ -5971,6 +6034,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000200110111111522222225333333333441444444555555250",
+              "notes": [
+                "[D R' U': [D', R U R']]"
+              ],
               "index": 19,
               "cleaned_text": "R'FRUR'DRU2R'D'RU2U'R'F'R"
             },
@@ -6040,6 +6106,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000500011111111222222223333333233441444444555555550",
+              "notes": [
+                "[L2, U' R' U]",
+                "U' R' U r2 D' R D r2",
+                "[z: [R' D' R, U2]]"
+              ],
               "index": 22,
               "cleaned_text": "R'U'RU'RD'R'URDR'R'UR"
             }
@@ -6216,6 +6287,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000005111111111220222222333333335444444440552555553",
+              "notes": " [r U r', B]",
               "index": 2,
               "cleaned_text": "RUURDR'U'RD'R'U'R'"
             },
@@ -6385,6 +6457,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000001112111111020222222335333333444444442555555553",
+              "notes": "[R2 U': [R U R', D]]",
               "index": 10,
               "cleaned_text": "R'F'DRU'R'D'RUR'FR"
             },
@@ -6408,6 +6481,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000502111111111220222222330333333440444444555555553",
+              "notes": "[U': [R, U' L' U]]",
               "index": 11,
               "cleaned_text": "R'FDRUR'D'RU'R'F'R"
             },
@@ -6431,6 +6505,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000003111111511220222222231333333444444044555555553",
+              "notes": "[l' U D': [R' D' R, U]]",
               "index": 13,
               "cleaned_text": "R2FRUR'DRU'R'D'F'R2"
             },
@@ -6454,6 +6529,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000001111111112220222522332333333044444444555555553",
+              "notes": "[z': [R' D R, U2]]",
               "index": 14,
               "cleaned_text": "U'R'DR'URD'R'U'RRU"
             },
@@ -6477,6 +6553,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "402000000111111111220222222335333330444444443555555553",
+              "notes": [
+                "[L, U' R' U]"
+              ],
               "index": 16,
               "cleaned_text": "L'RUR'U'LURU'R'"
             },
@@ -6523,6 +6602,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000001111111211220222222034333333444444543555555553",
+              "notes": [
+                "[z' R': [R' D R, U2]]",
+                "[R': [R U R2 U' R', F]]"
+              ],
               "index": 18,
               "cleaned_text": "UDRRD'R'URDR'U'R'D'U'"
             },
@@ -6592,6 +6675,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000004111111011220222222533333333444444241555555553",
+              "notes": "[R' F R: [U', R D R']] // a bit awkward",
               "index": 21,
               "cleaned_text": "RRU'R'D'RUR'DR'"
             },
@@ -6789,6 +6873,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000000111111311223222222533333335444444044552555551",
+              "notes": "[U, r' B r]",
               "index": 2,
               "cleaned_text": "UURDR'U'RD'R'U'"
             },
@@ -6858,6 +6943,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "405000000111111011223222222333333332444444544550555551",
+              "notes": "[U' D' R': [R D' R' D, F2]]",
               "index": 5,
               "cleaned_text": "RUR'URDR'U2RD'R'U2U'RU'R'"
             },
@@ -6913,6 +6999,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200000110111111200224222223433333333544544044555554551",
+              "notes": "[U' R D': [R' U' R, D2]]",
               "index": 7,
               "cleaned_text": "R'URRD'RUR'DR'U'R'U'R"
             },
@@ -7005,6 +7092,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000500111111011223222222233333333440444444555555551",
+              "notes": "[U L U', L2]",
               "index": 11,
               "cleaned_text": "RU'R'R'URDR'U'RD'RUR'"
             },
@@ -7143,6 +7231,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000000110111211523222222533333333444444144555555251",
+              "notes": [
+                "[D': [U' R U, L2]]"
+              ],
               "index": 19,
               "cleaned_text": "R'D2RRU'R'D'RUR'DR'D2R"
             },
@@ -7189,6 +7280,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000000011111511223222222333333233444444144555555551",
+              "notes": [
+                "Starts like UFR -> DBL"
+              ],
               "index": 22,
               "cleaned_text": "R'D'RRU'R'D'RUR'DR'DR"
             }
@@ -7544,6 +7638,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000500111111112221222022333333333440444444555555552",
+              "notes": "// could be executed as f: R U R', D if you don't like using your thumb. Still regripless.",
               "index": 11,
               "cleaned_text": "FRUR'DRU'R'D'F'"
             },
@@ -7682,6 +7777,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000000112111111021222522333333333244444444555555552",
+              "notes": [
+                "[R' U2 R, D]"
+              ],
               "index": 18,
               "cleaned_text": "U'DRUR'D'RU'R'U"
             },
@@ -7728,6 +7826,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000000111111014221222322533333333144444244555555552",
+              "notes": "[R2 U' R': [R' D' R, U2]]",
               "index": 21,
               "cleaned_text": "F2RU'R'D'RUR'DF2"
             },
@@ -7948,6 +8047,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000002111111111224222225330333333442444444555555550",
+              "notes": "[R' D': [U', R' D R]]",
               "index": 4,
               "cleaned_text": "U'RURDR'U'RD'R'R'U"
             },
@@ -8002,6 +8102,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000001115111111224222222335333333444444442555555050",
+              "notes": "[R' F2: [D, R U R']]",
               "index": 6,
               "cleaned_text": "R'R'DRU'R'D'RUR"
             },
@@ -8117,6 +8218,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000500111111111224222222334333333440444442555555550",
+              "notes": "[R' F2: [D, R U' R']] // totes regripless",
               "index": 11,
               "cleaned_text": "R'R'D'RU'R'DRUR"
             },
@@ -8255,6 +8357,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000002110111111524222222331333333444444445555555250",
+              "notes": "[U2 R' F': [R U' R', D]]",
               "index": 19,
               "cleaned_text": "FRRDR'U2RD'R'U2R'F'"
             },
@@ -8278,6 +8381,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000004111111110224222222331333333544444442555555550",
+              "notes": "[U R': [R' U R, D]]",
               "index": 20,
               "cleaned_text": "R'D'R'D'RU'R'DRUDR"
             },
@@ -8301,6 +8405,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000005111111311224222222030333333444444442555555553",
+              "notes": "[U' D R: [U, R D' R']]",
               "index": 21,
               "cleaned_text": "R'U'RURDR'U'RD'R'R'UR"
             },
@@ -8568,6 +8673,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "301000000211111111220222222333333535444444444053555555",
+              "notes": "[z R': [U2, R' D' R]]",
               "index": 7,
               "cleaned_text": "U2RU'R'URD'R'U'RDUR'U2"
             },
@@ -8614,6 +8720,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "304000000111111115220222022333333332244444444551555555",
+              "notes": "[L, U' R U] // regrips, but arguably faster",
               "index": 9,
               "cleaned_text": "RU'R'R'D'RU'R'DRURUR'"
             },
@@ -8660,6 +8767,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "302000500111111111220222222333333334440444444550555555",
+              "notes": "[L, U' R' U]",
               "index": 11,
               "cleaned_text": "U'R'FDRUR'D'RU'R'F'RU"
             },
@@ -8683,6 +8791,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000002111111111220222222335333334444444440553555555",
+              "notes": "[R U R' U', L']",
               "index": 12,
               "cleaned_text": "rUR'U'r'FRF'"
             },
@@ -8729,6 +8838,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "301000000111111112220222522333333334044444444552555555",
+              "notes": "[U' R' U': [R U R', D']]",
               "index": 14,
               "cleaned_text": "UR2U'L'UR2U'L"
             },
@@ -8775,6 +8885,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "305000000511111111220222222333333033444444444251555555",
+              "notes": "[U' D R' U': [R U R', D]]",
               "index": 17,
               "cleaned_text": "FRURD'R'U'RDR'R'F'"
             },
@@ -8867,6 +8978,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "304000000111111011220222222533333331444444244553555555",
+              "notes": "[L, U' R2 U]",
               "index": 21,
               "cleaned_text": "R'FRURDR'U'RD'R'R'F'R"
             },
@@ -9147,6 +9259,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000000115111111225222222333333533444444444255555051",
+              "notes": "[D: [R U' R', D]]",
               "index": 6,
               "cleaned_text": "r'F'rDr'FrD'"
             },
@@ -9239,6 +9352,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000500011111111225222222333333433440444444255555551",
+              "notes": [
+                "[R2 U2: [R' U' R, D']]",
+                "[f': [D, r' F' r]]"
+              ],
               "index": 11,
               "cleaned_text": "D'RU'R'R'URDR'U'RD'RUR'D"
             },
@@ -9423,6 +9540,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000000411111110225222222333333133544444444255555551",
+              "notes": [
+                "[U: [L, U R2 U']]"
+              ],
               "index": 20,
               "cleaned_text": "xU2R'DRU2R'D'Rx'"
             },
@@ -9733,6 +9853,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000000211111111221222222533333533444444344055555554",
+              "notes": "[D2 U': [R U R', D]]",
               "index": 7,
               "cleaned_text": "D'R'U2RDR'U2R"
             },
@@ -9802,6 +9923,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000000112111111021222222233333333444444544555555554",
+              "notes": [
+                "[D2, R' U2 R]",
+                "[U' D: [R U R', D2]]"
+              ],
               "index": 10,
               "cleaned_text": "R'UDR'D'RU2R'DRU2D'U'R"
             },
@@ -9848,6 +9973,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "300000002111111011221222222435333333444444340555555554",
+              "notes": [
+                "[z' R': [U2, R' D R]]",
+                "[R': [F, R U R2 U' R']]"
+              ],
               "index": 12,
               "cleaned_text": "UDRURD'R'U'RDR'R'D'U'"
             },
@@ -9963,6 +10092,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000113111211425222222033333333444444544555555152",
+              "notes": [
+                "[z R2: [R' U2 R, D']]",
+                "[U' R U: [D, R U R']]"
+              ],
               "index": 19,
               "cleaned_text": "U'D'RRD'R'U'RDR'UR'DU"
             },
@@ -10209,6 +10342,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000110111111425222222332333333444444445555555352",
+              "notes": "R U L2 U R' U' L2 U R U2 R'",
               "index": 3,
               "cleaned_text": "DR'DRU2RD'R'U2RDR'R'D'RD'"
             },
@@ -10232,6 +10366,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000110111111225222225333333333442444444555555452",
+              "notes": "U' F2 U R' U' R F2 R' U R",
               "index": 4,
               "cleaned_text": "D'R'D'RDRU'R'D'RUR'R'DRD"
             },
@@ -10278,6 +10413,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000215111111325222222333333533444444444055555152",
+              "notes": [
+                "[D R2 U D: [R' D' R, U2]]"
+              ],
               "index": 7,
               "cleaned_text": "UDR'D2R'URD2R'U'RRD'U'"
             },
@@ -10347,6 +10485,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000500114111111025222222333333333440444444555555252",
+              "notes": "[D R' U': [R U R', D']]",
               "index": 11,
               "cleaned_text": "R'FRU'R'DRU2R'D'RU2UR'F'R"
             },
@@ -10393,6 +10532,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000114111511125222222233333333444444044555555352",
+              "notes": "[D': [U' R U, L2]]",
               "index": 13,
               "cleaned_text": "R'D2RD'RU'R'DRUR'R'D2R"
             },
@@ -10439,6 +10579,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000005113111111025222222330333333444444442555555452",
+              "notes": "[U2 R' F': [R U' R', D]]",
               "index": 15,
               "cleaned_text": "FRU2RDR'U2RD'R'R'F'"
             },
@@ -10462,6 +10603,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "102000000113111111525222222333333330444444444555555052",
+              "notes": "[z R2: [D', R U2 R']]",
               "index": 16,
               "cleaned_text": "U2R'URU'R'DRUR'D'U'RU2"
             },
@@ -10508,6 +10650,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000113111211425222222033333333444444544555555152",
+              "notes": [
+                "// regripless if you start with your thumb underneath on D.",
+                "[z R: [U2, R D' R']]",
+                "[U' R U: [R U R', D]]"
+              ],
               "index": 18,
               "cleaned_text": "U'D'RRD'R'U'RDR'UR'DU"
             },
@@ -10531,6 +10678,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000111111110425222222333333333544444444555555252",
+              "notes": "[U2 R' F': [D', R U' R']]",
               "index": 20,
               "cleaned_text": "DD'RDR'F2RD'R'DF2D'"
             },
@@ -10793,6 +10941,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000111111110222222425333333333242444444555555554",
+              "notes": [
+                "// main alg can be done with no regrips",
+                "[D R D' R': [U', R' D R]]",
+                "[z' R: [U2, R D R']]"
+              ],
               "index": 4,
               "cleaned_text": "U'R2D'R2DR2UR2D'R2DR2"
             },
@@ -11066,6 +11219,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000511111113222222522333333033144444444255555554",
+              "notes": "[U: [U R2 U', L]]",
               "index": 17,
               "cleaned_text": "xR'DRU2R'D'RU2x'"
             },
@@ -11333,6 +11487,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000111111011224222222333333335444444544552555553",
+              "notes": "[r U r', B2]",
               "index": 2,
               "cleaned_text": "RD'U2UR'DRU'R'D'RU2DR'"
             },
@@ -11356,6 +11511,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000111111011224222222432333333444444345555555553",
+              "notes": "[U2, R2 D R2 D' R2]",
               "index": 3,
               "cleaned_text": "D'R'DRU2RD'R'U2RDR'R'D'RD"
             },
@@ -11525,6 +11681,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000112111211024222222533333333444444144555555553",
+              "notes": [
+                "[R U' R': [R D' R' D, F']] // R (U' D') R' D F' D' R D R' F R U R'",
+                "[U' R2 U, L'] // debatably faster"
+              ],
               "index": 10,
               "cleaned_text": "U'DRRD'R'U'RDR'UR'D'U"
             },
@@ -11548,6 +11708,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000500111111411224222222033333333440444244555555553",
+              "notes": [
+                "first U, do lefty"
+              ],
               "index": 11,
               "cleaned_text": "fRUR'D'RU'R'Df'"
             },
@@ -11571,6 +11734,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000002111111411224222222335333333444444040555555553",
+              "notes": [
+                "[R: [D', R U' R']]"
+              ],
               "index": 12,
               "cleaned_text": "R'FRRDR'U'RD'R'UR'F'R"
             },
@@ -11594,6 +11760,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000111111412224222522233333333044444144555555553",
+              "notes": "[R2 U' R': [U2, R' D' R]]",
               "index": 14,
               "cleaned_text": "F2D'RU'R'DRUR'F2"
             },
@@ -11732,6 +11899,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000011111111224222222533333233444444344555555553",
+              "notes": [
+                "[R D' R: [R U' R', D]]"
+              ],
               "index": 22,
               "cleaned_text": "R'U'RURD'R'U'RDR'R'UR"
             }
@@ -12037,6 +12207,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000211111115223222022333333433244444444155555555",
+              "notes": "[L2, U' R U]",
               "index": 9,
               "cleaned_text": "D'RDRU'R'D'RUR'R'D"
             },
@@ -12060,6 +12231,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000212111111023222222333333133444444444555555555",
+              "notes": "// execute like U D' (D' R D') r2 U R' U' r2 (U' D')",
               "index": 10,
               "cleaned_text": "UD2RD'r2'UR'U'r2D'U'"
             },
@@ -12083,6 +12255,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000500411111111223222222333333233440444444055555555",
+              "notes": [
+                "[L2, U' R' U]",
+                "[z: [U2, R' D' R]]",
+                "[U' R U': [R' U R, D']]"
+              ],
               "index": 11,
               "cleaned_text": "R'U'RRD'R'U'RDR'UR'UR"
             },
@@ -12175,6 +12352,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000005311111111223222222330333433444444442055555555",
+              "notes": [
+                "[R, D L2 D']"
+              ],
               "index": 15,
               "cleaned_text": "U'RRD'R'URDR'U'R'U"
             },
@@ -12290,6 +12470,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "100000000111111011223222222533333433444444244355555555",
+              "notes": "[R D' R: [D, R U' R']]",
               "index": 21,
               "cleaned_text": "R'U'RRD'R'URDR'U'R'UR"
             }
@@ -13226,6 +13407,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111110111222322222333334333444442444555555555",
+              "notes": "// I find [R' U R U', M2] easier to execute sometimes.",
               "index": 3,
               "cleaned_text": "RUR'U'M2URU'R'M2"
             },
@@ -13272,6 +13454,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111110111222322222333335333444444444555552555",
+              "notes": "[r' F' r U, M2] // regripless",
               "index": 5,
               "cleaned_text": "DRUR'U'R'U'R'URUD'"
             },
@@ -13318,6 +13501,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000005000111110111222322222333332333444444444555555515",
+              "notes": [
+                "// execute like M U r' F' M2 F r U' M",
+                "// or do",
+                "[M: [U L' U', M2]]"
+              ],
               "index": 7,
               "cleaned_text": "U'R'F2FRSR'F'RS'R'F2RU"
             },
@@ -13364,6 +13552,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000005000111110111222322222333333323444444444515555555",
+              "notes": [
+                "[M: [U L U', M2]]"
+              ],
               "index": 9,
               "cleaned_text": "uR'u'M2uRu'M2"
             },
@@ -13479,6 +13670,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000004000111110111222322222323333333444444414555555555",
+              "notes": "[u R u', M2] // awkward",
               "index": 14,
               "cleaned_text": "MU'R'UM2U'RUM2M'"
             },
@@ -13548,6 +13740,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111112111202522222333332333444444444555555535",
+              "notes": [
+                "[U' L U, M2]"
+              ],
               "index": 18,
               "cleaned_text": "UDR'ER2E'R2RD'U'"
             },
@@ -13640,6 +13835,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111110111222322222333233333444444444555555555",
+              "notes": [
+                "[U D': R2 S' R2 R]",
+                "M U2 M U2 M2"
+              ],
               "index": 22,
               "cleaned_text": "M'u2M'u2"
             },
@@ -13871,6 +14070,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111110111222422222333333333444442444555555555",
+              "notes": "(R2 f2 R2 U')*2",
               "index": 4,
               "cleaned_text": "MU2MUM'U2M'U'"
             },
@@ -13940,6 +14140,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000050111110111222422222333333333444442444555555515",
+              "notes": [
+                "Start with thumb on D"
+              ],
               "index": 7,
               "cleaned_text": "FL'S'LF'L'SL"
             },
@@ -13963,6 +14166,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000050121110111222422222333333333444441444555155555",
+              "notes": [
+                "// regripless ",
+                "[R S R': U' M' U2 M U']"
+              ],
               "index": 8,
               "cleaned_text": "ruL'E'L2EL2Lu'r'"
             },
@@ -14009,6 +14216,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200020111110111222421222333333333444440444555555555",
+              "notes": [
+                "// R' r2 to start?",
+                "[R' F': [R U' R', E]]",
+                "[U' R2 U, M]"
+              ],
               "index": 10,
               "cleaned_text": "rM'UR'U'MURU'r'"
             },
@@ -14124,6 +14336,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000040111110111222422222333333333414442444555555555",
+              "notes": [
+                "// r U r' S' r U r' S r U2 r'",
+                "[R S' R': U M' U2 M U]"
+              ],
               "index": 16,
               "cleaned_text": "rU2U'r'S'rUr'SrU2r'"
             },
@@ -14147,6 +14363,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000002030111110111222422222333331333444440444555555555",
+              "notes": [
+                "[R2 U: [R' F' R, S']]",
+                "M U M U M' U M U M2"
+              ],
               "index": 17,
               "cleaned_text": "UDS'R'FRSR'F'RD'U'"
             },
@@ -14170,6 +14390,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111112111202522222333333333444442444555555545",
+              "notes": "[L: U M' U2 M U]",
               "index": 18,
               "cleaned_text": "DR'ER2E'R2RD'"
             },
@@ -14193,6 +14414,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000030111210111222422222333133333444441444555555555",
+              "notes": "[D R2 D', M']",
               "index": 19,
               "cleaned_text": "UD'S'RFR'SRF'R'DU'"
             },
@@ -14239,6 +14461,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111110111222422222333333333444244444555555555",
+              "notes": [
+                "[R' F': [R U' R', E']]",
+                "[R D': R S' R2 S R]"
+              ],
               "index": 21,
               "cleaned_text": "SR'F'R'S'R2SR2RFRS'"
             },
@@ -14262,6 +14488,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111110111222422222333233333444443444555555555",
+              "notes": [
+                "[D': R2 S' R2 S]"
+              ],
               "index": 22,
               "cleaned_text": "u'M'u2M'u'"
             },
@@ -14285,6 +14514,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111110111222422222333333333444445444555255555",
+              "notes": [
+                "[L2: U M' U2 M U]",
+                "D' R' D' R D R D R D' R'"
+              ],
               "index": 23,
               "cleaned_text": "SR'F'RSR2S'R2R'FRS'"
             }
@@ -14497,6 +14730,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111110111222224222333333333444442444555555555",
+              "notes": "(U R2 f2 R2)*2",
               "index": 3,
               "cleaned_text": "UMU2MU'M'U2M'"
             },
@@ -14520,6 +14754,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111110111222225222333333333444444444555552555",
+              "notes": [
+                "[R' F: [R S R', F2]]",
+                "[U', M U2 M]",
+                "D R' U' R U R U R U' R' (U' D')"
+              ],
               "index": 5,
               "cleaned_text": "RU'R2f2R2U'R2f2R"
             },
@@ -14543,6 +14782,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111114111222322222323333333444444404555555555",
+              "notes": "[D': [S, r U' r']",
               "index": 6,
               "cleaned_text": "r'DR2S'R2SD'r"
             },
@@ -14566,6 +14806,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000111111111242222222333333333444442444555555505",
+              "notes": [
+                "[L2 D: L2 E L2 E']",
+                "[U: [r' D r, S']]"
+              ],
               "index": 7,
               "cleaned_text": "UR'F2F'RSR'FRS'R'F2RU'"
             },
@@ -14589,6 +14833,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000121110111222221222333333333444444444555155555",
+              "notes": "[U: [r' D r, S']]",
               "index": 8,
               "cleaned_text": "LFL2E'L2EF'L'"
             },
@@ -14612,6 +14857,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000111110111222223222333333323444444444515555555",
+              "notes": "[R' F: r2 E r2 E] // regripless",
               "index": 9,
               "cleaned_text": "luM'u2M'ul'"
             },
@@ -14635,6 +14881,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111110111222224212333333333424444444555555555",
+              "notes": [
+                "R U R2 f2 R2 U R2 f2 R2",
+                "[U R: U' M' U2 M U'] // not the best because of regrips"
+              ],
               "index": 11,
               "cleaned_text": "U'RU'M2UR'U'M2UU"
             },
@@ -14681,6 +14931,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400020111110111222220222333333333444441444555555555",
+              "notes": "Slight variation of the inverse (which is more awkward to execute) but essentially the same alg. ",
               "index": 13,
               "cleaned_text": "lD'R2S'R2SDl'"
             },
@@ -14704,6 +14955,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000131111111222221222323333333444444404555455555",
+              "notes": "// L not required, but it makes the whole thing regripless",
               "index": 14,
               "cleaned_text": "LFE'R2ER2F'L'"
             },
@@ -14727,6 +14979,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000111111121222223222333333313444044444545555555",
+              "notes": "// first F with right middle finger",
               "index": 15,
               "cleaned_text": "R'FE'R2ER2F'R"
             },
@@ -14773,6 +15026,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000302000111110111222220222333331333444444444555555555",
+              "notes": "M U (M' U' M U2 M U M') U M'",
               "index": 17,
               "cleaned_text": "UR'F'RSR'FRS'U'"
             },
@@ -14819,6 +15073,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111210111222221222333133333444444444555555555",
+              "notes": [
+                "M U' (M' U' M U2 M U M') U' M'",
+                "[D': [S', R F R']]"
+              ],
               "index": 19,
               "cleaned_text": "DSr'D'rS'r'DrD'"
             },
@@ -14842,6 +15100,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111110111222224222313333333444444424555555555",
+              "notes": "[U R': U' M' U2 M U']",
               "index": 20,
               "cleaned_text": "U'R'U'M2URU'M2UU"
             },
@@ -14865,6 +15124,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111110111222224222333333333444244444555555555",
+              "notes": [
+                "(R2 U R2 f2)*2",
+                "M' D2 M' D' M D2 M D",
+                "[M' U2 M, D']"
+              ],
               "index": 21,
               "cleaned_text": "R'FR'SRF2R'S'RF2F'R"
             },
@@ -14888,6 +15152,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111110111222322222333332333444444444555555555",
+              "notes": "M2 U2 M U2 M",
               "index": 22,
               "cleaned_text": "U2M'U2M"
             }
@@ -15075,6 +15340,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111110111222522222333332333444444444555553555",
+              "notes": "[M2, r' F' r U] // regripless",
               "index": 2,
               "cleaned_text": "U'DR'U'RURURU'R'D'"
             },
@@ -15121,6 +15387,12 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111110111222522222333333333444444444555552555",
+              "notes": [
+                "[M U2 M, U']",
+                "(R2 f2 R2 U)*2",
+                "[M D2 M', U']",
+                "(U D) R U R' U' R' U' R' U R D'"
+              ],
               "index": 4,
               "cleaned_text": "R'F'RSR'F2RS'R'F2FR"
             },
@@ -15213,6 +15485,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020200000111110111222521222333333333444444444555550555",
+              "notes": [
+                "[l': [M', U' L U]] // not as fast as inverse",
+                "[U L2 U', M]",
+                "[U' D: [S', R' F R]]"
+              ],
               "index": 10,
               "cleaned_text": "LFL'ULE'L'U'LEF'L'"
             },
@@ -15328,6 +15605,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "040000000111110121222522222333333333444144444555551555",
+              "notes": "[U' R' F: E R2 E' R2]",
               "index": 15,
               "cleaned_text": "R'f'RS'R2SR2R'fR"
             },
@@ -15374,6 +15652,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "030002000111110111222522222333331333444444444555550555",
+              "notes": "[U' D': [S, r U' r']]",
               "index": 17,
               "cleaned_text": "MU'MU'M'U'MU'M2"
             },
@@ -15420,6 +15699,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "030000000111210111222522222333133333444444444555551555",
+              "notes": [
+                "[l: [M, U' L' U]]"
+              ],
               "index": 19,
               "cleaned_text": "U'D'S'RFR'SRF'R'DU"
             },
@@ -15489,6 +15771,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111110111222522222333233333444444444555553555",
+              "notes": [
+                "[D: L2 S L2 S']"
+              ],
               "index": 22,
               "cleaned_text": "uM'u2M'u"
             },
@@ -15697,6 +15982,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "030001000111115111222022222333332333444444444555550555",
+              "notes": [
+                "// Execute like l' U L U' M2 U L' U' (M' L)",
+                "// or",
+                "[U2 D: [R' F R, S']]"
+              ],
               "index": 2,
               "cleaned_text": "l'ULU'M2UL'U'M2l"
             },
@@ -15720,6 +16010,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "040000010111115111222022222333333333444442444555550555",
+              "notes": "Execute like [S', r U r']",
               "index": 3,
               "cleaned_text": "S'LFL'SLF'L'"
             },
@@ -15743,6 +16034,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111110111222223222323333333444444414555555555",
+              "notes": "[D': [r U' r', S]",
               "index": 4,
               "cleaned_text": "r'D'R2S'R2SDr"
             },
@@ -15789,6 +16081,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000121115111222022222333333333444444444555155555",
+              "notes": [
+                "// left index first",
+                "[L2, U' M' U]"
+              ],
               "index": 8,
               "cleaned_text": "SUM'U2MU2U'S'"
             },
@@ -15858,6 +16154,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "040000000111115111222022212333333333424444444555552555",
+              "notes": [
+                "[U' M': [U R U', M']] // ",
+                "[R' D R, E']",
+                "[E', r' D' r]"
+              ],
               "index": 11,
               "cleaned_text": "u'U'R'UM'U'RUMu"
             },
@@ -15881,6 +16182,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": true,
               "signature": "040500000111111111222220222333333333444442444555550555",
+              "notes": [
+                "Execute like R' F' R"
+              ],
               "index": 12,
               "cleaned_text": "l'UlUM'U2MU2U'l'U'l"
             },
@@ -15927,6 +16231,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "030000000111115111222022222323333333444444414555554555",
+              "notes": [
+                "[U': [U' R' U, M']]",
+                "[F': R' S R2 S' R']"
+              ],
               "index": 14,
               "cleaned_text": "r'UMU2M'U2U'r"
             },
@@ -16042,6 +16350,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111215111222022222333133333444444444555553555",
+              "notes": "regripless, end with l2 L'",
               "index": 19,
               "cleaned_text": "l'ULU'M'UL'U'Ml"
             },
@@ -16065,6 +16374,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "040000000111115111222022222313333333444444424555553555",
+              "notes": "[R': [S', r U r']]",
               "index": 20,
               "cleaned_text": "rU2R'E'RUR'ERU'U2r'"
             },
@@ -16111,6 +16421,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "030000000111115111222022222333233333444444444555551555",
+              "notes": [
+                "[M' U' M, D2]",
+                "U2 M' U M U2 M U' M'"
+              ],
               "index": 22,
               "cleaned_text": "M'U'MU2MUM'U2"
             },
@@ -16134,6 +16448,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "050000000111115111222022222333333333444444444555251555",
+              "notes": "[S, r U r']",
               "index": 23,
               "cleaned_text": "R'D'RS'R'DRS"
             }
@@ -16322,6 +16637,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111115111232222222333332333444444444555555505",
+              "notes": [
+                "[M': [U L' U', M2]]"
+              ],
               "index": 2,
               "cleaned_text": "U'R'F2RSR'FRS'R'F'F2RU"
             },
@@ -16345,6 +16663,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111115111242222222333333333444442444555555505",
+              "notes": "[u': [U R U', M2]]",
               "index": 3,
               "cleaned_text": "L'S'LFL'SLF'"
             },
@@ -16368,6 +16687,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111115111222222222333333333444444444555555505",
+              "notes": "[L2 F': [L2, E]]",
               "index": 4,
               "cleaned_text": "UR'F'F'RSR'FRS'R'FRU'"
             },
@@ -16391,6 +16711,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111115111252222222333333333444444444555552505",
+              "notes": [
+                "R' F2 R S R' F R S' R' F R"
+              ],
               "index": 5,
               "cleaned_text": "R'F2RSR'FRS'R'F'F2R"
             },
@@ -16437,6 +16760,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111111111232222222333333323444444454555555545",
+              "notes": [
+                "Thumb on D",
+                "or ",
+                "[L S: U' M' U2 M U']"
+              ],
               "index": 9,
               "cleaned_text": "rU'r'Er2Er'Ur'"
             },
@@ -16483,6 +16811,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111222422252333333333424444444555555515",
+              "notes": [
+                "[E, l' U l]",
+                "[z': [U' R U, M']]"
+              ],
               "index": 11,
               "cleaned_text": "ER'DRE'R'D'R"
             },
@@ -16506,6 +16838,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111115111202222222333333333444441444555555545",
+              "notes": [
+                "[D: [S', R' F2 R]]"
+              ],
               "index": 13,
               "cleaned_text": "UM'UL'U'MULU'U'"
             },
@@ -16529,6 +16864,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111232222222323333333444444414555555545",
+              "notes": [
+                "x R' U' R U R U R U' R' U' x'",
+                "[L2 F: L2 E' L2 E]"
+              ],
               "index": 14,
               "cleaned_text": "E2R'FRE2R'F'R"
             },
@@ -16552,6 +16891,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115121212222222333333333444144444555555545",
+              "notes": "[M' U' R: [E, R2]]",
               "index": 15,
               "cleaned_text": "l'R'U'RURURU'R'U'l"
             },
@@ -16644,6 +16984,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111215111212222222333133333444444444555555535",
+              "notes": [
+                "also regripless, if you truly believe. Start the first M' with your left ring."
+              ],
               "index": 19,
               "cleaned_text": "M'UL'U'M'ULU'MM"
             },
@@ -16667,6 +17010,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111242222222313333333444444424555555535",
+              "notes": [
+                "[z' U2: [U' R U, M']]",
+                "[F2: [R S' R', F]]"
+              ],
               "index": 20,
               "cleaned_text": "l'l'ElUl'E'lU'l"
             },
@@ -16690,6 +17037,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111115111242222222333333333444442444555555505",
+              "notes": "[D, R E R']",
               "index": 21,
               "cleaned_text": "RF2RS'R'FRSR'F'F2R'"
             },
@@ -16713,6 +17061,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111232222222333233333444444444555555515",
+              "notes": [
+                "[x: U' R2 f2 R2 U' R2 f2 R2]"
+              ],
               "index": 22,
               "cleaned_text": "l'U'MU2MUM'U2L"
             },
@@ -16940,6 +17291,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010141115111222122222333333333444442444555055555",
+              "notes": [
+                "// regripless ",
+                "[R S R': U' M' U2 M U']"
+              ],
               "index": 3,
               "cleaned_text": "ruLE'L2EL2L'u'r'"
             },
@@ -17009,6 +17364,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000101115111222122222333333333444444444555551555",
+              "notes": "[L2, U' M' U]",
               "index": 6,
               "cleaned_text": "SU'M'U2MU2US'"
             },
@@ -17078,6 +17434,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000101115111222121222333333333444444444555255555",
+              "notes": "[M', U L2 U']",
               "index": 10,
               "cleaned_text": "U'LFL'S'L2SL2LF'L'U"
             },
@@ -17124,6 +17481,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000151115111212122222333333333444444444555255525",
+              "notes": "// regripless",
               "index": 12,
               "cleaned_text": "rUELE'L2EL2L'E'U'r'"
             },
@@ -17239,6 +17597,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000002000101115111222122222333331333444444444555355555",
+              "notes": [
+                "[U L F L': [S', L2]]"
+              ],
               "index": 17,
               "cleaned_text": "U'SU'M'U2MU2US'U"
             },
@@ -17308,6 +17669,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000141115111222122222313333333444444424555355555",
+              "notes": "[R: [S, r' D r]]",
               "index": 20,
               "cleaned_text": "M'uLE'L2EL2L'u'M"
             },
@@ -17354,6 +17716,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000131115111222122222333233333444444444555155555",
+              "notes": "[D R' F': R S' R2 S R]",
               "index": 22,
               "cleaned_text": "SuM'u2M'uS'"
             }
@@ -17535,6 +17898,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111115111222322222333332333444444444505555555",
+              "notes": [
+                "[M2, u R' u']"
+              ],
               "index": 2,
               "cleaned_text": "M'ULU'M2UL'U'M2M"
             },
@@ -17581,6 +17947,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111115111222322222333333323444444444505555555",
+              "notes": "[R' F': r2 E r2 E] // regripless",
               "index": 4,
               "cleaned_text": "lu'Mu2Mu'l'"
             },
@@ -17650,6 +18017,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111111111232222222323333333444444454545555555",
+              "notes": [
+                "Thumb on D",
+                "or [L' S: U' M' U2 M U']"
+              ],
               "index": 7,
               "cleaned_text": "rU'rE'r2E'rUr'"
             },
@@ -17765,6 +18136,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111111111222223222333333323444444454505555555",
+              "notes": "x' U M U2 M' U x",
               "index": 14,
               "cleaned_text": "F'EL2E'L2F"
             },
@@ -17811,6 +18183,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111114111222222222333333333404444444555555555",
+              "notes": [
+                "[r' D' r, E2]"
+              ],
               "index": 16,
               "cleaned_text": "R2F'ER2E'R2FR2"
             },
@@ -17880,6 +18255,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111222322222333333343444244444515555555",
+              "notes": [
+                "[L': [S, r' D r]]",
+                "[z': [U' M U, R]]"
+              ],
               "index": 21,
               "cleaned_text": "DR'E'RD'R'ER"
             },
@@ -17903,6 +18282,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111222322222333233333444444444515555555",
+              "notes": [
+                "[L': M' U' M U2 M U M' U2]",
+                "[l: [M' U2 M', U]]"
+              ],
               "index": 22,
               "cleaned_text": "LU2M'UMU2MU'M'L'"
             },
@@ -18143,6 +18526,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400010111112111222020222333333333444442444555555555",
+              "notes": [
+                " // finishes with r2' R",
+                "[R' F': [E, R U' R']]"
+              ],
               "index": 3,
               "cleaned_text": "rUR'U'M'URU'Mr'"
             },
@@ -18166,6 +18553,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010500000111112111222020222333333333444444444555552555",
+              "notes": [
+                "// l' U' L U M' U' L' U l2 L'",
+                "[L F: [E', L' U L]]",
+                "[U' D: [R' F R, S']]"
+              ],
               "index": 5,
               "cleaned_text": "l'U'LUM'U'L'UMl"
             },
@@ -18235,6 +18627,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000121112111222025222333333333444444444555155555",
+              "notes": "[U L2 U', M] // Regripless if you never take your hand off of L, but awkward.",
               "index": 8,
               "cleaned_text": "U'LFLS'L2SL2L'F'L'U"
             },
@@ -18281,6 +18674,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111112111222022212333333333424444444555555555",
+              "notes": [
+                "[r: [R U R' U', M']] //first M' with lefty, ends with r2, not too bad",
+                "[u' R' u, M']",
+                "[M, D R' D']"
+              ],
               "index": 11,
               "cleaned_text": "M'URU'M'UR'U'MM"
             },
@@ -18373,6 +18771,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111112121222024222333333333444144444555555555",
+              "notes": [
+                "[U' R2 U, M'] // regripless too, but not as fast"
+              ],
               "index": 15,
               "cleaned_text": "UR'F'R'SR2S'R2RFRU'"
             },
@@ -18396,6 +18797,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111112111222024222333333333414444444555555555",
+              "notes": [
+                "regripless"
+              ],
               "index": 16,
               "cleaned_text": "U'RUM'U'R'UM"
             },
@@ -18465,6 +18869,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111212111222023222333133333444444444555555555",
+              "notes": "[D: [R F R', S']]",
               "index": 19,
               "cleaned_text": "D'r'D'rSr'DrS'D"
             },
@@ -18534,6 +18939,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111112111222021222333233333444444444555555555",
+              "notes": "U (M' U' M U2 M U M') U",
               "index": 22,
               "cleaned_text": "D'R'FR'S'R2SR'F'RD"
             },
@@ -18557,6 +18963,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000111112111222021222333333333444444444555255555",
+              "notes": [
+                "[U: [S, r U r']]",
+                "[U M' U' M, D]"
+              ],
               "index": 23,
               "cleaned_text": "UR'D'RS'R'DRSU'"
             }
@@ -18744,6 +19154,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111112111222422202333332333434444444555555555",
+              "notes": [],
               "index": 2,
               "cleaned_text": "M2URU'M2UR'U'"
             },
@@ -18767,6 +19178,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111112111222422202333333333444442444555555555",
+              "notes": "[U: R' f2 R2 U' R2 f2 R2 U' R'] // regripless, although the main alg isn't bad.",
               "index": 3,
               "cleaned_text": "U'M2URU'M2UR'"
             },
@@ -18813,6 +19225,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111112111222422202333333333454444444555552555",
+              "notes": "U' r' F2 r2 U' r2 F2 r2 U' r' U // regripless",
               "index": 5,
               "cleaned_text": "RUM'U2MU2U'R'"
             },
@@ -18836,6 +19249,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000111112111222422252333333333404444444555551555",
+              "notes": [
+                "[u': [U' R' U, M']]",
+                "[U': [D R' D', M]]"
+              ],
               "index": 6,
               "cleaned_text": "U'M'M'URU'MUR'U'MU"
             },
@@ -18882,6 +19299,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000121112111222422252333333333414444444555155555",
+              "notes": [
+                "Start with r' R' to do regripless"
+              ],
               "index": 8,
               "cleaned_text": "R'r'DrSr'D'rS'R"
             },
@@ -18905,6 +19325,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111252522222333333323444444444515555535",
+              "notes": [
+                "Thumb on U to make it easier to execute.",
+                "or",
+                "[z' U2: [M, U R U']]"
+              ],
               "index": 9,
               "cleaned_text": "L2l'UlEl'U'lE'L2"
             },
@@ -18928,6 +19353,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111112111222421222333333333404444444555555555",
+              "notes": [
+                "[M', u' R' u]",
+                "[D R' D', M]"
+              ],
               "index": 10,
               "cleaned_text": "M'M'URU'MUR'U'M"
             },
@@ -18951,6 +19380,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522212333333323424444444545555555",
+              "notes": "x M U M' U2 M U M' x'",
               "index": 12,
               "cleaned_text": "RDRE'R2ER2R'D'R'"
             },
@@ -18997,6 +19427,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111222422252333333333424444444555555515",
+              "notes": [
+                "[R': [R' F' R, S']]"
+              ],
               "index": 14,
               "cleaned_text": "ER'DRE'R'D'R"
             },
@@ -19020,6 +19453,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112121222422242333333333414144444555555555",
+              "notes": [
+                "[u' R': [U M' U', R']]"
+              ],
               "index": 15,
               "cleaned_text": "D'R2F'RS'R2SR2R'FR2D"
             },
@@ -19135,6 +19571,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111222422212333233333434444444555555555",
+              "notes": [
+                "[R D': R2 S' R2 S]",
+                "[R U: M' U2 M' U2 M2]"
+              ],
               "index": 22,
               "cleaned_text": "Ru'M'u2M'u'R'"
             },
@@ -19158,6 +19598,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111222422212333333333454444444555255555",
+              "notes": "[M2 U' L': [E', L2]]",
               "index": 23,
               "cleaned_text": "RD'R'D'RDRDRD'R2"
             }
@@ -19348,6 +19789,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000003000111110111222322222333335313444444444525555555",
+              "notes": [
+                "[M2, U' L' U]"
+              ],
               "index": 2,
               "cleaned_text": "UDR'E'R2ER2RD'U'"
             },
@@ -19417,6 +19861,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111112111202522222333333333444444444555552555",
+              "notes": "[U2 D: R' E R2 E' R']",
               "index": 5,
               "cleaned_text": "UM2U'L'UM2U'L"
             },
@@ -19440,6 +19885,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000141115111222122222333333333444244444555155555",
+              "notes": "[u L: [L, U' M U]]",
               "index": 8,
               "cleaned_text": "rUEL'EL2E'L2LE'U'r'"
             },
@@ -19486,6 +19932,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111113111222521222333333323444444444505555555",
+              "notes": [
+                "[D' L D, M]"
+              ],
               "index": 10,
               "cleaned_text": "M'M'U'LUMU'L'UM"
             },
@@ -19509,6 +19958,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111222422232333333313454444444525555555",
+              "notes": "x M U' M' U2 M U' M' x'",
               "index": 11,
               "cleaned_text": "RDR'E'R2ER2RD'R'"
             },
@@ -19532,6 +19982,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111112111242522222333333333444441444555555505",
+              "notes": [
+                "[R': [r U' r', E']]",
+                "[u: [U L U', M']]"
+              ],
               "index": 13,
               "cleaned_text": "L'R'F'RSR'FRS'L"
             },
@@ -19578,6 +20032,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111111151252222222333333313444244444545555535",
+              "notes": [
+                "// sort of regripless if F done with left thumb",
+                "[u' R: [R, U M' U']]"
+              ],
               "index": 15,
               "cleaned_text": "FU'R'E'R2ER2RUF'"
             },
@@ -19647,6 +20105,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111212111222422232333133333414444444555555555",
+              "notes": "[D' L D, M']",
               "index": 19,
               "cleaned_text": "M2URU'M'UR'U'MM2"
             },
@@ -19670,6 +20129,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111232522222313333333444444424555555545",
+              "notes": "[R' D: R E' R2 E R]",
               "index": 20,
               "cleaned_text": "RDR'E2RD'R'E2"
             },
@@ -19716,6 +20176,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111212522222333233333444444444555555535",
+              "notes": [
+                "u M' u2 M' u"
+              ],
               "index": 22,
               "cleaned_text": "L'DL2SL2S'D'L"
             },
@@ -19954,6 +20417,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400030111111111222220222333333323444445444505555555",
+              "notes": "[D: [R' F R, S']]",
               "index": 4,
               "cleaned_text": "RFR2E'R2EF'R'"
             },
@@ -20023,6 +20487,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111114111222022222333333333444445444555555515",
+              "notes": "[U2: [L', U' M' U]]",
               "index": 7,
               "cleaned_text": "DR'F2RS'R'F2RSD'"
             },
@@ -20184,6 +20649,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111114121222022222333333333444144444555555555",
+              "notes": [
+                "// right index for first S'",
+                "[F: R' E R2 E' R']"
+              ],
               "index": 15,
               "cleaned_text": "S'U'M'U2MU2US"
             },
@@ -20253,6 +20722,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000040111114111222022212333333333424442444555555555",
+              "notes": [
+                "Cancels to do Uw' at the end"
+              ],
               "index": 18,
               "cleaned_text": "ER'UM'U'RUMU'E'"
             },
@@ -20276,6 +20748,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111214111222022222333133333444443444555555555",
+              "notes": "[M, D' R2 D]",
               "index": 19,
               "cleaned_text": "rU'R'UM'U'RUMr'"
             },
@@ -20299,6 +20772,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000040111114111222022222313333333444443424555555555",
+              "notes": [
+                "[u: [U' R U', M']]"
+              ],
               "index": 20,
               "cleaned_text": "UM'UR'U'M'URU'MMU'"
             },
@@ -20345,6 +20821,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000030111114111222022222333233333444441444555555555",
+              "notes": "U2 M' U' M U2 M U M' // I personally find this faster",
               "index": 22,
               "cleaned_text": "M'UMU2MU'M'U2"
             },
@@ -20596,6 +21073,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111114111222322222323333333444444404555555555",
+              "notes": [
+                "// Execute like [r U: R2 S R2 S']",
+                "[F': [E, R2]"
+              ],
               "index": 4,
               "cleaned_text": "LF'ER2E'R2FL'"
             },
@@ -20619,6 +21100,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111114111222322222353333333444444404555552555",
+              "notes": "[R': [S, R' F' R]]",
               "index": 5,
               "cleaned_text": "f'R'S'R2SR2Rf"
             },
@@ -20642,6 +21124,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000111114111222322222303333333444444454555551555",
+              "notes": [
+                "[F': R S R2 S' R]",
+                "[U': [M', U' R' U]]"
+              ],
               "index": 6,
               "cleaned_text": "r'U'MU2M'U2Ur"
             },
@@ -20665,6 +21151,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114111222322222323333333444444454555555515",
+              "notes": [
+                "[E': [R' D R, E2]]",
+                "x U R U R' U' R' U' R' U R x'",
+                "[L2 F: E' L2 E L2]"
+              ],
               "index": 7,
               "cleaned_text": "l'UlE2l'U'lE2"
             },
@@ -20711,6 +21202,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111110111222223222323333333444444414555555555",
+              "notes": [
+                "[x': U M U2 M' U]"
+              ],
               "index": 9,
               "cleaned_text": "F'R2ER2E'F"
             },
@@ -20757,6 +21251,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111242222212333333333424444444555555525",
+              "notes": [
+                "[R': [S', R' F' R]]"
+              ],
               "index": 11,
               "cleaned_text": "R'DRER'D'RE'"
             },
@@ -20826,6 +21323,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114111222322222323333333414444444555555555",
+              "notes": "[R S': U M' U2 M U]",
               "index": 16,
               "cleaned_text": "RUM'U'R2UMU'R2R'"
             },
@@ -20964,6 +21462,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000141111111222522222323333333444444414555355555",
+              "notes": [
+                "[z: [L', U M U']]"
+              ],
               "index": 23,
               "cleaned_text": "RRF'R'S'RFR'SR'"
             }
@@ -21151,6 +21652,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111114131222122222333332333444044444555555555",
+              "notes": [
+                "[U: [S, R F' R']]"
+              ],
               "index": 2,
               "cleaned_text": "rU'RUM2U'R'UM2r'"
             },
@@ -21174,6 +21678,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111114141222122222333333333444042444555555555",
+              "notes": [
+                "Execute like [S, l D' l']"
+              ],
               "index": 3,
               "cleaned_text": "SRF'R'S'RFR'"
             },
@@ -21220,6 +21727,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111114151222122222333333333444044444555552555",
+              "notes": "[U' R' F': E R2 E' R2]",
               "index": 5,
               "cleaned_text": "R'f'R'S'R2SR'fR"
             },
@@ -21358,6 +21866,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114141222122212333333333424244444555555555",
+              "notes": [
+                "// do the first D' with your left ring to make it smoother.",
+                "[u' R': [U M' U', R']]"
+              ],
               "index": 11,
               "cleaned_text": "D'R2F'R'S'R2SR2RFR2D"
             },
@@ -21404,6 +21916,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111114101222122222333333333444441444555555555",
+              "notes": [
+                "Left index to start",
+                "[U M U', R2]"
+              ],
               "index": 13,
               "cleaned_text": "S'UM'U2MU2U'S"
             },
@@ -21473,6 +21989,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000002000111114101222122222333331333444344444555555555",
+              "notes": "[U S': U M' U2 M U]",
               "index": 17,
               "cleaned_text": "U'R'F'RSR2S'R2R'FRU"
             },
@@ -21496,6 +22013,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114151222122222333333313444344444525555555",
+              "notes": [
+                "[L': [R F' R', S']]",
+                "[u R': [U M' U', R']]"
+              ],
               "index": 18,
               "cleaned_text": "M'u'R'ER2E'R2RuM"
             },
@@ -21771,6 +22292,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111114111222222232333332333404444444555555555",
+              "notes": [
+                "// a few good options",
+                "[U': [R S R', F']]",
+                "[u' R': U M' U2 M U]"
+              ],
               "index": 2,
               "cleaned_text": "M'U'RUM2U'R'UM2M"
             },
@@ -21802,6 +22328,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "022000410111115115225024022333333334241442444550550553",
+              "notes": [
+                "[u': [M2, U' L U]]"
+              ],
               "index": 3,
               "cleaned_text": "rU2r'S'rU'r'SrU2r'"
             },
@@ -21848,6 +22377,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111114111222222252333333333404444444555552555",
+              "notes": "[u: [U' L' U, M2]]",
               "index": 5,
               "cleaned_text": "RSR'F'RS'R'F"
             },
@@ -21871,6 +22401,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000111114111222222202333333333454444444555551555",
+              "notes": "[U': [M', U' R U]]",
               "index": 6,
               "cleaned_text": "MRU'MU2M'U2UR'M'"
             },
@@ -21894,6 +22425,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114111222222232333333323454444444515555555",
+              "notes": [
+                "Start with R thumb on U",
+                "or",
+                "x U perm x'"
+              ],
               "index": 7,
               "cleaned_text": "M'R'U'RE'R2ER2R'URM"
             },
@@ -22032,6 +22568,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114111222222232323333333444444414555555555",
+              "notes": "[R' S': U M' U2 M U]",
               "index": 14,
               "cleaned_text": "R'UM'U'R2UMU'R2UU'R"
             },
@@ -22101,6 +22638,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114111222222242313333333434444424555555555",
+              "notes": [
+                "[E', r' D' r]",
+                "[R D R', E]"
+              ],
               "index": 20,
               "cleaned_text": "RS'R'F'RSR'F"
             },
@@ -22147,6 +22688,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114111222222232333233333414444444555555555",
+              "notes": "R U2 M' U' M U2 M U M' R'",
               "index": 22,
               "cleaned_text": "rUMU2MU'M'U2M'r'"
             },
@@ -22365,6 +22907,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000004010111113111222022222333330333444442444555555555",
+              "notes": "[U D: [R' F R, S']]",
               "index": 3,
               "cleaned_text": "M2U'M'U'MU'M'U'M'"
             },
@@ -22388,6 +22931,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000102000111113111222022222333330333444444444555555555",
+              "notes": "M U (M U M' U2 M' U' M) U M'",
               "index": 4,
               "cleaned_text": "USR'F'RS'R'FRU'"
             },
@@ -22411,6 +22955,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010005000111113111222022222333330333444444444555552555",
+              "notes": "[U' D': [r U' r', S]]",
               "index": 5,
               "cleaned_text": "M2UM'UMUM'UM'"
             },
@@ -22457,6 +23002,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000002000111113111222022222333335333444444444555555515",
+              "notes": "[U D: [R' F2 R, S']]",
               "index": 7,
               "cleaned_text": "l'U'MU'M'U'MU'L"
             },
@@ -22480,6 +23026,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000121113111222022222333335333444444444555155555",
+              "notes": "[U' S: U M' U2 M U]",
               "index": 8,
               "cleaned_text": "ULFLS'L2SL2L'F'L'U'"
             },
@@ -22641,6 +23188,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111113121222022222333334333444144444555555555",
+              "notes": "[U S': U' M' U2 M U']",
               "index": 15,
               "cleaned_text": "U'R'F'R'SR2S'R2RFRU"
             },
@@ -22687,6 +23235,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000005000111113111222022222333333313444444444525555555",
+              "notes": [
+                "[u: [R', U M' U']]"
+              ],
               "index": 18,
               "cleaned_text": "L'U'SLFL'S'LF'L'UL"
             },
@@ -22710,6 +23261,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111213111222022222333133333444444444555555555",
+              "notes": [
+                "// mirror is nice too",
+                "M' U (M' U M U2 M U' M' U2) U' M",
+                "[U r: [U' R' U, M']]"
+              ],
               "index": 19,
               "cleaned_text": "M'U'M'UMU2MU'M'U'M"
             },
@@ -22733,6 +23289,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000004000111113111222022222313333333444444424555555555",
+              "notes": [
+                "[u: [R, U M' U']]"
+              ],
               "index": 20,
               "cleaned_text": "RUS'R'F'RSR'FRU'R'"
             },
@@ -22756,6 +23315,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000004000111113111222022222333331333444244444555555555",
+              "notes": [
+                "[R' F': [R U R', E]]",
+                "D' M' D' M D' M' D' M"
+              ],
               "index": 21,
               "cleaned_text": "US'R'F'RSR'FRU'"
             },
@@ -22986,6 +23549,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000002000111110111212322222333335333444444444555555525",
+              "notes": [
+                "[M2, U' L U]"
+              ],
               "index": 2,
               "cleaned_text": "UDRER2E'R2R'D'U'"
             },
@@ -23032,6 +23598,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111113111222522222333333303444444444555552555",
+              "notes": "[U2 D: R E' R2 E R] // regripless",
               "index": 5,
               "cleaned_text": "UM2U'LUM2U'L'"
             },
@@ -23132,6 +23699,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "004000003225113111012522222335333113444444441550555325",
+              "notes": [
+                "[D' L' D, M]"
+              ],
               "index": 10,
               "cleaned_text": "M'M'U'LUMM"
             },
@@ -23155,6 +23725,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522212333333323424444444545555555",
+              "notes": "[R D: R E' R2 E R]",
               "index": 11,
               "cleaned_text": "R'DRE2R'D'RE2"
             },
@@ -23201,6 +23772,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111113111222522222333333343444441444505555555",
+              "notes": [
+                "[L: [R' F' R, S]]"
+              ],
               "index": 13,
               "cleaned_text": "uM'U'R'UMU'RUu'"
             },
@@ -23224,6 +23798,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522222333333353444444444525555515",
+              "notes": [
+                "[L': [r S r', D']]",
+                "[E': [E', l' U l]]"
+              ],
               "index": 14,
               "cleaned_text": "ER'DRER'D'RE'E'"
             },
@@ -23247,6 +23825,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111111121222225222333333343444044444515555555",
+              "notes": [
+                "[L': [R F' R', S']]"
+              ],
               "index": 15,
               "cleaned_text": "U'lU2l'S'lU2l'SU"
             },
@@ -23270,6 +23851,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222422222343333333414444424555555555",
+              "notes": "// Do the U with right index",
               "index": 16,
               "cleaned_text": "rU'rEr'UrE'r'r'"
             },
@@ -23316,6 +23898,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111213111222522222333133333444444444515555555",
+              "notes": [
+                "[D' L' D, M']"
+              ],
               "index": 19,
               "cleaned_text": "M2U'LUM'U'L'UMM2"
             },
@@ -23640,6 +24225,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111213111222122222333033333444444444555555555",
+              "notes": [
+                "M U' (M U M' U2 M' U' M) U' M'",
+                "[D': [R F R', S']]"
+              ],
               "index": 4,
               "cleaned_text": "Dr'D'rSr'DrS'D'"
             },
@@ -23732,6 +24321,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000121113111222122222333533333444444444555155555",
+              "notes": [
+                "[l': [M', U L U']]"
+              ],
               "index": 8,
               "cleaned_text": "DS'RF'R'SRFR'D'"
             },
@@ -23778,6 +24370,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111013111222121222333233333444444444555555555",
+              "notes": "[D: [S', R F R']]",
               "index": 10,
               "cleaned_text": "D'Sr'D'rS'r'DrD"
             },
@@ -23870,6 +24463,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111313111222122222323433333444444414555555555",
+              "notes": [
+                "[z: [U' L' U, M]]"
+              ],
               "index": 14,
               "cleaned_text": "M2U'R'UMU'RUM'M2"
             },
@@ -23916,6 +24512,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111213111222122222333433333414444444555555555",
+              "notes": "[M': [M', U' R U]]",
               "index": 16,
               "cleaned_text": "D'R'DMD'RDM'"
             },
@@ -23939,6 +24536,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000002000111013111222122222333331333444444444555555555",
+              "notes": "M' U' M U' M' U2 M' U M U' M",
               "index": 17,
               "cleaned_text": "DS'R'B'RSR'BRD'"
             },
@@ -24288,6 +24886,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111113111222422222303333333444444454555552555",
+              "notes": [
+                "[U: [M2, U R' U']] // regripless"
+              ],
               "index": 5,
               "cleaned_text": "R'UM'U2MU2U'R"
             },
@@ -24311,6 +24912,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111113111222422222343333333444441404555555555",
+              "notes": [
+                "[u': [M', U L U']]",
+                "[R': [r U r', S']]"
+              ],
               "index": 6,
               "cleaned_text": "UM'M'UR'U'MURU'MU'"
             },
@@ -24334,6 +24939,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522222333333353444444444525555515",
+              "notes": [
+                "[F': [R S' R', F']]",
+                "[z' U2: [M', U' R U]]"
+              ],
               "index": 7,
               "cleaned_text": "l'Ul'E'lU'l'Ell"
             },
@@ -24357,6 +24966,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000121113111222422222353333333444444414555155555",
+              "notes": [
+                "[R: [r' D r, S]]"
+              ],
               "index": 8,
               "cleaned_text": "M'uL'E'L2EL2Lu'M"
             },
@@ -24403,6 +25015,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111113111222421222323333333444444404555555555",
+              "notes": "[D R D', M]",
               "index": 10,
               "cleaned_text": "M'M'UR'U'MURU'M"
             },
@@ -24426,6 +25039,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222422212323333333424444444555555555",
+              "notes": [
+                "[F': [R U' R', E']]",
+                "[r': [R2, U' M U]]"
+              ],
               "index": 11,
               "cleaned_text": "D'lE'l2E'lD"
             },
@@ -24472,6 +25089,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111113111222422222343333333444441404555555555",
+              "notes": [
+                "[u: [U' R U, M']]",
+                "[U M2: [U R' U', M]]"
+              ],
               "index": 13,
               "cleaned_text": "UDRD'MDR'D'M'U'"
             },
@@ -24518,6 +25139,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222422222343333333414444424555555555",
+              "notes": [
+                "[E', R D R']",
+                "[r' D' r, E]"
+              ],
               "index": 16,
               "cleaned_text": "F'RS'R'FRSR'"
             },
@@ -24564,6 +25189,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222422222333333313444444454525555555",
+              "notes": "L first",
               "index": 18,
               "cleaned_text": "LR'UM'U2MU2U'RL'"
             },
@@ -24587,6 +25213,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111213111222422222333133333444444414555555555",
+              "notes": "[D R D', M']",
               "index": 19,
               "cleaned_text": "M2UR'U'M'URU'MM2"
             },
@@ -24633,6 +25260,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222422222313233333444444434555555555",
+              "notes": [
+                "[R D': R2 S' R2 S]",
+                "[R U: M' U2 M' U2 M2]"
+              ],
               "index": 22,
               "cleaned_text": "R'u'M'u2M'u'R"
             },
@@ -24840,6 +25471,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111111101222422222333332333444344444555555555",
+              "notes": [
+                "[U' R2: U M' U2 M U]"
+              ],
               "index": 2,
               "cleaned_text": "M2UR2U'M2UR2U'"
             },
@@ -24886,6 +25520,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111111101222422222333333333444244444555555555",
+              "notes": "(f2 R2 U' R2)*2",
               "index": 4,
               "cleaned_text": "R'F'RS'R'F2RSR'F2FR"
             },
@@ -24909,6 +25544,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111111101222422222333333333444544444555552555",
+              "notes": "[R2: U M' U2 M U]",
               "index": 5,
               "cleaned_text": "S'LFLS'L2SL2L'F'L'S"
             },
@@ -24932,6 +25568,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000111111151222422222333333333444044444555551555",
+              "notes": [
+                "[D': [S, L F L']]",
+                "[D', M' U' M]"
+              ],
               "index": 6,
               "cleaned_text": "U2R'F'RS'R'FRSU2"
             },
@@ -25001,6 +25641,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111111151222422222333333323444344444515555555",
+              "notes": "[L': [r' D r, S]]",
               "index": 9,
               "cleaned_text": "R'E'RDR'ERD'"
             },
@@ -25024,6 +25665,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111111121222421222333333333444044444555555555",
+              "notes": [
+                "[r: [M', U R U']]"
+              ],
               "index": 10,
               "cleaned_text": "U'R'F'RS'R'FRSU"
             },
@@ -25070,6 +25714,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522222333333313444244444545555555",
+              "notes": "[R' E2 R, D]",
               "index": 12,
               "cleaned_text": "M2UR'E'R2ER2RU'M2"
             },
@@ -25093,6 +25738,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111111141222422222333333333444041444555555555",
+              "notes": [
+                "[D, R' E R]",
+                "[D', M' U M]"
+              ],
               "index": 13,
               "cleaned_text": "R'F'RS'R'FRS"
             },
@@ -25185,6 +25834,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111212522222333333333444244444555555545",
+              "notes": [
+                "[R E2 R', D]"
+              ],
               "index": 18,
               "cleaned_text": "M2URER2E'R2R'U'M2"
             },
@@ -25208,6 +25860,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111211131222422222333133333444144444555555555",
+              "notes": "[R D R' D', M'] // ends with r'",
               "index": 19,
               "cleaned_text": "D'S'RF'R'SRFR'D"
             },
@@ -25504,6 +26157,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111011111222322222333533333444444444555552555",
+              "notes": "u' M u2 M u'",
               "index": 5,
               "cleaned_text": "D'L2SL2S'D"
             },
@@ -25529,6 +26183,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020104000111011111222223222333330333444445444555550555",
+              "notes": [
+                "// Insert LU into DF, U2, insert LU into UF, U2",
+                "U2 M U' M' U2 M' U M"
+              ],
               "index": 6,
               "cleaned_text": "MUM'U2MU'M'U2"
             },
@@ -25575,6 +26233,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000121511111222322222333133333444444444555155555",
+              "notes": "[S: u' M u2 M u']",
               "index": 8,
               "cleaned_text": "DR'F'R'S'R2SR2RFRD'"
             },
@@ -25621,6 +26280,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111211111222321222333033333444444444555555555",
+              "notes": "[D' R' F: R S' R2 S R]",
               "index": 10,
               "cleaned_text": "U'MU'M'U2M'UMU'"
             },
@@ -25736,6 +26396,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111411121222322222333133333444144444555555555",
+              "notes": [
+                "[S' D: R2 S' R2 S]"
+              ],
               "index": 15,
               "cleaned_text": "D'R'F'RS'R2SR2R'FRD"
             },
@@ -25759,6 +26422,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111411111222322222333233333414444444555555555",
+              "notes": "[r: [M U2 M, U]]",
               "index": 16,
               "cleaned_text": "RU2MUM'U2M'U'r'"
             },
@@ -25805,6 +26469,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111211111212322222333533333444444444555555525",
+              "notes": [
+                "[L: u' M u2 M u']"
+              ],
               "index": 18,
               "cleaned_text": "L'D'L2SL2S'DL"
             },
@@ -26081,6 +26748,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010101111111222522222333333333444442444555455555",
+              "notes": [
+                "L2 U' M' U2 M U' L2",
+                "R D R' D' R' D' R' D R D"
+              ],
               "index": 3,
               "cleaned_text": "SR'F'R'SR2S'R2RFRS'"
             },
@@ -26104,6 +26775,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000101111111222522222333333333444444444555255555",
+              "notes": [
+                "[D, M' U2 M]"
+              ],
               "index": 4,
               "cleaned_text": "LFL'SLF2L'S'LF2F'L'"
             },
@@ -26127,6 +26801,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000101111111222522222333333333444444444555552555",
+              "notes": [
+                "[U M2 U', L2]"
+              ],
               "index": 5,
               "cleaned_text": "LFEL'ULE'L'U'LF'L'"
             },
@@ -26150,6 +26827,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000151111111222522222333333333444444444555051555",
+              "notes": [
+                "// D' with left ring push",
+                "[r U r', S]",
+                "[D, M' U' M]"
+              ],
               "index": 6,
               "cleaned_text": "S'R'D'RSR'DR"
             },
@@ -26219,6 +26901,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000121111111222521222333333333444444444555055555",
+              "notes": [
+                "[l': [M', U' L' U]]"
+              ],
               "index": 10,
               "cleaned_text": "ULFL'SLF'L'S'U'"
             },
@@ -26242,6 +26927,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000121111111222522212333333333424444444555455555",
+              "notes": "[M2 U' L: [E', L2]]",
               "index": 11,
               "cleaned_text": "R2DR'D'R'D'R'DRDR'"
             },
@@ -26288,6 +26974,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020141111111222522222333333333444441444555055555",
+              "notes": [
+                "// Start with right ring",
+                "[D, M' U M]"
+              ],
               "index": 13,
               "cleaned_text": "DS'R'F'RSR'FRD'"
             },
@@ -26380,6 +27070,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000002000131111111222522222333331333444444444555055555",
+              "notes": [
+                "[U': [S', R' D' R]]",
+                "M' D' M D' M' D' M D'",
+                "[U' M' U' M, D]"
+              ],
               "index": 17,
               "cleaned_text": "U'LFL'SLF'L'S'U"
             },
@@ -26426,6 +27121,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000131211111222522222333133333444444444555155555",
+              "notes": [
+                "[l: [M, U' L U]]"
+              ],
               "index": 19,
               "cleaned_text": "DSr'DrS'r'D'rD'"
             },
@@ -26495,6 +27193,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111111111222522222333233333444444444555355555",
+              "notes": "// Perhaps execute like M2 U' S' l2 S' l2 U M2",
               "index": 22,
               "cleaned_text": "M2U'S'L2SL2UM2"
             }
@@ -28320,6 +29019,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111111111202224222333333333444445444555555525",
+              "notes": [
+                "[E': [R E' R', U']]",
+                "[L' M2 U': [M, U2]]"
+              ],
               "index": 11,
               "cleaned_text": "RE2R'U'RE2R'U"
             },
@@ -28389,6 +29092,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000040111111111222224222333333333404442444555555555",
+              "notes": "[r U': [r' S' r, U]]",
               "index": 15,
               "cleaned_text": "U2RS'R'U'RSR'UU2"
             },
@@ -28550,6 +29254,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010101111111222224222333333333444445444555255555",
+              "notes": "U' L' U' L U L U L U' L'",
               "index": 23,
               "cleaned_text": "l2U'MU2M'U2Ul2"
             }
@@ -28806,6 +29511,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "050000000121111111222225222333333333444444444555051555",
+              "notes": "[U': [U', R E' R']]",
               "index": 7,
               "cleaned_text": "r'D'rS'r'DrS"
             },
@@ -28886,6 +29592,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000111111111222225202333333333424444444555554555",
+              "notes": [
+                "[R' S2 R, U]"
+              ],
               "index": 10,
               "cleaned_text": "R2U'RURURU'R'U'R"
             },
@@ -28909,6 +29618,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000111111111202225222333333333444444444555555525",
+              "notes": [
+                "// Execute like (r' L') to start",
+                "[R' F2 R: U M' U2 M U]"
+              ],
               "index": 11,
               "cleaned_text": "L'MU'M'ULU'MUM'"
             },
@@ -28955,6 +29668,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000151111111222221222333333333444444444555052555",
+              "notes": [
+                "[R': [R' F R, S]]"
+              ],
               "index": 13,
               "cleaned_text": "UL'E'LU'L'EL"
             },
@@ -29001,6 +29717,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "040000000111111111222225222333333333404444444555552555",
+              "notes": [
+                "[F, R S R']",
+                "[R S R', U]"
+              ],
               "index": 15,
               "cleaned_text": "LE'L'ULEL'U'"
             },
@@ -29047,6 +29767,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "030000000111111111222225222333333303444444444525555555",
+              "notes": "[l: [U' M' U, L']]",
               "index": 17,
               "cleaned_text": "u'U'R'ERUR'E'Ru"
             },
@@ -29116,6 +29837,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111110111222225222333333333444444444555552555",
+              "notes": "[R' F: [R S R', F2]]",
               "index": 20,
               "cleaned_text": "RU'R2f2R2U'R2f2R"
             },
@@ -29478,6 +30200,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010500000111112111222020222333333333444444444555552555",
+              "notes": [
+                "end with l2 L'"
+              ],
               "index": 9,
               "cleaned_text": "l'U'LUM'U'L'UMl"
             },
@@ -29717,6 +30442,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020300000111111111222224222353333333444444404555550555",
+              "notes": [
+                "[r': [R' F' R, S]]"
+              ],
               "index": 19,
               "cleaned_text": "S'ULEL2E'L2L'U'S"
             },
@@ -30169,6 +30897,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500020111111111202222222333333333444440444555555545",
+              "notes": "[R E2 R', F']",
               "index": 12,
               "cleaned_text": "MDR'ER2E'R2RD'M'"
             },
@@ -30330,6 +31059,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000111111111242222222303333333444444424555555535",
+              "notes": "[F2: [R S' R', F']]",
               "index": 19,
               "cleaned_text": "R'U'R'ERUR'E'RR"
             },
@@ -30600,6 +31330,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111111111222223222333332333444444404555555555",
+              "notes": "// execute like [U: [R S R', U2]]",
               "index": 2,
               "cleaned_text": "UL'ELU2L'E'LU2U'"
             },
@@ -30623,6 +31354,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000141111111222221222333333333444442444555055555",
+              "notes": [
+                "[M D M', U]"
+              ],
               "index": 3,
               "cleaned_text": "UL'E'LUL'ELU'U'"
             },
@@ -30646,6 +31380,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000151111111222221222333333333444444444555052555",
+              "notes": "[U': [R E' R', U']]",
               "index": 4,
               "cleaned_text": "S'r'D'rSr'Dr"
             },
@@ -30761,6 +31496,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000141111111222221202333333333424444444555255555",
+              "notes": "[R': [S, r' D' R]]",
               "index": 10,
               "cleaned_text": "USrU2r'S'rU2r'U'"
             },
@@ -30784,6 +31520,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000151111111202221222333333333444444444555255525",
+              "notes": "[R F R': D' M D2 M' D]",
               "index": 11,
               "cleaned_text": "S'U'R'ER2E'R2RUS"
             },
@@ -30830,6 +31567,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000131111111222221222323333333444444404555455555",
+              "notes": "[F: R S' R2 S R]",
               "index": 13,
               "cleaned_text": "LF'L2EL2E'FL'"
             },
@@ -30876,6 +31614,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000121111111222221222333333333404444444555455555",
+              "notes": "[R2 F R: [S', R2]]",
               "index": 15,
               "cleaned_text": "M'U'LE'L2EL2L'UM"
             },
@@ -30991,6 +31730,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000131111111222221222323333333444444404555455555",
+              "notes": [
+                "[M' D: [U2, M']]"
+              ],
               "index": 20,
               "cleaned_text": "LF'L2EL2E'FL'"
             },
@@ -31268,6 +32010,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000151111111222221222333333333444444444555052555",
+              "notes": "// execute like [U, r' S r]",
               "index": 4,
               "cleaned_text": "UL'E'LU'L'EL"
             },
@@ -31406,6 +32149,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000111111111202223222333333353444444444525555525",
+              "notes": "// You could execute like [r' F r, E]",
               "index": 11,
               "cleaned_text": "L'ULEL'U'LE'"
             },
@@ -31590,6 +32334,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111222322222323333333444444414545555555",
+              "notes": [
+                "[M' D: [U2, M']]"
+              ],
               "index": 20,
               "cleaned_text": "FL2EL2E'F'"
             },
@@ -32225,6 +32972,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111212111222023222333133333444444444555555555",
+              "notes": "[D': [r' D' r, S]]",
               "index": 22,
               "cleaned_text": "DRFR'S'RF'R'SD'"
             },
@@ -32454,6 +33202,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111111111222224202333333333444442444555555555",
+              "notes": [
+                "[U: [R' S2 R, U]]",
+                "[M U M' U', R]"
+              ],
               "index": 3,
               "cleaned_text": "E'U'R'ERUR'E'RE"
             },
@@ -32500,6 +33252,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020200000111111111222224252333333333404444444555550555",
+              "notes": "[U r U: [M, U2]]",
               "index": 5,
               "cleaned_text": "S'UL'E'L2EL2LU'S"
             },
@@ -32546,6 +33299,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000121111111222224252333333333414444444555055555",
+              "notes": "[R': [r' D' r, S]]",
               "index": 7,
               "cleaned_text": "UrU2r'SrU2r'S'U'"
             },
@@ -33093,6 +33847,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111111111202225222333333333444444444555552555",
+              "notes": "[R' F2 R: U M' U2 M U]",
               "index": 4,
               "cleaned_text": "MU'M'UL'U'MUM'L"
             },
@@ -33185,6 +33940,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111112111222025222333333333444444444555555515",
+              "notes": [
+                "How to do this without regrips?"
+              ],
               "index": 9,
               "cleaned_text": "UL'U'M'ULU'M"
             },
@@ -33231,6 +33989,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200020111111111242225222333333333444440444555555505",
+              "notes": "[L': [R' F R, S]]",
               "index": 12,
               "cleaned_text": "SU'RER2E'R2R'US'"
             },
@@ -33461,6 +34220,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000111011111212225222333233333444444444555555535",
+              "notes": "[U L' U', M2]",
               "index": 22,
               "cleaned_text": "U'D'RER2E'R2R'DU"
             },
@@ -33484,6 +34244,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000101111111212225222333333333444444444555255555",
+              "notes": [
+                "From Graham Siggins' algs:",
+                "\"setup like u E', undo setup like E2U' \""
+              ],
               "index": 23,
               "cleaned_text": "uE'LEL2E'L2L'Eu'"
             }
@@ -33686,6 +34450,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "040000020111111111222225222333333333444440444555550555",
+              "notes": [
+                "[U: [L' U' L U, M']]"
+              ],
               "index": 4,
               "cleaned_text": "R'FRSR'F'RS'"
             },
@@ -33732,6 +34499,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500020111111111222223222333333303444440444545555555",
+              "notes": "[F', R E2 R']",
               "index": 6,
               "cleaned_text": "MDRE'R2ER2R'D'M'"
             },
@@ -33801,6 +34569,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400010111112111222020222333333333444442444555555555",
+              "notes": [
+                "end with r2 R"
+              ],
               "index": 9,
               "cleaned_text": "rUR'U'M'URU'Mr'"
             },
@@ -33847,6 +34618,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400050111111111202220222333333333444442444555555525",
+              "notes": "[R F R': D' M D2 M' D]",
               "index": 11,
               "cleaned_text": "SU'R'ER2E'R2RUS'"
             },
@@ -34054,6 +34826,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400030111011111222220222333233333444441444555555555",
+              "notes": "[r: [U R' U', M2]]",
               "index": 22,
               "cleaned_text": "D'S'R'FRSR'F'RD"
             },
@@ -34284,6 +35057,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111111111222223222333332333444444404555555555",
+              "notes": [
+                "[U2: [r' S' r, U']]"
+              ],
               "index": 3,
               "cleaned_text": "UL'ELU2L'E'LU2U'"
             },
@@ -34307,6 +35083,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111111111222223222353333333444444404555552555",
+              "notes": [
+                "[R': [S, R' F R]]"
+              ],
               "index": 4,
               "cleaned_text": "UL'ELU'L'E'L"
             },
@@ -34399,6 +35178,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111111111222223222333333323444444454505555555",
+              "notes": [
+                "x' U M' U2 M U x"
+              ],
               "index": 8,
               "cleaned_text": "FR2E'R2EF'"
             },
@@ -34704,6 +35486,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000101111111222223222353333333444444414555255555",
+              "notes": [
+                "[R: [S', R F R']]",
+                "[f R: [S, R2]]"
+              ],
               "index": 23,
               "cleaned_text": "uL'E'L2EL2Lu'"
             }
@@ -34904,6 +35690,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111111141222221222333333333444042444555555555",
+              "notes": "[S, R F R']",
               "index": 3,
               "cleaned_text": "U'R'E'RUR'ER"
             },
@@ -34927,6 +35714,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111111151222221222333333333444044444555552555",
+              "notes": "[U': [R E R', U']]",
               "index": 4,
               "cleaned_text": "U'RFR'SRF'R'S'U"
             },
@@ -35042,6 +35830,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111112111222021222333333333444244444555555555",
+              "notes": "Use right middle to do the first move, then you're cool, brah.",
               "index": 9,
               "cleaned_text": "U'S'R'F'RSR'FRU"
             },
@@ -35496,6 +36285,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000500000131111111222221222333332333444444444555055555",
+              "notes": "// execute like [U: [R S' R', U2]]",
               "index": 2,
               "cleaned_text": "ULEL'U2LE'L'U2U'"
             },
@@ -35519,6 +36309,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100020111111141222224222333333333444040444555555555",
+              "notes": [
+                "[U: [R S' R', U]]"
+              ],
               "index": 3,
               "cleaned_text": "rU2r'SrFr'S'rF'U2r'"
             },
@@ -35611,6 +36404,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000121111111222222212333333333454444444555055555",
+              "notes": "[R2 F R': [S', R2]]",
               "index": 7,
               "cleaned_text": "M'U'L'E'L2EL2LUM"
             },
@@ -35910,6 +36704,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000101111111222222252333333333414444444555255555",
+              "notes": [
+                "[L F2: [L' S L, F]]"
+              ],
               "index": 23,
               "cleaned_text": "r'r'DrSr'D'rS'r"
             }
@@ -36716,6 +37513,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111111111222225222333333303444444444555552555",
+              "notes": "[u: [L' E L, U']]",
               "index": 4,
               "cleaned_text": "MU'M'ULU'MUM'L'"
             },
@@ -36831,6 +37629,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111111111222225202333333323424444444545555555",
+              "notes": "[R U' R', E2]",
               "index": 10,
               "cleaned_text": "R'U'R'E'R2ER2RUR"
             },
@@ -36900,6 +37699,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111111111222225222323333343444444404535555555",
+              "notes": [
+                "[E': [R U' R',  E']]"
+              ],
               "index": 13,
               "cleaned_text": "ELUL'E'LU'L'"
             },
@@ -37084,6 +37886,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111311111222223222333533303444444444525555555",
+              "notes": "[U L U', M2]",
               "index": 22,
               "cleaned_text": "U'D'RE'R2ER2R'DU"
             },
@@ -37639,6 +38442,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111511111222221222333333303444444444525555555",
+              "notes": "[L: U' M U' M' U' M U' M']",
               "index": 17,
               "cleaned_text": "UUMU'LUM'U'L'U'"
             },
@@ -37662,6 +38466,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111411111222221222303333333444444424555555555",
+              "notes": "[r U: [R' F' R, S']]",
               "index": 19,
               "cleaned_text": "U2MUR'U'M'URU'U2"
             },
@@ -37931,6 +38736,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111111111222224222303333333444442444555555555",
+              "notes": [
+                "[M U M' U', R']"
+              ],
               "index": 3,
               "cleaned_text": "RURURU'R'U'R'U'"
             },
@@ -38000,6 +38808,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111111111222224222353333333444444424555555505",
+              "notes": [
+                "[F: [R S' R', F]]"
+              ],
               "index": 6,
               "cleaned_text": "R2ERU'R'E'RUR'R2"
             },
@@ -38069,6 +38880,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000300000111112111222025222333333323444444444515555555",
+              "notes": [
+                "regripless dough?"
+              ],
               "index": 9,
               "cleaned_text": "ULU'M'UL'U'M"
             },
@@ -38843,6 +39657,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111113111222522222333333303444444444525555555",
+              "notes": "[U2: [M2, U' L U]]",
               "index": 17,
               "cleaned_text": "U'DRE'R2ER2R'D'U"
             },
@@ -38866,6 +39681,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111213111222122222333033333444444444555555555",
+              "notes": [
+                "[D: [r' D' r, S]]"
+              ],
               "index": 18,
               "cleaned_text": "D'RFR'S'RF'R'SD"
             },
@@ -39433,6 +40251,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000102000111111131222224222333330333444044444555555555",
+              "notes": "[R U' R U, M]",
               "index": 16,
               "cleaned_text": "UD'SR'F'RS'R'FRDU'"
             },
@@ -39955,6 +40774,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111211111202223222333533333444444444555555525",
+              "notes": [
+                "[M2, U L' U']"
+              ],
               "index": 11,
               "cleaned_text": "U'D'R'ER2E'R2RDU"
             },
@@ -39978,6 +40800,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100020111411111222223222333033333444440444555555555",
+              "notes": "[r: [M2, U R' U']]",
               "index": 12,
               "cleaned_text": "D'R'FRS'R'F'RSD"
             },
@@ -40093,6 +40916,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111311111222223222333533303444444444525555555",
+              "notes": "[M2, U L U']",
               "index": 17,
               "cleaned_text": "U'D'RE'R2ER2R'DU"
             },
@@ -40380,6 +41204,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000101111111222225222333333333444442444555455555",
+              "notes": "U' L' U' L U L U L U' L'",
               "index": 3,
               "cleaned_text": "l2UMU2M'U2U'l2"
             },
@@ -40403,6 +41228,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000101111111222225222333333333444444444555552555",
+              "notes": "// Execute like [r' F' r: r2 S r2 S]",
               "index": 4,
               "cleaned_text": "L'U'L'S'L2SL2LUL"
             },
@@ -40564,6 +41390,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000101111111222223222353333333444444414555255555",
+              "notes": "[f R': [S, R2]]",
               "index": 13,
               "cleaned_text": "uL'E'L2EL2Lu'"
             },
@@ -40748,6 +41575,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111111101222225222333333333444244444555455555",
+              "notes": "D M D2 M' D",
               "index": 21,
               "cleaned_text": "U'S'R2SR2U"
             },
@@ -42813,6 +43641,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "400000500111111111222225222333333333440444444555552550",
+              "notes": "R' F R U R' U' R' F' R2 U' R' U2 R U2\ufeff",
               "index": 4,
               "cleaned_text": "RU'R'U2LRU'R'UL'U2"
             }
@@ -45869,6 +46698,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "200100100211112111220422205333333533423444444055555554",
+              "notes": [],
               "index": 4,
               "cleaned_text": "l'Dr'D'rU2r'DrU2D'l"
             },
@@ -46443,6 +47273,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "003000310111111101222222225334334330440344442554555555",
+              "notes": [
+                "2Lw U2 2Lw' U2 r U2 2Lw U2 2Lw' U2 r' U2"
+              ],
               "index": 2,
               "cleaned_text": "Dr'r'D'rU2r'DrU2rD'"
             }
@@ -50555,6 +51388,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000005000111110111222322222333332333444444444555555515",
+              "notes": [
+                "or [L2 F: L2 E L2 E']?"
+              ],
               "index": 7,
               "cleaned_text": "U'R'F2FRSR'F'RS'R'F2RU"
             },
@@ -50601,6 +51437,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000005000111110111222322222333333323444444444515555555",
+              "notes": [
+                "[u r' u', M2]"
+              ],
               "index": 9,
               "cleaned_text": "uR'u'M2uRu'M2"
             },
@@ -50716,6 +51555,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000004000111110111222322222323333333444444414555555555",
+              "notes": "[u R u', M2] // awkward",
               "index": 14,
               "cleaned_text": "MU'R'UM2U'RUM2M'"
             },
@@ -50785,6 +51625,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111112111202522222333332333444444444555555535",
+              "notes": [
+                "[U' L U, M2]"
+              ],
               "index": 18,
               "cleaned_text": "UDR'ER2E'R2RD'U'"
             },
@@ -50877,6 +51720,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111110111222322222333233333444444444555555555",
+              "notes": "[U D': R2 S' R2 R]",
               "index": 22,
               "cleaned_text": "M'u2M'u2"
             },
@@ -51171,6 +52015,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000050111110111222422222333333333444442444555555515",
+              "notes": [
+                "Start with thumb on D"
+              ],
               "index": 7,
               "cleaned_text": "FL'S'LF'L'SL"
             },
@@ -51240,6 +52087,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200020111110111222421222333333333444440444555555555",
+              "notes": [
+                "M' with left hand"
+              ],
               "index": 10,
               "cleaned_text": "rM'UR'U'MURU'r'"
             },
@@ -51378,6 +52228,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000002030111110111222422222333331333444440444555555555",
+              "notes": [
+                "[R2 U: [R' F' R, S']]"
+              ],
               "index": 17,
               "cleaned_text": "MUMUM'UMUM2"
             },
@@ -51401,6 +52254,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111112111202522222333333333444442444555555545",
+              "notes": "[L: U M' U2 M U]",
               "index": 18,
               "cleaned_text": "DR'ER2E'R2RD'"
             },
@@ -52274,6 +53128,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111110111222225222333333333444444444555552555",
+              "notes": "[R' F': [R S R', F2]]",
               "index": 4,
               "cleaned_text": "RU'R2f2R2U'R2f2R"
             },
@@ -52642,6 +53497,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111110111222522222333233333444444444555553555",
+              "notes": [
+                "u M' u2 M' u"
+              ],
               "index": 22,
               "cleaned_text": "DL2SL2S'D'"
             },
@@ -52847,6 +53705,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "030001000111115111222022222333332333444444444555550555",
+              "notes": [
+                "Execute like l' U L U' M2 U L' U' (M' L)"
+              ],
               "index": 2,
               "cleaned_text": "l'ULU'M2UL'U'M2l"
             },
@@ -52870,6 +53731,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "040000010111115111222022222333333333444442444555550555",
+              "notes": "Execute like [S', r U r']",
               "index": 3,
               "cleaned_text": "S'LFL'SLF'L'"
             },
@@ -52939,6 +53801,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000121115111222022222333333333444444444555155555",
+              "notes": [
+                "[L2, U' M' U]"
+              ],
               "index": 8,
               "cleaned_text": "SUM'U2MU2U'S'"
             },
@@ -53008,6 +53873,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111252222222333333313444444444525555535",
+              "notes": [
+                "[z': [U' R U, M']]",
+                "[R' D R, E']",
+                "[E', r' D' r]"
+              ],
               "index": 11,
               "cleaned_text": "El'UlE'l'U'l"
             },
@@ -53031,6 +53901,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": true,
               "signature": "040500000111111111222220222333333333444442444555550555",
+              "notes": [
+                "Execute like R' F' R"
+              ],
               "index": 12,
               "cleaned_text": "l'UlUM'U2MU2U'l'U'l"
             },
@@ -53077,6 +53950,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "030000000111115111222022222323333333444444414555554555",
+              "notes": "[r': U M U2 M' U]",
               "index": 14,
               "cleaned_text": "U'U'R'UM'U'RUMU"
             },
@@ -53192,6 +54066,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111215111222022222333133333444444444555553555",
+              "notes": "regripless, end with l2 L'",
               "index": 19,
               "cleaned_text": "l'ULU'M'UL'U'Ml"
             },
@@ -53215,6 +54090,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "040000000111115111222022222313333333444444424555553555",
+              "notes": [
+                "[R': [S', L F L']]"
+              ],
               "index": 20,
               "cleaned_text": "R'S'rUr'SrU'r'R"
             },
@@ -53510,6 +54388,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010000000111115111252222222333333333444444444555552505",
+              "notes": [
+                "R' F2 R S R' F R S' R' F R"
+              ],
               "index": 5,
               "cleaned_text": "R'F2RSR'FRS'R'F'F2R"
             },
@@ -53556,6 +54437,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111111111232222222333333323444444454555555545",
+              "notes": [
+                "Thumb on D",
+                "or ",
+                "[L S: U' M' U2 M U']"
+              ],
               "index": 9,
               "cleaned_text": "rU'r'Er2Er'Ur'"
             },
@@ -53602,6 +54488,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111242222212333333333424444444555555525",
+              "notes": "[E, l' U l]",
               "index": 11,
               "cleaned_text": "R'DRER'D'RE'"
             },
@@ -53648,6 +54535,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111232222222323333333444444414555555545",
+              "notes": [
+                "x R' U' R U R U R U' R' U' x'",
+                "[L2 F: L2 E' L2 E]"
+              ],
               "index": 14,
               "cleaned_text": "F'RS'UM'U2MU2U'SR'F"
             },
@@ -53763,6 +54654,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111215111212222222333133333444444444555555535",
+              "notes": [
+                "also regripless, if you truly believe. Start the first M' with your left ring."
+              ],
               "index": 19,
               "cleaned_text": "M'UL'U'M'ULU'MM"
             },
@@ -53786,6 +54680,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111115111252222222333333313444444444525555535",
+              "notes": [
+                "[x' U2: [M', U' R U]]"
+              ],
               "index": 20,
               "cleaned_text": "l'l'E'lUl'ElU'l"
             },
@@ -54124,6 +55021,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000121115111222122222333333333444444444555555515",
+              "notes": [
+                "[L': [U' M' U, L']]"
+              ],
               "index": 7,
               "cleaned_text": "L'U'M'UL'U'MULL"
             },
@@ -54170,6 +55070,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000200000101115111222121222333333333444444444555255555",
+              "notes": "[M', U L2 U']",
               "index": 10,
               "cleaned_text": "U'LFL'S'L2SL2LF'L'U"
             },
@@ -54446,6 +55347,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000131115111222122222333233333444444444555155555",
+              "notes": "[D R' F': R S' R2 S R]",
               "index": 22,
               "cleaned_text": "SuM'u2M'uS'"
             }
@@ -54624,6 +55526,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111115111222322222333332333444444444505555555",
+              "notes": [
+                "[M2, u R' u']"
+              ],
               "index": 2,
               "cleaned_text": "M'ULU'M2UL'U'M2M"
             },
@@ -54739,6 +55644,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111111111232222222323333333444444454545555555",
+              "notes": [
+                "Thumb on D",
+                "or [L' S: U' M' U2 M U']"
+              ],
               "index": 7,
               "cleaned_text": "rU'rE'r2E'rUr'"
             },
@@ -54854,6 +55763,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111111111222223222333333323444444454505555555",
+              "notes": "x' U M U2 M' U x",
               "index": 14,
               "cleaned_text": "F'EL2E'L2F"
             },
@@ -54900,6 +55810,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111114111222222222333333333404444444555555555",
+              "notes": [
+                "[r' D' r, E2]"
+              ],
               "index": 16,
               "cleaned_text": "R2F'ER2E'R2FR2"
             },
@@ -55203,6 +56116,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400010111112111222020222333333333444442444555555555",
+              "notes": "r U R' U' M' U R U' r2' R",
               "index": 3,
               "cleaned_text": "rUR'U'M'URU'Mr'"
             },
@@ -55226,6 +56140,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010500000111112111222020222333333333444444444555552555",
+              "notes": "l' U' L U M' U' L' U l2 L'",
               "index": 5,
               "cleaned_text": "l'U'LUM'U'L'UMl"
             },
@@ -55295,6 +56210,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000102000131111111222225222333330333444444444555055555",
+              "notes": "Regripless if you never take your hand off of L",
               "index": 8,
               "cleaned_text": "UL2U'MUL2U'M'"
             },
@@ -55797,6 +56713,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111112111202522222333332333444444444555555535",
+              "notes": [],
               "index": 2,
               "cleaned_text": "M2U'L'UM2U'LU"
             },
@@ -55935,6 +56852,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000121112111222422252333333333414444444555155555",
+              "notes": [
+                "Start with r' R' to do regripless"
+              ],
               "index": 8,
               "cleaned_text": "R'r'DrSr'D'rS'R"
             },
@@ -55958,6 +56878,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111252522222333333323444444444515555535",
+              "notes": [
+                "Thumb on U to make it easier to execute.",
+                "or",
+                "[z' U2: [M, U R U']]"
+              ],
               "index": 9,
               "cleaned_text": "L2l'UlEl'U'lE'L2"
             },
@@ -56004,6 +56929,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522212333333323424444444545555555",
+              "notes": "x M U M' U2 M U M' x'",
               "index": 12,
               "cleaned_text": "RDRE'R2ER2R'D'R'"
             },
@@ -56073,6 +56999,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112121222422242333333333414144444555555555",
+              "notes": [
+                "[u' R': [U M' U', R']]"
+              ],
               "index": 15,
               "cleaned_text": "D'R2F'RS'R2SR2R'FR2D"
             },
@@ -56188,6 +57117,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111222422212333233333434444444555555555",
+              "notes": [
+                "[R D': R2 S' R2 S]",
+                "[R U: M' U2 M' U2 M2]"
+              ],
               "index": 22,
               "cleaned_text": "Ru'M'u2M'u'R'"
             },
@@ -56738,6 +57671,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111212522222333233333444444444555555535",
+              "notes": [
+                "u M' u2 M' u"
+              ],
               "index": 22,
               "cleaned_text": "L'DL2SL2S'D'L"
             },
@@ -57270,6 +58206,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000040111114111222022212333333333424442444555555555",
+              "notes": [
+                "Cancels to do Uw' at the end"
+              ],
               "index": 18,
               "cleaned_text": "ER'UM'U'RUMU'E'"
             },
@@ -57316,6 +58255,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000040111114111222022222313333333444443424555555555",
+              "notes": [
+                "[u: [U' R U', M']]"
+              ],
               "index": 20,
               "cleaned_text": "UM'UR'U'M'URU'MMU'"
             },
@@ -57677,6 +58619,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111115111222222222333333333444444444555555505",
+              "notes": [
+                "[E': [R' D R, E2]]",
+                "x U R U R' U' R' U' R' U R x'",
+                "[l' U l, E2]"
+              ],
               "index": 7,
               "cleaned_text": "L2FE'L2EL2F'L2"
             },
@@ -57723,6 +58670,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000400000111110111222223222323333333444444414555555555",
+              "notes": [
+                "[x': U M U2 M' U]"
+              ],
               "index": 9,
               "cleaned_text": "F'R2ER2E'F"
             },
@@ -57976,6 +58926,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000141111111222522222323333333444444414555355555",
+              "notes": [
+                "[z: [L', U M U']]"
+              ],
               "index": 23,
               "cleaned_text": "RRF'R'S'RFR'SR'"
             }
@@ -58160,6 +59113,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111114131222122222333332333444044444555555555",
+              "notes": [
+                "[U: [S, R F' R']]"
+              ],
               "index": 2,
               "cleaned_text": "rU'RUM2U'R'UM2r'"
             },
@@ -58183,6 +59139,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111114141222122222333333333444042444555555555",
+              "notes": [
+                "Execute like [S, l D' l']"
+              ],
               "index": 3,
               "cleaned_text": "SRF'R'S'RFR'"
             },
@@ -58367,6 +59326,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114141222122212333333333424244444555555555",
+              "notes": [
+                "[u' R': [U M' U', R']]"
+              ],
               "index": 11,
               "cleaned_text": "D'R2F'R'S'R2SR2RFR2D"
             },
@@ -58773,6 +59735,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010111114111222222242333333333404442444555555555",
+              "notes": "[r U2: [r' S' r: U']]",
               "index": 3,
               "cleaned_text": "LF2L'S'LF'L'SLFF2L'"
             },
@@ -58865,6 +59828,11 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111114111222222232333333323454444444515555555",
+              "notes": [
+                "Start with R thumb on U",
+                "or",
+                "x U perm x'"
+              ],
               "index": 7,
               "cleaned_text": "M'R'U'RE'R2ER2R'URM"
             },
@@ -59651,6 +60619,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000005000111113111222022222333333313444444444525555555",
+              "notes": [
+                "[u: [R', U M' U']]"
+              ],
               "index": 18,
               "cleaned_text": "L'U'SLFL'S'LF'L'UL"
             },
@@ -59674,6 +60645,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111213111222022222333133333444444444555555555",
+              "notes": [
+                "[U r: [U' R' U, M']]"
+              ],
               "index": 19,
               "cleaned_text": "M'U'M'UMU2MU'M'U'M"
             },
@@ -59697,6 +60671,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000004000111113111222022222313333333444444424555555555",
+              "notes": [
+                "[u: [R, U M' U']]"
+              ],
               "index": 20,
               "cleaned_text": "RUS'R'F'RSR'FRU'R'"
             },
@@ -60159,6 +61136,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522222333333353444444444525555515",
+              "notes": [
+                "[L': [r S r', D']]",
+                "[E': [E', l' U l]]"
+              ],
               "index": 14,
               "cleaned_text": "ER'DRER'D'RE'E'"
             },
@@ -60754,6 +61735,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111313111222122222323433333444444414555555555",
+              "notes": [
+                "[z: [U' L' U, M]]"
+              ],
               "index": 14,
               "cleaned_text": "M2U'R'UMU'RUM'M2"
             },
@@ -61190,6 +62174,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020000000111113111222422222353333333444444404555551555",
+              "notes": [
+                "[u': [M', U L U']]",
+                "[U M': [M', U R' U']]"
+              ],
               "index": 6,
               "cleaned_text": "R'rUr'S'rU'r'SR"
             },
@@ -61213,6 +62201,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522222333333353444444444525555515",
+              "notes": [
+                "[F': [R S' R', F']]",
+                "[x' U2: [M', U' R U]]"
+              ],
               "index": 7,
               "cleaned_text": "l'Ul'E'lU'l'Ell"
             },
@@ -61351,6 +62343,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000020111113111222422222343333333444441404555555555",
+              "notes": [
+                "[u: [U' R U, M']]"
+              ],
               "index": 13,
               "cleaned_text": "UM2UR'U'MURU'M'M2U'"
             },
@@ -61374,6 +62369,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111242522222333333333414444444555555525",
+              "notes": [
+                "[E', R D R']"
+              ],
               "index": 16,
               "cleaned_text": "r'D'rEr'DrE'"
             },
@@ -61420,6 +62418,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222422222333333313444444454525555555",
+              "notes": "L first",
               "index": 18,
               "cleaned_text": "LR'UM'U2MU2U'RL'"
             },
@@ -61489,6 +62488,10 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222422222313233333444444434555555555",
+              "notes": [
+                "[R D': R2 S' R2 S]",
+                "[R U: M' U2 M' U2 M2]"
+              ],
               "index": 22,
               "cleaned_text": "R'u'M'u2M'u'R"
             },
@@ -61690,6 +62693,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000001000111111101222422222333332333444344444555555555",
+              "notes": [
+                "[U' R2: U M' U2 M U]"
+              ],
               "index": 2,
               "cleaned_text": "M2UR2U'M2UR2U'"
             },
@@ -61713,6 +62719,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000111111101222422222333333333444244444555555555",
+              "notes": [
+                "f2 R2 U' R2 f2 R2 U' R2"
+              ],
               "index": 4,
               "cleaned_text": "R'F'RS'R'F2RSR'F2FR"
             },
@@ -61897,6 +62906,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111113111222522222333333313444244444545555555",
+              "notes": "[R' E2 R, D]",
               "index": 12,
               "cleaned_text": "M2UR'E'R2ER2RU'M2"
             },
@@ -62012,6 +63022,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111112111212522222333333333444244444555555545",
+              "notes": [
+                "[R E2 R', D]"
+              ],
               "index": 18,
               "cleaned_text": "M2URER2E'R2R'U'M2"
             },
@@ -62359,6 +63372,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "020104000111011111222223222333330333444445444555550555",
+              "notes": [
+                "Insert LU into DF, U2, insert LU into UF, U2"
+              ],
               "index": 6,
               "cleaned_text": "MUM'U2MU'M'U2"
             },
@@ -62405,6 +63421,7 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000121511111222322222333133333444444444555155555",
+              "notes": "[D R' F': R' S' R2 S R']",
               "index": 8,
               "cleaned_text": "Su'Mu2Mu'S'"
             },
@@ -62566,6 +63583,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111411121222322222333133333444144444555555555",
+              "notes": [
+                "[S' D: R2 S' R2 S]"
+              ],
               "index": 15,
               "cleaned_text": "D'R'F'RS'R2SR2R'FRD"
             },
@@ -62635,6 +63655,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000000111211111212322222333533333444444444555555525",
+              "notes": [
+                "[L: u' M u2 M u']"
+              ],
               "index": 18,
               "cleaned_text": "L'D'L2SL2S'DL"
             },
@@ -62904,6 +63927,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000000010101111111222522222333333333444442444555455555",
+              "notes": [
+                "L2 U' M' U2 M U' L2"
+              ],
               "index": 3,
               "cleaned_text": "SR'F'R'SR2S'R2RFRS'"
             },
@@ -62927,6 +63953,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "000100000101111111222522222333333333444444444555255555",
+              "notes": [
+                "[D, M' U2 M]"
+              ],
               "index": 4,
               "cleaned_text": "LFL'SLF2L'S'LF2F'L'"
             },
@@ -62950,6 +63979,9 @@
               "pll_alg_flag": false,
               "ell_alg_flag": false,
               "signature": "010500000111112111222020222333333333444444444555552555",
+              "notes": [
+                "[U M2 U', L2]"
+              ],
               "index": 5,
               "cleaned_text": "LFE'L'ULEL'U'LF'L'"
             },

@@ -77,7 +77,7 @@ def prepare_data(sheet, meta, notes):
                         continue
                     try:
                         cube, alg = init_cube(input_alg=cell)
-                        bundle = analyze(cube)
+                        bundle = analyze(cube, this_note)
                         bundle.update({"index": cell_ind, "cleaned_text": "".join(alg.alg())})
                         successes.append(bundle)
                     except (AmbiguousStatementException, BadMultiplierException, InvalidMoveException,
