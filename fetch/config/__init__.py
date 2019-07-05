@@ -1,2 +1,2 @@
-from .data import DataSelector
-from .jobs import JobConfiguration
+from .config import DataSelector
+from fetch.config.config import JobConfiguration

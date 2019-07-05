@@ -13,3 +13,16 @@ def signature(array):
     return array_str.replace(" ", Notation.EMPTY)\
         .replace("\n", Notation.EMPTY).replace("[", Notation.EMPTY).replace("]", Notation.EMPTY)\
         .replace(",", Notation.EMPTY)
+
+
+def split_note(note):
+    """
+    Split notes up by line feeds and remove empty strings.
+    :param note: string containing notes from a cell
+    :type note: str
+    :return: str or list
+    """
+    if note is None or note == Notation.EMPTY:
+        return None
+    splits = note.split('\n')
+    return list(filter(None, splits))

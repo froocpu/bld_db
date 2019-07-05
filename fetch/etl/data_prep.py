@@ -1,6 +1,8 @@
-from json import dump
+from json import dump, dumps
 from ..config import DataSelector
 from .extract_metadata import collect_field
+from parse import Algorithm
+from cube import Cube, TooManyUnsolvedPiecesException, AlgorithmDoesNothingException
 
 
 def prepare_data(sheet, meta):
@@ -21,7 +23,7 @@ def prepare_data(sheet, meta):
     for i, t in enumerate(titles):
 
         # Define the range to query (needs the name of the sheet.)
-        sheet_range = '{0}!{1}'.format(t, DataSelector.RANGE)
+        sheet_range = '{0}!{1}'.format(t, DataSelector.DEFAULT_RANGE)
         result = sheet.values().get(spreadsheetId=meta['spreadsheetId'], range=sheet_range).execute()
 
         values = result.get('values')
@@ -33,8 +35,7 @@ def prepare_data(sheet, meta):
 
         # Filter out cells with strings that are either too short or too long.
         for ind, col in enumerate(values):
-            cells = [cell for cell in col if
-                     len(cell) > DataSelector.ALG_CHAR_MIN_LENGTH and len(cell) <= DataSelector.ALG_CHAR_MAX_LENGTH]
+            cells = [cell for cell in col if len(cell) > DataSelector.ALG_CHAR_MIN_LENGTH and len(cell) <= DataSelector.ALG_CHAR_MAX_LENGTH]
             if len(cells) > 0:
                 filtered.update({ind: cells})
 
@@ -61,31 +62,68 @@ def trim_properties_metadata(data, parent='properties'):
     return data
 
 
-def trim_sheets_metadata(data, parent='sheets'):
+def trim_sheets_metadata(data, parent='sheets', child='properties'):
     """
     Strip out fields that aren't necessary from individual sheets, usually stuff like sorting specs and views.
     :param data: sheet metadata
     :type data: dict
     :param parent: the name of the sheets field.
     :type parent: str
+    :param child: the name of the field inside the parent field from which to remove stuff.
+    :type child: str
     :return: dict
     """
-    for ind in range(len(data[parent])):
-        for col in DataSelector.SHEET_FIELDS_TO_REMOVE:
-            data[parent][ind].pop(col, None)
+    for ind, j in enumerate(data[parent]):
+        for col in DataSelector.SHEET_PARENT_FIELDS_TO_REMOVE:
+            if col in data[parent][ind].keys():
+                data[parent][ind].pop(col, None)
+        if data[parent][ind][child]:
+            for inner_col in DataSelector.SHEET_CHILD_FIELDS_TO_REMOVE:
+                if inner_col in data[parent][ind][child].keys():
+                    data[parent][ind][child].pop(inner_col)
+
     return data
 
 
-def write_json(data, fn):
+def write_json(data, fn, append=True):
     """
     Provide data and a file name and this function will create a formatted JSON file for you.
     :param data: sheets data to write to a file.
     :type data: dict
     :param fn: file name to write to.
     :type fn: str
+    :param append: Write to one file or not.
+    :type append: boolean
     :return: None
     """
-    with open(fn, "w") as dt:
-        dump(data, dt, indent=DataSelector.PRETTY_INDENT)
+    if append:
+        # will overwrite DataSelector.PRETTY_INDENT
+        with open (fn, "a+") as single_file:
+            single_file.write(dumps(data))
+    else:
+        with open(fn, "w") as dt:
+            if DataSelector.NO_INDENT:
+                dump(data, dt)
+            else:
+                dump(data, dt, indent=DataSelector.PRETTY_INDENT)
 
 
+def init_objects(input_alg):
+    """
+    Initialise a cube, apply the algorithm to it and then for a second time to get to the correct state.
+    :param input_alg: string containing an algorithm to parse.
+    :type input_alg: str
+    :return: Cube, Algorithm
+    """
+    cube = Cube(3)
+    alg = Algorithm(input_alg)
+    cube.apply(alg.alg())
+
+    if cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES:
+        raise TooManyUnsolvedPiecesException(
+            "This algorithm leaves a lot of pieces unsolved. The parser may be behaving incorrectly, or the alg is bad.")
+
+    if cube.unsolved_corner_count + cube.unsolved_edge_count == 0:
+        raise AlgorithmDoesNothingException("This algorithm appears to do nothing.")
+
+    return cube, alg

@@ -38,6 +38,7 @@ class BaseCube(object):
         """
         self.N = int(N)
         self.stickers = np.array([np.tile(i, (self.N, self.N)) for i in range(6)])
+        self.stickers_solved = self.stickers.copy()
         self.sticker_colours = RenderingProperties.COLOUR_SCHEME
         self.sticker_thickness = 0.001  # sticker thickness in units of total cube size
         self.sticker_width = 0.9  # sticker size relative to cubie size (must be < 1)

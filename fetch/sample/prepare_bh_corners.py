@@ -45,9 +45,12 @@ if __name__ == '__main__':
                 continue
             try:
 
-                alg = Algorithm(cell)
-                cube = Cube(3)
-                cube.apply(alg.alg())
+                def init_cube(cell):
+                    alg = Algorithm(cell)
+                    cube = Cube(3)
+                    cube.apply(alg.alg())
+                    return alg, cube
+
 
                 if cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES:
                     raise TooManyUnsolvedPiecesException(
@@ -106,6 +109,8 @@ if __name__ == '__main__':
                                "failures": failures}}}}})
 
         write_json(final_dataset, "../data/json/bh.json")
+
+
 
 
 

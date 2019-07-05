@@ -1,41 +1,31 @@
 from .config import Notation
 
 
-class BaseMove:
-
-    @staticmethod
-    def inverse(move):
-        if move == Notation.PAUSE or move.endswith(Notation.DOUBLE):
-            return move
-        if move.endswith(Notation.PRIME):
-            return move.replace(Notation.PRIME, "")
-        return move + Notation.PRIME
-
-    @staticmethod
-    def SiGN(move):
-        if Notation.WIDE in move:
-            rm_wide = move.replace(Notation.WIDE, "")
-            return rm_wide[0].lower() + rm_wide[1:]
-        return move
-
-    @staticmethod
-    def wca(move):
-        if Notation.WIDE not in move:
-            add_wide = move[0].upper() + Notation.WIDE + move[1:]
-            return add_wide
-        return move
-
-
-class Move(BaseMove):
+class Move:
 
     def __init__(self, s):
         self.move = s
 
-    def invert(self):
-        return self.inverse(self.move)
+    def is_prime(self):
+        return self.move.endswith(Notation.PRIME)
 
-    def to_SiGN(self):
-        return self.SiGN(self.move)
+    def is_double(self):
+        return self.move.endswith(Notation.DOUBLE)
 
-    def to_wca(self):
-        return self.wca(self.move)
+    def is_cw(self):
+        return (self.is_prime() and not self.is_double())
+
+    def inverse(self):
+        if self.move == Notation.PAUSE or self.is_double():
+            return self.move
+        if self.is_prime():
+            return self.move.replace(Notation.PRIME, Notation.EMPTY)
+        return self.move + Notation.PRIME
+
+    def double(self):
+        if self.move == Notation.PAUSE or self.is_double():
+            return self.move
+        if self.is_prime():
+            return self.move.replace(Notation.PRIME, Notation.DOUBLE)
+        return self.move + Notation.DOUBLE
+
