@@ -7,8 +7,6 @@ from cube.exceptions import *
 from fetch.exceptions import failure_message_builder
 from fetch.etl import split_note
 
-from json import dumps
-
 
 def prepare_data(sheet, meta, notes):
     """
@@ -25,19 +23,15 @@ def prepare_data(sheet, meta, notes):
     sheet_ids = collect_field(sheets, "sheetId")
 
     final_data = {"id": meta['spreadsheetId'], "spreadsheet_metadata": meta}
+
     sheet_contents = {}
-
-    print("full JSON: {}".format(dumps(notes)))
-    print("notes len: {}".format(len(notes['sheets'])))
-    print("sheets len: {}".format(len(titles)))
-
     successes = []
     failures = []
 
     for i, t in enumerate(titles):
 
         # Define the range to query (needs the name of the sheet.)
-        sheet_range = '{0}!{1}'.format(t, DataSelector.RANGE)
+        sheet_range = '{0}!{1}'.format(t, DataSelector.DEFAULT_RANGE)
         result = sheet.values().get(spreadsheetId=meta['spreadsheetId'], range=sheet_range).execute()
 
         values = result.get('values')

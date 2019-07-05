@@ -3,7 +3,7 @@ import pickle
 
 from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
-from ..config.data import DataSelector
+from ..config.config import DataSelector
 
 
 def authenticate():

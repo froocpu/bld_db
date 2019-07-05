@@ -33,10 +33,11 @@ if __name__ == '__main__':
             # Write it out to a file.
             # write_json(sheet_metadata, "data/metadata.json")
             filename = row[1].lower().encode('ascii', errors='ignore').decode('utf-8').replace(" ", "_")
-            fn = "../data/json/{0}_{1}.json".format(filename, row[0][0:7])
+            #fn = "../data/json/{0}_{1}.json".format(filename, row[0][0:7])
+            fn = "../data/json/all.json"
 
             print("Writing out to {}...".format(fn))
-            write_json(final_data, fn)
+            write_json(data=final_data, fn=fn, append=True)
 
             print("Sleeping for {} seconds to avoid the rate limit:".format(JobConfiguration.SECONDS_TO_WAIT))
             sleep(JobConfiguration.SECONDS_TO_WAIT)

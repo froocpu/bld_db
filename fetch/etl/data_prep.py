@@ -1,4 +1,4 @@
-from json import dump
+from json import dump, dumps
 from ..config import DataSelector
 from .extract_metadata import collect_field
 from parse import Algorithm
@@ -23,7 +23,7 @@ def prepare_data(sheet, meta):
     for i, t in enumerate(titles):
 
         # Define the range to query (needs the name of the sheet.)
-        sheet_range = '{0}!{1}'.format(t, DataSelector.RANGE)
+        sheet_range = '{0}!{1}'.format(t, DataSelector.DEFAULT_RANGE)
         result = sheet.values().get(spreadsheetId=meta['spreadsheetId'], range=sheet_range).execute()
 
         values = result.get('values')
@@ -35,8 +35,7 @@ def prepare_data(sheet, meta):
 
         # Filter out cells with strings that are either too short or too long.
         for ind, col in enumerate(values):
-            cells = [cell for cell in col if
-                     len(cell) > DataSelector.ALG_CHAR_MIN_LENGTH and len(cell) <= DataSelector.ALG_CHAR_MAX_LENGTH]
+            cells = [cell for cell in col if len(cell) > DataSelector.ALG_CHAR_MIN_LENGTH and len(cell) <= DataSelector.ALG_CHAR_MAX_LENGTH]
             if len(cells) > 0:
                 filtered.update({ind: cells})
 
@@ -86,17 +85,27 @@ def trim_sheets_metadata(data, parent='sheets', child='properties'):
     return data
 
 
-def write_json(data, fn):
+def write_json(data, fn, append=True):
     """
     Provide data and a file name and this function will create a formatted JSON file for you.
     :param data: sheets data to write to a file.
     :type data: dict
     :param fn: file name to write to.
     :type fn: str
+    :param append: Write to one file or not.
+    :type append: boolean
     :return: None
     """
-    with open(fn, "w") as dt:
-        dump(data, dt, indent=DataSelector.PRETTY_INDENT)
+    if append:
+        # will overwrite DataSelector.PRETTY_INDENT
+        with open (fn, "a+") as single_file:
+            single_file.write(dumps(data))
+    else:
+        with open(fn, "w") as dt:
+            if DataSelector.NO_INDENT:
+                dump(data, dt)
+            else:
+                dump(data, dt, indent=DataSelector.PRETTY_INDENT)
 
 
 def init_objects(input_alg):
