@@ -6,13 +6,17 @@ from parse.exceptions import *
 from cube.exceptions import *
 from fetch.exceptions import etl_exceptions
 
+from json import dumps
 
-def prepare_data_try_parse(sheet, meta):
+
+def prepare_data(sheet, meta, notes):
     """
     Extract the real data from the original sheet object, using metadata as a guide, but also try and parse the algs.
     :param sheet: output from service_builder.
     :param meta: metadata about the sheet.
     :type meta: dict
+    :param notes: notes from each cell - may contain alternate algs or notes.
+    :type notes: dict
     :return: dict
     """
     sheets = meta.get('sheets', '')
@@ -21,6 +25,10 @@ def prepare_data_try_parse(sheet, meta):
 
     final_data = {"id": meta['spreadsheetId'], "spreadsheet_metadata": meta}
     sheet_contents = {}
+
+    print("full JSON: {}".format(dumps(notes)))
+    print("notes len: {}".format(len(notes['sheets'])))
+    print("sheets len: {}".format(len(titles)))
 
     for i, t in enumerate(titles):
 
@@ -37,18 +45,33 @@ def prepare_data_try_parse(sheet, meta):
 
         # Filter out cells with strings that are either too short or too long.
         for ind, column in enumerate(values):
+
             if len(column) > 0:
 
                 successes = []
                 failures = []
                 cells = []
 
+                """
+                if empty, then no values to parse. else, it should match?
+                """
+
                 for cell_ind, cell in enumerate(column):
 
-                    cells.append({"index": ind,
+                    try:
+                        this_note = notes['sheets'][i]['data'][0]['rowData'][ind]['values'][cell_ind]['note']
+                    except (IndexError, KeyError):
+                        this_note = None
+
+                    cell_output = {"index": ind,
                                   "row_index": cell_ind + 1,
                                   "column_index": int(ind) + 1,
-                                  "text": cell})
+                                  "text": cell}
+
+                    if this_note is not None:
+                        cell_output.update({"notes": this_note})
+
+                    cells.append(cell_output)
 
                     if len(cell) <= DataSelector.ALG_CHAR_MIN_LENGTH or len(cell) > DataSelector.ALG_CHAR_MAX_LENGTH:
                         continue

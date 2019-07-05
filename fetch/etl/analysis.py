@@ -1,13 +1,17 @@
-from .strings import signature
+from .strings import signature, split_notes
 from numpy import array_equal
 
 
-def analyze(cube):
+def analyze(cube, notes=None):
     """
     Perform cycle discovery on the cube and calculate metadata about the alg.
     :param cube: Cube object with moves applied.
     :type cube: Cube
+    :param notes: extracted earlier in the pipeline, this is the accompanying note for a cell.
+    :type notes: str
     :return: a dict containing the results
+
+    TODO: process notes object.
     """
     edge_cycles = cube.edge_cycle_discovery()
     corner_cycles = cube.corner_cycle_discovery()
@@ -38,16 +42,21 @@ def analyze(cube):
     else:
         ll_flag, pll_flag, oll_flag, coll_flag, ell_flag = False, False, False, False, False
 
-    return {"edge_cycles": edge_cycles,
-            "corner_cycles": corner_cycles,
-            "unsolved_edges_count": cube.unsolved_edge_count,
-            "unsolved_corners_count": cube.unsolved_corner_count,
-            "flipped_edges_count": flipped_edge_count,
-            "twisted_corners_count": twisted_corner_count,
-            "parity_flag": parity_flag,
-            "ll_alg_flag": ll_flag,
-            "coll_alg_flag": coll_flag,
-            "oll_alg_flag": oll_flag,
-            "pll_alg_flag": pll_flag,
-            "ell_alg_flag": ell_flag,
-            "signature": signature(cube.stickers)}
+    bundle = {"edge_cycles": edge_cycles,
+              "corner_cycles": corner_cycles,
+              "unsolved_edges_count": cube.unsolved_edge_count,
+              "unsolved_corners_count": cube.unsolved_corner_count,
+              "flipped_edges_count": flipped_edge_count,
+              "twisted_corners_count": twisted_corner_count,
+              "parity_flag": parity_flag,
+              "ll_alg_flag": ll_flag,
+              "coll_alg_flag": coll_flag,
+              "oll_alg_flag": oll_flag,
+              "pll_alg_flag": pll_flag,
+              "ell_alg_flag": ell_flag,
+              "signature": signature(cube.stickers)}
+
+    splits = split_notes(notes)
+    if splits is not None:
+        bundle.update({"notes": splits})
+    return bundle

@@ -198,13 +198,14 @@ def _generate_good_mappings(stickers):
     Internal function. Used to take a snapshot of the cube and calculate metadata on states.
     :param stickers: a set of stickers (m-n array), solved or not.
     :return: dict
+
+    Note: by changing the order of the fields, you can influence the order in which the cycle pieces appear in the cycles objects.
     """
     corners = {
-        # TODO: find the source of the weird mapping error.
-        "ULF": (stickers[0][0][0], stickers[5][2][2], stickers[2][0][2]),
-        "UFR": (stickers[0][2][0], stickers[2][2][2], stickers[4][0][2]),
-        "URB": (stickers[0][2][2], stickers[4][2][2], stickers[3][0][2]),
         "UBL": (stickers[0][0][2], stickers[3][2][2], stickers[5][0][2]),
+        "URB": (stickers[0][2][2], stickers[4][2][2], stickers[3][0][2]),
+        "UFR": (stickers[0][2][0], stickers[2][2][2], stickers[4][0][2]),
+        "ULF": (stickers[0][0][0], stickers[5][2][2], stickers[2][0][2]),
         "DFL": (stickers[1][0][2], stickers[2][0][0], stickers[5][2][0]),
         "DRF": (stickers[1][2][2], stickers[4][0][0], stickers[2][2][0]),
         "DBR": (stickers[1][2][0], stickers[3][0][0], stickers[4][2][0]),
@@ -212,11 +213,11 @@ def _generate_good_mappings(stickers):
     }
 
     edges = {
+        "UF": (stickers[0][1][0], stickers[2][1][2]),
+        "DF": (stickers[1][1][2], stickers[2][1][0]),
         "UB": (stickers[0][1][2], stickers[3][1][2]),
         "UR": (stickers[0][2][1], stickers[4][1][2]),
-        "UF": (stickers[0][1][0], stickers[2][1][2]),
         "UL": (stickers[0][0][1], stickers[5][1][2]),
-        "DF": (stickers[1][1][2], stickers[2][1][0]),
         "DR": (stickers[1][2][1], stickers[4][1][0]),
         "DB": (stickers[1][1][0], stickers[3][1][0]),
         "DL": (stickers[1][0][1], stickers[5][1][0]),

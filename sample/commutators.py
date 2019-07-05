@@ -4,7 +4,7 @@ import cube
 
 if __name__ == "__main__":
     # Create two fresh cubes, a 4x4x4 and a 3x3x3, because why not.
-    corners = cube.Cube(4)
+    corners = cube.Cube(3)
     edges = cube.Cube(3)
 
     # Apply a corner commutator.
