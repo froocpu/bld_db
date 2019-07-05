@@ -99,7 +99,7 @@ def write_json(data, fn):
         dump(data, dt, indent=DataSelector.PRETTY_INDENT)
 
 
-def init_cube(input_alg):
+def init_objects(input_alg):
     """
     Initialise a cube, apply the algorithm to it and then for a second time to get to the correct state.
     :param input_alg: string containing an algorithm to parse.

@@ -1,10 +1,10 @@
 from ..config import DataSelector
-from .data_prep import collect_field, init_cube
+from .data_prep import collect_field, init_objects
 from .analysis import analyze
 
 from parse.exceptions import *
 from cube.exceptions import *
-from fetch.exceptions import etl_exceptions
+from fetch.exceptions import failure_message_builder
 from fetch.etl import split_note
 
 from json import dumps
@@ -31,6 +31,9 @@ def prepare_data(sheet, meta, notes):
     print("notes len: {}".format(len(notes['sheets'])))
     print("sheets len: {}".format(len(titles)))
 
+    successes = []
+    failures = []
+
     for i, t in enumerate(titles):
 
         # Define the range to query (needs the name of the sheet.)
@@ -49,63 +52,69 @@ def prepare_data(sheet, meta, notes):
 
             if len(column) > 0:
 
-                successes = []
-                failures = []
                 cells = []
 
-                """
-                if empty, then no values to parse. else, it should match?
-                """
-
                 for cell_ind, cell in enumerate(column):
+                    # Don't do work if the string doesn't even match the legal limits.
+                    if len(cell) <= DataSelector.ALG_CHAR_MIN_LENGTH or len(cell) > DataSelector.ALG_CHAR_MAX_LENGTH:
+                        continue
 
+                    # Prepare basic object.
+                    cell_output = {"index": cell_ind,
+                                   "row_index": cell_ind + 1,
+                                   "column_index": int(ind) + 1,
+                                   "text": cell}
+
+                    # Google Sheets API is bad for returning notes data - not all the fields are returned.
+                    # Quite a crappy try-catch, but if it can find anything at that index, then return it.
                     try:
                         this_note = notes['sheets'][i]['data'][0]['rowData'][ind]['values'][cell_ind]['note']
                     except (IndexError, KeyError):
                         this_note = None
 
-                    cell_output = {"index": cell_ind,
-                                  "row_index": cell_ind + 1,
-                                  "column_index": int(ind) + 1,
-                                  "text": cell}
-
-                    if len(cell) <= DataSelector.ALG_CHAR_MIN_LENGTH or len(cell) > DataSelector.ALG_CHAR_MAX_LENGTH:
-                        continue
-
-                    # process notes in separate try catch.
-                    # TODO: broken
+                    # Process notes in separate try catch.
+                    # If no notes, crack on.
                     if this_note is not None:
                         cell_output.update({"notes": this_note})
                         split_notes = split_note(this_note)
                         for note in split_notes:
                             try:
-                                cube_n, alg_n = init_cube(input_alg=note)
-                                bundle_n = analyze(cube_n)
-                                bundle_n.update({"index": cell_ind,
-                                                 "cleaned_text": "".join(alg_n.alg()),
-                                                 "is_note_flag": True})
-                                successes.append(bundle_n)
+                                note_cube, note_alg = init_objects(input_alg=note)
+                                note_bundle = analyze(note_cube)
+                                note_bundle.update({"cell_index": cell_ind,
+                                                    "row_index": cell_ind+1,
+                                                    "column_index": ind,
+                                                    "sheet_index": i,
+                                                    "cleaned_text": "".join(note_alg.alg()),
+                                                    "is_note_flag": True})
+                                successes.append(note_bundle)
                             except (AmbiguousStatementException, BadMultiplierException, InvalidMoveException,
                                     BadSeparatorException, UnclosedBracketsException, InvalidSequenceException,
                                     AlgorithmDoesNothingException, TooManyUnsolvedPiecesException,
                                     IllegalCharactersException) as e:
-                                failure_message = etl_exceptions(e, cell_ind)
+                                failure_message = failure_message_builder(e=e, ind=cell_ind, sheet_index=i,
+                                                                          alg_text=note, is_note_flag=True)
                                 failures.append(failure_message)
                             except (EmptyAlgorithmException, Exception) as e:
-                                # Not bothered about collecting data on empty strings. Print if uncaught exception.
                                 if isinstance(e, Exception):
                                     print("{0} returned exception: {1}".format(note, e))
                                 continue
+                    # Continue processing the main data.
                     try:
                         cells.append(cell_output)
-                        cube, alg = init_cube(input_alg=cell)
+                        cube, alg = init_objects(input_alg=cell)
                         bundle = analyze(cube)
-                        bundle.update({"index": cell_ind, "cleaned_text": "".join(alg.alg())})
+                        bundle.update({"cell_index": cell_ind,
+                                       "row_index": cell_ind + 1,
+                                       "cleaned_text": "".join(alg.alg()),
+                                       "column_index": ind,
+                                       "sheet_index": i
+                                       })
                         successes.append(bundle)
                     except (AmbiguousStatementException, BadMultiplierException, InvalidMoveException,
                             BadSeparatorException, UnclosedBracketsException, InvalidSequenceException,
                             AlgorithmDoesNothingException, TooManyUnsolvedPiecesException, IllegalCharactersException) as e:
-                        failure_message = etl_exceptions(e, cell_ind)
+                        failure_message = failure_message_builder(e=e, ind=cell_ind, sheet_index=i, alg_text=cell)
                         failures.append(failure_message)
                     except (EmptyAlgorithmException, Exception) as e:
                         # Not bothered about collecting data on empty strings. Print if uncaught exception.
@@ -113,11 +122,11 @@ def prepare_data(sheet, meta, notes):
                             print("{0} returned exception: {1}".format(cell, e))
                         continue
 
-                filtered.update({ind: {"cells": cells, "successes": successes, "failures": failures}})
+                filtered.update({ind: {"cells": cells}})
 
         # Start building the final dictionary.
-        sheet_contents.update({sheet_ids[i]: {"range": result['range'], "values": filtered}})
+        sheet_contents.update({sheet_ids[i]: {"range": result['range'], "cells": filtered}})
 
-    final_data.update({"data": sheet_contents})
+    final_data.update({"raw": sheet_contents, "algorithms": successes, "failures": failures})
 
     return final_data
