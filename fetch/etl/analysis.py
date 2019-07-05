@@ -1,17 +1,13 @@
-from .strings import signature, split_note
+from .strings import signature
 from numpy import array_equal
 
 
-def analyze(cube, notes=None):
+def analyze(cube):
     """
     Perform cycle discovery on the cube and calculate metadata about the alg.
     :param cube: Cube object with moves applied.
     :type cube: Cube
-    :param notes: extracted earlier in the pipeline, this is the accompanying note for a cell.
-    :type notes: str
     :return: a dict containing the results
-
-    TODO: process notes object.
     """
     edge_cycles = cube.edge_cycle_discovery()
     corner_cycles = cube.corner_cycle_discovery()
@@ -56,8 +52,4 @@ def analyze(cube, notes=None):
               "ell_alg_flag": ell_flag,
               "signature": signature(cube.stickers)}
 
-    splits = split_note(notes)
-
-    if splits is not None:
-        bundle.update({"notes": splits})
     return bundle

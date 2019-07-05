@@ -5,6 +5,7 @@ from .analysis import analyze
 from parse.exceptions import *
 from cube.exceptions import *
 from fetch.exceptions import etl_exceptions
+from fetch.etl import split_note
 
 from json import dumps
 
@@ -63,21 +64,42 @@ def prepare_data(sheet, meta, notes):
                     except (IndexError, KeyError):
                         this_note = None
 
-                    cell_output = {"index": ind,
+                    cell_output = {"index": cell_ind,
                                   "row_index": cell_ind + 1,
                                   "column_index": int(ind) + 1,
                                   "text": cell}
 
-                    if this_note is not None:
-                        cell_output.update({"notes": this_note})
-
-                    cells.append(cell_output)
-
                     if len(cell) <= DataSelector.ALG_CHAR_MIN_LENGTH or len(cell) > DataSelector.ALG_CHAR_MAX_LENGTH:
                         continue
+
+                    # process notes in separate try catch.
+                    # TODO: broken
+                    if this_note is not None:
+                        cell_output.update({"notes": this_note})
+                        split_notes = split_note(this_note)
+                        for note in split_notes:
+                            try:
+                                cube_n, alg_n = init_cube(input_alg=note)
+                                bundle_n = analyze(cube_n)
+                                bundle_n.update({"index": cell_ind,
+                                                 "cleaned_text": "".join(alg_n.alg()),
+                                                 "is_note_flag": True})
+                                successes.append(bundle_n)
+                            except (AmbiguousStatementException, BadMultiplierException, InvalidMoveException,
+                                    BadSeparatorException, UnclosedBracketsException, InvalidSequenceException,
+                                    AlgorithmDoesNothingException, TooManyUnsolvedPiecesException,
+                                    IllegalCharactersException) as e:
+                                failure_message = etl_exceptions(e, cell_ind)
+                                failures.append(failure_message)
+                            except (EmptyAlgorithmException, Exception) as e:
+                                # Not bothered about collecting data on empty strings. Print if uncaught exception.
+                                if isinstance(e, Exception):
+                                    print("{0} returned exception: {1}".format(note, e))
+                                continue
                     try:
+                        cells.append(cell_output)
                         cube, alg = init_cube(input_alg=cell)
-                        bundle = analyze(cube, this_note)
+                        bundle = analyze(cube)
                         bundle.update({"index": cell_ind, "cleaned_text": "".join(alg.alg())})
                         successes.append(bundle)
                     except (AmbiguousStatementException, BadMultiplierException, InvalidMoveException,
