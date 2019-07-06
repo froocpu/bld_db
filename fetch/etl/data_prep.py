@@ -1,5 +1,5 @@
 from json import dump, dumps
-from ..config import DataSelector
+from ..config import DataSelector, JobConfiguration
 from .extract_metadata import collect_field
 from parse import Algorithm
 from cube import Cube, TooManyUnsolvedPiecesException, AlgorithmDoesNothingException
@@ -85,7 +85,7 @@ def trim_sheets_metadata(data, parent='sheets', child='properties'):
     return data
 
 
-def write_json(data, fn, append=True):
+def write_json(data, fn, append=JobConfiguration.OUTPUT_SINGLE_FILE):
     """
     Provide data and a file name and this function will create a formatted JSON file for you.
     :param data: sheets data to write to a file.
@@ -99,7 +99,7 @@ def write_json(data, fn, append=True):
     if append:
         # will overwrite DataSelector.PRETTY_INDENT
         with open (fn, "a+") as single_file:
-            single_file.write(dumps(data))
+            single_file.write(dumps(data) + "\n")
     else:
         with open(fn, "w") as dt:
             if DataSelector.NO_INDENT:

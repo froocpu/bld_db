@@ -2,8 +2,11 @@ from fetch.session import authenticate, service_builder
 from fetch.etl import write_json, trim_properties_metadata, trim_sheets_metadata, prepare_data
 from fetch.config import JobConfiguration
 
-from time import sleep
+from time import sleep, time
+from json import dumps
 
+import datetime
+import hashlib
 import csv
 
 
@@ -30,6 +33,11 @@ if __name__ == '__main__':
             # Get the rest of the data and trim it.
             final_data = prepare_data(sheet, sheet_metadata, sheet_notes)
 
+            # Append some extra fields.
+            final_data.update({"author": row[1],
+                               "timestamp_processed": datetime.datetime.fromtimestamp(time()).strftime('%Y-%m-%d %H:%M:%S'),
+                               "md5sum": hashlib.md5(dumps(final_data, sort_keys=True).encode('utf-8')).hexdigest()})
+
             # Write it out to a file.
             # write_json(sheet_metadata, "data/metadata.json")
             filename = row[1].lower().encode('ascii', errors='ignore').decode('utf-8').replace(" ", "_")
@@ -37,11 +45,10 @@ if __name__ == '__main__':
             fn = "../data/json/all.json"
 
             print("Writing out to {}...".format(fn))
-            write_json(data=final_data, fn=fn, append=True)
+            write_json(data=final_data, fn=fn)
 
             print("Sleeping for {} seconds to avoid the rate limit:".format(JobConfiguration.SECONDS_TO_WAIT))
             sleep(JobConfiguration.SECONDS_TO_WAIT)
-
 
 
 

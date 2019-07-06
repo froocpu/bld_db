@@ -22,31 +22,37 @@ def prepare_data(sheet, meta, notes):
     titles = collect_field(sheets, "title")
     sheet_ids = collect_field(sheets, "sheetId")
 
-    final_data = {"id": meta['spreadsheetId'], "spreadsheet_metadata": meta}
+    final_data = {**meta}
 
-    sheet_contents = {}
+    # Move all the sheets data up one level.
+    for si, sh in enumerate(meta['sheets']):
+        meta['sheets'][si] = {**meta['sheets'][si]['properties']}
+
+    # Push properties up to the parent level?
+    final_data.update({**final_data['properties']})
+    final_data.pop('properties')
+
     successes = []
     failures = []
+    cells = []
 
-    for i, t in enumerate(titles):
+    for sheet_index, title, sheet_id in zip(range(len(sheet_ids)), titles, sheet_ids):
+
+        print(sheet_index, title, sheet_id)
 
         # Define the range to query (needs the name of the sheet.)
-        sheet_range = '{0}!{1}'.format(t, DataSelector.DEFAULT_RANGE)
+        sheet_range = '{0}!{1}'.format(title, DataSelector.DEFAULT_RANGE)
         result = sheet.values().get(spreadsheetId=meta['spreadsheetId'], range=sheet_range).execute()
 
         values = result.get('values')
         if not values:
-            print("No data found in this sheet: {}".format(t))
+            print("No data found in this sheet: {}".format(title))
             continue
 
-        filtered = {}
-
         # Filter out cells with strings that are either too short or too long.
-        for ind, column in enumerate(values):
+        for col_index, column in enumerate(values):
 
             if len(column) > 0:
-
-                cells = []
 
                 for cell_ind, cell in enumerate(column):
                     # Don't do work if the string doesn't even match the legal limits.
@@ -54,15 +60,16 @@ def prepare_data(sheet, meta, notes):
                         continue
 
                     # Prepare basic object.
-                    cell_output = {"index": cell_ind,
+                    cell_output = {"cell_index": cell_ind,
                                    "row_index": cell_ind + 1,
-                                   "column_index": int(ind) + 1,
+                                   "column_index": int(col_index) + 1,
+                                   "sheet_id": sheet_id,
                                    "text": cell}
 
                     # Google Sheets API is bad for returning notes data - not all the fields are returned.
                     # Quite a crappy try-catch, but if it can find anything at that index, then return it.
                     try:
-                        this_note = notes['sheets'][i]['data'][0]['rowData'][ind]['values'][cell_ind]['note']
+                        this_note = notes['sheets'][sheet_index]['data'][0]['rowData'][col_index]['values'][cell_ind]['note']
                     except (IndexError, KeyError):
                         this_note = None
 
@@ -77,8 +84,8 @@ def prepare_data(sheet, meta, notes):
                                 note_bundle = analyze(note_cube)
                                 note_bundle.update({"cell_index": cell_ind,
                                                     "row_index": cell_ind+1,
-                                                    "column_index": ind,
-                                                    "sheet_index": i,
+                                                    "column_index": col_index,
+                                                    "sheet_id": sheet_id,
                                                     "cleaned_text": "".join(note_alg.alg()),
                                                     "is_note_flag": True})
                                 successes.append(note_bundle)
@@ -86,7 +93,7 @@ def prepare_data(sheet, meta, notes):
                                     BadSeparatorException, UnclosedBracketsException, InvalidSequenceException,
                                     AlgorithmDoesNothingException, TooManyUnsolvedPiecesException,
                                     IllegalCharactersException) as e:
-                                failure_message = failure_message_builder(e=e, ind=cell_ind, sheet_index=i,
+                                failure_message = failure_message_builder(e=e, ind=cell_ind, sheet_index=sheet_index,
                                                                           alg_text=note, is_note_flag=True)
                                 failures.append(failure_message)
                             except (EmptyAlgorithmException, Exception) as e:
@@ -101,14 +108,14 @@ def prepare_data(sheet, meta, notes):
                         bundle.update({"cell_index": cell_ind,
                                        "row_index": cell_ind + 1,
                                        "cleaned_text": "".join(alg.alg()),
-                                       "column_index": ind,
-                                       "sheet_index": i
+                                       "column_index": col_index,
+                                       "sheet_id": sheet_id
                                        })
                         successes.append(bundle)
                     except (AmbiguousStatementException, BadMultiplierException, InvalidMoveException,
                             BadSeparatorException, UnclosedBracketsException, InvalidSequenceException,
                             AlgorithmDoesNothingException, TooManyUnsolvedPiecesException, IllegalCharactersException) as e:
-                        failure_message = failure_message_builder(e=e, ind=cell_ind, sheet_index=i, alg_text=cell)
+                        failure_message = failure_message_builder(e=e, ind=cell_ind, sheet_index=sheet_index, alg_text=cell)
                         failures.append(failure_message)
                     except (EmptyAlgorithmException, Exception) as e:
                         # Not bothered about collecting data on empty strings. Print if uncaught exception.
@@ -116,11 +123,6 @@ def prepare_data(sheet, meta, notes):
                             print("{0} returned exception: {1}".format(cell, e))
                         continue
 
-                filtered.update({ind: {"cells": cells}})
-
-        # Start building the final dictionary.
-        sheet_contents.update({sheet_ids[i]: {"range": result['range'], "cells": filtered}})
-
-    final_data.update({"raw": sheet_contents, "algorithms": successes, "failures": failures})
+    final_data.update({"raw_cell_contents": cells, "algorithms": successes, "failures": failures})
 
     return final_data
