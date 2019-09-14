@@ -5,7 +5,6 @@ import cube as c
 
 
 class TestModuleIntegration(unittest.TestCase):
-
     def setUp(self):
         self.cube = c.Cube(3)
         self.solved = c.Cube(3)
@@ -27,7 +26,9 @@ class TestModuleIntegration(unittest.TestCase):
         t_alg = p.Algorithm(t_perm)
         self.cube.apply(t_alg.alg())
 
-        self.assertListEqual(self.cube.stickers[0:2].tolist(), self.solved.stickers[0:2].tolist())
+        self.assertListEqual(
+            self.cube.stickers[0:2].tolist(), self.solved.stickers[0:2].tolist()
+        )
         self.assertListEqual(self.cube.stickers[4].tolist(), expected_r_face)
 
         self.cube.apply(t_alg.invert())

@@ -3,7 +3,6 @@ from parse.algorithm.sanitise import sanitise
 
 
 class TestSanitise(unittest.TestCase):
-
     def test_sanitise_clean(self):
         string = "RUR'U'."
         self.assertEqual(sanitise(string), string)

@@ -3,7 +3,6 @@ from ..utils.strings import rotate_sticker
 
 
 class TestStrings(unittest.TestCase):
-
     def test_rotate_sticker(self):
         """
         Given that an edge string has a length of two...

@@ -4,7 +4,6 @@ from parse.algorithm.moves import Move
 
 
 class TestMoveClass(unittest.TestCase):
-
     def test_inverse(self):
         test_moves = ["U", "L2", "R'", "D'", "B2'", "d", "Lw", "R"]
         expected_moves = ["U'", "L2", "R", "D", "B2", "d'", "Lw'", "R'"]

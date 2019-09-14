@@ -12,10 +12,12 @@ def failure_message_builder(e, ind, alg_text, sheet_index, is_note_flag=False):
     :param is_note_flag: whether the parsed text was a note or not.
     :return: dict
     """
-    failure_message = {"cell_index": ind,
-                       "row_index": ind+1,
-                       "sheet_index": sheet_index,
-                       "text": alg_text}
+    failure_message = {
+        "cell_index": ind,
+        "row_index": ind + 1,
+        "sheet_index": sheet_index,
+        "text": alg_text,
+    }
 
     if is_note_flag:
         failure_message.update({"is_note_flag": is_note_flag})

@@ -26,10 +26,3 @@ if __name__ == "__main__":
     mu = Algorithm(my_mu_alg)
     print(mu.alg())
     print(mu.raw)
-
-
-
-
-
-
-

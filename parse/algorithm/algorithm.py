@@ -1,6 +1,12 @@
 import re
 
-from .algorithm_helpers import expand_algorithm, handle_statement_no_brackets, split_sequence, parse_brackets, multiplier
+from .algorithm_helpers import (
+    expand_algorithm,
+    handle_statement_no_brackets,
+    split_sequence,
+    parse_brackets,
+    multiplier,
+)
 from .config import Notation
 from .moves import Move
 from .sanitise import sanitise
@@ -11,7 +17,6 @@ from ..exceptions import *
 
 
 class Algorithm:
-
     def __init__(self, s):
 
         # Check for errors early on.
@@ -25,7 +30,9 @@ class Algorithm:
 
         # Scan the cleaned string for instances of (A)*n, where A needs to be repeated n times.
         # Expand each match and reset the string.
-        multiplier_pattern_matches = list(set(re.findall(Notation.MULTIPLIER_REGEX, cleaned)))
+        multiplier_pattern_matches = list(
+            set(re.findall(Notation.MULTIPLIER_REGEX, cleaned))
+        )
 
         for m in multiplier_pattern_matches:
             expanded_expression = multiplier(m)
@@ -34,11 +41,15 @@ class Algorithm:
         # If there are still multiplier symbols present, then raise an exception.
         if Notation.MULTIPLIER in cleaned:
             raise BadMultiplierException(
-                "Regex did not replace the multiplier statements, probably due to an invalid number of iterations specified."
-                    .format(cleaned))
+                "Regex did not replace the multiplier statements, probably due to an invalid number of iterations specified.".format(
+                    cleaned
+                )
+            )
 
         # Presumably, at this point, brackets don't mean anything significant, so remove them.
-        cleaned = cleaned.replace(Notation.EXPRESSION_OB, Notation.EMPTY).replace(Notation.EXPRESSION_CB, Notation.EMPTY)
+        cleaned = cleaned.replace(Notation.EXPRESSION_OB, Notation.EMPTY).replace(
+            Notation.EXPRESSION_CB, Notation.EMPTY
+        )
 
         # Scan the alg for occurrences of conjugates and commutators. Sort them by their depth.
         # If there aren't any, simply finish processing the alg.
@@ -61,7 +72,9 @@ class Algorithm:
 
         # Once the alg is expanded, split the final string into individual moves and validate them.
         validation_set = generate_valid_moves()
-        validated_moves = [validate_move(m, validation_set) for m in split_sequence(cleaned)]
+        validated_moves = [
+            validate_move(m, validation_set) for m in split_sequence(cleaned)
+        ]
 
         # Create a Move instance for each move, provided they are all valid.
         self.moves = [Move(m) for m in validated_moves]
@@ -127,7 +140,10 @@ def _detect_unclosed_brackets(s, ob, cb):
 
     if count_ob != count_cb:
         raise UnclosedBracketsException(
-            "Unmatched brackets found: '{0}':{1}, '{2}':{3}".format(ob, count_ob, cb, count_cb))
+            "Unmatched brackets found: '{0}':{1}, '{2}':{3}".format(
+                ob, count_ob, cb, count_cb
+            )
+        )
 
 
 def _raise_early_exceptions(s):
@@ -139,12 +155,14 @@ def _raise_early_exceptions(s):
     """
     # Throw some early exceptions.
     if s is None or s == Notation.EMPTY:
-        raise EmptyAlgorithmException("Alg is either completely empty at initialisation, or just missing entirely.")
+        raise EmptyAlgorithmException(
+            "Alg is either completely empty at initialisation, or just missing entirely."
+        )
 
     if isinstance(s, str) is False:
         raise TypeError("Input must be a string.")
 
-    if s.isdigit() or s.replace('.', '').replace('+', '').replace('+', '').isdigit():
+    if s.isdigit() or s.replace(".", "").replace("+", "").replace("+", "").isdigit():
         raise ValueError("Input appears to be an integer or a numeric value. Silly.")
 
     # Check for unmatched brackets.

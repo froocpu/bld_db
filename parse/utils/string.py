@@ -18,6 +18,12 @@ def clean_alg(alg):
     :return: str
     """
     empty = ""
-    stripped = alg.strip().replace(" ", empty).replace("\t", empty).replace("\n", empty).replace("\r", empty)
+    stripped = (
+        alg.strip()
+        .replace(" ", empty)
+        .replace("\t", empty)
+        .replace("\n", empty)
+        .replace("\r", empty)
+    )
     stripped = stripped.replace("\u2019", "'")
-    return stripped.encode('ascii', errors='ignore').decode('utf-8')
+    return stripped.encode("ascii", errors="ignore").decode("utf-8")

@@ -3,7 +3,6 @@ from parse.utils.string import count_occurrences, clean_alg
 
 
 class TestUtils(unittest.TestCase):
-
     def test_count_occurrences_single_char(self):
         test_string = "Famous rice pudding recipe."
         test_string_alg = "R U R' U' R' F R2 U' R' U' R U R' F'"

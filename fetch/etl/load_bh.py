@@ -6,4 +6,4 @@ def load_bh_file(fn):
     :return: list(str)
     """
     with open(fn, "r") as bh:
-        return [i.replace('\n', '') for i in bh.readlines()]
+        return [i.replace("\n", "") for i in bh.readlines()]

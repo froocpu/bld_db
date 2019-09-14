@@ -7,5 +7,5 @@ def service_builder(credentials):
     :param: creds - credentials
     :return: service object
     """
-    service = build('sheets', 'v4', credentials=credentials)
+    service = build("sheets", "v4", credentials=credentials)
     return service.spreadsheets()

@@ -14,10 +14,16 @@ def validate_move(s, validation_set):
     move = s.strip()
 
     if len(move) > Validation.MOVE_MAX_CHAR_LENGTH:
-        raise InvalidMoveException("'{0}' contains more than {1} characters.".format(move, Validation.MOVE_MAX_CHAR_LENGTH))
+        raise InvalidMoveException(
+            "'{0}' contains more than {1} characters.".format(
+                move, Validation.MOVE_MAX_CHAR_LENGTH
+            )
+        )
 
     if move not in validation_set:
-        raise InvalidMoveException("'{0}' not a valid move in SiGN or WCA notation.".format(move))
+        raise InvalidMoveException(
+            "'{0}' not a valid move in SiGN or WCA notation.".format(move)
+        )
 
     return move
 

@@ -10,9 +10,13 @@ def signature(array):
     :return: str
     """
     array_str = str(array.tolist())
-    return array_str.replace(" ", Notation.EMPTY)\
-        .replace("\n", Notation.EMPTY).replace("[", Notation.EMPTY).replace("]", Notation.EMPTY)\
+    return (
+        array_str.replace(" ", Notation.EMPTY)
+        .replace("\n", Notation.EMPTY)
+        .replace("[", Notation.EMPTY)
+        .replace("]", Notation.EMPTY)
         .replace(",", Notation.EMPTY)
+    )
 
 
 def split_note(note):
@@ -24,5 +28,5 @@ def split_note(note):
     """
     if note is None or note == Notation.EMPTY:
         return None
-    splits = note.split('\n')
+    splits = note.split("\n")
     return list(filter(None, splits))

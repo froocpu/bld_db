@@ -4,4 +4,3 @@ class AlgorithmTooLongException(Exception):
 
 class IllegalCharactersException(Exception):
     pass
-

@@ -1,7 +1,12 @@
 from .validation import Notation, Validation
 from .moves import Move
-from ..exceptions.validation import EmptyAlgorithmException, BadSeparatorException, \
-    AmbiguousStatementException, BadMultiplierException, UnclosedBracketsException
+from ..exceptions.validation import (
+    EmptyAlgorithmException,
+    BadSeparatorException,
+    AmbiguousStatementException,
+    BadMultiplierException,
+    UnclosedBracketsException,
+)
 from ..utils import count_occurrences
 
 
@@ -17,15 +22,15 @@ def expand_algorithm(s):
         sep = Notation.CONJUGATE
     else:
         move_objects = [Move(m) for m in split_sequence(s)]
-        return ''.join(constructor(a=move_objects))
+        return "".join(constructor(a=move_objects))
 
     A, B = split_ab(s, sep)
 
     A = [Move(m) for m in split_sequence(A)]
     B = [Move(m) for m in split_sequence(B)]
 
-    comm = (constructor(A, B, 1) if sep == Notation.COMMUTATOR else constructor(A, B, 2))
-    return ''.join(comm)
+    comm = constructor(A, B, 1) if sep == Notation.COMMUTATOR else constructor(A, B, 2)
+    return "".join(comm)
 
 
 def handle_statement_no_brackets(s):
@@ -54,7 +59,9 @@ def constructor(a, b=None, alg_type=0):
     if a is None or len(a) == 0:
         raise EmptyAlgorithmException("No moves detected in this algorithm.")
     if (b is None or len(b) == 0) and alg_type > 0:
-        raise EmptyAlgorithmException("This algorithm expected moves in the B part, but none were detected.")
+        raise EmptyAlgorithmException(
+            "This algorithm expected moves in the B part, but none were detected."
+        )
 
     A = [m.move for m in a]
 
@@ -95,10 +102,10 @@ def split_sequence(s):
         # If the next character in the sequence matches these, then append it to the move and increment the counter.
         # Must be done in this order.
         for ch in [Notation.WIDE, Notation.DOUBLE, Notation.PRIME]:
-            if counter+1 > size:
+            if counter + 1 > size:
                 break
-            if s[counter+1] == ch:
-                this_move += s[counter+1]
+            if s[counter + 1] == ch:
+                this_move += s[counter + 1]
                 counter += 1
         moves.append(this_move)
         counter += 1
@@ -113,9 +120,13 @@ def split_ab(s, sep):
     :return: objects
     """
     if sep not in [Notation.COMMUTATOR, Notation.CONJUGATE]:
-        raise BadSeparatorException("This alg uses non-standard notation - '{0}' is not allowed.".format(sep))
+        raise BadSeparatorException(
+            "This alg uses non-standard notation - '{0}' is not allowed.".format(sep)
+        )
     if count_occurrences(sep, s) != 1:
-        raise AmbiguousStatementException("This statement appears to have incorrect syntax. '{0}'".format(s))
+        raise AmbiguousStatementException(
+            "This statement appears to have incorrect syntax. '{0}'".format(s)
+        )
 
     return s.split(sep)
 
@@ -138,7 +149,7 @@ def parse_brackets(string, ob="[", cb="]"):
             stack.append(i)
         elif c == cb and stack:
             start = stack.pop()
-            yield (len(stack), string[start + 1: i])
+            yield (len(stack), string[start + 1 : i])
 
 
 def multiplier(string):
@@ -150,15 +161,35 @@ def multiplier(string):
     :return: str
     """
     if Notation.MULTIPLIER not in string:
-        string = string.replace(Notation.EXPRESSION_CB, Notation.EXPRESSION_CB + Notation.MULTIPLIER)
+        string = string.replace(
+            Notation.EXPRESSION_CB, Notation.EXPRESSION_CB + Notation.MULTIPLIER
+        )
     splits = string.split(Notation.MULTIPLIER)
     try:
         n = int(splits[1])
-        cleaned = splits[0].replace(Notation.EXPRESSION_OB, Notation.EMPTY).replace(Notation.EXPRESSION_CB, Notation.EMPTY)
-        if n < Validation.MULTIPLIER_MIN_REPITITIONS or n > Validation.MULTIPLIER_MAX_REPITITIONS or len(splits) != 2:
-            raise BadMultiplierException("Multiplier statement '{}' provided is invalid or illegal.".format(splits[0]))
+        cleaned = (
+            splits[0]
+            .replace(Notation.EXPRESSION_OB, Notation.EMPTY)
+            .replace(Notation.EXPRESSION_CB, Notation.EMPTY)
+        )
+        if (
+            n < Validation.MULTIPLIER_MIN_REPITITIONS
+            or n > Validation.MULTIPLIER_MAX_REPITITIONS
+            or len(splits) != 2
+        ):
+            raise BadMultiplierException(
+                "Multiplier statement '{}' provided is invalid or illegal.".format(
+                    splits[0]
+                )
+            )
         return cleaned * n
     except ValueError:
-        print("Too many multiplier symbols used. Function tried to convert an empty string into an int.")
+        print(
+            "Too many multiplier symbols used. Function tried to convert an empty string into an int."
+        )
     except IndexError:
-        print("Could not split using the multiplier statement provided: {}".format(splits[0]))
+        print(
+            "Could not split using the multiplier statement provided: {}".format(
+                splits[0]
+            )
+        )

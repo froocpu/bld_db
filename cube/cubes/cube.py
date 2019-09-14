@@ -22,24 +22,37 @@ class Cube(BaseCube):
         self.unsolved_corner_count = 0
         self.unsolved_corners = []
         self.unsolved_edges = []
-        self.solved_state_corners, self.solved_state_edges = _generate_good_mappings(self.stickers)
+        self.solved_state_corners, self.solved_state_edges = _generate_good_mappings(
+            self.stickers
+        )
 
         self.reverse_dict = {}
         for v in self.facedict:
             self.reverse_dict.update({self.facedict[v]: v})
 
         # Generate mappings.
-        good_corner_mappings, good_edge_mappings = self.solved_state_corners, self.solved_state_edges
+        good_corner_mappings, good_edge_mappings = (
+            self.solved_state_corners,
+            self.solved_state_edges,
+        )
 
         bad_edge_mappings = flip_edge_mappings(good_edge_mappings)
 
         # Two clockwise rotations == one counter-clockwise rotation.
-        bad_corner_mappings_cw = corner_mapping_rotation_cw(mappings=good_corner_mappings)
-        bad_corner_mappings_ccw = corner_mapping_rotation_cw(mappings=bad_corner_mappings_cw)
+        bad_corner_mappings_cw = corner_mapping_rotation_cw(
+            mappings=good_corner_mappings
+        )
+        bad_corner_mappings_ccw = corner_mapping_rotation_cw(
+            mappings=bad_corner_mappings_cw
+        )
 
         # Create final mapping dicts.
         self.edge_mappings = {**good_edge_mappings, **bad_edge_mappings}
-        self.corner_mappings = {**good_corner_mappings, **bad_corner_mappings_cw, **bad_corner_mappings_ccw}
+        self.corner_mappings = {
+            **good_corner_mappings,
+            **bad_corner_mappings_cw,
+            **bad_corner_mappings_ccw,
+        }
 
     def apply(self, alg):
         """
@@ -128,7 +141,11 @@ class Cube(BaseCube):
         corner_mappings_ccw = corner_mapping_rotation_cw(mappings=corner_mappings_cw)
 
         self.edge_mappings = {**edge_mappings, **edge_mappings_inverse}
-        self.corner_mappings = {**corner_mappings, **corner_mappings_cw, **corner_mappings_ccw}
+        self.corner_mappings = {
+            **corner_mappings,
+            **corner_mappings_cw,
+            **corner_mappings_ccw,
+        }
 
     def corner_cycle_discovery(self):
         """
@@ -138,11 +155,19 @@ class Cube(BaseCube):
 
         for j in self.unsolved_corners:
 
-            if any([j in k for k in all_corner_cycles]) or any([rotate_sticker(j, cw=True) in k for k in all_corner_cycles]) or any([rotate_sticker(j, cw=False) in k for k in all_corner_cycles]):
+            if (
+                any([j in k for k in all_corner_cycles])
+                or any([rotate_sticker(j, cw=True) in k for k in all_corner_cycles])
+                or any([rotate_sticker(j, cw=False) in k for k in all_corner_cycles])
+            ):
                 continue
 
             this_cycle = [j]
-            end_cycle_piece = [j, rotate_sticker(j, cw=False), rotate_sticker(j, cw=True)]
+            end_cycle_piece = [
+                j,
+                rotate_sticker(j, cw=False),
+                rotate_sticker(j, cw=True),
+            ]
 
             while True:
                 this_piece = self.corner_mappings[this_cycle[-1]]
@@ -175,7 +200,9 @@ class Cube(BaseCube):
 
         for j in self.unsolved_edges:
 
-            if any([j in k for k in all_edge_cycles]) or any([rotate_sticker(j) in k for k in all_edge_cycles]):
+            if any([j in k for k in all_edge_cycles]) or any(
+                [rotate_sticker(j) in k for k in all_edge_cycles]
+            ):
                 continue
 
             this_cycle = [j]
@@ -183,7 +210,10 @@ class Cube(BaseCube):
 
             while True:
                 this_piece = self.edge_mappings[this_cycle[-1]]
-                sticker_a, sticker_b = self.reverse_dict[this_piece[0]], self.reverse_dict[this_piece[1]]
+                sticker_a, sticker_b = (
+                    self.reverse_dict[this_piece[0]],
+                    self.reverse_dict[this_piece[1]],
+                )
                 sticker = "".join([sticker_a, sticker_b])
                 if sticker in end_cycle_piece:
                     all_edge_cycles.append(this_cycle)
@@ -209,7 +239,7 @@ def _generate_good_mappings(stickers):
         "DFL": (stickers[1][0][2], stickers[2][0][0], stickers[5][2][0]),
         "DRF": (stickers[1][2][2], stickers[4][0][0], stickers[2][2][0]),
         "DBR": (stickers[1][2][0], stickers[3][0][0], stickers[4][2][0]),
-        "DLB": (stickers[1][0][0], stickers[5][0][0], stickers[3][2][0])
+        "DLB": (stickers[1][0][0], stickers[5][0][0], stickers[3][2][0]),
     }
 
     edges = {
@@ -224,7 +254,7 @@ def _generate_good_mappings(stickers):
         "FL": (stickers[2][0][1], stickers[5][2][1]),
         "FR": (stickers[2][2][1], stickers[4][0][1]),
         "BL": (stickers[3][2][1], stickers[5][0][1]),
-        "BR": (stickers[3][0][1], stickers[4][2][1])
+        "BR": (stickers[3][0][1], stickers[4][2][1]),
     }
 
     return corners, edges
@@ -257,10 +287,3 @@ def corner_mapping_rotation_cw(mappings):
         new_tuple = (mappings[k][1], mappings[k][2], mappings[k][0])
         new_dict.update({new_key: new_tuple})
     return new_dict
-
-
-
-
-
-
-

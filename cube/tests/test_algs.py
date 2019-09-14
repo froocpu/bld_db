@@ -5,7 +5,6 @@ from cube.utils import wide_commutator, corner_commutator, t_perm, niklas
 
 
 class TestAlgs(unittest.TestCase):
-
     def setUp(self):
         self.cube = Cube(3)
         self.solved = Cube(3)
@@ -18,7 +17,9 @@ class TestAlgs(unittest.TestCase):
         """
         niklas(self.cube)
         expected_u_face = [[3, 0, 2], [0, 0, 0], [0, 0, 5]]
-        self.assertListEqual(self.cube.stickers[1].tolist(), self.solved.stickers[1].tolist())
+        self.assertListEqual(
+            self.cube.stickers[1].tolist(), self.solved.stickers[1].tolist()
+        )
         self.assertListEqual(self.cube.stickers[0].tolist(), expected_u_face)
 
     def test_tperm(self):
@@ -33,7 +34,9 @@ class TestAlgs(unittest.TestCase):
         """
         t_perm(self.cube)
         expected_r_face = [[4, 4, 3], [4, 4, 5], [4, 4, 2]]
-        self.assertListEqual(self.cube.stickers[0:2].tolist(), self.solved.stickers[0:2].tolist())
+        self.assertListEqual(
+            self.cube.stickers[0:2].tolist(), self.solved.stickers[0:2].tolist()
+        )
         self.assertListEqual(self.cube.stickers[4].tolist(), expected_r_face)
 
         t_perm(self.cube)
@@ -68,10 +71,9 @@ class TestAlgs(unittest.TestCase):
         expected_d_face = [[1, 1, 1], [1, 1, 4], [1, 1, 1]]
         expected_f_face = [[2, 2, 2], [3, 2, 2], [2, 2, 2]]
 
-        self.assertListEqual(self.cube.stickers[5].tolist(), self.solved.stickers[5].tolist())
+        self.assertListEqual(
+            self.cube.stickers[5].tolist(), self.solved.stickers[5].tolist()
+        )
         self.assertListEqual(self.cube.stickers[0].tolist(), expected_u_face)
         self.assertListEqual(self.cube.stickers[1].tolist(), expected_d_face)
         self.assertListEqual(self.cube.stickers[2].tolist(), expected_f_face)
-
-
-

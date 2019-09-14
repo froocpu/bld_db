@@ -44,5 +44,20 @@ def t_perm(cube):
     """
     T-perm PLL.
     """
-    alg = ['R', 'U', "R'", "U'", "R'", 'F', 'R2', "U'", "R'", "U'", 'R', 'U', "R'", "F'"]
+    alg = [
+        "R",
+        "U",
+        "R'",
+        "U'",
+        "R'",
+        "F",
+        "R2",
+        "U'",
+        "R'",
+        "U'",
+        "R",
+        "U",
+        "R'",
+        "F'",
+    ]
     _helper(cube=cube, alg=alg, cycle=False)

@@ -2,12 +2,15 @@ import unittest
 
 from parse.algorithm.config import Validation
 from parse.algorithm.algorithm import Algorithm
-from parse.exceptions.validation import AmbiguousStatementException, EmptyAlgorithmException, BadMultiplierException, \
-    UnclosedBracketsException
+from parse.exceptions.validation import (
+    AmbiguousStatementException,
+    EmptyAlgorithmException,
+    BadMultiplierException,
+    UnclosedBracketsException,
+)
 
 
 class TestAlgorithm(unittest.TestCase):
-
     def test_vanilla_success(self):
         """
         When simple algorithms are passed as inputs...
@@ -54,7 +57,24 @@ class TestAlgorithm(unittest.TestCase):
         """
         comm1 = Algorithm("[S, R2]")
         comm2_nested = Algorithm("[[M', U],[M, D]]")
-        comm2_nested_expected = ["M'", "U", "M", "U'", "M", "D", "M'", "D'", "U", "M'", "U'", "M", "D", "M", "D'", "M'"]
+        comm2_nested_expected = [
+            "M'",
+            "U",
+            "M",
+            "U'",
+            "M",
+            "D",
+            "M'",
+            "D'",
+            "U",
+            "M'",
+            "U'",
+            "M",
+            "D",
+            "M",
+            "D'",
+            "M'",
+        ]
 
         self.assertListEqual(comm1.alg(), ["S", "R2", "S'", "R2"])
         self.assertEqual(comm2_nested.alg(), comm2_nested_expected)
@@ -149,7 +169,22 @@ class TestAlgorithm(unittest.TestCase):
         And the output algorithm should match the expected alg.
         """
         m2 = Algorithm("[U R U': M2][U' R' U: M2]")
-        m2_expected = ["U", "R", "U'", "M2", "U", "R'", "U'", "U'", "R'", "U", "M2", "U'", "R", "U"]
+        m2_expected = [
+            "U",
+            "R",
+            "U'",
+            "M2",
+            "U",
+            "R'",
+            "U'",
+            "U'",
+            "R'",
+            "U",
+            "M2",
+            "U'",
+            "R",
+            "U",
+        ]
 
         self.assertListEqual(m2.alg(), m2_expected)
 
@@ -164,8 +199,38 @@ class TestAlgorithm(unittest.TestCase):
         t_shorthand = Algorithm("[R,U] R' F R2 U' [R': U'] U R' F'")
         t_complex = Algorithm("[R,U] (R' F R2) U' [R': U'] U R' F'")
 
-        t_expected = ["R", "U", "R'", "U'", "R'", "F", "R2", "U'", "R'", "U'", "R", "U", "R'", "F'"]
-        t_expected_inverse = ["F", "R", "U'", "R'", "U", "R", "U", "R2", "F'", "R", "U", "R", "U'", "R'"]
+        t_expected = [
+            "R",
+            "U",
+            "R'",
+            "U'",
+            "R'",
+            "F",
+            "R2",
+            "U'",
+            "R'",
+            "U'",
+            "R",
+            "U",
+            "R'",
+            "F'",
+        ]
+        t_expected_inverse = [
+            "F",
+            "R",
+            "U'",
+            "R'",
+            "U",
+            "R",
+            "U",
+            "R2",
+            "F'",
+            "R",
+            "U",
+            "R",
+            "U'",
+            "R'",
+        ]
 
         self.assertListEqual(t.alg(), t_expected)
         self.assertListEqual(t_shorthand.alg(), t_expected)
@@ -184,15 +249,23 @@ class TestAlgorithm(unittest.TestCase):
         test_int = 2
 
         mult1 = Algorithm("(M' U M U)*{}".format(test_int))  # simple multiplier alg
-        mult2 = Algorithm("M' U' (M' D')*{} U M'".format(test_int))  # multiplier in middle of normal alg
-        mult3 = Algorithm("[L: (U M' U M)*{}]".format(test_int))  # nested inside conjugate
+        mult2 = Algorithm(
+            "M' U' (M' D')*{} U M'".format(test_int)
+        )  # multiplier in middle of normal alg
+        mult3 = Algorithm(
+            "[L: (U M' U M)*{}]".format(test_int)
+        )  # nested inside conjugate
         mult4 = Algorithm("(M' U M U)*1")  # one iteration
         mult5 = Algorithm("(M' U)*4")  # four iterations
         mult6 = Algorithm("U (M' U)*0")  # zero iterations is valid.
 
         self.assertListEqual(mult1.alg(), ["M'", "U", "M", "U"] * test_int)
-        self.assertListEqual(mult2.alg(), ["M'", "U'"] + ["M'", "D'"] * test_int + ["U", "M'"])
-        self.assertListEqual(mult3.alg(), ["L"] + ["U", "M'", "U", "M"] * test_int + ["L'"])
+        self.assertListEqual(
+            mult2.alg(), ["M'", "U'"] + ["M'", "D'"] * test_int + ["U", "M'"]
+        )
+        self.assertListEqual(
+            mult3.alg(), ["L"] + ["U", "M'", "U", "M"] * test_int + ["L'"]
+        )
         self.assertListEqual(mult4.alg(), ["M'", "U", "M", "U"])
         self.assertListEqual(mult5.alg(), ["M'", "U"] * 4)
         self.assertListEqual(mult6.alg(), ["U"])
@@ -206,15 +279,23 @@ class TestAlgorithm(unittest.TestCase):
         test_int = 2
 
         mult1 = Algorithm("(M' U M U){}".format(test_int))  # simple multiplier alg
-        mult2 = Algorithm("M' U' (M' D'){} U M'".format(test_int))  # multiplier in middle of normal alg
-        mult3 = Algorithm("[L: (U M' U M){}]".format(test_int))  # nested inside conjugate
+        mult2 = Algorithm(
+            "M' U' (M' D'){} U M'".format(test_int)
+        )  # multiplier in middle of normal alg
+        mult3 = Algorithm(
+            "[L: (U M' U M){}]".format(test_int)
+        )  # nested inside conjugate
         mult4 = Algorithm("(M' U M U)1")  # one iteration
         mult5 = Algorithm("(M' U) 4")  # four iterations
         mult6 = Algorithm("U (M' U)0")  # zero iterations is valid.
 
         self.assertListEqual(mult1.alg(), ["M'", "U", "M", "U"] * test_int)
-        self.assertListEqual(mult2.alg(), ["M'", "U'"] + ["M'", "D'"] * test_int + ["U", "M'"])
-        self.assertListEqual(mult3.alg(), ["L"] + ["U", "M'", "U", "M"] * test_int + ["L'"])
+        self.assertListEqual(
+            mult2.alg(), ["M'", "U'"] + ["M'", "D'"] * test_int + ["U", "M'"]
+        )
+        self.assertListEqual(
+            mult3.alg(), ["L"] + ["U", "M'", "U", "M"] * test_int + ["L'"]
+        )
         self.assertListEqual(mult4.alg(), ["M'", "U", "M", "U"])
         self.assertListEqual(mult5.alg(), ["M'", "U"] * 4)
         self.assertListEqual(mult6.alg(), ["U"])

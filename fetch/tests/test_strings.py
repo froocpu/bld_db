@@ -5,7 +5,6 @@ from ..etl.strings import signature
 
 
 class TestStrings(unittest.TestCase):
-
     def test_signature(self):
         """
         When a numpy array is provided to signature()...
@@ -15,4 +14,3 @@ class TestStrings(unittest.TestCase):
         sig_str = signature(sig_arr)
         self.assertTrue(isinstance(sig_str, str))
         self.assertEqual(sig_str, "011123")
-

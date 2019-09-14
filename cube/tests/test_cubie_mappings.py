@@ -4,7 +4,6 @@ from cube.cubes import Cube
 
 
 class TestCubieMappings(unittest.TestCase):
-
     def setUp(self):
         self.c = Cube(3)
 
@@ -13,7 +12,9 @@ class TestCubieMappings(unittest.TestCase):
         When edge mappings are generated, then there should be no sticker pairings where the two stickers are opposites.
         """
         illegal_pairs = [(0, 1), (2, 3), (4, 5)]
-        distinct_pairs = set([tuple(sorted(i)) for i in list(self.c.edge_mappings.values())])
+        distinct_pairs = set(
+            [tuple(sorted(i)) for i in list(self.c.edge_mappings.values())]
+        )
         for ip in illegal_pairs:
             self.assertNotIn(ip, distinct_pairs)
 

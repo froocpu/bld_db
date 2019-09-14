@@ -13,5 +13,5 @@ def rotate_sticker(st, cw=None):
     if cw is None and len(st) == 2:
         return st[::-1].upper()
     if cw:
-        return ''.join([st[1], st[2], st[0]]).upper()
-    return ''.join([st[2], st[0], st[1]]).upper()
+        return "".join([st[1], st[2], st[0]]).upper()
+    return "".join([st[2], st[0], st[1]]).upper()

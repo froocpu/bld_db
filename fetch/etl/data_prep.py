@@ -13,20 +13,24 @@ def prepare_data(sheet, meta):
     :type meta: dict
     :return: dict
     """
-    sheets = meta.get('sheets', '')
+    sheets = meta.get("sheets", "")
     titles = collect_field(sheets, "title")
     sheet_ids = collect_field(sheets, "sheetId")
 
-    final_data = {"id": meta['spreadsheetId'], "spreadsheet_metadata": meta}
+    final_data = {"id": meta["spreadsheetId"], "spreadsheet_metadata": meta}
     sheet_contents = {}
 
     for i, t in enumerate(titles):
 
         # Define the range to query (needs the name of the sheet.)
-        sheet_range = '{0}!{1}'.format(t, DataSelector.DEFAULT_RANGE)
-        result = sheet.values().get(spreadsheetId=meta['spreadsheetId'], range=sheet_range).execute()
+        sheet_range = "{0}!{1}".format(t, DataSelector.DEFAULT_RANGE)
+        result = (
+            sheet.values()
+            .get(spreadsheetId=meta["spreadsheetId"], range=sheet_range)
+            .execute()
+        )
 
-        values = result.get('values')
+        values = result.get("values")
         if not values:
             print("No data found in this sheet: {}".format(t))
             continue
@@ -35,20 +39,26 @@ def prepare_data(sheet, meta):
 
         # Filter out cells with strings that are either too short or too long.
         for ind, col in enumerate(values):
-            cells = [cell for cell in col if len(cell) > DataSelector.ALG_CHAR_MIN_LENGTH and len(cell) <= DataSelector.ALG_CHAR_MAX_LENGTH]
+            cells = [
+                cell
+                for cell in col
+                if len(cell) > DataSelector.ALG_CHAR_MIN_LENGTH
+                and len(cell) <= DataSelector.ALG_CHAR_MAX_LENGTH
+            ]
             if len(cells) > 0:
                 filtered.update({ind: cells})
 
         # Start building the final dictionary.
-        sheet_contents.update({int(sheet_ids[i]): {"range": result['range'],
-                                                   "values": filtered}})
+        sheet_contents.update(
+            {int(sheet_ids[i]): {"range": result["range"], "values": filtered}}
+        )
 
     final_data.update({"data": sheet_contents})
 
     return final_data
 
 
-def trim_properties_metadata(data, parent='properties'):
+def trim_properties_metadata(data, parent="properties"):
     """
     Strip out fields that aren't necessary, usually stuff like formatting.
     :param data: sheet metadata
@@ -62,7 +72,7 @@ def trim_properties_metadata(data, parent='properties'):
     return data
 
 
-def trim_sheets_metadata(data, parent='sheets', child='properties'):
+def trim_sheets_metadata(data, parent="sheets", child="properties"):
     """
     Strip out fields that aren't necessary from individual sheets, usually stuff like sorting specs and views.
     :param data: sheet metadata
@@ -98,7 +108,7 @@ def write_json(data, fn, append=JobConfiguration.OUTPUT_SINGLE_FILE):
     """
     if append:
         # will overwrite DataSelector.PRETTY_INDENT
-        with open (fn, "a+") as single_file:
+        with open(fn, "a+") as single_file:
             single_file.write(dumps(data) + "\n")
     else:
         with open(fn, "w") as dt:
@@ -119,9 +129,13 @@ def init_objects(input_alg):
     alg = Algorithm(input_alg)
     cube.apply(alg.alg())
 
-    if cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES:
+    if (
+        cube.unsolved_corner_count >= DataSelector.MAX_ALLOWED_UNSOLVED_CORNERS
+        or cube.unsolved_edge_count >= DataSelector.MAX_ALLOWED_UNSOLVED_EDGES
+    ):
         raise TooManyUnsolvedPiecesException(
-            "This algorithm leaves a lot of pieces unsolved. The parser may be behaving incorrectly, or the alg is bad.")
+            "This algorithm leaves a lot of pieces unsolved. The parser may be behaving incorrectly, or the alg is bad."
+        )
 
     if cube.unsolved_corner_count + cube.unsolved_edge_count == 0:
         raise AlgorithmDoesNothingException("This algorithm appears to do nothing.")
